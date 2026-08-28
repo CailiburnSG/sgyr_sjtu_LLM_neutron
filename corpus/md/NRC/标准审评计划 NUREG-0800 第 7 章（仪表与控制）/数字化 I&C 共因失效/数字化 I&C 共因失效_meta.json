@@ -1,0 +1,427 @@
+{
+  "table_of_contents": [
+    {
+      "title": "U.S. NUCLEAR REGULATORY COMMISSION \nSTANDARD REVIEW PLAN",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          180.0,
+          110.98828125
+        ],
+        [
+          494.6928405761719,
+          110.98828125
+        ],
+        [
+          494.6928405761719,
+          150.69769287109375
+        ],
+        [
+          180.0,
+          150.69769287109375
+        ]
+      ]
+    },
+    {
+      "title": "BRANCH TECHNICAL POSITION 7-1",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          71.12109375,
+          177.50390625
+        ],
+        [
+          263.88287353515625,
+          177.50390625
+        ],
+        [
+          263.88287353515625,
+          188.9761962890625
+        ],
+        [
+          71.12109375,
+          188.9761962890625
+        ]
+      ]
+    },
+    {
+      "title": "GUIDANCE ON ISOLATION OF LOW-PRESSURE SYSTEMS FROM THE HIGH-PRESSURE \nREACTOR COOLANT SYSTEM",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          71.71875,
+          202.640625
+        ],
+        [
+          538.3059692382812,
+          202.640625
+        ],
+        [
+          538.3059692382812,
+          226.8956298828125
+        ],
+        [
+          71.71875,
+          226.8956298828125
+        ]
+      ]
+    },
+    {
+      "title": "REVIEW RESPONSIBILITIES",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.5234375,
+          241.2354736328125
+        ],
+        [
+          223.554443359375,
+          241.2354736328125
+        ],
+        [
+          223.554443359375,
+          252.21551513671875
+        ],
+        [
+          70.5234375,
+          252.21551513671875
+        ]
+      ]
+    },
+    {
+      "title": "USNRC STANDARD REVIEW PLAN",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          237.568359375,
+          487.65234375
+        ],
+        [
+          374.86517333984375,
+          487.65234375
+        ],
+        [
+          374.86517333984375,
+          497.40875244140625
+        ],
+        [
+          237.568359375,
+          497.40875244140625
+        ]
+      ]
+    },
+    {
+      "title": "A. BACKGROUND",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          71.419921875,
+          86.23828125
+        ],
+        [
+          188.5580291748047,
+          86.23828125
+        ],
+        [
+          188.5580291748047,
+          98.1358642578125
+        ],
+        [
+          71.419921875,
+          98.1358642578125
+        ]
+      ]
+    },
+    {
+      "title": "B. BRANCH TECHNICAL POSITION",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          71.12109375,
+          339.15234375
+        ],
+        [
+          277.7891540527344,
+          339.15234375
+        ],
+        [
+          277.7891540527344,
+          351.0929870605469
+        ],
+        [
+          71.12109375,
+          351.0929870605469
+        ]
+      ]
+    },
+    {
+      "title": "C. REFERENCES",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.822265625,
+          302.02734375
+        ],
+        [
+          183.11082458496094,
+          302.02734375
+        ],
+        [
+          183.11082458496094,
+          313.1736145019531
+        ],
+        [
+          70.822265625,
+          313.1736145019531
+        ]
+      ]
+    },
+    {
+      "title": "BTP 7-1 \nDescription of Changes",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          244.2595672607422,
+          86.625
+        ],
+        [
+          370.7469787597656,
+          86.625
+        ],
+        [
+          370.7469787597656,
+          110.79583740234375
+        ],
+        [
+          244.2595672607422,
+          110.79583740234375
+        ]
+      ]
+    },
+    {
+      "title": "BTP 7-1, \"Guidance on Isolation of Low-Pressure Systems from the \nHigh-Pressure Reactor Coolant System",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          127.8984375,
+          124.5234375
+        ],
+        [
+          485.1243896484375,
+          124.5234375
+        ],
+        [
+          485.1243896484375,
+          148.7152099609375
+        ],
+        [
+          127.8984375,
+          148.7152099609375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          82
+        ],
+        [
+          "Line",
+          39
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          78
+        ],
+        [
+          "Line",
+          40
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          53
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "TableCell",
+          22
+        ],
+        [
+          "Span",
+          13
+        ],
+        [
+          "Line",
+          7
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Form",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          41
+        ],
+        [
+          "Line",
+          21
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/\u6570\u5b57\u5316 I&C \u5171\u56e0\u5931\u6548"
+}

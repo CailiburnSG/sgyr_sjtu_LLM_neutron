@@ -1,0 +1,34 @@
+%% Results and discussion
+\subsection{Case study: agent-to-diagnosis pipeline}
+On representative neutron-current workspaces (e.g., A1/A2 series), the agent produces condition
+reports capturing synchronized zeros/spikes and collinear channel groups; the RAG stage attaches
+IAEA passages on ex-core neutron noise, surveillance, and sensor characteristics to form a citable
+expert memo.
+\Cref{fig:case-waveforms} illustrates three channels from A1\_1 after downsampling for display.
+As a concrete example, the A1\_1 condition report flags high-sensitivity morphology across channels,
+strong collinearity among several detectors, repeated spike events (notably on one channel with
+23 complete spike episodes), and frequent zero dropouts on others.
+This subsection provides qualitative evidence that the measurement-side pipeline is operational;
+quantitative claims in the remainder of this section focus on retrieval.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.95\linewidth]{fig3_case_waveforms}
+  \caption{Example neutron-current traces from dataset A1\_1 (three channels; downsampled for
+  readability). The zero-prior agent analyzes the full-resolution series in the workspace.}
+  \label{fig:case-waveforms}
+\end{figure}
+
+\subsection{Retrieval robustness under corpus expansion}
+On the IAEA-only pool, all four queries achieve perfect IAEA purity and first-hit rank~1, confirming index correctness.
+Under controlled admission of non-core supplements, English phrase purity declines gradually (on the order of $100\%\!\rightarrow\!\sim\!34\%$ at full same-domain expansion across configurations), while Chinese short queries often collapse near zero core purity after only about ten non-core documents---even as top-1 cosine scores rise.
+Thus similarity scores alone are misleading when choosing a core--non-core library ratio for deployment.
+
+\subsection{Chunking versus language}
+Across the chunk-size/overlap grid, full-corpus English purity typically varies only within roughly $30\%$--$40\%$, far smaller than the language gap.
+Current bottlenecks are embedding--language alignment and query information content, not further micro-tuning of overlap.
+
+\subsection{Relevance criteria and query formulation}
+Self-retrieval shows a persistent gap between strict and document-level Recall@10 (e.g., about $0.65$ vs.~$0.86$ on a representative \texttt{o80\_c1200} IAEA-only setting), consistent with overlap-induced near-duplicate chunks.
+Domain-term sentences outperform first-sentence and random-window queries; titles may retrieve the correct document but fail strict chunk re-identification.
+These findings motivate the report-driven, terminology-rich query construction used in \cref{sec:rag-diag}, plus optional metadata filtering or reranking when the corpus grows.

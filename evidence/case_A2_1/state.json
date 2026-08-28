@@ -1,0 +1,245 @@
+{
+    "project_meta": {
+        "project_id": "A2_1_Analysis",
+        "raw_source": "/home/sda/sgyr/my_dataprocess_assistant2.0/data/A2_1.csv",
+        "workspace_dir": "/home/sda/sgyr/my_dataprocess_assistant2.0/data/A2_1_workspace"
+    },
+    "file_registry": {
+        "current_active_file": "/home/sda/sgyr/my_dataprocess_assistant2.0/data/A2_1_workspace/A2_1_sorted.csv"
+    },
+    "workflow_history": [
+        {
+            "step_index": 1,
+            "tool": "load_and_profile_csv_tool",
+            "status": "completed",
+            "timestamp": "2026-04-15 17:11:31"
+        },
+        {
+            "step_index": 2,
+            "tool": "anomaly_scan_tool",
+            "status": "completed",
+            "timestamp": "2026-04-15 17:11:38"
+        },
+        {
+            "step_index": 3,
+            "tool": "zero_prior_discovery_tool",
+            "status": "completed",
+            "timestamp": "2026-04-15 17:11:40"
+        },
+        {
+            "step_index": 4,
+            "tool": "global_extremes_scan_tool",
+            "status": "completed",
+            "timestamp": "2026-04-15 17:32:36"
+        },
+        {
+            "step_index": 5,
+            "tool": "global_time_lag_scan_tool",
+            "status": "completed",
+            "timestamp": "2026-04-16 10:19:55"
+        }
+    ],
+    "integrated_conclusions": {
+        "step_1_profile": "工作区已建立。完成时间排序，数据规模为 597607x8。",
+        "step_2_anomaly": "已完成工况扫描。高频突变传感器包括: BL.BL3.3RIC2012MA_VER,BL.BL3.3RIC2014MA_VER,BL.BL3.3RIC2015MA_VER。",
+        "step_3_zero_prior": "零先验扫描完成。发现 9 对高度共线变量。",
+        "step_4_extremes": "全局极值扫描完成。已提取 7 个变量的巅峰与谷底时间戳。",
+        "step_5_causality": "因果扫描完成。发现 0 条具有时间滞后的物理传导链路。"
+    },
+    "knowledge_graph": {
+        "initial_data_stats": {
+            "rows": 597607,
+            "columns": 8,
+            "frequency": "0 days 00:00:01"
+        },
+        "anomalies": {
+            "top_spikes": [
+                "BL.BL3.3RIC2012MA_VER",
+                "BL.BL3.3RIC2014MA_VER",
+                "BL.BL3.3RIC2015MA_VER"
+            ],
+            "top_zero_drops": [
+                "BL.BL3.3RIC2011MA_VER",
+                "BL.BL3.3RIC2012MA_VER",
+                "BL.BL3.3RIC2013MA_VER"
+            ],
+            "high_volatility": [
+                "BL.BL3.3RIC2015MA_VER",
+                "BL.BL3.3RIC2016MA_VER",
+                "BL.BL3.3RIC2017MA_VER"
+            ]
+        },
+        "variable_roles": {
+            "discrete": [],
+            "slow_lag": [],
+            "highly_volatile": [
+                "BL.BL3.3RIC2011MA_VER",
+                "BL.BL3.3RIC2012MA_VER",
+                "BL.BL3.3RIC2013MA_VER",
+                "BL.BL3.3RIC2014MA_VER",
+                "BL.BL3.3RIC2015MA_VER",
+                "BL.BL3.3RIC2016MA_VER",
+                "BL.BL3.3RIC2017MA_VER"
+            ],
+            "normal": []
+        },
+        "redundant_sensor_pairs": [
+            [
+                "BL.BL3.3RIC2011MA_VER",
+                "BL.BL3.3RIC2015MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC2011MA_VER",
+                "BL.BL3.3RIC2016MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC2011MA_VER",
+                "BL.BL3.3RIC2017MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC2012MA_VER",
+                "BL.BL3.3RIC2013MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC2012MA_VER",
+                "BL.BL3.3RIC2014MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC2013MA_VER",
+                "BL.BL3.3RIC2014MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC2015MA_VER",
+                "BL.BL3.3RIC2016MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC2015MA_VER",
+                "BL.BL3.3RIC2017MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC2016MA_VER",
+                "BL.BL3.3RIC2017MA_VER"
+            ]
+        ],
+        "global_extremes": {
+            "BL.BL3.3RIC2011MA_VER": {
+                "max": {
+                    "value": 289.7880859375,
+                    "timestamp": "2025-01-21 01:22:02"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:01:11"
+                }
+            },
+            "BL.BL3.3RIC2012MA_VER": {
+                "max": {
+                    "value": 1491.720947265625,
+                    "timestamp": "2025-01-21 01:23:35"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:01:11"
+                }
+            },
+            "BL.BL3.3RIC2013MA_VER": {
+                "max": {
+                    "value": 1492.1500244140625,
+                    "timestamp": "2025-01-21 01:23:16"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:01:11"
+                }
+            },
+            "BL.BL3.3RIC2014MA_VER": {
+                "max": {
+                    "value": 1492.1500244140625,
+                    "timestamp": "2025-01-21 02:21:25"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:01:11"
+                }
+            },
+            "BL.BL3.3RIC2015MA_VER": {
+                "max": {
+                    "value": 322.43121337890625,
+                    "timestamp": "2025-01-21 01:22:18"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:01:11"
+                }
+            },
+            "BL.BL3.3RIC2016MA_VER": {
+                "max": {
+                    "value": 325.3629150390625,
+                    "timestamp": "2025-01-21 02:14:58"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:01:11"
+                }
+            },
+            "BL.BL3.3RIC2017MA_VER": {
+                "max": {
+                    "value": 324.3212890625,
+                    "timestamp": "2025-01-21 02:24:23"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:01:11"
+                }
+            }
+        },
+        "causality_chains": [],
+        "synchronous_pairs": [
+            {
+                "col_A": "BL.BL3.3RIC2016MA_VER",
+                "col_B": "BL.BL3.3RIC2017MA_VER",
+                "correlation": 0.9999925270850246
+            },
+            {
+                "col_A": "BL.BL3.3RIC2015MA_VER",
+                "col_B": "BL.BL3.3RIC2016MA_VER",
+                "correlation": 0.9999319181869243
+            },
+            {
+                "col_A": "BL.BL3.3RIC2015MA_VER",
+                "col_B": "BL.BL3.3RIC2017MA_VER",
+                "correlation": 0.9999018712823263
+            },
+            {
+                "col_A": "BL.BL3.3RIC2012MA_VER",
+                "col_B": "BL.BL3.3RIC2013MA_VER",
+                "correlation": 0.9997196850585998
+            },
+            {
+                "col_A": "BL.BL3.3RIC2013MA_VER",
+                "col_B": "BL.BL3.3RIC2014MA_VER",
+                "correlation": 0.9994891055792869
+            },
+            {
+                "col_A": "BL.BL3.3RIC2012MA_VER",
+                "col_B": "BL.BL3.3RIC2014MA_VER",
+                "correlation": 0.9994129305488898
+            },
+            {
+                "col_A": "BL.BL3.3RIC2011MA_VER",
+                "col_B": "BL.BL3.3RIC2015MA_VER",
+                "correlation": 0.9977012309326863
+            },
+            {
+                "col_A": "BL.BL3.3RIC2011MA_VER",
+                "col_B": "BL.BL3.3RIC2016MA_VER",
+                "correlation": 0.9968906772968675
+            },
+            {
+                "col_A": "BL.BL3.3RIC2011MA_VER",
+                "col_B": "BL.BL3.3RIC2017MA_VER",
+                "correlation": 0.996733409657027
+            }
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+﻿query_mode,relevance,recall_at_10_mean,recall_at_10_std
+domain_term,relaxed_doc,0.9333,0.2537
+domain_term,strict,0.8000,0.4068
+first_sentence,relaxed_doc,0.8375,0.3712
+first_sentence,strict,0.6500,0.4800
+random_window,relaxed_doc,0.9079,0.2911
+random_window,strict,0.7237,0.4501
+title,relaxed_doc,0.9250,0.2651
+title,strict,0.0000,0.0000

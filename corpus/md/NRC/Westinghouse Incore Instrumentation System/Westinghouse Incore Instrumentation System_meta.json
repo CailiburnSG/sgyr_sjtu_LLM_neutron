@@ -1,0 +1,1785 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Westinghouse Technology Systems Manual",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          188.26171875,
+          296.61328125
+        ],
+        [
+          443.2987060546875,
+          296.61328125
+        ],
+        [
+          443.2987060546875,
+          309.76171875
+        ],
+        [
+          188.26171875,
+          309.76171875
+        ]
+      ]
+    },
+    {
+      "title": "TABLE OF CONTENTS",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          239.958984375,
+          53.7130126953125
+        ],
+        [
+          389.4018859863281,
+          53.7130126953125
+        ],
+        [
+          389.4018859863281,
+          67.63299560546875
+        ],
+        [
+          239.958984375,
+          67.63299560546875
+        ]
+      ]
+    },
+    {
+      "title": "LIST OF FIGURES",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          236.970703125,
+          38.113037109375
+        ],
+        [
+          360.0488586425781,
+          38.113037109375
+        ],
+        [
+          360.0488586425781,
+          52.03302001953125
+        ],
+        [
+          236.970703125,
+          52.03302001953125
+        ]
+      ]
+    },
+    {
+      "title": "9.2 INCORE INSTRUMENTATION SYSTEM",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          87.85546875,
+          37.5
+        ],
+        [
+          336.0,
+          37.5
+        ],
+        [
+          336.0,
+          47.25
+        ],
+        [
+          87.85546875,
+          47.25
+        ]
+      ]
+    },
+    {
+      "title": "Learning Objectives:",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          88.453125,
+          65.25
+        ],
+        [
+          210.0,
+          65.25
+        ],
+        [
+          210.0,
+          76.5703125
+        ],
+        [
+          88.453125,
+          76.5703125
+        ]
+      ]
+    },
+    {
+      "title": "9.2.1 Introduction",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          88.453125,
+          258.0
+        ],
+        [
+          212.25,
+          258.0
+        ],
+        [
+          212.25,
+          268.76953125
+        ],
+        [
+          88.453125,
+          268.76953125
+        ]
+      ]
+    },
+    {
+      "title": "9.2.2 System Description",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          69.92578125,
+          272.3499755859375
+        ],
+        [
+          227.80880737304688,
+          272.3499755859375
+        ],
+        [
+          227.80880737304688,
+          284.3500061035156
+        ],
+        [
+          69.92578125,
+          284.3500061035156
+        ]
+      ]
+    },
+    {
+      "title": "9.2.2.1 Incore Neutron Monitoring System",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          71.12109375,
+          300.6700134277344
+        ],
+        [
+          318.9404602050781,
+          300.6700134277344
+        ],
+        [
+          318.9404602050781,
+          312.6700134277344
+        ],
+        [
+          71.12109375,
+          312.6700134277344
+        ]
+      ]
+    },
+    {
+      "title": "9.2.2.2 Incore Temperature Monitoring System",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          88.453125,
+          424.38995361328125
+        ],
+        [
+          363.88287353515625,
+          424.38995361328125
+        ],
+        [
+          363.88287353515625,
+          436.38995361328125
+        ],
+        [
+          88.453125,
+          436.38995361328125
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3 Component Descriptions",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          69.328125,
+          313.2421875
+        ],
+        [
+          258.7171325683594,
+          313.2421875
+        ],
+        [
+          258.7171325683594,
+          325.75
+        ],
+        [
+          69.328125,
+          325.75
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.1 Conduits, Guide Thimbles, Isolation Valves, and Seal Table",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          69.328125,
+          342.07000732421875
+        ],
+        [
+          463.36859130859375,
+          342.07000732421875
+        ],
+        [
+          463.36859130859375,
+          354.07000732421875
+        ],
+        [
+          69.328125,
+          354.07000732421875
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.2 Drive Unit Assemblies",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          88.453125,
+          203.3499755859375
+        ],
+        [
+          270.18798828125,
+          203.3499755859375
+        ],
+        [
+          270.18798828125,
+          215.3499755859375
+        ],
+        [
+          88.453125,
+          215.3499755859375
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.3 Transfer Device Assemblies and Isolation Valves",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          71.71875,
+          160.875
+        ],
+        [
+          403.890625,
+          160.875
+        ],
+        [
+          403.890625,
+          173.95001220703125
+        ],
+        [
+          71.71875,
+          173.95001220703125
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.4 Interconnecting Tubing Runs",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.5234375,
+          590.1101837158203
+        ],
+        [
+          289.1300048828125,
+          590.1101837158203
+        ],
+        [
+          289.1300048828125,
+          602.12109375
+        ],
+        [
+          70.5234375,
+          602.12109375
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.5 Detector and Drive Cable Assemblies",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          88.453125,
+          37.5
+        ],
+        [
+          354.75,
+          37.5
+        ],
+        [
+          354.75,
+          47.25
+        ],
+        [
+          88.453125,
+          47.25
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.6 Readout and Control Equipment",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          88.5,
+          299.25
+        ],
+        [
+          326.25,
+          299.25
+        ],
+        [
+          326.25,
+          311.6953125
+        ],
+        [
+          88.5,
+          311.6953125
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.7 Gas Purge System",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          69.92578125,
+          36.73828125
+        ],
+        [
+          227.63238525390625,
+          36.73828125
+        ],
+        [
+          227.63238525390625,
+          49.75
+        ],
+        [
+          69.92578125,
+          49.75
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.8 Leak Detection System",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          71.12109375,
+          328.2699890136719
+        ],
+        [
+          252.92359924316406,
+          328.2699890136719
+        ],
+        [
+          252.92359924316406,
+          340.2699890136719
+        ],
+        [
+          71.12109375,
+          340.2699890136719
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.9 Thermocouples",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          70.224609375,
+          535.6300354003906
+        ],
+        [
+          211.04483032226562,
+          535.6300354003906
+        ],
+        [
+          211.04483032226562,
+          547.6300201416016
+        ],
+        [
+          70.224609375,
+          547.6300201416016
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.10 Thermocouple Reference Junction Box",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          70.5234375,
+          646.3901519775391
+        ],
+        [
+          345.4453125,
+          646.3901519775391
+        ],
+        [
+          345.4453125,
+          658.3901519775391
+        ],
+        [
+          70.5234375,
+          658.3901519775391
+        ]
+      ]
+    },
+    {
+      "title": "9.2.3.11 Thermocouple Indicator",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          87.85546875,
+          92.8125
+        ],
+        [
+          276.4676208496094,
+          92.8125
+        ],
+        [
+          276.4676208496094,
+          104.95001220703125
+        ],
+        [
+          87.85546875,
+          104.95001220703125
+        ]
+      ]
+    },
+    {
+      "title": "9.2.4 Operation and System Interrelationships",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          87.85546875,
+          287.2300109863281
+        ],
+        [
+          362.093505859375,
+          287.2300109863281
+        ],
+        [
+          362.093505859375,
+          299.70703125
+        ],
+        [
+          87.85546875,
+          299.70703125
+        ]
+      ]
+    },
+    {
+      "title": "9.2.4.1 Detector Calibration",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          88.453125,
+          315.5500183105469
+        ],
+        [
+          254.37564086914062,
+          315.5500183105469
+        ],
+        [
+          254.37564086914062,
+          327.5500183105469
+        ],
+        [
+          88.453125,
+          327.5500183105469
+        ]
+      ]
+    },
+    {
+      "title": "9.2.4.2 Flux-Mapping Procedure",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          88.453125,
+          619.5102691650391
+        ],
+        [
+          280.36273193359375,
+          619.5102691650391
+        ],
+        [
+          280.36273193359375,
+          631.5102691650391
+        ],
+        [
+          88.453125,
+          631.5102691650391
+        ]
+      ]
+    },
+    {
+      "title": "9.2.4.3 Incore-Excore Calibration",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          71.12109375,
+          617.3501739501953
+        ],
+        [
+          268.34765625,
+          617.3501739501953
+        ],
+        [
+          268.34765625,
+          629.3501739501953
+        ],
+        [
+          71.12109375,
+          629.3501739501953
+        ]
+      ]
+    },
+    {
+      "title": "9.2.4.4 Computer",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          70.224609375,
+          120.550048828125
+        ],
+        [
+          181.4755859375,
+          120.550048828125
+        ],
+        [
+          181.4755859375,
+          132.550048828125
+        ],
+        [
+          70.224609375,
+          132.550048828125
+        ]
+      ]
+    },
+    {
+      "title": "9.2.4.5 Incore Data Collection",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          70.5234375,
+          204.07000732421875
+        ],
+        [
+          248.51246643066406,
+          204.07000732421875
+        ],
+        [
+          248.51246643066406,
+          216.07000732421875
+        ],
+        [
+          70.5234375,
+          216.07000732421875
+        ]
+      ]
+    },
+    {
+      "title": "9.2.5 Summary",
+      "heading_level": null,
+      "page_id": 19,
+      "polygon": [
+        [
+          70.822265625,
+          36.73828125
+        ],
+        [
+          167.30599975585938,
+          36.73828125
+        ],
+        [
+          167.30599975585938,
+          49.75
+        ],
+        [
+          70.822265625,
+          49.75
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          5
+        ],
+        [
+          "Line",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          33
+        ],
+        [
+          "Form",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "TableCell",
+          116
+        ],
+        [
+          "Span",
+          59
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableOfContents",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          27
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "TableCell",
+          11
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableOfContents",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          55
+        ],
+        [
+          "Span",
+          23
+        ],
+        [
+          "ListItem",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          82
+        ],
+        [
+          "Line",
+          41
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          96
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          89
+        ],
+        [
+          "Line",
+          44
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          80
+        ],
+        [
+          "Line",
+          40
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          81
+        ],
+        [
+          "Line",
+          41
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          55
+        ],
+        [
+          "Span",
+          20
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          85
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          85
+        ],
+        [
+          "Line",
+          42
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          82
+        ],
+        [
+          "Line",
+          41
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          78
+        ],
+        [
+          "Line",
+          39
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          87
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          113
+        ],
+        [
+          "Line",
+          47
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          86
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          76
+        ],
+        [
+          "Line",
+          38
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 19,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          46
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 20,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          53
+        ],
+        [
+          "TableCell",
+          44
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 21,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          33
+        ],
+        [
+          "Form",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 22,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          69
+        ],
+        [
+          "Span",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          21
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 24,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          39
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 25,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          42
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 26,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          31
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 27,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          104
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 28,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          61
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 29,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          19
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 30,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          15
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 31,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          14
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 32,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          23
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Westinghouse Incore Instrumentation System"
+}

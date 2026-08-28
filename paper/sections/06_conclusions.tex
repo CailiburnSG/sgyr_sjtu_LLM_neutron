@@ -1,0 +1,7 @@
+%% 第6章：结论
+We integrated a zero-prior tool-using agent for neutron-current diagnosis with manual-grounded multi-stage RAG, and evaluated the supporting dense-retrieval layer under same-domain corpus growth.
+The agent observes data; RAG aligns observations to manuals with citations; retrieval tests delineate when the knowledge layer remains trustworthy.
+Main empirical messages: scores can decouple from target purity; language dominates chunking; strict chunk matching underestimates useful hits when overlap is present; terminology-rich queries are preferable to titles or ultra-short Chinese prompts.
+
+Limitations include case-level (not gold-standard) diagnosis scoring, a single embedding model, and the absence of end-to-end answer factuality metrics.
+Future work will add rerankers, multilingual encoders, small human-labeled query--document sets, and generation-side evaluation.

@@ -1,0 +1,209 @@
+{
+  "table_of_contents": [
+    {
+      "title": "IDENTIFICATION OF NEUTRON NOISE SOURCES",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          184.3359375,
+          87.373046875
+        ],
+        [
+          420.6640625,
+          87.373046875
+        ],
+        [
+          420.6640625,
+          99.44964599609375
+        ],
+        [
+          184.3359375,
+          99.44964599609375
+        ]
+      ]
+    },
+    {
+      "title": "IN A BOILING WATER REACTOR",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          225.1025390625,
+          109.02636718750001
+        ],
+        [
+          389.3505859375,
+          109.02636718750001
+        ],
+        [
+          389.3505859375,
+          123.9296875
+        ],
+        [
+          225.1025390625,
+          123.9296875
+        ]
+      ]
+    },
+    {
+      "title": "ACKNOWLEDGMENTS",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          241.9677734375,
+          406.875
+        ],
+        [
+          334.2001953125,
+          406.875
+        ],
+        [
+          334.2001953125,
+          418.24969482421875
+        ],
+        [
+          241.9677734375,
+          418.24969482421875
+        ]
+      ]
+    },
+    {
+      "title": "REFERENCES",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          251.36181640625,
+          510.7996520996094
+        ],
+        [
+          315.0848388671875,
+          510.7996520996094
+        ],
+        [
+          315.0848388671875,
+          521.6896667480469
+        ],
+        [
+          251.36181640625,
+          521.6896667480469
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          68
+        ],
+        [
+          "Line",
+          35
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          56
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          51
+        ],
+        [
+          "Line",
+          24
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Identification of Neutron Noise Sources in a BWR"
+}

@@ -1,0 +1,280 @@
+%% System design — data, agent (neutron-current focus), then RAG stubs
+\subsection{Data description}
+\label{sec:data}
+Two complementary resources are used throughout this study: plant neutron-current measurements for
+agent-side diagnosis, and a curated nuclear I\&C manual corpus for manual-grounded RAG and retrieval
+evaluation.
+
+\paragraph{Neutron-current measurement archive.}
+The underlying measurement archive is organized into four groups of multi-channel neutron-current CSV
+records (hereafter Groups~A1, A2, B1, and B2), corresponding to different instrumentation banks in the
+same plant campaign.
+In total, the archive contains 42 series files, as summarized in~\cref{tab:neutron-data}.
+
+\begin{table}[H]
+  \centering
+  \caption{Composition of the neutron-current measurement archive.}
+  \label{tab:neutron-data}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    Group & Number of series & Channels per series & Columns per series \\
+    \midrule
+    A1 & 11 & 7 & 8 \\
+    A2 & 11 & 7 & 8 \\
+    B1 & 10 & 7 & 8 \\
+    B2 & 10 & 7 & 8 \\
+    \midrule
+    Total & 42 & --- & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Each series stores a time column together with seven neutron-current channels (eight columns overall);
+channel identifiers follow plant tagging conventions (e.g., \texttt{RIC}\ldots\texttt{MA\_VER}).
+Within each group, the seven detectors are arranged in a circular (circumferential) layout around the
+reactor, so neighboring channels correspond to adjacent angular positions rather than to an arbitrary
+listing order in the CSV.
+Representative series contain on the order of $6\times 10^{5}$ samples at a nominal interval of
+\SI{1}{\second} and cover multi-day windows.
+
+Importantly, timestamps in the \emph{raw} CSV files are only approximately chronological: local
+disorders and non-monotonic segments appear, so the records are not strictly sorted in increasing time
+order as exported from the plant historian.
+The agent therefore begins with an explicit chronological sort before any downstream probe is applied.
+
+Plant-side operational annotations and fault-related records exist for parts of this campaign; however,
+they are heterogeneous across sources and are not aligned into a uniform, sample-level fault taxonomy
+that could be tabulated without substantial manual curation.
+We therefore do \emph{not} report fault-label counts in this paper.
+Instead, the zero-prior agent treats channel tags as opaque identifiers and does not consume fault labels
+during analysis; any available annotations are reserved for future supervised benchmarking rather than
+for the present pipeline.
+
+For the system demonstration and case studies in~\cref{sec:results}, we focus on a working subset drawn
+from Groups~A1 and A2, processed independently in workspace-local analyses.
+The same agent protocol applies unchanged to the remaining series in the archive.
+
+\paragraph{Nuclear I\&C manual corpus.}
+The knowledge corpus comprises 59 technical documents converted from PDF to Markdown for indexing
+and is partitioned into a \emph{core} pool and a \emph{non-core} (supplementary) pool.
+The core pool contains 13 IAEA manuals, including the IAEA OLM reports on instrument-channel
+monitoring and on process/component condition monitoring and
+diagnostics~\citep{iaea2008olm1,iaea2008olm2}, together with related IAEA guidance on I\&C design,
+digital modernization, maintenance/surveillance, and operational limits and procedures.
+The non-core pool contains the remaining 46 same-domain manuals drawn from NRC, EPRI/DOE,
+OECD/NEA, and related laboratory or topical materials on sensors, noise, and core/instrument
+monitoring.
+These non-core documents are \emph{not} treated merely as noise to be rejected; rather, they are
+topically related supplements that enlarge the searchable knowledge base in a controlled way.
+A central experimental question of this work is therefore the \emph{core--non-core relationship}:
+how retrieval behavior changes as the ratio of core to non-core documents varies---equivalently,
+how large a non-core supplement can be admitted for a fixed core set before target (core) evidence
+is diluted.
+This controlled expansion underpins the corpus-scope and self-retrieval experiments
+in~\cref{sec:eval}.
+
+\subsection{Zero-prior diagnostic agent}
+\label{sec:agent}
+\subsubsection{Design objective}
+The measurement-side goal is to turn a raw neutron-current CSV into a structured, human-readable
+condition report without assuming a labeled fault library, a fixed channel-to-physics map, or
+handcrafted frequency bands.
+Channel tags are treated as opaque identifiers; statistical morphology, redundancy, anomalies, and
+spatiotemporal cues are discovered from the series themselves.
+This ``zero-prior'' stance matches the archive described in~\cref{sec:data}, where fault annotations
+are heterogeneous and are deliberately not consumed at inference time.
+
+\subsubsection{Architecture and control loop}
+The agent couples a local LLM planner with a deterministic tool router~\citep{yao2023react}.
+The planner proposes tool calls; a Python router executes registered analyzers and returns concise
+status messages that update a persistent workspace blackboard (\texttt{state.json}).
+Only the entry probe may receive a raw file path; thereafter every probe must take a workspace
+directory alone and resolve the active CSV from the blackboard.
+\Cref{fig:agent-workflow} summarizes the control flow.
+
+After initialization, the planner is not allowed to restate free-text file paths.
+LLM tool use remains brittle: models may invent nonexistent APIs, pass malformed arguments, or
+generate fluent but unfaithful content~\citep{patil2024gorilla,schick2023toolformer,ji2023hallucination}.
+The workspace contract therefore keeps authoritative paths and trusted state on the runtime side,
+while the planner selects only the next registered probe; the failure modes that motivated these
+constraints are detailed in~\cref{sec:agent-design}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\linewidth]{fig2_agent_workflow}
+  \caption{Zero-prior agent workflow for neutron-current CSV analysis. Profiling creates a workspace
+  blackboard; later probes operate only on the workspace directory and accumulate a condition report.}
+  \label{fig:agent-workflow}
+\end{figure}
+
+\subsubsection{Workspace initialization}
+Given a CSV path, the load-and-profile probe creates a dedicated workspace directory, parses the time
+column, sorts the series into increasing chronological order (addressing the raw non-monotonic exports
+noted in~\cref{sec:data}), and writes a cleaned active file.
+It also records basic health indicators---shape, nominal sampling interval, missingness, and inactive
+channels---on the blackboard and appends an initialization block to the condition report.
+Subsequent probes refuse to run if the blackboard is missing, which enforces a mandatory warm-up step.
+
+\subsubsection{Statistical discovery and anomaly probes}
+After initialization, the planner may invoke the probes listed in~\cref{tab:agent-tools}.
+The zero-prior discovery probe performs a global longitudinal scan: uniqueness and coefficient of
+variation are used to assign coarse morphological roles (discrete/step-like, high-inertia, highly
+volatile, or ordinary continuous), while pairwise correlations flag near-redundant channel pairs
+($|r|\ge 0.99$) and strongly co-moving groups.
+Given the circular detector layout, such collinearity often indicates angularly adjacent or
+functionally redundant sensors rather than coincidental numerical agreement.
+
+The anomaly/regime probe then segments each channel into steady and transient regimes and enumerates
+spike episodes and isolated zero dropouts, summarizing which channels dominate each anomaly type.
+The time-lag scan computes cross-correlations across channels to separate lead--lag conduction links
+from essentially synchronous groups.
+The extremes scan localizes global maxima/minima and their timestamps; the spatial-snapshot probe
+freezes a multi-channel cross-section at a chosen time, which is useful after an extreme has been
+identified.
+Together, these probes accumulate evidence that can later be verbalized as spikes, dropouts,
+redundancy, and regime changes without supervised class labels.
+
+\begin{table}[H]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Diagnostic probes used by the neutron-current agent. The last column records the registered
+  implementation identifier for reproducibility.}
+  \label{tab:agent-tools}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth}
+                    >{\raggedright\arraybackslash}p{0.40\linewidth}
+                    >{\raggedright\arraybackslash\ttfamily\scriptsize}p{0.33\linewidth}@{}}
+    \toprule
+    \textrm{\normalfont Probe} &
+    \textrm{\normalfont Description} &
+    \textrm{\normalfont Implementation ID} \\
+    \midrule
+    Load-and-profile &
+    Creates workspace, sorts timestamps, records data-health indicators. &
+    \path{load_and_profile_csv_tool} \\
+    Zero-prior discovery &
+    Infers morphological roles and co-moving or near-redundant groups. &
+    \path{zero_prior_discovery_tool} \\
+    Anomaly/regime &
+    Segments regimes; enumerates spikes and zero dropouts. &
+    \path{anomaly_detector} \\
+    Time-lag scan &
+    Estimates lead--lag versus synchronous groups. &
+    \path{global_time_lag_scan_tool} \\
+    Extremes scan &
+    Localizes global maxima/minima and timestamps. &
+    \path{global_extremes_scan_tool} \\
+    Spatial snapshot &
+    Multi-channel cross-section at a selected time. &
+    \path{get_spatial_snapshot_tool} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Design process and adopted constraints}
+\label{sec:agent-design}
+The architecture in~\cref{sec:agent} is the outcome of an iterative, failure-driven design process
+rather than a single a~priori specification.
+Early prototypes delegated almost all bookkeeping to the planner: each probe call restated an absolute
+CSV path, tool replies were expected to be nearly pure JSON, and the resulting condition text was
+passed almost unchanged into downstream diagnosis.
+Under a local mid-size LLM these assumptions failed repeatedly on multi-step neutron-current analyses.
+\Cref{tab:agent-design} summarizes the issues retained as hard constraints in the final protocol;
+the remainder of this subsection elaborates the failure mechanisms that motivate those rows.
+
+\begin{table}[H]
+  \centering
+  \footnotesize
+  \caption{Design issues encountered in early agent prototypes and constraints adopted in the final
+  measurement-side protocol.}
+  \label{tab:agent-design}
+  \begin{tabular}{@{}p{0.30\linewidth}p{0.62\linewidth}@{}}
+    \toprule
+    Design issue & Adopted constraint \\
+    \midrule
+    Path restatement errors across tool steps
+    (wrong folder; raw vs.\ sorted copy) &
+    Only load-and-profile accepts a CSV path; later probes take a workspace directory and resolve the
+    active file from the blackboard. \\
+    Dropped or malformed tool JSON from local LLMs &
+    Strip Markdown fences; extract the first brace-balanced JSON object/array; accept only registered
+    probe identifiers. \\
+    Oversized condition text for downstream reasoning &
+    Retain a human-readable report; drive RAG from a compact structured alert summary. \\
+    Ungrounded diagnostic prose without manuals &
+    Build queries from the structured summary; require multi-stage, citation-bearing retrieval over the
+    I\&C corpus. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+When every tool step re-emitted a free-text path, small transcription errors compounded over a probe
+chain: the planner confused campaign folders, mixed raw exports with chronologically sorted copies, or
+pointed later probes at a different series than the one just profiled.
+Because the runtime trusted the path argument, such mistakes executed silently and produced incoherent
+reports rather than explicit refusals.
+The adopted remedy is to treat the load-and-profile step as the sole path-accepting entry point.
+It creates a dedicated workspace, writes the cleaned active file, and records the authoritative
+location on the blackboard; thereafter probes accept only a workspace directory and resolve the series
+from that board~\citep{yao2023react,patil2024gorilla}.
+Path ownership thus moves from mutable model strings to a runtime contract, which also makes incomplete
+warm-up fail closed when the blackboard is missing.
+
+A second class of failures arose at the action interface.
+Strict ``JSON-only'' prompting was brittle: local models frequently wrapped tool calls in Markdown
+fences, interleaved brief natural-language commentary, or truncated braces, so the router discarded
+otherwise valid actions; unrestricted free text made parsing equally unreliable.
+The present extractor therefore strips fences, searches for the first brace-balanced JSON object or
+array, and validates that the \texttt{action} field matches a registered probe identifier before
+execution~\citep{yao2023react,schick2023toolformer}.
+Invented analyzer names fail closed.
+This does not claim perfect structured generation; it treats imperfect local-model output as the
+default case and recovers the call when a well-formed object is present.
+
+Even when the probe chain completed, an unfiltered multi-page condition narrative overloaded the
+manual-diagnosis stage: the LLM was asked to reason over lengthy prose while simultaneously selecting
+handbook passages, which encouraged vague, poorly grounded summaries.
+The design therefore separates audiences.
+The workspace retains a chronological, human-readable report for inspection and audit, while a compact
+structured summary---variable-wise alerts, spike/zero tallies, and collinearity or lag cues---is
+reserved as the machine interface to RAG (\cref{sec:rag-diag}).
+Retrieval queries are derived from that summary rather than from an operator's free-text guess about
+which manual clause applies, and the synthesizer is required to attach numbered citations to retrieved
+chunks~\citep{ji2023hallucination}.
+Illustrative workspaces retained for this study show complete probe chains on representative A1/A2
+series, while other series exhibit partial completion or redundant re-invocation of the same probe;
+these cases indicate that the workspace and JSON contracts are enforceable, yet planner discipline
+still affects coverage---a qualitative observation that motivates the protocol, not a supervised
+accuracy claim with fabricated recovery rates.
+
+\subsubsection{Calling protocol and outputs}
+Tool calls must appear as constrained JSON objects
+(\texttt{\{"action": \ldots, "parameters": \ldots\}}), optionally wrapped in Markdown fences; the
+runtime extracts the first balanced JSON object or array even when the LLM adds free-text commentary,
+mitigating the JSON-loss issue discussed above.
+Only registered probe identifiers (\cref{tab:agent-tools}) are accepted by the local router
+(Ollama~\texttt{qwen2.5:7b} in our deployment), so invented analyzer names fail closed rather than
+executing an undefined path.
+Each successful probe appends narrative blocks to the workspace report and updates structured fields on
+the blackboard (e.g., morphological roles, spike/zero summaries, lag groups).
+The resulting condition report---together with optional JSON snapshots---forms the sole
+measurement-side interface to the RAG stage in~\cref{sec:rag-diag}: downstream retrieval is driven by
+observed phenomena rather than by an operator's free-text guess about which manual clause applies.
+
+\subsection{Manual corpus and index construction}
+\label{sec:index}
+Source PDFs are page-cropped when needed, converted to Markdown, chunked with a size/overlap grid, and
+embedded with \texttt{nomic-embed-text} into a LlamaIndex vector store~\citep{liu2023llamaindex}.
+Indexing is applied to the corpus described in~\cref{sec:data}; evaluation varies which documents are
+admitted into the active retrieval pool while keeping the embedding model fixed.
+
+\subsection{Report-driven multi-stage RAG diagnosis}
+\label{sec:rag-diag}
+Condition reports are parsed into compact JSON (variable-wise alerts, spike summaries,
+topology/collinearity cues).
+Queries are constructed from this JSON rather than from short free-text alone.
+Retrieval proceeds in stages (phenomenon/mechanism passages, then redundancy/topology supplements)
+and the LLM composes a multi-part diagnosis with numbered citations (\texttt{[n]}, \texttt{Rn}) linked
+to retrieved chunks.
+Because diagnosis quality depends on retrieval, \cref{sec:eval} evaluates the knowledge layer
+separately.

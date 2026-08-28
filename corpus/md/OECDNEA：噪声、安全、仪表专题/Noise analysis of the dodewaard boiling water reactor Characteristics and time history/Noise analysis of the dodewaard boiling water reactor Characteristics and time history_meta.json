@@ -1,0 +1,915 @@
+{
+  "table_of_contents": [
+    {
+      "title": "NOISE ANALYSIS OF THE DODEWAARD \nWATER REACTOR: CHARACTERISTICS \nTIME HISTORY \nBOILING \nAND",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          78.75,
+          121.302734375
+        ],
+        [
+          418.6437683105469,
+          121.302734375
+        ],
+        [
+          418.6437683105469,
+          162.47589111328125
+        ],
+        [
+          78.75,
+          162.47589111328125
+        ]
+      ]
+    },
+    {
+      "title": "ABSTRACT",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          95.23828125,
+          239.90234375
+        ],
+        [
+          134.3494415283203,
+          239.90234375
+        ],
+        [
+          134.3494415283203,
+          247.28524780273438
+        ],
+        [
+          95.23828125,
+          247.28524780273438
+        ]
+      ]
+    },
+    {
+      "title": "KEYWORDS",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          95.23828125,
+          350.392578125
+        ],
+        [
+          134.2662353515625,
+          350.392578125
+        ],
+        [
+          134.2662353515625,
+          357.826171875
+        ],
+        [
+          95.23828125,
+          357.826171875
+        ]
+      ]
+    },
+    {
+      "title": "INTRODUCTION",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          95.73046875,
+          399.048828125
+        ],
+        [
+          151.76254272460938,
+          399.048828125
+        ],
+        [
+          151.76254272460938,
+          408.08526611328125
+        ],
+        [
+          95.73046875,
+          408.08526611328125
+        ]
+      ]
+    },
+    {
+      "title": "REACTOR INSTRUMENTATION AND ANALYSIS SYSTEM",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          96.9609375,
+          553.126953125
+        ],
+        [
+          283.2892761230469,
+          553.126953125
+        ],
+        [
+          283.2892761230469,
+          560.560546875
+        ],
+        [
+          96.9609375,
+          560.560546875
+        ]
+      ]
+    },
+    {
+      "title": "CHARACTERISTICS OF THE EX-CORE NEUTRON NOISE",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          96.0,
+          83.96966413867823
+        ],
+        [
+          283.5,
+          83.96966413867823
+        ],
+        [
+          283.5,
+          92.58203125
+        ],
+        [
+          96.0,
+          92.58203125
+        ]
+      ]
+    },
+    {
+      "title": "BREAK FREQUENCY AT ] Hz",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          95.73046875,
+          178.744140625
+        ],
+        [
+          197.74974060058594,
+          178.744140625
+        ],
+        [
+          197.74974060058594,
+          186.56527709960938
+        ],
+        [
+          95.73046875,
+          186.56527709960938
+        ]
+      ]
+    },
+    {
+      "title": "CHARACTERISTICS OF THE NEUTRON NOISE BELOW l Hz",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          95.9765625,
+          582.861328125
+        ],
+        [
+          298.54974365234375,
+          582.861328125
+        ],
+        [
+          298.54974365234375,
+          590.294921875
+        ],
+        [
+          95.9765625,
+          590.294921875
+        ]
+      ]
+    },
+    {
+      "title": "NEUTRON NOISE PEAK AT 0.017 Hz",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          96.46875,
+          397.3564463705309
+        ],
+        [
+          225.75,
+          397.3564463705309
+        ],
+        [
+          225.75,
+          406.482421875
+        ],
+        [
+          96.46875,
+          406.482421875
+        ]
+      ]
+    },
+    {
+      "title": "NEUTRON NOISE BEYOND THE BREAK FREQUENCY",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          95.484375,
+          415.267578125
+        ],
+        [
+          268.8835144042969,
+          415.267578125
+        ],
+        [
+          268.8835144042969,
+          423.2052307128906
+        ],
+        [
+          95.484375,
+          423.2052307128906
+        ]
+      ]
+    },
+    {
+      "title": "TIME HISTORY OF THE NEUTRON NOISE",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          100.5,
+          480.5763813651138
+        ],
+        [
+          242.25,
+          480.5763813651138
+        ],
+        [
+          242.25,
+          490.279296875
+        ],
+        [
+          100.5,
+          490.279296875
+        ]
+      ]
+    },
+    {
+      "title": "TABLE 1 Steam flow oscillations",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          158.9765625,
+          120.96484375
+        ],
+        [
+          301.9094543457031,
+          120.96484375
+        ],
+        [
+          301.9094543457031,
+          129.82666015625
+        ],
+        [
+          158.9765625,
+          129.82666015625
+        ]
+      ]
+    },
+    {
+      "title": "Simp~_i_fied_geometr~_of_th_e_Dod_ewaard_s_t~_am_s~_stem",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          157.9921875,
+          139.2109375
+        ],
+        [
+          376.431884765625,
+          139.2109375
+        ],
+        [
+          376.431884765625,
+          147.0377197265625
+        ],
+        [
+          157.9921875,
+          147.0377197265625
+        ]
+      ]
+    },
+    {
+      "title": "CONCLUSIONS",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          96.71484375,
+          163.876953125
+        ],
+        [
+          146.68894958496094,
+          163.876953125
+        ],
+        [
+          146.68894958496094,
+          170.91534423828125
+        ],
+        [
+          96.71484375,
+          170.91534423828125
+        ]
+      ]
+    },
+    {
+      "title": "ACKNOWLEDGEMENTS",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          95.484375,
+          331.80859375
+        ],
+        [
+          166.5497589111328,
+          331.80859375
+        ],
+        [
+          166.5497589111328,
+          339.3954162597656
+        ],
+        [
+          95.484375,
+          339.3954162597656
+        ]
+      ]
+    },
+    {
+      "title": "REFERENCES",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          95.73046875,
+          390.939453125
+        ],
+        [
+          142.03359985351562,
+          390.939453125
+        ],
+        [
+          142.03359985351562,
+          398.373046875
+        ],
+        [
+          95.73046875,
+          398.373046875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          87
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          85
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          74
+        ],
+        [
+          "Span",
+          13
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          103
+        ],
+        [
+          "Line",
+          52
+        ],
+        [
+          "Text",
+          16
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          56
+        ],
+        [
+          "Line",
+          45
+        ],
+        [
+          "Text",
+          18
+        ],
+        [
+          "Equation",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          51
+        ],
+        [
+          "Span",
+          11
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          116
+        ],
+        [
+          "Line",
+          51
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          63
+        ],
+        [
+          "Span",
+          12
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          54
+        ],
+        [
+          "Span",
+          10
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          69
+        ],
+        [
+          "Line",
+          34
+        ],
+        [
+          "Equation",
+          9
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          28
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Span",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          105
+        ],
+        [
+          "Line",
+          55
+        ],
+        [
+          "ListItem",
+          12
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Noise analysis of the dodewaard boiling water reactor Characteristics and time history"
+}

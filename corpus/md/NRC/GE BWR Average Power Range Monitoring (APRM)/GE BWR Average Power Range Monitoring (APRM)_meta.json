@@ -1,0 +1,1232 @@
+{
+  "table_of_contents": [
+    {
+      "title": "TABLE OF CONTENTS",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          226.5,
+          63.75
+        ],
+        [
+          384.0,
+          63.75
+        ],
+        [
+          384.0,
+          78.75
+        ],
+        [
+          226.5,
+          78.75
+        ]
+      ]
+    },
+    {
+      "title": "LIST OF FIGURES",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          246.08120727539062,
+          65.7421875
+        ],
+        [
+          369.90277099609375,
+          65.7421875
+        ],
+        [
+          369.90277099609375,
+          80.97576904296875
+        ],
+        [
+          246.08120727539062,
+          80.97576904296875
+        ]
+      ]
+    },
+    {
+      "title": "5.4 AVERAGE POWER RANGE MONITORING SYSTEM",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          71.71875,
+          66.515625
+        ],
+        [
+          388.03265380859375,
+          66.515625
+        ],
+        [
+          388.03265380859375,
+          78.9100341796875
+        ],
+        [
+          71.71875,
+          78.9100341796875
+        ]
+      ]
+    },
+    {
+      "title": "Learning Objectives:",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.5234375,
+          97.06640625
+        ],
+        [
+          194.00961303710938,
+          97.06640625
+        ],
+        [
+          194.00961303710938,
+          109.27001953125
+        ],
+        [
+          70.5234375,
+          109.27001953125
+        ]
+      ]
+    },
+    {
+      "title": "5.4.1 Introduction",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          71.419921875,
+          642.33984375
+        ],
+        [
+          181.28358459472656,
+          642.33984375
+        ],
+        [
+          181.28358459472656,
+          655.6300201416016
+        ],
+        [
+          71.419921875,
+          655.6300201416016
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2 Component Description",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          71.12109375,
+          399.09375
+        ],
+        [
+          243.93556213378906,
+          399.09375
+        ],
+        [
+          243.93556213378906,
+          412.8701477050781
+        ],
+        [
+          71.12109375,
+          412.8701477050781
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.1 LPRM Inputs",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          69.328125,
+          476.7101135253906
+        ],
+        [
+          196.69998168945312,
+          476.7101135253906
+        ],
+        [
+          196.69998168945312,
+          488.7101135253906
+        ],
+        [
+          69.328125,
+          488.7101135253906
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.3 Count Circuit",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          69.92578125,
+          112.1484375
+        ],
+        [
+          196.00518798828125,
+          112.1484375
+        ],
+        [
+          196.00518798828125,
+          124.3900146484375
+        ],
+        [
+          69.92578125,
+          124.3900146484375
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.2 Averaging Circuit",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          70.224609375,
+          340.1501159667969
+        ],
+        [
+          219.94276428222656,
+          340.1501159667969
+        ],
+        [
+          219.94276428222656,
+          352.1501159667969
+        ],
+        [
+          70.224609375,
+          352.1501159667969
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.4 Slope and Bias Circuit",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          69.92578125,
+          537.4300689697266
+        ],
+        [
+          247.32681274414062,
+          537.4300689697266
+        ],
+        [
+          247.32681274414062,
+          549.4300689697266
+        ],
+        [
+          69.92578125,
+          549.4300689697266
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.5 Trip Units",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          71.96119689941406,
+          233.830078125
+        ],
+        [
+          175.9819793701172,
+          233.830078125
+        ],
+        [
+          175.9819793701172,
+          245.830078125
+        ],
+        [
+          71.96119689941406,
+          245.830078125
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.5.1 APRM High-High Trip (also called the APRM Upscale and Neutron \nTrip)",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.5234375,
+          431.2301330566406
+        ],
+        [
+          521.3446044921875,
+          431.2301330566406
+        ],
+        [
+          521.3446044921875,
+          459.03515625
+        ],
+        [
+          70.5234375,
+          459.03515625
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.5.2 APRM High-High Thermal Trip (also called the APRM Flow-Biased \nTrip)",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.5234375,
+          552.5500640869141
+        ],
+        [
+          522.1017456054688,
+          552.5500640869141
+        ],
+        [
+          522.1017456054688,
+          579.7900543212891
+        ],
+        [
+          70.5234375,
+          579.7900543212891
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.5.3 APRM High Trip (also called the APRM Upscale Alarm Trip)",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.5234375,
+          263.35546875
+        ],
+        [
+          483.90283203125,
+          263.35546875
+        ],
+        [
+          483.90283203125,
+          276.1900634765625
+        ],
+        [
+          70.5234375,
+          276.1900634765625
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.5.4 APRM Downscale Trip",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.5234375,
+          385.55859375
+        ],
+        [
+          274.66278076171875,
+          385.55859375
+        ],
+        [
+          274.66278076171875,
+          397.630126953125
+        ],
+        [
+          70.5234375,
+          397.630126953125
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.5.5 APRM Inoperable",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          71.71875,
+          507.0700988769531
+        ],
+        [
+          246.73634338378906,
+          507.0700988769531
+        ],
+        [
+          246.73634338378906,
+          519.0700988769531
+        ],
+        [
+          71.71875,
+          519.0700988769531
+        ]
+      ]
+    },
+    {
+      "title": "5.4.2.5.6 APRM Flow Bias Not Normal Trip",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          71.71875,
+          66.12890625
+        ],
+        [
+          335.9730224609375,
+          66.12890625
+        ],
+        [
+          335.9730224609375,
+          78.9100341796875
+        ],
+        [
+          71.71875,
+          78.9100341796875
+        ]
+      ]
+    },
+    {
+      "title": "5.4.3 System Features and Interfaces",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          71.12109375,
+          278.82421875
+        ],
+        [
+          292.0316162109375,
+          278.82421875
+        ],
+        [
+          292.0316162109375,
+          291.4300842285156
+        ],
+        [
+          71.12109375,
+          291.4300842285156
+        ]
+      ]
+    },
+    {
+      "title": "Local Power Range Monitoring System (Section 5.3)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.5234375,
+          355.2701110839844
+        ],
+        [
+          368.8338317871094,
+          355.2701110839844
+        ],
+        [
+          368.8338317871094,
+          367.76953125
+        ],
+        [
+          70.5234375,
+          367.76953125
+        ]
+      ]
+    },
+    {
+      "title": "Reactor Protection System (Section 7.3)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          71.71875,
+          431.2301330566406
+        ],
+        [
+          300.1219177246094,
+          431.2301330566406
+        ],
+        [
+          300.1219177246094,
+          443.2301330566406
+        ],
+        [
+          71.71875,
+          443.2301330566406
+        ]
+      ]
+    },
+    {
+      "title": "Rod Block Monitoring System (Section 5.5)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          71.71875,
+          491.95013427734375
+        ],
+        [
+          317.4596862792969,
+          491.95013427734375
+        ],
+        [
+          317.4596862792969,
+          503.95013427734375
+        ],
+        [
+          71.71875,
+          503.95013427734375
+        ]
+      ]
+    },
+    {
+      "title": "Reactor Manual Control System (Section 7.1)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.5234375,
+          567.7900543212891
+        ],
+        [
+          331.43719482421875,
+          567.7900543212891
+        ],
+        [
+          331.43719482421875,
+          579.7900543212891
+        ],
+        [
+          70.5234375,
+          579.7900543212891
+        ]
+      ]
+    },
+    {
+      "title": "Recirculation System (Section 2.4)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          71.12109375,
+          643.6300201416016
+        ],
+        [
+          268.7899475097656,
+          643.6300201416016
+        ],
+        [
+          268.7899475097656,
+          655.6300201416016
+        ],
+        [
+          71.12109375,
+          655.6300201416016
+        ]
+      ]
+    },
+    {
+      "title": "5.4.4 Summary",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.5234375,
+          81.2109375
+        ],
+        [
+          162.88758850097656,
+          81.2109375
+        ],
+        [
+          162.88758850097656,
+          94.030029296875
+        ],
+        [
+          70.5234375,
+          94.030029296875
+        ]
+      ]
+    },
+    {
+      "title": "TABLE 5.4-1 APRM INTERLOCKS AND TRIPS",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          151.8046875,
+          82.89569091796875
+        ],
+        [
+          458.8808288574219,
+          82.89569091796875
+        ],
+        [
+          458.8808288574219,
+          96.93572998046875
+        ],
+        [
+          151.8046875,
+          96.93572998046875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          5
+        ],
+        [
+          "Line",
+          3
+        ],
+        [
+          "Text",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          33
+        ],
+        [
+          "Form",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          26
+        ],
+        [
+          "Line",
+          5
+        ],
+        [
+          "Span",
+          4
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableOfContents",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          15
+        ],
+        [
+          "Line",
+          7
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          73
+        ],
+        [
+          "Line",
+          36
+        ],
+        [
+          "ListItem",
+          26
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          73
+        ],
+        [
+          "Line",
+          34
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          69
+        ],
+        [
+          "Line",
+          34
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          71
+        ],
+        [
+          "Line",
+          35
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          69
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          61
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          21
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          4
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Line",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          220
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "TableCell",
+          56
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Line",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Line",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          257
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Line",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          55
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Line",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/GE BWR Average Power Range Monitoring (APRM)"
+}

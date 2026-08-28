@@ -1,0 +1,35 @@
+没问题！作为这个项目的架构师，在真正动手敲代码之前，确实需要一张**“全局施工图纸（Master Blueprint）”**。
+
+结合我们之前聊的所有原子工具（波形、延迟、空间快照等），我为你整理了这套**“零先验盲测 Agent (Zero-Prior Data Discovery Agent)”**的完整工程目录结构。
+
+这套架构主打一个高内聚、低耦合，不管以后你要加多少新功能，或者接入什么新的大模型（GPT-4、Gemini、Claude），这套骨架都能稳稳撑住。
+
+📁 Zero_Prior_Agent_Project (项目根目录)
+Plaintext
+Zero_Prior_Agent_Project/
+│
+├── 📂 data/                     # 【数据仓库】
+│   └── ria_scram_data.csv       # 你拿来做测试的匿名脱敏数据
+│
+├── 📂 tools/                    # 【武器库 / 原子工具集】(Python 苦力活)
+│   ├── __init__.py
+│   ├── data_loader.py           # 负责读取 CSV，做基础的清洗和格式化
+
+│   ├── stat_analyzer.py         # 纵向统计：算波动率(CV)、检测阶跃控制信号
+│   ├── temporal_analyzer.py     # 时间维度：算互相关(Pearson)、寻找滞后周期(Lag)
+│   └── spatial_analyzer.py      # 空间维度：寻找全局极值时间点、截取“空间时间暂停快照”
+│
+├── 📂 agent/                    # 【大脑 / LLM 交互层】(逻辑与控制流)
+│   ├── __init__.py
+│   ├── prompts.py               # 存放 System Prompt、工具描述的 JSON Schema (核心资产)
+│   └── react_core.py            # ReAct 循环引擎：解析 LLM 输出 -> 调用 tools -> 返回 Observation
+│
+├── 📄 main.py                   # 【主入口】(统帅部)
+├── 📄 .env                      # 【环境变量】(存放你的大模型 API_KEY，千万别传到 Github！)
+└── 📄 requirements.txt
+
+
+
+
+
+我目前正在针对核电厂的大量的运行数据开展一个基于大语言模型的运行数据状态评估项目，我们服务器里的都是原始时序数据，我目前针对中子测量电流数据，使用大语言模型进行工况的切分和诊断，它的数据有很多尖峰与零值，同时也有很多噪声和杂音，这里面的噪声和杂音可能来自于数据链的传输过程的噪声损耗，我还需要关于物理场相关故障的文章，我需要让我的大预言模型知道具体发生的是何种情况的错误。根据我提供的资料进行启发性思考同时分析我资料的来源，我还需要下载和补充哪些必要的相关资料？特别是技术报告文件名称和下载链接。

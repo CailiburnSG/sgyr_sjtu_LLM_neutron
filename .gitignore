@@ -1,0 +1,18 @@
+# Embedding / vector-index variants: too large for GitHub (>100MB files, ~11GB total).
+# Kept on the server under this pack and under RAGTEST/rag_index/storage_*.
+corpus/storage_*/
+
+# Python / editor junk
+__pycache__/
+*.pyc
+.DS_Store
+*.swp
+
+# LaTeX build noise (keep main.pdf for reading)
+paper/*.log
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.aux
+paper/*.out
+paper/*.blg
+paper/*.spl

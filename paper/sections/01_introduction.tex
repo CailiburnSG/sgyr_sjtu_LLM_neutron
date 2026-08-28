@@ -1,0 +1,102 @@
+%% Introduction (nuclear-application style): motivation + literature + gap + contributions + outline
+%% Former Related-work material is merged here; see also sections/01_introduction_zh.md
+
+Nuclear power plants (NPPs) continuously acquire neutron and instrument-channel measurements for
+surveillance and condition monitoring.
+Ex-core and in-core detectors yield high-volume time series that support power surveillance, sensor
+health assessment, and early anomaly detection, yet the resulting records are typically sparsely
+labeled.
+In practice, day-to-day diagnosis still depends on authoritative technical manuals, including IAEA
+guidance on online monitoring (OLM) for instrument channels and for process and component condition
+monitoring~\citep{iaea2008olm1,iaea2008olm2}.
+Hashemian~\citep{hashemian2011online} reviewed OLM technologies that extend calibration intervals and
+strengthen channel performance assessment.
+Beyond calibration surveillance, reactor-physics studies treat neutron-noise analysis as a
+non-intrusive probe of vibrations, flow anomalies, and core dynamics~\citep{pazsit2010noise,demaziere2022cortex},
+while data-driven methods have automated validation of neutron-detector operation and noise-signal
+integrity under constrained detector sets~\citep{tambouratzis2020neutron,tambouratzis2020decomposition}.
+Deep-learning fault diagnosis for NPPs continues to improve accuracy on labeled accident and fault
+scenarios~\citep{elbordany2024fault}; however, such pipelines usually assume fixed feature schemas or
+predefined fault libraries.
+Exploratory diagnosis of neutron-current CSV streams often lacks gold-standard fault tags, so
+operators must still map observed spikes, dropouts, and collinear channel groups to clauses in I\&C
+manuals.
+Rule-only workflows are brittle across diverse plant conditions, whereas large language models (LLMs)
+used alone may produce fluent but ungrounded recommendations.
+These observations motivate language-mediated assistants that observe measurement data with weak
+priors and then ground interpretations in citable manuals.
+
+Retrieval-augmented generation (RAG)~\citep{lewis2020rag} addresses part of this grounding problem by
+conditioning generation on passages retrieved from an external corpus.
+In nuclear applications, the corpus is typically regulatory text, plant technical specifications, work
+orders, or design and safety manuals rather than open-domain web content.
+Idaho National Laboratory studies have shown that RAG can improve diagnostic question answering and
+predictive-maintenance explanations for NPP systems, while emphasizing factuality evaluation because
+nuclear coverage in pretraining remains sparse~\citep{reeves2024reliability,lin2025cws}.
+Work on power-uprate document interpretation further illustrates both the utility of RAG over
+thousands of technical pages and recurring failure modes, including incorrect retrieval,
+misinterpretation of retrieved text, reliance on parametric knowledge outside the evidence,
+hallucination, and refusal~\citep{mapes2025uprate}.
+Agentic, citation-enforcing frameworks such as RADIANT-LLM target local, provenance-tracked decision
+support for safety-critical nuclear workflows and report marked reductions in hallucination relative
+to ungrounded commercial chatbots~\citep{ndum2026radiant}.
+Taken together, these studies indicate that manual-grounded RAG is a practical route to more
+trustworthy nuclear language assistance.
+Nevertheless, most nuclear RAG demonstrations begin from a user question about documents
+(procedures, technical specifications, or maintenance records).
+Far fewer systems couple retrieval to an upstream analysis of neutron measurement CSV data, where the
+query itself must be constructed from observed channel phenomena rather than from free-text operator
+prompts.
+
+Tool-using agents provide a complementary mechanism for the measurement side of the pipeline.
+ReAct-style agents~\citep{yao2023react} interleave reasoning with tool calls, enabling iterative
+observation--action loops over local analyzers and external interfaces.
+For neutron-current diagnosis, this paradigm suggests a persistent workspace blackboard together with
+specialized probes---profiling, zero-prior statistical discovery, anomaly and regime segmentation, lag
+checks, and spatial snapshots---before any manual retrieval is invoked.
+On the knowledge side, practical RAG stacks~\citep{liu2023llamaindex} rely on chunking, dense
+embedding, and top-$k$ retrieval, while evaluation frameworks such as RAGAs~\citep{es2024ragas}
+emphasize faithfulness and context relevance of generated answers.
+Nuclear RAG studies already caution that retrieval errors can propagate into unsafe
+advice~\citep{mapes2025uprate}, and corpus-scaling experiments show that knowledge-base growth alters
+context precision~\citep{ndum2026radiant}.
+What remains under-characterized for neutron-manual corpora is the relationship between a compact
+authoritative \emph{core} library and a larger same-domain \emph{non-core} supplement: as the
+core--non-core ratio changes, cosine similarity scores may rise while core-document purity collapses,
+especially under short Chinese versus English queries and under strict chunk identity versus
+document-level relevance.
+General RAG benchmarks rarely stress bilingual nuclear terminology or core-versus-supplement purity
+under controlled library expansion.
+
+Against this background, the present work addresses three coupled challenges:
+(1)~how to extract spikes, dropouts, collinearity or redundancy, and regime changes from
+neutron-current CSV data with minimal prior assumptions;
+(2)~how to align observed phenomena with manual clauses while retaining citable provenance; and
+(3)~whether dense retrieval over same-domain technical corpora remains reliable after corpus
+expansion, particularly under Chinese versus English query formulations.
+The main contributions are as follows.
+First, we develop a zero-prior, tool-using diagnostic agent with a workspace blackboard for
+neutron-current analysis.
+Second, we introduce a report-driven multi-stage RAG protocol that converts condition reports into
+structured JSON queries, retrieves passages from IAEA-centered nuclear I\&C manuals, and produces
+expert-style diagnoses with explicit evidence identifiers.
+Third, we conduct a same-domain retrieval-robustness study that quantifies corpus dilution, language
+effects, chunking choices, and the gap between strict chunk matching and document-level relevance.
+\Cref{fig:overview} summarizes the end-to-end pipeline.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig1_overview}
+  \caption{End-to-end pipeline: neutron-current CSV is analyzed by a zero-prior tool-using agent
+  that maintains a workspace blackboard and produces a condition report; the report is compressed
+  into structured JSON to drive manual-grounded RAG with citable diagnoses. A side branch evaluates
+  retrieval robustness under same-domain corpus expansion.}
+  \label{fig:overview}
+\end{figure}
+
+The remainder of this paper is organized as follows.
+\Cref{sec:system} presents the data resources and system design, including the diagnostic agent,
+manual corpus indexing, and report-driven RAG diagnosis.
+\Cref{sec:eval} describes the evaluation protocol for retrieval robustness.
+\Cref{sec:results} reports experimental results and discussion.
+\Cref{sec:concl} concludes the paper and outlines future work.

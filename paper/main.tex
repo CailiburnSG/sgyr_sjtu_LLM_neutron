@@ -1,0 +1,86 @@
+%% =====================================================================
+%% 面向中子测量数据的零先验诊断 Agent 与核电仪表手册 RAG
+%% 模板：Elsevier elsarticle（ANE / PNE / NET 等常用）
+%% 用法：上传整个 paper_neutron_rag/ 到 Overleaf，编译器选 pdfLaTeX
+%% =====================================================================
+\documentclass[preprint,12pt,authoryear]{elsarticle}
+
+%% ---------- packages ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{float}           % [H] to pin tables/figures in place
+\usepackage{xurl}            % breakable paths / implementation IDs
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{lineno}          % 投稿审稿时可开行号
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\graphicspath{{figs/}}
+
+\journal{Annals of Nuclear Energy}  % 定刊后改：Progress in Nuclear Energy / Nuclear Engineering and Technology
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Zero-Prior Diagnostic Agent for Neutron Measurement Data with Manual-Grounded RAG: System Design and Retrieval Robustness Evaluation}
+
+%% 作者信息请按实际修改
+\author[addr1]{Author One}
+\author[addr1]{Author Two\corref{cor1}}
+\cortext[cor1]{Corresponding author.}
+\ead{corresponding@author.edu}
+
+\address[addr1]{Affiliation, City, Country}
+
+\begin{abstract}
+Nuclear power plant neutron instrumentation channels produce large volumes of sparsely labeled time-series data, while operational diagnosis still relies on technical manuals such as IAEA guidance. Pure rule-based pipelines struggle to generalize, whereas large language models alone risk ungrounded recommendations. This paper presents an end-to-end framework that (i)~uses a zero-prior tool-using agent to profile neutron-current CSV records and generate condition reports, (ii)~compresses reports into structured JSON to drive multi-stage retrieval-augmented generation (RAG) over nuclear I\&C manuals with citable evidence, and (iii)~systematically evaluates dense retrieval under controlled expansion of a same-domain non-core supplement around a fixed IAEA core library, together with query language, chunking, and relevance criteria. Experiments show that cosine scores can rise while core-document purity collapses as the core--non-core ratio changes, that Chinese short queries fail much earlier than English ones, and that chunk-size/overlap effects are secondary to language and query formulation. The results motivate report-driven, terminology-rich query construction and careful governance of core versus supplementary manuals for knowledge-grounded nuclear diagnostics.
+\end{abstract}
+
+\begin{keyword}
+neutron instrumentation \sep online monitoring \sep large language model agent \sep retrieval-augmented generation \sep nuclear I\&C manuals \sep retrieval robustness
+\end{keyword}
+
+\end{frontmatter}
+
+%% \linenumbers  % 投稿时按期刊要求打开
+
+%% ============================================================
+\section{Introduction}
+\label{sec:intro}
+\input{sections/01_introduction}
+
+\section{System design}
+\label{sec:system}
+\input{sections/03_system}
+
+\section{Evaluation protocol}
+\label{sec:eval}
+\input{sections/04_evaluation}
+
+\section{Results and discussion}
+\label{sec:results}
+\input{sections/05_results}
+
+\section{Conclusions}
+\label{sec:concl}
+\input{sections/06_conclusions}
+
+%% ============================================================
+\section*{Acknowledgments}
+This work was supported by \ldots\ (grant information to be added).
+
+%% 参考文献：Overleaf 上用 Elsevier 的 elsarticle-harv / elsarticle-num
+%% authoryear 模式示例：
+\bibliographystyle{elsarticle-harv}
+\bibliography{refs}
+
+\end{document}

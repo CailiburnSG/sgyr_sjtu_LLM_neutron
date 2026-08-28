@@ -1,0 +1,3 @@
+source_encoding_detected=gbk
+rows_written=5001 (incl header)
+source=/home/sda/sgyr/my_dataprocess_assistant2.0/data/A1_1.csv

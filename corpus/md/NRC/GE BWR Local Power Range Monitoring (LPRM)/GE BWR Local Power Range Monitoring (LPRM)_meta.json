@@ -1,0 +1,1257 @@
+{
+  "table_of_contents": [
+    {
+      "title": "General Electric Systems Technology Manual \nChapter 5.3",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          153.0,
+          338.62066650390625
+        ],
+        [
+          461.0235900878906,
+          338.62066650390625
+        ],
+        [
+          461.0235900878906,
+          388.06109619140625
+        ],
+        [
+          153.0,
+          388.06109619140625
+        ]
+      ]
+    },
+    {
+      "title": "TABLE OF CONTENTS",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          226.5,
+          64.5
+        ],
+        [
+          384.0,
+          64.5
+        ],
+        [
+          384.0,
+          81.0
+        ],
+        [
+          226.5,
+          81.0
+        ]
+      ]
+    },
+    {
+      "title": "LIST OF FIGURES",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          246.08120727539062,
+          66.515625
+        ],
+        [
+          369.90277099609375,
+          66.515625
+        ],
+        [
+          369.90277099609375,
+          81.09576416015625
+        ],
+        [
+          246.08120727539062,
+          81.09576416015625
+        ]
+      ]
+    },
+    {
+      "title": "5.3 LOCAL POWER RANGE MONITORING SYSTEM",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          71.12109375,
+          66.90234375
+        ],
+        [
+          369.9739990234375,
+          66.90234375
+        ],
+        [
+          369.9739990234375,
+          78.9100341796875
+        ],
+        [
+          71.12109375,
+          78.9100341796875
+        ]
+      ]
+    },
+    {
+      "title": "Learning Objectives:",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.5234375,
+          97.06640625
+        ],
+        [
+          194.00961303710938,
+          97.06640625
+        ],
+        [
+          194.00961303710938,
+          109.27001953125
+        ],
+        [
+          70.5234375,
+          109.27001953125
+        ]
+      ]
+    },
+    {
+      "title": "5.3.1 Introduction",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          71.12109375,
+          430.5101013183594
+        ],
+        [
+          181.28358459472656,
+          430.5101013183594
+        ],
+        [
+          181.28358459472656,
+          442.5101013183594
+        ],
+        [
+          71.12109375,
+          442.5101013183594
+        ]
+      ]
+    },
+    {
+      "title": "5.3.2 Component Description",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          71.12109375,
+          266.590087890625
+        ],
+        [
+          243.93556213378906,
+          266.590087890625
+        ],
+        [
+          243.93556213378906,
+          278.590087890625
+        ],
+        [
+          71.12109375,
+          278.590087890625
+        ]
+      ]
+    },
+    {
+      "title": "5.3.2.1 LPRM Detector Assembly",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          69.92578125,
+          327.1640625
+        ],
+        [
+          269.37432861328125,
+          327.1640625
+        ],
+        [
+          269.37432861328125,
+          339.3100891113281
+        ],
+        [
+          69.92578125,
+          339.3100891113281
+        ]
+      ]
+    },
+    {
+      "title": "5.3.2.2 LPRM Detector",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          71.419921875,
+          629.96484375
+        ],
+        [
+          205.97482299804688,
+          629.96484375
+        ],
+        [
+          205.97482299804688,
+          642.9099884033203
+        ],
+        [
+          71.419921875,
+          642.9099884033203
+        ]
+      ]
+    },
+    {
+      "title": "5.3.2.3 Power Supplies",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.822265625,
+          233.830078125
+        ],
+        [
+          209.42718505859375,
+          233.830078125
+        ],
+        [
+          209.42718505859375,
+          245.830078125
+        ],
+        [
+          70.822265625,
+          245.830078125
+        ]
+      ]
+    },
+    {
+      "title": "5.3.2.4 Flux Amplifier",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          69.626953125,
+          340.1501159667969
+        ],
+        [
+          200.01080322265625,
+          340.1501159667969
+        ],
+        [
+          200.01080322265625,
+          352.1501159667969
+        ],
+        [
+          69.626953125,
+          352.1501159667969
+        ]
+      ]
+    },
+    {
+      "title": "5.3.2.5 LPRM Trip Units",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.5234375,
+          157.99005126953125
+        ],
+        [
+          213.31398010253906,
+          157.99005126953125
+        ],
+        [
+          213.31398010253906,
+          169.99005126953125
+        ],
+        [
+          70.5234375,
+          169.99005126953125
+        ]
+      ]
+    },
+    {
+      "title": "5.3.2.6 Power Range Monitoring Cabinets",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.5234375,
+          402.9609375
+        ],
+        [
+          315.4339904785156,
+          402.9609375
+        ],
+        [
+          315.4339904785156,
+          415.27008056640625
+        ],
+        [
+          70.5234375,
+          415.27008056640625
+        ]
+      ]
+    },
+    {
+      "title": "5.3.3 System Features and Interfaces",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          71.12109375,
+          127.23046875
+        ],
+        [
+          288.7939453125,
+          127.23046875
+        ],
+        [
+          288.7939453125,
+          139.63006591796875
+        ],
+        [
+          71.12109375,
+          139.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "5.3.3.1 LPRM Detector String Locations",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          71.71875,
+          203.02734375
+        ],
+        [
+          304.04840087890625,
+          203.02734375
+        ],
+        [
+          304.04840087890625,
+          215.47003173828125
+        ],
+        [
+          71.71875,
+          215.47003173828125
+        ]
+      ]
+    },
+    {
+      "title": "5.3.3.2 LPRM Calibration",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.5234375,
+          580.46484375
+        ],
+        [
+          220.04959106445312,
+          580.46484375
+        ],
+        [
+          220.04959106445312,
+          594.9100494384766
+        ],
+        [
+          70.5234375,
+          594.9100494384766
+        ]
+      ]
+    },
+    {
+      "title": "5.3.3.3 System Interfaces",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          69.92578125,
+          66.515625
+        ],
+        [
+          226.00035095214844,
+          66.515625
+        ],
+        [
+          226.00035095214844,
+          78.9100341796875
+        ],
+        [
+          69.92578125,
+          78.9100341796875
+        ]
+      ]
+    },
+    {
+      "title": "Average Power Range Monitoring System (Section 5.4)",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.5234375,
+          141.5390625
+        ],
+        [
+          384.7686462402344,
+          141.5390625
+        ],
+        [
+          384.7686462402344,
+          154.75006103515625
+        ],
+        [
+          70.5234375,
+          154.75006103515625
+        ]
+      ]
+    },
+    {
+      "title": "Rod Block Monitoring System (Section 5.5)",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          71.71875,
+          218.7100830078125
+        ],
+        [
+          317.4596862792969,
+          218.7100830078125
+        ],
+        [
+          317.4596862792969,
+          231.2578125
+        ],
+        [
+          71.71875,
+          231.2578125
+        ]
+      ]
+    },
+    {
+      "title": "Reactor Protection System (Section 7.3)",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          71.71875,
+          309.79010009765625
+        ],
+        [
+          300.1219177246094,
+          309.79010009765625
+        ],
+        [
+          300.1219177246094,
+          321.79010009765625
+        ],
+        [
+          71.71875,
+          321.79010009765625
+        ]
+      ]
+    },
+    {
+      "title": "Traversing Incore Probe System (Section 5.6)",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          71.12109375,
+          385.55859375
+        ],
+        [
+          330.8778991699219,
+          385.55859375
+        ],
+        [
+          330.8778991699219,
+          397.630126953125
+        ],
+        [
+          71.12109375,
+          397.630126953125
+        ]
+      ]
+    },
+    {
+      "title": "Process Computer System (Thermal Limits, Section 1.8)",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.5234375,
+          461.59014892578125
+        ],
+        [
+          391.6314392089844,
+          461.59014892578125
+        ],
+        [
+          391.6314392089844,
+          473.59014892578125
+        ],
+        [
+          70.5234375,
+          473.59014892578125
+        ]
+      ]
+    },
+    {
+      "title": "5.3.4 Summary",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.5234375,
+          537.4300689697266
+        ],
+        [
+          162.88758850097656,
+          537.4300689697266
+        ],
+        [
+          162.88758850097656,
+          549.4300689697266
+        ],
+        [
+          70.5234375,
+          549.4300689697266
+        ]
+      ]
+    },
+    {
+      "title": "TABLE 5.3-1 LPRM DESIGN PARAMETERS",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          70.5234375,
+          81.984375
+        ],
+        [
+          444.0644226074219,
+          81.984375
+        ],
+        [
+          444.0644226074219,
+          100.56439208984375
+        ],
+        [
+          70.5234375,
+          100.56439208984375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          5
+        ],
+        [
+          "Line",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          33
+        ],
+        [
+          "Form",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          36
+        ],
+        [
+          "Line",
+          5
+        ],
+        [
+          "Span",
+          4
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableOfContents",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          17
+        ],
+        [
+          "Line",
+          8
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          69
+        ],
+        [
+          "Line",
+          33
+        ],
+        [
+          "ListItem",
+          16
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          76
+        ],
+        [
+          "Line",
+          36
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          46
+        ],
+        [
+          "Span",
+          39
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          77
+        ],
+        [
+          "Line",
+          36
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          75
+        ],
+        [
+          "Line",
+          35
+        ],
+        [
+          "TableCell",
+          20
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          71
+        ],
+        [
+          "Line",
+          35
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          57
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          21
+        ],
+        [
+          "Line",
+          8
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          43
+        ],
+        [
+          "TableCell",
+          18
+        ],
+        [
+          "Line",
+          14
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          91
+        ],
+        [
+          "Line",
+          33
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Line",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Line",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Line",
+          1
+        ],
+        [
+          "Span",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Line",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          21
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/GE BWR Local Power Range Monitoring (LPRM)"
+}

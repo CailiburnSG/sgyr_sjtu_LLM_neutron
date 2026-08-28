@@ -1,0 +1,243 @@
+{
+  "table_of_contents": [
+    {
+      "title": "SURVEILLANCE AND DIAGNOSTIC METHODS GROUP\nINSTRUMENTATION AND CONTROLS DIVISION\nOAK RIDGE NATIONAL LABORATORY",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          183.12001037597656,
+          277.77734375
+        ],
+        [
+          440.3800048828125,
+          277.77734375
+        ],
+        [
+          440.3800048828125,
+          345.71783447265625
+        ],
+        [
+          183.12001037597656,
+          345.71783447265625
+        ]
+      ]
+    },
+    {
+      "title": "RESEARCH HIGHLIGHTS FOR FY1983",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          212.0068359375,
+          69.22705078125
+        ],
+        [
+          406.24542124542126,
+          69.22705078125
+        ],
+        [
+          406.24542124542126,
+          84.07872539831303
+        ],
+        [
+          212.0068359375,
+          84.07872539831303
+        ]
+      ]
+    },
+    {
+      "title": "WHAT WE DID NOT ACCOMPLISH IN FY1983",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          191.17216117216117,
+          127.5399061032864
+        ],
+        [
+          423.5775335775336,
+          127.5399061032864
+        ],
+        [
+          423.5775335775336,
+          141.7943661971831
+        ],
+        [
+          191.17216117216117,
+          141.7943661971831
+        ]
+      ]
+    },
+    {
+      "title": "TASKS PERFORMED IN ADDITION TO THE FY1983 PLAN",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          163.5,
+          177.1106941838649
+        ],
+        [
+          459.0,
+          177.1106941838649
+        ],
+        [
+          459.0,
+          195.1219512195122
+        ],
+        [
+          163.5,
+          195.1219512195122
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          79
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          26
+        ],
+        [
+          "Span",
+          12
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          13
+        ],
+        [
+          "Span",
+          6
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          6
+        ],
+        [
+          "Span",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/LWR \u4e2d\u5b50\u566a\u58f0\u7814\u7a76\uff08\u8349\u6848 NUREG \u76f8\u5173"
+}

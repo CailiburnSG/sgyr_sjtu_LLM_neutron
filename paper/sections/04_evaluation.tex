@@ -1,0 +1,26 @@
+%% Evaluation protocol — corpus details cross-ref sec:data
+\subsection{Corpus and indexing grid}
+As detailed in~\cref{sec:data}, retrieval experiments use a fixed IAEA \emph{core} pool of 13 documents
+and a same-domain \emph{non-core} (supplementary) pool of up to 46 manuals (59 documents in total).
+We vary how many non-core documents are admitted alongside the core set, thereby scanning different
+core--non-core ratios rather than treating non-core texts as unstructured noise.
+Seventeen Markdown index configurations span chunk sizes $\{800,1000,1200,1500\}$ and overlaps
+$\{50,80,100,120,150\}$ (valid pairs only).
+The embedding model is fixed (\texttt{nomic-embed-text}); only the active retrieval pool and chunking
+configuration change across runs.
+
+\subsection{Experiment A: corpus-scope extrapolation}
+Four fixed queries---Chinese/English core terms and phrases (e.g., ``neutron'' /
+``neutron measurement current'')---are issued while randomly attaching non-core documents in steps
+of five (multiple trials), so that the effective core:non-core composition changes in a controlled
+manner.
+We report top-$k$ cosine scores, core (IAEA) purity@10 (fraction of top-10 hits from the core pool),
+and the rank of the first core hit.
+
+\subsection{Experiment B: self-retrieval}
+IAEA chunks are sampled as probes.
+Queries are built as first sentence, title, random window, or domain-term sentence.
+Relevance is scored under \emph{strict} (same \texttt{node\_id}) and \emph{relaxed\_doc} (same
+\texttt{doc\_id}) criteria.
+Metrics: Recall@$\{1,5,10\}$ and MRR, including decay under corpus expansion and the strict--relaxed
+gap induced by chunk overlap.

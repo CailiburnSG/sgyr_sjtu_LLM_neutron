@@ -1,0 +1,1476 @@
+{
+  "table_of_contents": [
+    {
+      "title": "FORT St. VRAIN",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          255.75,
+          170.30328638497653
+        ],
+        [
+          342.75,
+          170.30328638497653
+        ],
+        [
+          342.75,
+          180.80657276995305
+        ],
+        [
+          255.75,
+          180.80657276995305
+        ]
+      ]
+    },
+    {
+      "title": "THREE MILE ISLAND",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          242.25,
+          390.1220657276996
+        ],
+        [
+          348.0,
+          390.1220657276996
+        ],
+        [
+          348.0,
+          399.124882629108
+        ],
+        [
+          242.25,
+          399.124882629108
+        ]
+      ]
+    },
+    {
+      "title": "BASELINE SIGNATURES",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          245.93994140625,
+          139.27880859375
+        ],
+        [
+          361.85302734375,
+          139.27880859375
+        ],
+        [
+          361.85302734375,
+          152.210693359375
+        ],
+        [
+          245.93994140625,
+          152.210693359375
+        ]
+      ]
+    },
+    {
+      "title": "ANALYTICAL PREDICTION OF NOISE SIGNATURES",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          185.8828125,
+          82.31884765625
+        ],
+        [
+          434.9296875,
+          82.31884765625
+        ],
+        [
+          434.9296875,
+          95.66021728515625
+        ],
+        [
+          185.8828125,
+          95.66021728515625
+        ]
+      ]
+    },
+    {
+      "title": "LOOSE-PARTS MONITORING",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          236.71484375,
+          266.853515625
+        ],
+        [
+          372.06640625,
+          266.853515625
+        ],
+        [
+          372.06640625,
+          278.1658935546875
+        ],
+        [
+          236.71484375,
+          278.1658935546875
+        ]
+      ]
+    },
+    {
+      "title": "BOILING WATER REACTOR STABILITY MONITORING",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          174.453125,
+          466.99365234375
+        ],
+        [
+          430.3870849609375,
+          466.99365234375
+        ],
+        [
+          430.3870849609375,
+          479.9002380371094
+        ],
+        [
+          174.453125,
+          479.9002380371094
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          282.0,
+          89.34130859375
+        ],
+        [
+          342.333984375,
+          89.34130859375
+        ],
+        [
+          342.333984375,
+          101.25347900390625
+        ],
+        [
+          282.0,
+          101.25347900390625
+        ]
+      ]
+    },
+    {
+      "title": "D. N. FRY -- DEVELOPMENT GROUP\n\n18C DIVISION -- ORNL",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          199.4188034188034,
+          61.51924882629108
+        ],
+        [
+          422.82783882783883,
+          61.51924882629108
+        ],
+        [
+          422.82783882783883,
+          116.65087890625
+        ],
+        [
+          199.4188034188034,
+          116.65087890625
+        ]
+      ]
+    },
+    {
+      "title": "WE HAVE RECENTLY USED NOISE ANALYSIS METHODS TO AID NRC IN",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          128.4065934065934,
+          59.26854460093897
+        ],
+        [
+          476.0805860805861,
+          58.51830985915493
+        ],
+        [
+          476.0805860805861,
+          112.53521126760563
+        ],
+        [
+          129.15750915750917,
+          112.53521126760563
+        ]
+      ]
+    },
+    {
+      "title": "WE HAVE ALSO C0flTINUED T0:",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          85.421875,
+          65.54296875
+        ],
+        [
+          273.109375,
+          65.54296875
+        ],
+        [
+          273.109375,
+          84.152587890625
+        ],
+        [
+          85.421875,
+          84.152587890625
+        ]
+      ]
+    },
+    {
+      "title": "WE PROVIDED ASSISTANCE TO NRC IN ASSESSING\nA PROBLEM AT FORT ST. VRAIN",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          123.720703125,
+          61.6416015625
+        ],
+        [
+          431.220703125,
+          61.6416015625
+        ],
+        [
+          431.220703125,
+          105.79730224609375
+        ],
+        [
+          123.720703125,
+          105.79730224609375
+        ]
+      ]
+    },
+    {
+      "title": "INCREASED ACTIVITY ON DISPLACED PROBES CAN BE ASSOCIATED WITH OFFSETS IN NUCLEAR SIGNALS",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          273.08544600938967,
+          69.0
+        ],
+        [
+          686.4647887323944,
+          69.0
+        ],
+        [
+          686.4647887323944,
+          110.25
+        ],
+        [
+          273.08544600938967,
+          110.25
+        ]
+      ]
+    },
+    {
+      "title": "THEREFORE, NOISE ANALYSIS AIDED NRC'S EVALUATION OF FORT ST. VRAIN OSCILLATIONS",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          158.25,
+          60.861328125
+        ],
+        [
+          462.0,
+          60.861328125
+        ],
+        [
+          462.0,
+          100.53145539906103
+        ],
+        [
+          158.25,
+          100.53145539906103
+        ]
+      ]
+    },
+    {
+      "title": "WE PERFORMED Oil-SITE DIAGil0STIC\nMEASUREMENTS AT TMI T0:",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          182.28125,
+          62.81201171875
+        ],
+        [
+          407.734375,
+          62.81201171875
+        ],
+        [
+          407.734375,
+          104.9429931640625
+        ],
+        [
+          182.28125,
+          104.9429931640625
+        ]
+      ]
+    },
+    {
+      "title": "A PORTION OF STRIP CHART RECORDING SHOWS HOW NOISE\n\nANALYSIS MADE ITS MOST VALUABLE AND DIRECT\n\nCONTRIBUTION DURING PRIMARY COOLANT DEGASIFICATION OPERATIONS",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          92.25,
+          65.8505859375
+        ],
+        [
+          538.5,
+          65.8505859375
+        ],
+        [
+          538.5,
+          130.5
+        ],
+        [
+          92.25,
+          130.5
+        ]
+      ]
+    },
+    {
+      "title": "WE OBTAINED BASELINE NEUTRON NOISE SIGNATURES\nFROM EX-CORE DETECTORS IN TWO PWRS",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          139.61369193154033,
+          68.29268292682926
+        ],
+        [
+          472.1344743276283,
+          68.29268292682926
+        ],
+        [
+          472.1344743276283,
+          109.56848030018762
+        ],
+        [
+          139.61369193154033,
+          108.06754221388367
+        ]
+      ]
+    },
+    {
+      "title": "BOTH PLANT SIGNATURES ARE CONSISTENT WITH PWR\nRASELINE SIGNATURES",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          275.87109375,
+          56.36328125
+        ],
+        [
+          609.75,
+          56.36328125
+        ],
+        [
+          609.75,
+          92.33984375
+        ],
+        [
+          275.87109375,
+          92.33984375
+        ]
+      ]
+    },
+    {
+      "title": "PRELIMINARY MODEL PREDICTIONS COMPARE WELL\nWITH EXPERIMENTAL DATA FROM BWR-4s",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          372.65625,
+          57.8623046875
+        ],
+        [
+          686.0356138706654,
+          57.8623046875
+        ],
+        [
+          686.0356138706654,
+          96.8369140625
+        ],
+        [
+          372.65625,
+          96.8369140625
+        ]
+      ]
+    },
+    {
+      "title": "WE ARE NOW APPLYING THIS METHODOLOGY\n\nTO CALCULATE NEUTRON NOISE CAUSED BY POSTULATED",
+      "heading_level": null,
+      "page_id": 18,
+      "polygon": [
+        [
+          126.05140758873928,
+          69.04315196998124
+        ],
+        [
+          471.9424724602203,
+          70.3125
+        ],
+        [
+          471.9424724602203,
+          124.57786116322701
+        ],
+        [
+          126.05140758873928,
+          123.4375
+        ]
+      ]
+    },
+    {
+      "title": "TO INFER THE LOCATION OF IMPACTS, WE HAVE\nEXPLORED THE USE OF EllERGY ATTENUATION\nWITH IMPACT-TO-SENSOR DISTANCE",
+      "heading_level": null,
+      "page_id": 20,
+      "polygon": [
+        [
+          127.91999816894531,
+          143.75
+        ],
+        [
+          425.123046875,
+          143.75
+        ],
+        [
+          425.123046875,
+          211.78302001953125
+        ],
+        [
+          127.91999816894531,
+          211.78302001953125
+        ]
+      ]
+    },
+    {
+      "title": "IN THE QUIET ENVIRONMENT OF THE EGCR WE CAN LOCATE\nTHE IMPACT SITE TO WITHIN 12 INCHES IF WE ASSUME\nTHAT THE IMPACT IS ON THE VESSEL WALL",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          145.10546875,
+          68.359375
+        ],
+        [
+          507.93597412109375,
+          68.359375
+        ],
+        [
+          507.93597412109375,
+          136.3172607421875
+        ],
+        [
+          145.10546875,
+          136.3172607421875
+        ]
+      ]
+    },
+    {
+      "title": "(VESSEL DIAMETER IS ~ 20 FT)",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          232.6484375,
+          167.578125
+        ],
+        [
+          434.63409423828125,
+          167.578125
+        ],
+        [
+          434.63409423828125,
+          185.21630859375
+        ],
+        [
+          232.6484375,
+          185.21630859375
+        ]
+      ]
+    },
+    {
+      "title": "CHANGES IN CORE DESIGN OR OPERATING\nSTRATEGY MAY AFFECT STABILITY MARGIN IN BWRs",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          179.296875,
+          65.54296875
+        ],
+        [
+          499.640625,
+          65.54296875
+        ],
+        [
+          499.640625,
+          108.13018798828125
+        ],
+        [
+          179.296875,
+          108.13018798828125
+        ]
+      ]
+    },
+    {
+      "title": "THEREFORE",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          311.677734375,
+          140.05908203125
+        ],
+        [
+          376.822265625,
+          140.05908203125
+        ],
+        [
+          376.822265625,
+          156.70977783203125
+        ],
+        [
+          311.677734375,
+          156.70977783203125
+        ]
+      ]
+    },
+    {
+      "title": "NORMAL BOILING CAUSES P#lDOM REACTIVITY FLUCTUATION WHICH STIMULATES THE CORE",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          125.0,
+          85.62353515625
+        ],
+        [
+          698.0652465820312,
+          85.62353515625
+        ],
+        [
+          698.0652465820312,
+          107.70068359375
+        ],
+        [
+          125.0,
+          107.70068359375
+        ]
+      ]
+    },
+    {
+      "title": "UNIVARIATE AND MULTIVARIATE TIME SERIES ANALYSIS\nOF NEUTRON SIGNALS WAS USED TO I!!FER CORE STABILITY",
+      "heading_level": null,
+      "page_id": 24,
+      "polygon": [
+        [
+          137.91015625,
+          62.109375
+        ],
+        [
+          509.66796875,
+          62.109375
+        ],
+        [
+          509.66796875,
+          120.91259765625
+        ],
+        [
+          137.91015625,
+          120.91259765625
+        ]
+      ]
+    },
+    {
+      "title": "FROM THESE STUDIES AND EXPERIENCES,",
+      "heading_level": null,
+      "page_id": 25,
+      "polygon": [
+        [
+          111.79559363525091,
+          136.4573570759138
+        ],
+        [
+          370.65116279069764,
+          136.4573570759138
+        ],
+        [
+          370.65116279069764,
+          155.20149953139645
+        ],
+        [
+          111.79559363525091,
+          155.20149953139645
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          38
+        ],
+        [
+          "Span",
+          10
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          74
+        ],
+        [
+          "Line",
+          33
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          73
+        ],
+        [
+          "Line",
+          33
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          75
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          12
+        ],
+        [
+          "Span",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          14
+        ],
+        [
+          "Span",
+          5
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          33
+        ],
+        [
+          "Line",
+          15
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          29
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          22
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          19
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          12
+        ],
+        [
+          "Span",
+          4
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          35
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          10
+        ],
+        [
+          "Span",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          10
+        ],
+        [
+          "Span",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          22
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          11
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Span",
+          4
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          23
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "Text",
+          6
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          29
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          13
+        ],
+        [
+          "Span",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 19,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          34
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Span",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 20,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          19
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 21,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          69
+        ],
+        [
+          "TableCell",
+          26
+        ],
+        [
+          "Line",
+          20
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 22,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          28
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          37
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 24,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          27
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 25,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          8
+        ],
+        [
+          "Span",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Application of Noise Analysis to Safety-Related Diagnostics"
+}

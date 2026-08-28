@@ -1,0 +1,254 @@
+{
+    "project_meta": {
+        "project_id": "A1_1_Analysis",
+        "raw_source": "/home/sda/sgyr/my_dataprocess_assistant2.0/data/A1_1.csv",
+        "workspace_dir": "/home/sda/sgyr/my_dataprocess_assistant2.0/data/A1_1_workspace"
+    },
+    "file_registry": {
+        "current_active_file": "/home/sda/sgyr/my_dataprocess_assistant2.0/data/A1_1_workspace/A1_1_sorted.csv"
+    },
+    "workflow_history": [
+        {
+            "step_index": 1,
+            "tool": "load_and_profile_csv_tool",
+            "status": "completed",
+            "timestamp": "2026-04-20 16:38:19"
+        },
+        {
+            "step_index": 2,
+            "tool": "zero_prior_discovery_tool",
+            "status": "completed",
+            "timestamp": "2026-04-20 16:38:20"
+        },
+        {
+            "step_index": 3,
+            "tool": "anomaly_scan_tool",
+            "status": "completed",
+            "timestamp": "2026-04-20 16:38:27"
+        },
+        {
+            "step_index": 4,
+            "tool": "global_time_lag_scan_tool",
+            "status": "completed",
+            "timestamp": "2026-04-20 16:38:36"
+        },
+        {
+            "step_index": 5,
+            "tool": "global_extremes_scan_tool",
+            "status": "completed",
+            "timestamp": "2026-04-20 16:38:38"
+        }
+    ],
+    "integrated_conclusions": {
+        "step_1_profile": "工作区已建立。完成时间排序，数据规模为 597607x8。",
+        "step_2_zero_prior": "零先验扫描完成。发现 10 对高度共线变量。",
+        "step_3_anomaly": "已完成工况扫描。高频突变传感器包括: BL.BL3.3RIC1015MA_VER,BL.BL3.3RIC1011MA_VER,BL.BL3.3RIC1013MA_VER。",
+        "step_4_causality": "因果扫描完成。发现 0 条具有时间滞后的物理传导链路。",
+        "step_5_extremes": "全局极值扫描完成。已提取 7 个变量的巅峰与谷底时间戳。"
+    },
+    "knowledge_graph": {
+        "initial_data_stats": {
+            "rows": 597607,
+            "columns": 8,
+            "frequency": "0 days 00:00:01"
+        },
+        "variable_roles": {
+            "discrete": [],
+            "slow_lag": [],
+            "highly_volatile": [
+                "BL.BL3.3RIC1011MA_VER",
+                "BL.BL3.3RIC1012MA_VER",
+                "BL.BL3.3RIC1013MA_VER",
+                "BL.BL3.3RIC1014MA_VER",
+                "BL.BL3.3RIC1015MA_VER",
+                "BL.BL3.3RIC1016MA_VER",
+                "BL.BL3.3RIC1017MA_VER"
+            ],
+            "normal": []
+        },
+        "redundant_sensor_pairs": [
+            [
+                "BL.BL3.3RIC1011MA_VER",
+                "BL.BL3.3RIC1013MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1011MA_VER",
+                "BL.BL3.3RIC1014MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1011MA_VER",
+                "BL.BL3.3RIC1016MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1011MA_VER",
+                "BL.BL3.3RIC1017MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1013MA_VER",
+                "BL.BL3.3RIC1014MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1013MA_VER",
+                "BL.BL3.3RIC1016MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1013MA_VER",
+                "BL.BL3.3RIC1017MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1014MA_VER",
+                "BL.BL3.3RIC1016MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1014MA_VER",
+                "BL.BL3.3RIC1017MA_VER"
+            ],
+            [
+                "BL.BL3.3RIC1016MA_VER",
+                "BL.BL3.3RIC1017MA_VER"
+            ]
+        ],
+        "anomalies": {
+            "top_spikes": [
+                "BL.BL3.3RIC1015MA_VER",
+                "BL.BL3.3RIC1011MA_VER",
+                "BL.BL3.3RIC1013MA_VER"
+            ],
+            "top_zero_drops": [
+                "BL.BL3.3RIC1012MA_VER",
+                "BL.BL3.3RIC1011MA_VER",
+                "BL.BL3.3RIC1014MA_VER"
+            ],
+            "high_volatility": [
+                "BL.BL3.3RIC1015MA_VER",
+                "BL.BL3.3RIC1014MA_VER",
+                "BL.BL3.3RIC1013MA_VER"
+            ]
+        },
+        "causality_chains": [],
+        "synchronous_pairs": [
+            {
+                "col_A": "BL.BL3.3RIC1014MA_VER",
+                "col_B": "BL.BL3.3RIC1017MA_VER",
+                "correlation": 0.9999969863390858
+            },
+            {
+                "col_A": "BL.BL3.3RIC1013MA_VER",
+                "col_B": "BL.BL3.3RIC1014MA_VER",
+                "correlation": 0.9999965202936942
+            },
+            {
+                "col_A": "BL.BL3.3RIC1011MA_VER",
+                "col_B": "BL.BL3.3RIC1014MA_VER",
+                "correlation": 0.9999961781847705
+            },
+            {
+                "col_A": "BL.BL3.3RIC1011MA_VER",
+                "col_B": "BL.BL3.3RIC1017MA_VER",
+                "correlation": 0.9999949193268264
+            },
+            {
+                "col_A": "BL.BL3.3RIC1011MA_VER",
+                "col_B": "BL.BL3.3RIC1013MA_VER",
+                "correlation": 0.9999947116666572
+            },
+            {
+                "col_A": "BL.BL3.3RIC1013MA_VER",
+                "col_B": "BL.BL3.3RIC1017MA_VER",
+                "correlation": 0.9999933656807066
+            },
+            {
+                "col_A": "BL.BL3.3RIC1013MA_VER",
+                "col_B": "BL.BL3.3RIC1016MA_VER",
+                "correlation": 0.9999823759106905
+            },
+            {
+                "col_A": "BL.BL3.3RIC1011MA_VER",
+                "col_B": "BL.BL3.3RIC1016MA_VER",
+                "correlation": 0.9999717709758801
+            },
+            {
+                "col_A": "BL.BL3.3RIC1014MA_VER",
+                "col_B": "BL.BL3.3RIC1016MA_VER",
+                "correlation": 0.9999690191162378
+            },
+            {
+                "col_A": "BL.BL3.3RIC1016MA_VER",
+                "col_B": "BL.BL3.3RIC1017MA_VER",
+                "correlation": 0.9999687498529589
+            }
+        ],
+        "global_extremes": {
+            "BL.BL3.3RIC1011MA_VER": {
+                "max": {
+                    "value": 317.3276062011719,
+                    "timestamp": "2025-01-21 01:02:24"
+                },
+                "min": {
+                    "value": -1.1437759894761255e-05,
+                    "timestamp": "2025-01-21 03:44:56"
+                }
+            },
+            "BL.BL3.3RIC1012MA_VER": {
+                "max": {
+                    "value": 1.5111570043023088e+23,
+                    "timestamp": "2025-01-21 03:44:56"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:04:59"
+                }
+            },
+            "BL.BL3.3RIC1013MA_VER": {
+                "max": {
+                    "value": 312.6039123535156,
+                    "timestamp": "2025-01-21 01:02:24"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:04:46"
+                }
+            },
+            "BL.BL3.3RIC1014MA_VER": {
+                "max": {
+                    "value": 310.0526123046875,
+                    "timestamp": "2025-01-21 01:02:24"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:04:46"
+                }
+            },
+            "BL.BL3.3RIC1015MA_VER": {
+                "max": {
+                    "value": 312.2569885253906,
+                    "timestamp": "2025-01-21 04:27:32"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:04:46"
+                }
+            },
+            "BL.BL3.3RIC1016MA_VER": {
+                "max": {
+                    "value": 305.3646850585937,
+                    "timestamp": "2025-01-21 01:02:24"
+                },
+                "min": {
+                    "value": 0.0,
+                    "timestamp": "2025-01-21 01:04:46"
+                }
+            },
+            "BL.BL3.3RIC1017MA_VER": {
+                "max": {
+                    "value": 303.3959045410156,
+                    "timestamp": "2025-01-21 01:02:24"
+                },
+                "min": {
+                    "value": -0.0052483789622783,
+                    "timestamp": "2025-01-21 04:40:57"
+                }
+            }
+        }
+    }
+}
