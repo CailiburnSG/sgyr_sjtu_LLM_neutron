@@ -1,0 +1,35 @@
+{
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "device": "cpu",
+  "documents": 64,
+  "core_documents": 13,
+  "supplementary_documents": 51,
+  "chunks": 11199,
+  "chunk_words": 240,
+  "overlap_words": 24,
+  "top_k": 10,
+  "trials": 10,
+  "queries": [
+    [
+      "zh",
+      "中子",
+      "core_term"
+    ],
+    [
+      "en",
+      "neutron",
+      "core_term"
+    ],
+    [
+      "zh",
+      "中子测量电流",
+      "phrase"
+    ],
+    [
+      "en",
+      "neutron measurement current",
+      "phrase"
+    ]
+  ],
+  "elapsed_seconds": 387.9
+}

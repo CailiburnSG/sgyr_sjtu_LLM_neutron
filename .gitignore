@@ -7,6 +7,13 @@ __pycache__/
 *.pyc
 .DS_Store
 *.swp
+.venv-embedding/
+
+# Reproducible local embedding caches; CSV summaries and metadata are tracked.
+evidence/embedding_benchmark/*/chunk_embeddings.npy
+
+# Local TeX scratch output
+texput.log
 
 # LaTeX build noise (keep main.pdf for reading)
 paper/*.log

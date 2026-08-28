@@ -1,0 +1,66 @@
+\subsection{Case study: from observation to evidence}
+On representative A1/A2 workspaces, the measurement-side probes produce reports containing synchronized zero events, spike episodes, and strongly co-moving channel groups. For example, the A1\_1 report identifies high-sensitivity morphology across channels, several highly collinear detectors, repeated spike episodes on one channel, and zero dropouts on others. \Cref{fig:case-waveforms} displays downsampled A1\_1 traces; all probe outputs are computed on the full-resolution series.
+
+This result demonstrates that the workflow can produce an auditable observation record and use it to organize manual retrieval. It should not be interpreted as independent confirmation of a physical fault or a root cause. In the present study, the memo is an evidence-linked aid for subsequent engineering review; no uniformly aligned fault-label set is available for estimating end-to-end diagnostic accuracy.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.95\linewidth]{fig3_case_waveforms}
+  \caption{Example neutron-current traces from dataset A1\_1 (three channels; downsampled for readability). The full-resolution series is analyzed by the workspace probes.}
+  \label{fig:case-waveforms}
+\end{figure}
+
+\Cref{fig:a2-events} and \Cref{tab:a2-events} provide a second, tabulated case view from the checked-in A2\_1 report snapshot. The seven channels contain 30--34 detected spike episodes (mean 32.4) and each contains 12 isolated zero events. The repeated zero timestamps across channels are a concrete example of why the report preserves cross-channel timing rather than converting events immediately into a component-fault label: the observation supports a synchronized signal-quality event, while its physical mechanism requires external review.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.88\linewidth]{fig6_a2_event_summary}
+  \caption{Detected event counts from the A2\_1 condition-report snapshot. These are deterministic signal-event counts under \cref{eq:spike-rule}, not confirmed equipment-fault counts.}
+  \label{fig:a2-events}
+\end{figure}
+
+\input{tables/table_a2_events}
+
+\subsection{Similarity and source priority can diverge}
+The corpus-scope results show a consistent deployment risk: increasing the supplementary pool can raise cosine scores while reducing IAEA priority@10. \Cref{fig:scope-priority,tab:scope-aggregate} aggregate the phrase-query results over all 17 available index configurations. For Chinese, mean IAEA priority@10 falls from $1.00$ in the IAEA-only pool to $0.10\pm0.09$ after five supplementary documents and to $0.00$ after ten, while the mean top-1 cosine rises from $0.55$ to $0.63$. English is more gradual: priority@10 remains $0.86\pm0.05$ after five documents and is $0.38\pm0.05$ at 45 documents, while the corresponding cosine stays near $0.69$--$0.70$.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig4_scope_priority}
+  \caption{Phrase-query corpus-scope results averaged across 17 index configurations; shaded bands show one standard deviation across configurations. Source priority can decline while the nearest-neighbor cosine score rises.}
+  \label{fig:scope-priority}
+\end{figure}
+
+\input{tables/table_scope_aggregate}
+
+These results do not imply that supplementary documents are irrelevant. Rather, when an application requires IAEA sources to be surfaced first, nearest-neighbor similarity alone is not enough to enforce that policy. Source metadata, filtering, or reranking should be considered before a generated memo is presented as authority-backed evidence.
+
+\subsection{Language and query formulation dominate the tested chunking range}
+Across the tested index grid, the qualitative language effect is larger than the variation induced by modest changes in chunk length and overlap. Short Chinese prompts are particularly vulnerable to source-priority collapse, whereas terminology-rich English queries retain more core material. This is a finding for the fixed embedding model and corpus, not a claim that one language is intrinsically less retrievable. It supports deriving detailed, terminology-rich queries from the condition report instead of issuing only an ultra-short operator phrase.
+
+\subsection{Strict and document-level relevance answer different questions}
+Self-retrieval exposes a systematic strict--document-level gap. \Cref{fig:self-retrieval} aggregates first-sentence corpus-decay results over the available result directories and shows the same separation for both Recall@10 and MRR. In one $800/50$ setting, IAEA-only Recall@10 is 0.7625 under exact-node matching and 0.8625 under document-level matching. The gap is expected when overlapping chunks preserve relevant content in a neighboring node. Conversely, terminology-rich domain sentences have substantially stronger document-level Recall@10 in the available results. Evaluation should therefore report both criteria: strict matching measures chunk re-identification, while document-level matching better reflects whether the correct manual was recovered.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig5_self_retrieval}
+  \caption{First-sentence self-retrieval under corpus expansion, aggregated over available result directories. Shaded bands show one standard deviation across configurations. Document-level relevance remains higher than exact-node matching because overlapping chunks can preserve relevant text within the same document.}
+  \label{fig:self-retrieval}
+\end{figure}
+
+\subsection{Real CPU embedding-model comparison}
+To test whether the observed behavior is tied only to the historical embedding index, we ran a separate CPU benchmark over the checked-in 64-document corpus. This benchmark uses 240-word chunks with 24-word overlap (11,199 chunks), the same 13-document IAEA core and 51-document supplementary pool, the same four fixed bilingual queries, top-$10$ retrieval, and ten random expansion trials. It compares a multilingual MiniLM encoder with an English-oriented MiniLM encoder; it is reported separately from the historical \texttt{nomic-embed-text} experiments because the chunk construction differs.
+
+\Cref{fig:real-embedding-comparison,tab:real-embedding-comparison} show that embedding choice changes cosine scales and source-priority trajectories, but does not collapse the problem into one scalar. The multilingual model gives materially higher Chinese phrase cosine scores (0.62--0.64 versus 0.27 for the English-oriented model), while both models undergo source-priority decay as the supplementary pool grows. Thus multilingual semantic alignment and authoritative-source preference are complementary deployment requirements rather than interchangeable objectives.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig7_real_embedding_comparison}
+  \caption{Actual CPU embedding benchmark on the same 64-document corpus. Curves compare a multilingual MiniLM encoder and an English-oriented MiniLM encoder; bands show standard deviation over random supplementary-document selections. This is a newly run benchmark, not an extrapolation of the historical index.}
+  \label{fig:real-embedding-comparison}
+\end{figure}
+
+\input{tables/table_real_embedding_comparison}
+
+\subsection{Implications and limitations}
+The pipeline provides traceable observations and evidence retrieval, but it does not replace engineering judgment. The current evidence is limited by case-level rather than gold-standard diagnostic evaluation, one embedding model, a small fixed query set for the scope study, and no human assessment of generated citation support. A next validation stage should separately assess observation correctness, passage support for each memo claim, and the usefulness of the resulting memo to domain experts.

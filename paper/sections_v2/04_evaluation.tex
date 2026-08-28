@@ -1,0 +1,30 @@
+\subsection{Evaluation objective}
+The evaluation assesses the reliability of the \emph{evidence-retrieval layer}, not diagnostic accuracy or root-cause identification. We ask whether retrieval continues to honor a deployment policy that prioritizes a fixed IAEA core library when same-domain supplementary manuals are admitted, and how this behavior depends on query language, query formulation, and chunking.
+
+\subsection{Corpus and index configurations}
+The corpus contains a fixed core pool of 13 IAEA manuals and up to 46 same-domain supplementary manuals, for 59 documents in total. The supplementary pool is relevant nuclear instrumentation material; it is not treated as meaningless noise. Seventeen Markdown index configurations vary chunk size $\{800,1000,1200,1500\}$ and overlap $\{50,80,100,120,150\}$ for valid pairs. The embedding model is fixed as \texttt{nomic-embed-text}.
+
+\subsection{Corpus-scope experiment}
+Let $\mathcal{D}_{\mathrm{core}}$ be the fixed IAEA pool and $\mathcal{D}_{\mathrm{sup}}^{(m)}$ the $m$ admitted supplementary documents. Each retrieval pool is $\mathcal{D}_m=\mathcal{D}_{\mathrm{core}}\cup\mathcal{D}_{\mathrm{sup}}^{(m)}$. Four fixed Chinese and English nuclear terms or phrases are issued while $m$ increases in increments. We report top-$k$ cosine scores, IAEA priority@10, and the rank of the first IAEA hit. For a query $q$ and its ordered retrieval list $R_k(q)=\{d_1,\ldots,d_k\}$,
+\begin{equation}
+\operatorname{Priority@}k(q)=\frac{1}{k}\sum_{i=1}^{k}
+\mathbb{I}\left(d_i\in\mathcal{D}_{\mathrm{core}}\right).
+\label{eq:priority}
+\end{equation}
+This is the fraction of top-$k$ chunks from the pre-designated IAEA core. It measures adherence to a \emph{source-priority policy}; it is not a substitute for human relevance judgment, because a supplementary document may also be substantively relevant.
+
+\subsection{Self-retrieval experiment}
+IAEA chunks are sampled as probes. Queries are constructed from a first sentence, title, random window, or terminology-rich domain sentence. For a probe chunk $n_j^\ast$ and retrieved set $R_k(q_j)$, strict and document-level recall are
+\begin{equation}
+\begin{aligned}
+\operatorname{Recall@}k_{\mathrm{strict}}&=\frac{1}{N}\sum_{j=1}^{N}
+\mathbb{I}\left(n_j^\ast\in R_k(q_j)\right),\\
+\operatorname{Recall@}k_{\mathrm{doc}}&=\frac{1}{N}\sum_{j=1}^{N}
+\mathbb{I}\left(\exists n\in R_k(q_j):\operatorname{doc}(n)=\operatorname{doc}(n_j^\ast)\right).
+\end{aligned}
+\label{eq:recall}
+\end{equation}
+We additionally report mean reciprocal rank. The distinction prevents overlap-induced near-duplicate chunks from being mischaracterized as entirely irrelevant.
+
+\subsection{Interpretation boundary}
+The experiments establish retrieval behavior for the corpus, embedding model, query set, and index grid studied here. They do not establish a universal ranking of languages or chunking strategies, nor do they evaluate the factual correctness of generated memos. Those questions require additional multilingual models, relevance annotation, and generation-side review.

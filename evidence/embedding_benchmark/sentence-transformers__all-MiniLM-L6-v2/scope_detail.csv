@@ -1,0 +1,445 @@
+model,chunk_words,overlap_words,lang,query,query_tag,extra_docs,trial,pool_docs,pool_chunks,top1_score,top10_mean_score,iaea_priority_top10,first_iaea_rank
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,0,0,13,3477,0.2950652241706848,0.18592742085456848,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,0,18,4584,0.2950652241706848,0.1869906336069107,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,1,18,4453,0.2950652241706848,0.18592742085456848,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,2,18,4117,0.2950652241706848,0.19975538551807404,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,3,18,4605,0.2950652241706848,0.19619496166706085,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,4,18,4185,0.2950652241706848,0.18956485390663147,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,5,18,4062,0.2950652241706848,0.19975538551807404,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,6,18,4125,0.2950652241706848,0.19224999845027924,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,7,18,3862,0.2950652241706848,0.1882380247116089,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,8,18,4373,0.2950652241706848,0.19717761874198914,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,5,9,18,3883,0.2950652241706848,0.19717761874198914,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,0,23,5908,0.2950652241706848,0.20435242354869843,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,1,23,5689,0.2950652241706848,0.20435242354869843,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,2,23,5554,0.2950652241706848,0.20048975944519043,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,3,23,4272,0.2950652241706848,0.20905852317810059,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,4,23,4541,0.2950652241706848,0.19975538551807404,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,5,23,4630,0.2950652241706848,0.187219500541687,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,6,23,4986,0.2950652241706848,0.19619496166706085,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,7,23,4503,0.2950652241706848,0.18713535368442535,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,8,23,5776,0.2950652241706848,0.20308053493499756,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,10,9,23,5007,0.2950652241706848,0.19224999845027924,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,0,28,6078,0.2950652241706848,0.21027405560016632,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,1,28,5414,0.2950652241706848,0.21107526123523712,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,2,28,6510,0.2950652241706848,0.20779891312122345,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,3,28,5544,0.2950652241706848,0.21107526123523712,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,4,28,6963,0.2950652241706848,0.20931115746498108,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,5,28,5580,0.2950652241706848,0.19186779856681824,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,6,28,6319,0.2950652241706848,0.2044031322002411,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,7,28,5863,0.2950652241706848,0.19224999845027924,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,8,28,5941,0.2950652241706848,0.19975538551807404,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,15,9,28,5684,0.2950652241706848,0.19040367007255554,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,0,33,7092,0.2950652241706848,0.2162473499774933,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,1,33,7013,0.2950652241706848,0.21044310927391052,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,2,33,7242,0.2950652241706848,0.21027405560016632,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,3,33,7862,0.2950652241706848,0.20889464020729065,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,4,33,6257,0.2950652241706848,0.21061921119689941,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,5,33,6168,0.2950652241706848,0.20087194442749023,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,6,33,6275,0.2950652241706848,0.20527100563049316,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,7,33,5119,0.2950652241706848,0.19720038771629333,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,8,33,6622,0.2950652241706848,0.20032548904418945,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,20,9,33,5869,0.2950652241706848,0.20308053493499756,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,0,38,7255,0.2950652241706848,0.20435242354869843,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,1,38,7743,0.2950652241706848,0.20435242354869843,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,2,38,7853,0.2950652241706848,0.2146988809108734,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,3,38,6520,0.2950652241706848,0.2162473499774933,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,4,38,6650,0.2950652241706848,0.21511538326740265,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,5,38,7722,0.2950652241706848,0.20325426757335663,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,6,38,7458,0.2950652241706848,0.2162473499774933,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,7,38,7196,0.2950652241706848,0.20527100563049316,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,8,38,6963,0.2950652241706848,0.20891964435577393,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,25,9,38,7267,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,0,43,7206,0.2950652241706848,0.21107526123523712,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,1,43,7029,0.2950652241706848,0.20914208889007568,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,2,43,8840,0.2950652241706848,0.21325556933879852,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,3,43,8000,0.2950652241706848,0.20085439085960388,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,4,43,6703,0.2950652241706848,0.20163829624652863,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,5,43,7750,0.2950652241706848,0.20889464020729065,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,6,43,7776,0.2950652241706848,0.21511538326740265,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,7,43,7804,0.2950652241706848,0.2146988809108734,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,8,43,7714,0.2950652241706848,0.20435242354869843,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,30,9,43,8215,0.2950652241706848,0.21325556933879852,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,0,48,8043,0.2950652241706848,0.2019927054643631,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,1,48,8048,0.2950652241706848,0.21107526123523712,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,2,48,8333,0.2950652241706848,0.21325556933879852,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,3,48,9534,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,4,48,9242,0.2950652241706848,0.21325556933879852,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,5,48,9221,0.2950652241706848,0.21325556933879852,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,6,48,9357,0.2950652241706848,0.21325556933879852,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,7,48,8507,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,8,48,8682,0.2950652241706848,0.20829220116138458,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,35,9,48,9073,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,0,53,9577,0.2950652241706848,0.21027405560016632,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,1,53,9958,0.2950652241706848,0.21511538326740265,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,2,53,9354,0.2950652241706848,0.20992636680603027,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,3,53,9412,0.2950652241706848,0.2162473499774933,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,4,53,10059,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,5,53,9605,0.2950652241706848,0.21325556933879852,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,6,53,9544,0.2950652241706848,0.2162473499774933,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,7,53,9691,0.2950652241706848,0.21511538326740265,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,8,53,7900,0.2950652241706848,0.2146988809108734,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,40,9,53,9591,0.2950652241706848,0.2162473499774933,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,0,58,10342,0.2950652241706848,0.21511538326740265,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,1,58,10968,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,2,58,10320,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,3,58,10854,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,4,58,10265,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,5,58,10405,0.2950652241706848,0.2162473499774933,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,6,58,9148,0.2950652241706848,0.20889464020729065,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,7,58,10484,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,8,58,10394,0.2950652241706848,0.21511538326740265,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,45,9,58,10899,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,0,63,11158,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,1,63,11187,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,2,63,11154,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,3,63,11126,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,4,63,11133,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,5,63,10856,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,6,63,10819,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,7,63,11151,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,8,63,10572,0.2950652241706848,0.2146988809108734,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,50,9,63,11028,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,0,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,1,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,2,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,3,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,4,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,5,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,6,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,7,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,8,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子,core_term,51,9,64,11199,0.2950652241706848,0.21817710995674133,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,0,0,13,3477,0.5049821138381958,0.4382035732269287,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,0,18,4649,0.5942858457565308,0.5515881180763245,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,1,18,3817,0.5049821138381958,0.4382035732269287,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,2,18,4111,0.523047149181366,0.4828995168209076,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,3,18,3580,0.5049821138381958,0.4382035732269287,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,4,18,4631,0.523047149181366,0.49530553817749023,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,5,18,4186,0.5633959174156189,0.4647814631462097,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,6,18,4380,0.5633959174156189,0.4869118332862854,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,7,18,3811,0.5049821138381958,0.4382035732269287,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,8,18,4277,0.5301513075828552,0.4888865351676941,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,5,9,18,4317,0.5049821138381958,0.4462305009365082,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,0,23,4595,0.5301513075828552,0.501179575920105,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,1,23,5502,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,2,23,5137,0.523047149181366,0.4828995168209076,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,3,23,5546,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,4,23,4516,0.5049821138381958,0.45305436849594116,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,5,23,4632,0.5049821138381958,0.46183401346206665,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,6,23,5813,0.5633959174156189,0.5032563805580139,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,7,23,4378,0.5049821138381958,0.4382035732269287,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,8,23,4339,0.5049821138381958,0.46334680914878845,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,10,9,23,4749,0.5049821138381958,0.44198471307754517,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,0,28,6198,0.523047149181366,0.4848244786262512,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,1,28,5179,0.5049821138381958,0.45555195212364197,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,2,28,5795,0.5942858457565308,0.5519160032272339,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,3,28,5605,0.5633959174156189,0.46676570177078247,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,4,28,5039,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,5,28,6091,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,6,28,4691,0.5633959174156189,0.4695259630680084,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,7,28,5279,0.5633959174156189,0.5065466165542603,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,8,28,4808,0.5049821138381958,0.44518885016441345,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,15,9,28,6230,0.5633959174156189,0.49622082710266113,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,0,33,7294,0.5633959174156189,0.4961501955986023,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,1,33,6295,0.5942858457565308,0.5515881180763245,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,2,33,6641,0.5633959174156189,0.5068200826644897,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,3,33,5606,0.5613957643508911,0.4850136637687683,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,4,33,5488,0.5613957643508911,0.4865166246891022,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,5,33,6475,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,6,33,5948,0.5942858457565308,0.5515881180763245,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,7,33,6136,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,8,33,6939,0.5049821138381958,0.4546023905277252,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,20,9,33,5694,0.5633959174156189,0.4976770877838135,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,0,38,6849,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,1,38,8646,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,2,38,7826,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,3,38,7882,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,4,38,9027,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,5,38,5973,0.5633959174156189,0.5126250982284546,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,6,38,6654,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,7,38,6361,0.5633959174156189,0.5126250982284546,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,8,38,6767,0.5613957643508911,0.49921226501464844,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,25,9,38,7481,0.523047149181366,0.4888972342014313,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,0,43,7809,0.5633959174156189,0.5068200826644897,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,1,43,7681,0.5613957643508911,0.5048957467079163,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,2,43,7178,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,3,43,8219,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,4,43,8198,0.5633959174156189,0.5196191668510437,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,5,43,8256,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,6,43,7500,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,7,43,7855,0.5613957643508911,0.5066200494766235,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,8,43,8044,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,30,9,43,7580,0.5613957643508911,0.5048957467079163,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,0,48,8236,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,1,48,8248,0.5633959174156189,0.5121451616287231,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,2,48,8437,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,3,48,8221,0.5613957643508911,0.5030564069747925,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,4,48,8729,0.5613957643508911,0.5122089982032776,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,5,48,8261,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,6,48,9283,0.5633959174156189,0.5113345384597778,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,7,48,8499,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,8,48,8586,0.5633959174156189,0.5121451616287231,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,35,9,48,8166,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,0,53,8770,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,1,53,10013,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,2,53,8909,0.5633959174156189,0.5113345384597778,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,3,53,9838,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,4,53,9804,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,5,53,9883,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,6,53,10112,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,7,53,9920,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,8,53,8956,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,40,9,53,10573,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,0,58,10116,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,1,58,10432,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,2,58,10654,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,3,58,9958,0.5942858457565308,0.5552405118942261,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,4,58,10485,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,5,58,10707,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,6,58,9996,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,7,58,9658,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,8,58,9999,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,45,9,58,10307,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,0,63,10908,0.5942858457565308,0.5550404787063599,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,1,63,11028,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,2,63,10899,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,3,63,11150,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,4,63,10846,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,5,63,11169,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,6,63,10899,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,7,63,11189,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,8,63,10846,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,50,9,63,10799,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,0,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,1,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,2,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,3,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,4,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,5,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,6,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,7,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,8,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron,core_term,51,9,64,11199,0.5942858457565308,0.5581029653549194,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,0,0,13,3477,0.26858365535736084,0.1530168354511261,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,0,18,3603,0.26858365535736084,0.15749329328536987,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,1,18,4360,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,2,18,3618,0.26858365535736084,0.15749329328536987,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,3,18,4176,0.26858365535736084,0.15443214774131775,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,4,18,4633,0.26858365535736084,0.15632297098636627,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,5,18,5140,0.26858365535736084,0.15632297098636627,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,6,18,5075,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,7,18,4922,0.26858365535736084,0.18322491645812988,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,8,18,4162,0.26858365535736084,0.1533559113740921,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,5,9,18,3863,0.26858365535736084,0.16599483788013458,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,0,23,5479,0.26858365535736084,0.16901454329490662,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,1,23,5875,0.26858365535736084,0.20672044157981873,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,2,23,5412,0.26858365535736084,0.18364182114601135,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,3,23,5709,0.26858365535736084,0.1552843600511551,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,4,23,4289,0.26858365535736084,0.15744727849960327,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,5,23,4963,0.26858365535736084,0.19983240962028503,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,6,23,4396,0.26858365535736084,0.16397997736930847,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,7,23,5229,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,8,23,5190,0.26858365535736084,0.1590234339237213,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,10,9,23,4890,0.26858365535736084,0.1587042659521103,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,0,28,6410,0.26858365535736084,0.19965796172618866,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,1,28,6580,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,2,28,6087,0.26858365535736084,0.17073781788349152,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,3,28,6111,0.26858365535736084,0.1728779375553131,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,4,28,5011,0.26858365535736084,0.19983240962028503,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,5,28,5677,0.26858365535736084,0.16743703186511993,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,6,28,5471,0.26858365535736084,0.1703723669052124,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,7,28,5466,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,8,28,6495,0.26858365535736084,0.19965796172618866,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,15,9,28,5471,0.26858365535736084,0.18436799943447113,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,0,33,6077,0.26858365535736084,0.17469355463981628,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,1,33,6613,0.26858365535736084,0.1849823147058487,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,2,33,7223,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,3,33,7101,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,4,33,6116,0.26858365535736084,0.16596895456314087,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,5,33,5494,0.26858365535736084,0.16742809116840363,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,6,33,7281,0.26858365535736084,0.20681710541248322,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,7,33,6573,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,8,33,6420,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,20,9,33,6273,0.26858365535736084,0.1618836671113968,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,0,38,7679,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,1,38,6330,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,2,38,6248,0.26858365535736084,0.16909797489643097,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,3,38,7434,0.26858365535736084,0.16799886524677277,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,4,38,7207,0.26858365535736084,0.20672044157981873,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,5,38,7921,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,6,38,6338,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,7,38,7062,0.26858365535736084,0.20672044157981873,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,8,38,6848,0.26858365535736084,0.16599483788013458,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,25,9,38,7834,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,0,43,8717,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,1,43,7964,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,2,43,7642,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,3,43,7432,0.26858365535736084,0.20672044157981873,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,4,43,7386,0.26858365535736084,0.20681710541248322,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,5,43,8093,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,6,43,7472,0.26858365535736084,0.20672044157981873,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,7,43,8724,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,8,43,7823,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,30,9,43,7294,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,0,48,9353,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,1,48,7806,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,2,48,8939,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,3,48,9158,0.26858365535736084,0.20681710541248322,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,4,48,8666,0.26858365535736084,0.20681710541248322,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,5,48,8823,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,6,48,8510,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,7,48,7835,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,8,48,8619,0.26858365535736084,0.17424942553043365,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,35,9,48,7872,0.26858365535736084,0.19983240962028503,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,0,53,9288,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,1,53,10132,0.26858365535736084,0.20681710541248322,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,2,53,8427,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,3,53,10511,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,4,53,8923,0.26858365535736084,0.20300094783306122,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,5,53,9043,0.26858365535736084,0.19985488057136536,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,6,53,9793,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,7,53,9137,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,8,53,10221,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,40,9,53,9683,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,0,58,9746,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,1,58,10054,0.26858365535736084,0.1873224526643753,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,2,58,10104,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,3,58,10743,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,4,58,10931,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,5,58,10493,0.26858365535736084,0.20672044157981873,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,6,58,9825,0.26858365535736084,0.20681710541248322,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,7,58,10797,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,8,58,10019,0.26858365535736084,0.20681710541248322,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,45,9,58,9456,0.26858365535736084,0.21575865149497986,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,0,63,11181,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,1,63,11192,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,2,63,11186,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,3,63,11175,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,4,63,10908,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,5,63,11118,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,6,63,11175,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,7,63,11163,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,8,63,10901,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,50,9,63,11135,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,0,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,1,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,2,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,3,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,4,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,5,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,6,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,7,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,8,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,zh,中子测量电流,phrase,51,9,64,11199,0.26858365535736084,0.21730045974254608,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,0,0,13,3477,0.5812032222747803,0.5444711446762085,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,0,18,4494,0.5812032222747803,0.5467780232429504,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,1,18,3910,0.5812032222747803,0.5444711446762085,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,2,18,4013,0.6538369059562683,0.5579563975334167,0.9,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,3,18,5137,0.5812032222747803,0.5444711446762085,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,4,18,4117,0.5812032222747803,0.5447906255722046,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,5,18,4090,0.5981566905975342,0.5733245015144348,0.4,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,6,18,3892,0.5812032222747803,0.5444711446762085,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,7,18,4376,0.5812032222747803,0.5444711446762085,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,8,18,4248,0.5812032222747803,0.5444711446762085,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,5,9,18,3918,0.6538369059562683,0.5579563975334167,0.9,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,0,23,4887,0.5812032222747803,0.5591555833816528,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,1,23,4925,0.6538369059562683,0.5711647272109985,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,2,23,4757,0.6538369059562683,0.5711647272109985,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,3,23,4840,0.5812032222747803,0.5444711446762085,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,4,23,4499,0.6538369059562683,0.5579563975334167,0.9,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,5,23,4970,0.5812032222747803,0.5652473568916321,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,6,23,3957,0.6538369059562683,0.5650067925453186,0.7,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,7,23,4357,0.5812032222747803,0.5652473568916321,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,8,23,4702,0.5981566905975342,0.5777490735054016,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,10,9,23,3886,0.6538369059562683,0.5631019473075867,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,0,28,5804,0.5812032222747803,0.5467780232429504,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,1,28,5970,0.5812032222747803,0.5447906255722046,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,2,28,5477,0.6538369059562683,0.5834636092185974,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,3,28,5851,0.6538369059562683,0.5580931305885315,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,4,28,6100,0.6538369059562683,0.5673125386238098,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,5,28,5157,0.5812032222747803,0.5652473568916321,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,6,28,5735,0.5812032222747803,0.5560927391052246,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,7,28,6002,0.5812032222747803,0.5652473568916321,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,8,28,6223,0.5812032222747803,0.5549478530883789,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,15,9,28,5944,0.5812032222747803,0.5518821477890015,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,0,33,7079,0.5812032222747803,0.5499361753463745,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,1,33,6514,0.6538369059562683,0.5673125386238098,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,2,33,5750,0.5812032222747803,0.5467780232429504,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,3,33,7409,0.5981566905975342,0.5773730278015137,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,4,33,7226,0.5812032222747803,0.5518821477890015,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,5,33,6813,0.5981566905975342,0.578819751739502,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,6,33,7725,0.6538369059562683,0.5834636092185974,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,7,33,6060,0.5981566905975342,0.5777490735054016,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,8,33,7249,0.5812032222747803,0.5467780232429504,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,20,9,33,6792,0.5981566905975342,0.578819751739502,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,0,38,7486,0.5981566905975342,0.57957923412323,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,1,38,7331,0.5981566905975342,0.5746432542800903,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,2,38,6956,0.6538369059562683,0.5877362489700317,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,3,38,6885,0.5812032222747803,0.5447906255722046,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,4,38,6655,0.6538369059562683,0.5800503492355347,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,5,38,6496,0.5981566905975342,0.5774773955345154,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,6,38,7773,0.5981566905975342,0.5774773955345154,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,7,38,8228,0.6538369059562683,0.5834636092185974,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,8,38,5867,0.6538369059562683,0.5725738406181335,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,25,9,38,6452,0.6538369059562683,0.585316002368927,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,0,43,8510,0.6538369059562683,0.5881364941596985,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,1,43,8502,0.6538369059562683,0.5789201259613037,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,2,43,8412,0.6538369059562683,0.5870361924171448,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,3,43,8176,0.6538369059562683,0.5800503492355347,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,4,43,7316,0.5981566905975342,0.5778534412384033,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,5,43,7900,0.5812032222747803,0.5640532970428467,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,6,43,8258,0.6538369059562683,0.5711072087287903,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,7,43,8737,0.6538369059562683,0.5877362489700317,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,8,43,8347,0.6538369059562683,0.5772553086280823,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,30,9,43,8140,0.5981566905975342,0.5759992599487305,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,0,48,8455,0.5981566905975342,0.57957923412323,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,1,48,8671,0.6538369059562683,0.5600391626358032,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,2,48,9907,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,3,48,8837,0.6538369059562683,0.5752730965614319,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,4,48,8851,0.6538369059562683,0.5800204277038574,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,5,48,7977,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,6,48,9371,0.5812032222747803,0.5640532970428467,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,7,48,8559,0.6538369059562683,0.5877362489700317,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,8,48,9176,0.6538369059562683,0.5877362489700317,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,35,9,48,7343,0.6538369059562683,0.5881364941596985,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,0,53,8986,0.5812032222747803,0.5707631707191467,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,1,53,9188,0.6538369059562683,0.587110698223114,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,2,53,10068,0.6538369059562683,0.587110698223114,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,3,53,9810,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,4,53,8021,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,5,53,9980,0.5981566905975342,0.57957923412323,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,6,53,9327,0.6538369059562683,0.587110698223114,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,7,53,8657,0.6538369059562683,0.5877362489700317,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,8,53,9618,0.6538369059562683,0.5881364941596985,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,40,9,53,10372,0.5981566905975342,0.57957923412323,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,0,58,10109,0.6538369059562683,0.5881364941596985,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,1,58,10400,0.6538369059562683,0.5877362489700317,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,2,58,10309,0.5981566905975342,0.57957923412323,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,3,58,10573,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,4,58,10452,0.5812032222747803,0.5707631707191467,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,5,58,10651,0.5981566905975342,0.5778534412384033,0.3,4
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,6,58,9178,0.6538369059562683,0.5881364941596985,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,7,58,9844,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,8,58,10135,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,45,9,58,9709,0.6538369059562683,0.5870361924171448,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,0,63,11151,0.6538369059562683,0.5877362489700317,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,1,63,11178,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,2,63,11135,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,3,63,10899,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,4,63,10954,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,5,63,11037,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,6,63,11195,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,7,63,11104,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,8,63,11195,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,50,9,63,11195,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,0,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,1,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,2,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,3,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,4,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,5,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,6,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,7,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,8,64,11199,0.6538369059562683,0.5881410837173462,0.3,5
+sentence-transformers/all-MiniLM-L6-v2,240,24,en,neutron measurement current,phrase,51,9,64,11199,0.6538369059562683,0.5881410837173462,0.3,5

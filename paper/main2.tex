@@ -1,0 +1,73 @@
+%% =====================================================================
+%% Revision draft: evidence-constrained diagnostic workflow
+%% This file leaves main.tex and sections/ untouched.
+%% =====================================================================
+\documentclass[preprint,12pt,authoryear]{elsarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{float}
+\usepackage{xurl}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{lineno}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\graphicspath{{figs/}}
+\journal{Annals of Nuclear Energy}
+
+\begin{document}
+\begin{frontmatter}
+
+\title{Evidence-Constrained Diagnostic Assistance for Weakly Labeled Neutron Measurement Data: A Tool-Using Workflow and Retrieval Robustness Study}
+
+\author[addr1]{Author One}
+\author[addr1]{Author Two\corref{cor1}}
+\cortext[cor1]{Corresponding author.}
+\ead{corresponding@author.edu}
+\address[addr1]{Affiliation, City, Country}
+
+\begin{abstract}
+Neutron-instrumentation records from nuclear power plants are high-volume and only weakly labeled, whereas their interpretation must remain traceable to authoritative technical evidence. We present an evidence-constrained diagnostic-assistance workflow rather than an autonomous fault classifier. A zero-prior, tool-using agent first converts neutron-current CSV records into an auditable condition report by applying deterministic probes for data health, morphology, anomalies, lag, extremes, and spatial snapshots. A compact structured alert summary then drives multi-stage retrieval over nuclear instrumentation and control manuals, enabling a citation-bearing diagnostic memo. We evaluate the retrieval layer under controlled expansion of a fixed IAEA core library with same-domain supplementary documents, using Chinese and English queries, chunking configurations, and both strict chunk and document-level relevance criteria. In the evaluated setup, cosine similarity can increase while the priority of pre-designated IAEA sources decreases; short Chinese queries are especially sensitive to corpus expansion, whereas the tested chunk-size and overlap changes have a smaller effect. The results show that similarity alone is insufficient to govern evidence retrieval in this setting and motivate terminology-rich queries, explicit source-priority policies, and human review of diagnostic conclusions.
+\end{abstract}
+
+\begin{keyword}
+neutron instrumentation \sep online monitoring \sep diagnostic assistance \sep retrieval-augmented generation \sep evidence traceability \sep retrieval robustness
+\end{keyword}
+\end{frontmatter}
+
+\section{Introduction}
+\label{sec:intro}
+\input{sections_v2/01_introduction}
+
+\section{System design}
+\label{sec:system}
+\input{sections/03_system}
+\input{sections_v2/03_operational_definitions}
+
+\section{Evaluation protocol}
+\label{sec:eval}
+\input{sections_v2/04_evaluation}
+
+\section{Results and discussion}
+\label{sec:results}
+\input{sections_v2/05_results}
+
+\section{Conclusions}
+\label{sec:concl}
+\input{sections_v2/06_conclusions}
+
+\section*{Acknowledgments}
+This work was supported by \ldots\ (grant information to be added).
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{refs}
+\end{document}
