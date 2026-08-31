@@ -36,6 +36,41 @@ CONFIGS = ((800, 50), (800, 80), (800, 100), (800, 120), (800, 150),
 TOP_K, TRIALS, SEED = 10, 10, 20260831
 
 
+def resolve_model_source(model_name: str) -> tuple[str, bool]:
+    """Prefer a local HF/ST snapshot so offline / DNS-blocked hosts can still run.
+
+    Returns (load_path_or_id, local_files_only).
+    """
+    import os
+
+    repo_dir = f"models--{model_name.replace('/', '--')}"
+    candidates: list[Path] = []
+    for root_env in ("SENTENCE_TRANSFORMERS_HOME", "HF_HOME", "HUGGINGFACE_HUB_CACHE"):
+        raw = os.environ.get(root_env)
+        if not raw:
+            continue
+        root = Path(raw)
+        candidates.extend([
+            root / repo_dir,
+            root / "sentence-transformers" / repo_dir,
+            root / "hub" / repo_dir,
+        ])
+    candidates.append(ROOT / ".cache" / "huggingface" / "sentence-transformers" / repo_dir)
+    for base in candidates:
+        snaps = base / "snapshots"
+        if not snaps.is_dir():
+            continue
+        ref = base / "refs" / "main"
+        if ref.is_file():
+            tip = snaps / ref.read_text(encoding="utf-8").strip()
+            if tip.is_dir() and (tip / "modules.json").is_file():
+                return str(tip), True
+        for tip in sorted(snaps.iterdir()):
+            if tip.is_dir() and (tip / "modules.json").is_file():
+                return str(tip), True
+    return model_name, False
+
+
 def record_documents() -> tuple[list[dict[str, str]], list[Document]]:
     records, documents = [], []
     for path in sorted(CORPUS.rglob("*.md")):
@@ -68,7 +103,23 @@ def encode(model: SentenceTransformer, model_name: str, texts: list[str], kind: 
                         normalize_embeddings=True, convert_to_numpy=True)
 
 
-def run_one(model_name: str, chunk_size: int, overlap: int, batch_size: int, overwrite: bool) -> None:
+def resolve_device(requested: str) -> str:
+    """Return a concrete device string; prefer CUDA when requested and available."""
+    import torch
+
+    choice = (requested or "auto").strip().lower()
+    if choice in {"auto", "cuda"}:
+        if torch.cuda.is_available():
+            return "cuda"
+        if choice == "cuda":
+            print("Warning: --device cuda requested but CUDA is unavailable; falling back to cpu")
+        return "cpu"
+    if choice == "cpu":
+        return "cpu"
+    raise ValueError(f"unsupported --device value: {requested}")
+
+
+def run_one(model_name: str, chunk_size: int, overlap: int, batch_size: int, overwrite: bool, device: str) -> None:
     slug = model_name.replace("/", "__")
     out_dir = OUT / f"c{chunk_size}_o{overlap}" / slug
     detail_path = out_dir / "scope_detail.csv"
@@ -76,12 +127,15 @@ def run_one(model_name: str, chunk_size: int, overlap: int, batch_size: int, ove
         print(f"Skip existing result: {detail_path}")
         return
     out_dir.mkdir(parents=True, exist_ok=True)
+    resolved_device = resolve_device(device)
     spec = json.loads(QUERY_SET.read_text(encoding="utf-8"))
     queries = spec["baseline_queries"] + spec["technical_detail_queries"]
     records, documents = record_documents()
     texts, doc_ids = split_documents(documents, chunk_size, overlap)
-    print(f"{model_name}: chunking {chunk_size}/{overlap}; {len(texts)} chunks")
-    model = SentenceTransformer(model_name, device="cpu")
+    model_source, local_only = resolve_model_source(model_name)
+    print(f"{model_name}: chunking {chunk_size}/{overlap}; {len(texts)} chunks; "
+          f"device={resolved_device}; source={model_source}; local_only={local_only}")
+    model = SentenceTransformer(model_source, device=resolved_device, local_files_only=local_only)
     started = time.time()
     vectors = encode(model, model_name, texts, "passage", batch_size)
     qvectors = encode(model, model_name, [item["query"] for item in queries], "query", batch_size)
@@ -129,6 +183,8 @@ def run_one(model_name: str, chunk_size: int, overlap: int, batch_size: int, ove
         "model": model_name, "documents": len(records), "core_documents": len(core_docs), "chunks": len(texts),
         "chunk_size": chunk_size, "chunk_overlap": overlap, "splitter": "LlamaIndex TokenTextSplitter with character tokenizer",
         "top_k": TOP_K, "trials": TRIALS, "seed": SEED, "elapsed_seconds": round(time.time() - started, 1),
+        "device": resolved_device, "requested_device": device,
+        "model_source": model_source, "local_files_only": local_only,
         "query_set": str(QUERY_SET.relative_to(ROOT)),
         "scope": "fresh MiniLM re-embedding on the historical chunk-size/overlap grid; not the historical nomic index"
     }, indent=2), encoding="utf-8")
@@ -150,12 +206,17 @@ def main() -> None:
     parser.add_argument("--all-configs", action="store_true", help="Run all 17 historical settings")
     parser.add_argument("--model", choices=MODELS, action="append", help="Repeatable; defaults to both MiniLM encoders")
     parser.add_argument("--batch-size", type=int, default=32)
+    parser.add_argument(
+        "--device",
+        default="auto",
+        help="auto|cuda|cpu; auto prefers cuda when available, otherwise cpu",
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
     configs = CONFIGS if args.all_configs else (args.config or [(800, 80)])
     for config in configs:
         for model in args.model or MODELS:
-            run_one(model, *config, args.batch_size, args.overwrite)
+            run_one(model, *config, args.batch_size, args.overwrite, args.device)
 
 
 if __name__ == "__main__":

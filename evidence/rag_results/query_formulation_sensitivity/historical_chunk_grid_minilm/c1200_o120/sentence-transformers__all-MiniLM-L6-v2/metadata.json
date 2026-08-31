@@ -1,0 +1,19 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "documents": 64,
+  "core_documents": 13,
+  "chunks": 23448,
+  "chunk_size": 1200,
+  "chunk_overlap": 120,
+  "splitter": "LlamaIndex TokenTextSplitter with character tokenizer",
+  "top_k": 10,
+  "trials": 10,
+  "seed": 20260831,
+  "elapsed_seconds": 54.9,
+  "device": "cuda",
+  "requested_device": "cuda",
+  "model_source": "/home/sda/sgyr/paper_claude_pack/.cache/huggingface/sentence-transformers/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "local_files_only": true,
+  "query_set": "evidence/rag_results/query_formulation_sensitivity/technical_detail_query_pilot/query_set.json",
+  "scope": "fresh MiniLM re-embedding on the historical chunk-size/overlap grid; not the historical nomic index"
+}

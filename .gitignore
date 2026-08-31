@@ -23,3 +23,11 @@ paper/*.aux
 paper/*.out
 paper/*.blg
 paper/*.spl
+
+# Local experiment runtime (not for GitHub)
+.venv/
+.cache/
+
+# P0 runtime logs
+evidence/rag_results/query_formulation_sensitivity/historical_chunk_grid_minilm/run.log
+evidence/rag_results/query_formulation_sensitivity/historical_chunk_grid_minilm/nohup.out

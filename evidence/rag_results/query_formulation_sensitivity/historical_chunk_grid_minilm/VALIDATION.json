@@ -1,0 +1,25 @@
+{
+  "n_output_dirs": 6,
+  "summary_rows_each": 120,
+  "detail_rows_each": 1110,
+  "devices": [
+    "cuda"
+  ],
+  "configs": [
+    "c1200_o120|sentence-transformers/all-MiniLM-L6-v2",
+    "c1200_o120|sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "c1500_o150|sentence-transformers/all-MiniLM-L6-v2",
+    "c1500_o150|sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "c800_o80|sentence-transformers/all-MiniLM-L6-v2",
+    "c800_o80|sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  ],
+  "figures": [
+    "trajectory_iaea_priority_by_scope.png",
+    "heatmap_iaea_priority_m10.png"
+  ],
+  "tables": [
+    "summary_table_m10.csv",
+    "summary_table_m51.csv",
+    "summary_table_m10_m51_by_family.csv"
+  ]
+}

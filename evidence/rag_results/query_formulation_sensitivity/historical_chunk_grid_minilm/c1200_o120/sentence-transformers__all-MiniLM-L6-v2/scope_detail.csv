@@ -1,0 +1,1111 @@
+model,chunk_size,chunk_overlap,query_id,query,family,language,extra_docs,trial,top1_score,top10_mean_score,iaea_priority_top10,first_iaea_rank
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,0,0,0.3186507523059845,0.22795863449573517,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,0,0.3186507523059845,0.22795863449573517,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,1,0.3186507523059845,0.22897808253765106,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,2,0.3186507523059845,0.22897808253765106,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,3,0.3186507523059845,0.2306724488735199,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,4,0.3186507523059845,0.22795863449573517,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,5,0.3186507523059845,0.2282378375530243,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,6,0.3186507523059845,0.22795863449573517,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,7,0.3186507523059845,0.2293875515460968,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,8,0.3186507523059845,0.22925730049610138,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,5,9,0.3186507523059845,0.23076322674751282,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,0,0.3186507523059845,0.230686217546463,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,1,0.3186507523059845,0.23482060432434082,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,2,0.3186507523059845,0.22925730049610138,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,3,0.3186507523059845,0.23219212889671326,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,4,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,5,0.3186507523059845,0.2282378375530243,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,6,0.3186507523059845,0.2282378375530243,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,7,0.3186507523059845,0.22795863449573517,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,8,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,10,9,0.3186507523059845,0.23620648682117462,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,0,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,1,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,2,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,3,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,4,0.3186507523059845,0.23210136592388153,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,5,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,6,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,7,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,8,0.3186507523059845,0.2350529134273529,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,15,9,0.3186507523059845,0.2345685064792633,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,0,0.3186507523059845,0.23499257862567902,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,1,0.3186507523059845,0.23475880920886993,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,2,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,3,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,4,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,5,0.3186507523059845,0.23359207808971405,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,6,0.3186507523059845,0.2345816195011139,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,7,0.3186507523059845,0.2331826239824295,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,8,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,20,9,0.3186507523059845,0.2293875515460968,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,0,0.3186507523059845,0.23356366157531738,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,1,0.3186507523059845,0.23692376911640167,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,2,0.3186507523059845,0.23475880920886993,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,3,0.3186507523059845,0.23620648682117462,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,4,0.3186507523059845,0.23670551180839539,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,5,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,6,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,7,0.3186507523059845,0.23428840935230255,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,8,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,25,9,0.3186507523059845,0.23592638969421387,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,0,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,1,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,2,0.3186507523059845,0.2358979731798172,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,3,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,4,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,5,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,6,0.3186507523059845,0.23482060432434082,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,7,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,8,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,30,9,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,0,0.3186507523059845,0.23670551180839539,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,1,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,2,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,3,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,4,0.3186507523059845,0.23692376911640167,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,5,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,6,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,7,0.3186507523059845,0.23692376911640167,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,8,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,35,9,0.3186507523059845,0.23692376911640167,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,0,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,1,0.3186507523059845,0.23692376911640167,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,2,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,3,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,4,0.3186507523059845,0.2366306036710739,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,5,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,6,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,7,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,8,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,40,9,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,0,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,1,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,2,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,3,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,4,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,5,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,6,0.3186507523059845,0.2366306036710739,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,7,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,8,0.3186507523059845,0.24195095896720886,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,45,9,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,0,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,1,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,2,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,3,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,4,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,5,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,6,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,7,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,8,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,50,9,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,0,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,1,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,2,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,3,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,4,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,5,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,6,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,7,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,8,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_core,中子,baseline,zh,51,9,0.3186507523059845,0.24280807375907898,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,0,0,0.6124016046524048,0.4675292372703552,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,0,0.6124016046524048,0.46816807985305786,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,1,0.6124016046524048,0.5086561441421509,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,2,0.6124016046524048,0.4849333167076111,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,3,0.6124016046524048,0.46816807985305786,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,4,0.6124016046524048,0.48008713126182556,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,5,0.6124016046524048,0.4675292372703552,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,6,0.6124016046524048,0.4973483681678772,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,7,0.6124016046524048,0.5152378082275391,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,8,0.6124016046524048,0.5189857482910156,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,5,9,0.6124016046524048,0.4715217053890228,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,0,0.6124016046524048,0.5001736283302307,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,1,0.6124016046524048,0.5361665487289429,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,2,0.6124016046524048,0.5824410319328308,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,3,0.6124016046524048,0.5190819501876831,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,4,0.6124016046524048,0.5765848159790039,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,5,0.6124016046524048,0.5765848159790039,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,6,0.6124016046524048,0.505429744720459,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,7,0.6124016046524048,0.4900938868522644,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,8,0.6124016046524048,0.5765848159790039,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,10,9,0.6124016046524048,0.48429661989212036,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,0,0.6124016046524048,0.5823378562927246,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,1,0.6124016046524048,0.529077410697937,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,2,0.6124016046524048,0.5145129561424255,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,3,0.6124016046524048,0.4973483681678772,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,4,0.6124016046524048,0.524110734462738,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,5,0.6124016046524048,0.5272809863090515,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,6,0.6124016046524048,0.5136591196060181,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,7,0.6124016046524048,0.5221887230873108,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,8,0.6124016046524048,0.5411844253540039,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,15,9,0.6124016046524048,0.5345490574836731,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,0,0.6124016046524048,0.531113862991333,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,1,0.6124016046524048,0.5282658338546753,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,2,0.6124016046524048,0.5228129625320435,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,3,0.6124016046524048,0.5170770883560181,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,4,0.6124016046524048,0.5824410319328308,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,5,0.6124016046524048,0.5396076440811157,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,6,0.6124016046524048,0.5277257561683655,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,7,0.6124016046524048,0.5795252919197083,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,8,0.6124016046524048,0.5204276442527771,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,20,9,0.6124016046524048,0.5781118273735046,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,0,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,1,0.6124016046524048,0.5328834652900696,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,2,0.6124016046524048,0.5824410319328308,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,3,0.6124016046524048,0.5338867902755737,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,4,0.6124016046524048,0.5231496095657349,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,5,0.6124016046524048,0.579422116279602,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,6,0.6124016046524048,0.5440056920051575,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,7,0.6124016046524048,0.5765848159790039,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,8,0.6124016046524048,0.5331727266311646,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,25,9,0.6124016046524048,0.5795252919197083,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,0,0.6124016046524048,0.5205696225166321,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,1,0.6124016046524048,0.5302866101264954,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,2,0.6124016046524048,0.5823378562927246,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,3,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,4,0.6124016046524048,0.5389519929885864,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,5,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,6,0.6124016046524048,0.5824410319328308,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,7,0.6124016046524048,0.5795252919197083,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,8,0.6124016046524048,0.5493760704994202,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,30,9,0.6124016046524048,0.5411844253540039,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,0,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,1,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,2,0.6124016046524048,0.54085373878479,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,3,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,4,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,5,0.6124016046524048,0.5795252919197083,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,6,0.6124016046524048,0.579422116279602,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,7,0.6124016046524048,0.5795252919197083,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,8,0.6124016046524048,0.5338867902755737,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,35,9,0.6124016046524048,0.5781118273735046,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,0,0.6124016046524048,0.5795252919197083,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,1,0.6124016046524048,0.5795252919197083,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,2,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,3,0.6124016046524048,0.538689911365509,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,4,0.6124016046524048,0.5795252919197083,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,5,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,6,0.6124016046524048,0.5501352548599243,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,7,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,8,0.6124016046524048,0.5824410319328308,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,40,9,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,0,0.6124016046524048,0.5493760704994202,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,1,0.6124016046524048,0.5824410319328308,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,2,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,3,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,4,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,5,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,6,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,7,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,8,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,45,9,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,0,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,1,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,2,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,3,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,4,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,5,0.6124016046524048,0.5532783269882202,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,6,0.6124016046524048,0.5532783269882202,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,7,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,8,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,50,9,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,0,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,1,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,2,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,3,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,4,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,5,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,6,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,7,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,8,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_core,neutron,baseline,en,51,9,0.6124016046524048,0.5837513208389282,0.1,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,0,0,0.2825738787651062,0.21101036667823792,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,0,0.2825738787651062,0.2230473756790161,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,1,0.2825738787651062,0.24077916145324707,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,2,0.2825738787651062,0.21504724025726318,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,3,0.2825738787651062,0.22984842956066132,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,4,0.2825738787651062,0.21101036667823792,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,5,0.2825738787651062,0.2171688824892044,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,6,0.2825738787651062,0.23522913455963135,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,7,0.2825738787651062,0.21101036667823792,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,8,0.2825738787651062,0.21177783608436584,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,5,9,0.2825738787651062,0.24103128910064697,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,0,0.2825738787651062,0.23280267417430878,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,1,0.2825738787651062,0.22102931141853333,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,2,0.2825738787651062,0.21820351481437683,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,3,0.2825738787651062,0.21859702467918396,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,4,0.2825738787651062,0.21101036667823792,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,5,0.2825738787651062,0.22984842956066132,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,6,0.2825738787651062,0.23522913455963135,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,7,0.2825738787651062,0.23688550293445587,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,8,0.2825738787651062,0.21859702467918396,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,10,9,0.2825738787651062,0.23768344521522522,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,0,0.2825738787651062,0.23653487861156464,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,1,0.2825738787651062,0.24077916145324707,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,2,0.2825738787651062,0.2383250743150711,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,3,0.2825738787651062,0.22596535086631775,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,4,0.2825738787651062,0.23522913455963135,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,5,0.2825738787651062,0.22278201580047607,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,6,0.2825738787651062,0.23405417799949646,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,7,0.2825738787651062,0.2221449613571167,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,8,0.2825738787651062,0.23653487861156464,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,15,9,0.2825738787651062,0.22532682120800018,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,0,0.2825738787651062,0.2433321475982666,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,1,0.2825738787651062,0.24903671443462372,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,2,0.2825738787651062,0.2446252405643463,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,3,0.2825738787651062,0.2325633019208908,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,4,0.2825738787651062,0.24547620117664337,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,5,0.2825738787651062,0.24452729523181915,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,6,0.2825738787651062,0.23227012157440186,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,7,0.2825738787651062,0.23833301663398743,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,8,0.2825738787651062,0.2446252405643463,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,20,9,0.2825738787651062,0.21650592982769012,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,0,0.2825738787651062,0.2460819035768509,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,1,0.2825738787651062,0.23593652248382568,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,2,0.2825738787651062,0.2446252405643463,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,3,0.2825738787651062,0.24452729523181915,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,4,0.2825738787651062,0.23387141525745392,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,5,0.2825738787651062,0.24103128910064697,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,6,0.2825738787651062,0.24229197204113007,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,7,0.2825738787651062,0.24452729523181915,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,8,0.2825738787651062,0.2383110076189041,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,25,9,0.2825738787651062,0.24376563727855682,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,0,0.2825738787651062,0.24547620117664337,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,1,0.2825738787651062,0.24566540122032166,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,2,0.2825738787651062,0.23688550293445587,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,3,0.2825738787651062,0.2405848205089569,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,4,0.2825738787651062,0.24608981609344482,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,5,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,6,0.2825738787651062,0.24228402972221375,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,7,0.2825738787651062,0.24566540122032166,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,8,0.2825738787651062,0.24903671443462372,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,30,9,0.2825738787651062,0.2446252405643463,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,0,0.2825738787651062,0.24566540122032166,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,1,0.2825738787651062,0.24763813614845276,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,2,0.2825738787651062,0.2442333698272705,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,3,0.2825738787651062,0.24669548869132996,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,4,0.2825738787651062,0.2247467041015625,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,5,0.2825738787651062,0.24763813614845276,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,6,0.2825738787651062,0.2452969253063202,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,7,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,8,0.2825738787651062,0.2482438087463379,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,35,9,0.2825738787651062,0.2464350461959839,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,0,0.2825738787651062,0.2490287721157074,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,1,0.2825738787651062,0.2442333698272705,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,2,0.2825738787651062,0.2460819035768509,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,3,0.2825738787651062,0.2464350461959839,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,4,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,5,0.2825738787651062,0.2464350461959839,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,6,0.2825738787651062,0.24567337334156036,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,7,0.2825738787651062,0.2442333698272705,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,8,0.2825738787651062,0.2482438087463379,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,40,9,0.2825738787651062,0.2464350461959839,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,0,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,1,0.2825738787651062,0.24903671443462372,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,2,0.2825738787651062,0.2464350461959839,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,3,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,4,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,5,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,6,0.2825738787651062,0.2482438087463379,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,7,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,8,0.2825738787651062,0.2464350461959839,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,45,9,0.2825738787651062,0.24567337334156036,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,0,0.2825738787651062,0.2464350461959839,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,1,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,2,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,3,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,4,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,5,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,6,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,7,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,8,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,50,9,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,0,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,1,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,2,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,3,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,4,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,5,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,6,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,7,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,8,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_zh_phrase,中子测量电流,baseline,zh,51,9,0.2825738787651062,0.24921837449073792,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,0,0,0.608095645904541,0.5508915185928345,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,0,0.6103627681732178,0.5636995434761047,0.7,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,1,0.608095645904541,0.5591009259223938,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,2,0.608095645904541,0.5508915185928345,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,3,0.6411612033843994,0.5981714725494385,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,4,0.608095645904541,0.5613887906074524,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,5,0.608095645904541,0.5613887906074524,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,6,0.608095645904541,0.5508915185928345,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,7,0.608095645904541,0.5684740543365479,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,8,0.7212375402450562,0.5734304785728455,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,5,9,0.608095645904541,0.5684740543365479,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,0,0.7212375402450562,0.5734304785728455,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,1,0.6103627681732178,0.575335681438446,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,2,0.608095645904541,0.5613887906074524,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,3,0.608095645904541,0.5508915185928345,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,4,0.608095645904541,0.5508915185928345,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,5,0.6103627681732178,0.5636995434761047,0.7,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,6,0.608095645904541,0.5615701079368591,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,7,0.608095645904541,0.5588551759719849,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,8,0.7212375402450562,0.5734304785728455,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,10,9,0.608095645904541,0.5684740543365479,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,0,0.7212375402450562,0.589310348033905,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,1,0.7212375402450562,0.5817157626152039,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,2,0.608095645904541,0.5613887906074524,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,3,0.608095645904541,0.5588551759719849,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,4,0.7212375402450562,0.5812058448791504,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,5,0.6103627681732178,0.5649118423461914,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,6,0.6411612033843994,0.6026861667633057,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,7,0.7212375402450562,0.6142240762710571,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,8,0.7212374806404114,0.5879939198493958,0.4,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,15,9,0.6411612033843994,0.6026861667633057,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,0,0.608095645904541,0.560131847858429,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,1,0.6411612033843994,0.5979772806167603,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,2,0.6103627681732178,0.5790783762931824,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,3,0.608095645904541,0.5535857677459717,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,4,0.7212374210357666,0.5858235955238342,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,5,0.6103627681732178,0.5638808012008667,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,6,0.6411612033843994,0.5981714725494385,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,7,0.7212375402450562,0.6161203980445862,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,8,0.7212375402450562,0.5833761096000671,0.6,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,20,9,0.6103627681732178,0.5710662603378296,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,0,0.7212375402450562,0.5923332571983337,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,1,0.7212375402450562,0.6184664368629456,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,2,0.7212375402450562,0.5923332571983337,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,3,0.7212375402450562,0.5930529832839966,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,4,0.7212375402450562,0.6163197755813599,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,5,0.7212375402450562,0.5817157626152039,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,6,0.7212375402450562,0.5930529832839966,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,7,0.6411612033843994,0.6031365990638733,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,8,0.7212375402450562,0.6189220547676086,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,25,9,0.608095645904541,0.5731653571128845,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,0,0.608095645904541,0.5603131651878357,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,1,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,2,0.7212375402450562,0.6189220547676086,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,3,0.7212375402450562,0.6186658143997192,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,4,0.7212375402450562,0.6186658143997192,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,5,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,6,0.6103627681732178,0.575335681438446,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,7,0.7212375402450562,0.6156699657440186,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,8,0.7212375402450562,0.6165701150894165,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,30,9,0.7212375402450562,0.6163197755813599,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,0,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,1,0.7212375402450562,0.6159261465072632,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,2,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,3,0.7212375402450562,0.6186658143997192,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,4,0.7212375402450562,0.5952233076095581,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,5,0.6103627681732178,0.5715762376785278,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,6,0.6411612033843994,0.6022363305091858,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,7,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,8,0.6411612033843994,0.6000838279724121,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,35,9,0.7212375402450562,0.6189220547676086,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,0,0.7212375402450562,0.6161203980445862,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,1,0.7212375402450562,0.5956553220748901,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,2,0.7212375402450562,0.6161203980445862,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,3,0.7212375402450562,0.6186658143997192,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,4,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,5,0.7212375402450562,0.6163197755813599,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,6,0.7212375402450562,0.6163197755813599,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,7,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,8,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,40,9,0.6411612033843994,0.600534200668335,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,0,0.7212375402450562,0.6159261465072632,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,1,0.7212375402450562,0.5985192060470581,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,2,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,3,0.6411612033843994,0.6031365990638733,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,4,0.6411612033843994,0.6052322387695312,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,5,0.7212375402450562,0.5952233076095581,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,6,0.7212375402450562,0.5985192060470581,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,7,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,8,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,45,9,0.7212375402450562,0.6163197755813599,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,0,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,1,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,2,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,3,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,4,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,5,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,6,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,7,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,8,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,50,9,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,0,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,1,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,2,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,3,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,4,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,5,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,6,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,7,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,8,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,baseline_en_phrase,neutron measurement current,baseline,en,51,9,0.7212375402450562,0.6191161870956421,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,0,0,0.5773614645004272,0.5179775953292847,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,0,0.5773614645004272,0.5179775953292847,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,1,0.5773614645004272,0.5179775953292847,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,2,0.5773614645004272,0.527132511138916,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,3,0.5773614645004272,0.5184878706932068,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,4,0.5773614645004272,0.5190574526786804,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,5,0.5773614645004272,0.5218406915664673,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,6,0.5773614645004272,0.5179775953292847,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,7,0.5773614645004272,0.5360774993896484,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,8,0.5773614645004272,0.5360774993896484,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,5,9,0.5773614645004272,0.5313556790351868,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,0,0.5773614645004272,0.5283321142196655,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,1,0.5773614645004272,0.5423513650894165,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,2,0.5814653635025024,0.5461792349815369,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,3,0.5814653635025024,0.5410646796226501,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,4,0.5773614645004272,0.523352861404419,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,5,0.5773614645004272,0.5300987362861633,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,6,0.5773614645004272,0.5195677876472473,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,7,0.5773614645004272,0.5204982757568359,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,8,0.5773614645004272,0.5330589413642883,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,10,9,0.5814653635025024,0.5376611948013306,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,0,0.5773614645004272,0.5213178396224976,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,1,0.5814653635025024,0.5517934560775757,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,2,0.5814653635025024,0.5376611948013306,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,3,0.5773614645004272,0.5348072052001953,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,4,0.5773614645004272,0.5257914066314697,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,5,0.5773614645004272,0.5376176834106445,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,6,0.5814653635025024,0.5479450821876526,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,7,0.5773614645004272,0.5362427234649658,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,8,0.5773614645004272,0.5294402837753296,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,15,9,0.5814653635025024,0.5512533187866211,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,0,0.5773614645004272,0.538165807723999,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,1,0.5773614645004272,0.5474104881286621,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,2,0.5773614645004272,0.5379449129104614,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,3,0.5814653635025024,0.540982723236084,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,4,0.5773614645004272,0.5387829542160034,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,5,0.5773614645004272,0.5428915023803711,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,6,0.5773614645004272,0.535539448261261,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,7,0.5773614645004272,0.5387829542160034,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,8,0.5773614645004272,0.5281317830085754,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,20,9,0.5773614645004272,0.5328459739685059,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,0,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,1,0.5814653635025024,0.5479450821876526,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,2,0.5814653635025024,0.554959237575531,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,3,0.5773614645004272,0.5331894159317017,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,4,0.5814653635025024,0.5404885411262512,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,5,0.5814653635025024,0.5484852194786072,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,6,0.5773614645004272,0.5443171262741089,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,7,0.5773614645004272,0.5326967239379883,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,8,0.5814653635025024,0.5532189607620239,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,25,9,0.5814653635025024,0.5505462884902954,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,0,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,1,0.5814653635025024,0.5461792349815369,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,2,0.5814653635025024,0.5532189607620239,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,3,0.5814653635025024,0.5465195178985596,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,4,0.5814653635025024,0.5536996722221375,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,5,0.5814653635025024,0.5517934560775757,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,6,0.5814653635025024,0.5517934560775757,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,7,0.5814653635025024,0.5432680249214172,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,8,0.5773614645004272,0.5428915023803711,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,30,9,0.5814653635025024,0.5474530458450317,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,0,0.5814653635025024,0.5516510605812073,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,1,0.5773614645004272,0.5443171262741089,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,2,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,3,0.5814653635025024,0.5516510605812073,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,4,0.5814653635025024,0.554959237575531,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,5,0.5773614645004272,0.5490431785583496,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,6,0.5814653635025024,0.5516510605812073,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,7,0.5773614645004272,0.5490431785583496,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,8,0.5773614645004272,0.5476176142692566,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,35,9,0.5814653635025024,0.554959237575531,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,0,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,1,0.5814653635025024,0.5507612824440002,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,2,0.5814653635025024,0.5518659949302673,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,3,0.5773614645004272,0.5490431785583496,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,4,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,5,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,6,0.5814653635025024,0.5516510605812073,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,7,0.5814653635025024,0.554959237575531,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,8,0.5773614645004272,0.5490431785583496,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,40,9,0.5814653635025024,0.5461792349815369,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,0,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,1,0.5773614645004272,0.5490431785583496,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,2,0.5814653635025024,0.5517934560775757,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,3,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,4,0.5814653635025024,0.5507612824440002,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,5,0.5814653635025024,0.5486407279968262,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,6,0.5773614645004272,0.5490431785583496,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,7,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,8,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,45,9,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,0,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,1,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,2,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,3,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,4,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,5,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,6,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,7,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,8,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,50,9,0.5814653635025024,0.5516510605812073,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,0,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,1,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,2,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,3,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,4,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,5,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,6,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,7,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,8,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_en,neutron current measurement repeated spike events,observation_derived,en,51,9,0.5814653635025024,0.5556232333183289,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,0,0,0.25924092531204224,0.20288582146167755,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,0,0.25924092531204224,0.20700570940971375,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,1,0.2714090645313263,0.22643205523490906,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,2,0.25924092531204224,0.2050285041332245,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,3,0.25924092531204224,0.2045581340789795,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,4,0.25924092531204224,0.2244376838207245,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,5,0.25924092531204224,0.20700570940971375,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,6,0.25924092531204224,0.21530406177043915,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,7,0.25924092531204224,0.20740553736686707,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,8,0.2714090645313263,0.2242765724658966,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,5,9,0.2714090645313263,0.2285715639591217,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,0,0.25924092531204224,0.22974085807800293,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,1,0.25924092531204224,0.22060570120811462,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,2,0.2595795691013336,0.23197154700756073,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,3,0.25924092531204224,0.20325259864330292,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,4,0.25924092531204224,0.2232595682144165,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,5,0.25924092531204224,0.2170652449131012,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,6,0.25924092531204224,0.20633427798748016,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,7,0.25924092531204224,0.22700145840644836,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,8,0.25924092531204224,0.21815812587738037,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,10,9,0.2595795691013336,0.22844591736793518,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,0,0.25924092531204224,0.2230692207813263,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,1,0.2714090645313263,0.23020143806934357,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,2,0.25924092531204224,0.23192135989665985,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,3,0.25924092531204224,0.21409031748771667,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,4,0.2595795691013336,0.22941339015960693,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,5,0.2714090645313263,0.22765834629535675,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,6,0.2595795691013336,0.2285836637020111,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,7,0.25924092531204224,0.2339797019958496,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,8,0.25924092531204224,0.20559978485107422,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,15,9,0.25924092531204224,0.2260984480381012,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,0,0.2595795691013336,0.23824787139892578,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,1,0.2714090645313263,0.23526111245155334,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,2,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,3,0.25924092531204224,0.23054158687591553,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,4,0.2595795691013336,0.23303580284118652,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,5,0.2714090645313263,0.22942109405994415,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,6,0.25924092531204224,0.22825685143470764,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,7,0.2595795691013336,0.2285836637020111,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,8,0.2714090645313263,0.23104949295520782,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,20,9,0.25924092531204224,0.23206713795661926,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,0,0.25924092531204224,0.22284655272960663,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,1,0.2714090645313263,0.2412097454071045,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,2,0.2595795691013336,0.23466365039348602,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,3,0.2595795691013336,0.22160883247852325,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,4,0.25924092531204224,0.2341257780790329,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,5,0.25924092531204224,0.2341257780790329,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,6,0.2595795691013336,0.2238359898328781,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,7,0.2714090645313263,0.24124009907245636,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,8,0.25924092531204224,0.22700145840644836,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,25,9,0.2595795691013336,0.23618920147418976,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,0,0.25924092531204224,0.22529134154319763,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,1,0.2595795691013336,0.22918513417243958,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,2,0.2714090645313263,0.24332456290721893,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,3,0.2595795691013336,0.23229670524597168,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,4,0.2714090645313263,0.231277734041214,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,5,0.2714090645313263,0.2328374832868576,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,6,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,7,0.2595795691013336,0.22479446232318878,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,8,0.2595795691013336,0.23627880215644836,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,30,9,0.25924092531204224,0.22784948348999023,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,0,0.2714090645313263,0.2326122224330902,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,1,0.2714090645313263,0.2338540107011795,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,2,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,3,0.2714090645313263,0.23943081498146057,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,4,0.2595795691013336,0.2295173704624176,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,5,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,6,0.2714090645313263,0.23769131302833557,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,7,0.2714090645313263,0.2373463213443756,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,8,0.2714090645313263,0.24124009907245636,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,35,9,0.2714090645313263,0.24332456290721893,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,0,0.2714090645313263,0.23943081498146057,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,1,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,2,0.2714090645313263,0.24158379435539246,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,3,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,4,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,5,0.2595795691013336,0.23824787139892578,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,6,0.2714090645313263,0.24158379435539246,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,7,0.2714090645313263,0.23943081498146057,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,8,0.2595795691013336,0.23824787139892578,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,40,9,0.2595795691013336,0.23824787139892578,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,0,0.2714090645313263,0.23806564509868622,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,1,0.2714090645313263,0.24158379435539246,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,2,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,3,0.2714090645313263,0.24332456290721893,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,4,0.2714090645313263,0.23812182247638702,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,5,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,6,0.2714090645313263,0.23943081498146057,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,7,0.2595795691013336,0.23824787139892578,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,8,0.2714090645313263,0.23943081498146057,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,45,9,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,0,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,1,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,2,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,3,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,4,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,5,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,6,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,7,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,8,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,50,9,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,0,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,1,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,2,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,3,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,4,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,5,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,6,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,7,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,8,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_spike_zh,中子电流测量重复尖峰事件,observation_derived,zh,51,9,0.2714090645313263,0.24352702498435974,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,0,0,0.5664257407188416,0.5166586637496948,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,0,0.5664257407188416,0.5376383662223816,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,1,0.5664257407188416,0.5376383662223816,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,2,0.5664257407188416,0.5182132720947266,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,3,0.5664257407188416,0.5166586637496948,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,4,0.5664257407188416,0.5224710702896118,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,5,0.5664257407188416,0.5222797393798828,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,6,0.5664257407188416,0.5209285020828247,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,7,0.5778768062591553,0.5346089601516724,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,8,0.5664257407188416,0.5323692560195923,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,5,9,0.5664257407188416,0.5236997008323669,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,0,0.5664257407188416,0.5376383662223816,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,1,0.5664257407188416,0.534960150718689,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,2,0.5664257407188416,0.5282022953033447,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,3,0.5664257407188416,0.5302173495292664,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,4,0.5664257407188416,0.5209285020828247,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,5,0.5664257407188416,0.5208391547203064,0.7,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,6,0.5778768062591553,0.5397990942001343,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,7,0.5664257407188416,0.5323385000228882,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,8,0.5664257407188416,0.5376383662223816,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,10,9,0.5664257407188416,0.5200733542442322,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,0,0.5778768062591553,0.5441173911094666,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,1,0.5664257407188416,0.5411091446876526,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,2,0.5664257407188416,0.5334475040435791,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,3,0.5664257407188416,0.5306993126869202,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,4,0.5664257407188416,0.5334475040435791,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,5,0.5664257407188416,0.5269225239753723,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,6,0.5664257407188416,0.5310640335083008,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,7,0.5664257407188416,0.5291250348091125,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,8,0.5664257407188416,0.5390528440475464,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,15,9,0.5778768062591553,0.5416666865348816,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,0,0.5664257407188416,0.5282596349716187,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,1,0.5664257407188416,0.5409706830978394,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,2,0.5778768062591553,0.5445955991744995,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,3,0.5664257407188416,0.5389143228530884,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,4,0.5664257407188416,0.5396252870559692,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,5,0.5664257407188416,0.5296829342842102,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,6,0.5778768062591553,0.5377329587936401,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,7,0.5778768062591553,0.5422834157943726,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,8,0.5664257407188416,0.5274365544319153,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,20,9,0.5778768062591553,0.5445955991744995,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,0,0.5664257407188416,0.5411091446876526,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,1,0.5664257407188416,0.5352923274040222,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,2,0.5664257407188416,0.5365063548088074,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,3,0.5664257407188416,0.5396252870559692,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,4,0.5778768062591553,0.5467926263809204,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,5,0.5778768062591553,0.540018618106842,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,6,0.5664257407188416,0.540709912776947,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,7,0.5778768062591553,0.5461564660072327,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,8,0.5664257407188416,0.5414610505104065,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,25,9,0.5664257407188416,0.5391337871551514,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,0,0.5664257407188416,0.5409706830978394,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,1,0.5664257407188416,0.5351538062095642,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,2,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,3,0.5664257407188416,0.5402317047119141,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,4,0.5778768062591553,0.5444692373275757,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,5,0.5664257407188416,0.5396755933761597,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,6,0.5664257407188416,0.534742534160614,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,7,0.5664257407188416,0.5398448705673218,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,8,0.5778768062591553,0.5404128432273865,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,30,9,0.5664257407188416,0.5361741781234741,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,0,0.5778768062591553,0.5467926263809204,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,1,0.5778768062591553,0.5472708940505981,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,2,0.5664257407188416,0.5409294366836548,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,3,0.5664257407188416,0.5374046564102173,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,4,0.5664257407188416,0.5419393181800842,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,5,0.5664257407188416,0.5421434640884399,0.3,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,6,0.5664257407188416,0.5419393181800842,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,7,0.5664257407188416,0.5365063548088074,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,8,0.5778768062591553,0.5455971956253052,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,35,9,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,0,0.5778768062591553,0.5454587340354919,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,1,0.5778768062591553,0.5465731024742126,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,2,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,3,0.5664257407188416,0.5360593199729919,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,4,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,5,0.5664257407188416,0.5419393181800842,0.2,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,6,0.5778768062591553,0.5454587340354919,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,7,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,8,0.5778768062591553,0.5465731024742126,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,40,9,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,0,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,1,0.5778768062591553,0.5465731024742126,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,2,0.5778768062591553,0.5467926263809204,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,3,0.5778768062591553,0.5472708940505981,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,4,0.5778768062591553,0.5466541051864624,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,5,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,6,0.5778768062591553,0.5466541051864624,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,7,0.5778768062591553,0.5466541051864624,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,8,0.5778768062591553,0.5466541051864624,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,45,9,0.5778768062591553,0.5465731024742126,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,0,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,1,0.5778768062591553,0.5466541051864624,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,2,0.5778768062591553,0.5465731024742126,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,3,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,4,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,5,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,6,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,7,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,8,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,50,9,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,0,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,1,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,2,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,3,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,4,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,5,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,6,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,7,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,8,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_en,neutron current measurement synchronized zero-value dropout across channels,observation_derived,en,51,9,0.5778768062591553,0.5475090146064758,0.1,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,0,0,0.2799127995967865,0.2535555958747864,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,0,0.3168066740036011,0.2943044602870941,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,1,0.2799127995967865,0.2578534781932831,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,2,0.2799127995967865,0.2535555958747864,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,3,0.2799127995967865,0.2535555958747864,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,4,0.2799127995967865,0.2556822896003723,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,5,0.2799127995967865,0.2535555958747864,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,6,0.2799127995967865,0.25768929719924927,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,7,0.2799127995967865,0.2586030066013336,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,8,0.2799127995967865,0.2586030066013336,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,5,9,0.2799127995967865,0.2535555958747864,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,0,0.3037908971309662,0.28880706429481506,0.2,9
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,1,0.2799127995967865,0.2656414806842804,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,2,0.2799127995967865,0.2586030066013336,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,3,0.2799127995967865,0.2586030066013336,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,4,0.2799127995967865,0.2586030066013336,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,5,0.3037908971309662,0.27935582399368286,0.5,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,6,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,7,0.3037908971309662,0.28880706429481506,0.2,9
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,8,0.2799127995967865,0.26189976930618286,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,10,9,0.3360607624053955,0.30885833501815796,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,0,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,1,0.3168066740036011,0.2943044602870941,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,2,0.3037908971309662,0.2817949652671814,0.4,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,3,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,4,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,5,0.3168066740036011,0.2899133265018463,0.2,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,6,0.2846972644329071,0.26533398032188416,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,7,0.2799127995967865,0.25720837712287903,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,8,0.3168066740036011,0.2889978885650635,0.2,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,15,9,0.3168066740036011,0.2943044602870941,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,0,0.2846972644329071,0.26808634400367737,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,1,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,2,0.3037908971309662,0.28880706429481506,0.2,9
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,3,0.3168066740036011,0.2966877222061157,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,4,0.2799127995967865,0.2643436789512634,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,5,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,6,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,7,0.3360607624053955,0.30885833501815796,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,8,0.3360607624053955,0.31061190366744995,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,20,9,0.2799127995967865,0.26805853843688965,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,0,0.3168066740036011,0.2943044602870941,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,1,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,2,0.3360607624053955,0.31061190366744995,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,3,0.3037908971309662,0.2807002067565918,0.4,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,4,0.3168066740036011,0.2966877222061157,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,5,0.3168066740036011,0.2966877222061157,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,6,0.3360607624053955,0.31174272298812866,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,7,0.3168066740036011,0.2889978885650635,0.2,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,8,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,25,9,0.2799127995967865,0.2598884701728821,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,0,0.3360607624053955,0.31061190366744995,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,1,0.3168066740036011,0.2966877222061157,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,2,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,3,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,4,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,5,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,6,0.3360607624053955,0.31061190366744995,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,7,0.3360607624053955,0.31061190366744995,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,8,0.3168066740036011,0.2899133265018463,0.2,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,30,9,0.3360607624053955,0.31061190366744995,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,0,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,1,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,2,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,3,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,4,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,5,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,6,0.3360607624053955,0.31174272298812866,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,7,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,8,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,35,9,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,0,0.3360607624053955,0.31061190366744995,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,1,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,2,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,3,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,4,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,5,0.3360607624053955,0.30979228019714355,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,6,0.3360607624053955,0.30885833501815796,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,7,0.3168066740036011,0.29430752992630005,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,8,0.3168066740036011,0.29430752992630005,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,40,9,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,0,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,1,0.3360607624053955,0.31061190366744995,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,2,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,3,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,4,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,5,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,6,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,7,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,8,0.3360607624053955,0.312137246131897,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,45,9,0.3168066740036011,0.29430752992630005,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,0,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,1,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,2,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,3,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,4,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,5,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,6,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,7,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,8,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,50,9,0.3168066740036011,0.2966877222061157,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,0,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,1,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,2,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,3,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,4,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,5,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,6,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,7,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,8,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_zero_zh,中子电流测量跨通道同步零值闪断,observation_derived,zh,51,9,0.3360607624053955,0.3124895989894867,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,0,0,0.5262259840965271,0.4884430468082428,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,0,0.5262259840965271,0.48869672417640686,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,1,0.5337973237037659,0.49493542313575745,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,2,0.5410298705101013,0.5072095394134521,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,3,0.5262259840965271,0.4884430468082428,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,4,0.5262259840965271,0.4953002333641052,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,5,0.5342225432395935,0.5024735331535339,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,6,0.5262259840965271,0.4884430468082428,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,7,0.5262259840965271,0.4884430468082428,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,8,0.5262259840965271,0.4898008406162262,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,5,9,0.5262259840965271,0.4884430468082428,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,0,0.5410298705101013,0.5189428329467773,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,1,0.5262259840965271,0.4884430468082428,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,2,0.5262259840965271,0.5004955530166626,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,3,0.5342225432395935,0.4975207448005676,0.7,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,4,0.5933111906051636,0.5361151099205017,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,5,0.5933111906051636,0.5316632390022278,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,6,0.5262259840965271,0.4898192286491394,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,7,0.5342225432395935,0.49496936798095703,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,8,0.5337973237037659,0.497433602809906,0.7,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,10,9,0.5262259840965271,0.4951706528663635,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,0,0.5337973237037659,0.49994978308677673,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,1,0.5933111906051636,0.5405063629150391,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,2,0.5933111906051636,0.5389646887779236,0.2,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,3,0.5262259840965271,0.49508780241012573,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,4,0.5262259840965271,0.496370404958725,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,5,0.5262259840965271,0.506606936454773,0.4,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,6,0.5262259840965271,0.49238157272338867,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,7,0.5342225432395935,0.510470449924469,0.4,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,8,0.5410298705101013,0.5096870064735413,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,15,9,0.5342225432395935,0.5081650614738464,0.5,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,0,0.5262259840965271,0.49826788902282715,0.6,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,1,0.5933111906051636,0.5327039957046509,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,2,0.5410298705101013,0.5180471539497375,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,3,0.5933111906051636,0.5373553037643433,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,4,0.5410298705101013,0.5140613317489624,0.2,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,5,0.5342225432395935,0.5131609439849854,0.4,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,6,0.5933111906051636,0.5349443554878235,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,7,0.5342225432395935,0.49496936798095703,0.8,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,8,0.5410298705101013,0.5124286413192749,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,20,9,0.5933111906051636,0.5336617231369019,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,0,0.5933111906051636,0.5392662286758423,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,1,0.5933111906051636,0.5387684106826782,0.2,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,2,0.5933111906051636,0.5389683842658997,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,3,0.5933111906051636,0.5374894142150879,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,4,0.5933111906051636,0.5366954207420349,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,5,0.5262259840965271,0.502720832824707,0.5,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,6,0.5933111906051636,0.5373589396476746,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,7,0.5342225432395935,0.5165436267852783,0.2,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,8,0.5933111906051636,0.5399686098098755,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,25,9,0.5933111906051636,0.5373978018760681,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,0,0.5933111906051636,0.5405063629150391,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,1,0.5933111906051636,0.5378530621528625,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,2,0.5933111906051636,0.539135754108429,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,3,0.5933111906051636,0.5413392186164856,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,4,0.5337973237037659,0.5118594765663147,0.3,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,5,0.5933111906051636,0.5337443351745605,0.2,5
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,6,0.5933111906051636,0.5381780862808228,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,7,0.5933111906051636,0.5413392186164856,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,8,0.5410298705101013,0.5236369371414185,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,30,9,0.5342225432395935,0.5050678849220276,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,0,0.5933111906051636,0.5378530621528625,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,1,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,2,0.5933111906051636,0.5392236709594727,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,3,0.5410298705101013,0.5214134454727173,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,4,0.5410298705101013,0.5204372406005859,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,5,0.5933111906051636,0.5399260520935059,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,6,0.5933111906051636,0.5384333729743958,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,7,0.5933111906051636,0.5405489206314087,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,8,0.5933111906051636,0.5413392186164856,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,35,9,0.5933111906051636,0.536699116230011,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,0,0.5410298705101013,0.5236369371414185,0.2,4
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,1,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,2,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,3,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,4,0.5933111906051636,0.5405489206314087,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,5,0.5933111906051636,0.5351575016975403,0.2,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,6,0.5933111906051636,0.5366565585136414,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,7,0.5933111906051636,0.5405063629150391,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,8,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,40,9,0.5933111906051636,0.5413392186164856,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,0,0.5933111906051636,0.5399260520935059,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,1,0.5933111906051636,0.5397297739982605,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,2,0.5933111906051636,0.5376567840576172,0.1,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,3,0.5933111906051636,0.5390273928642273,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,4,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,5,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,6,0.5933111906051636,0.5405489206314087,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,7,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,8,0.5933111906051636,0.5413392186164856,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,45,9,0.5933111906051636,0.5384470820426941,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,0,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,1,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,2,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,3,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,4,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,5,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,6,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,7,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,8,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,50,9,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,0,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,1,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,2,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,3,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,4,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,5,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,6,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,7,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,8,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_en,neutron current measurement highly synchronized channels without time lag,observation_derived,en,51,9,0.5933111906051636,0.54182368516922,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,0,0,0.289313942193985,0.26438674330711365,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,0,0.36025118827819824,0.3101174831390381,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,1,0.3035067915916443,0.2725782096385956,0.7,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,2,0.289313942193985,0.26438674330711365,1.0,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,3,0.289313942193985,0.2672742009162903,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,4,0.289313942193985,0.267770916223526,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,5,0.2927127182483673,0.27699995040893555,0.6,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,6,0.289313942193985,0.26615434885025024,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,7,0.32834431529045105,0.2961282730102539,0.3,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,8,0.289313942193985,0.2675575315952301,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,5,9,0.3035067915916443,0.2822166979312897,0.4,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,0,0.2927127182483673,0.2786819338798523,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,1,0.3035067915916443,0.28361257910728455,0.4,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,2,0.2927127182483673,0.2786819338798523,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,3,0.2927127182483673,0.27898725867271423,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,4,0.32834431529045105,0.30158939957618713,0.1,9
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,5,0.2927127182483673,0.2773807942867279,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,6,0.2927127182483673,0.27898725867271423,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,7,0.36025118827819824,0.3101174831390381,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,8,0.289313942193985,0.2688665986061096,0.9,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,10,9,0.3035067915916443,0.28361257910728455,0.4,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,0,0.32834431529045105,0.29811039566993713,0.2,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,1,0.36025118827819824,0.3101174831390381,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,2,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,3,0.32834431529045105,0.2980661392211914,0.3,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,4,0.289313942193985,0.26949846744537354,0.8,1
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,5,0.36025118827819824,0.3102698028087616,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,6,0.3035067915916443,0.2725782096385956,0.7,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,7,0.2927127182483673,0.2773807942867279,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,8,0.2927127182483673,0.2831278443336487,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,15,9,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,0,0.32834431529045105,0.29827800393104553,0.1,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,1,0.36025118827819824,0.3102698028087616,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,2,0.36025118827819824,0.3101174831390381,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,3,0.3035067915916443,0.2822166979312897,0.4,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,4,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,5,0.2927127182483673,0.2786819338798523,0.5,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,6,0.3035067915916443,0.2812936007976532,0.4,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,7,0.2927127182483673,0.2788597047328949,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,8,0.32834431529045105,0.29914554953575134,0.3,7
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,20,9,0.36025118827819824,0.3102698028087616,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,0,0.2927127182483673,0.2831278443336487,0.3,3
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,1,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,2,0.36025118827819824,0.3102698028087616,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,3,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,4,0.2927127182483673,0.27898725867271423,0.4,2
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,5,0.32834431529045105,0.2970118522644043,0.3,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,6,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,7,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,8,0.36025118827819824,0.3101174831390381,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,25,9,0.36025118827819824,0.3102698028087616,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,0,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,1,0.32834431529045105,0.30053508281707764,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,2,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,3,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,4,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,5,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,6,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,7,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,8,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,30,9,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,0,0.32834431529045105,0.2970118522644043,0.3,6
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,1,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,2,0.32834431529045105,0.30158939957618713,0.1,9
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,3,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,4,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,5,0.36025118827819824,0.3102698028087616,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,6,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,7,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,8,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,35,9,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,0,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,1,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,2,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,3,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,4,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,5,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,6,0.36025118827819824,0.3102698028087616,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,7,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,8,0.36025118827819824,0.3176702857017517,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,40,9,0.32834431529045105,0.30053508281707764,0.1,8
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,0,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,1,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,2,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,3,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,4,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,5,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,6,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,7,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,8,0.32834431529045105,0.30158939957618713,0.1,9
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,45,9,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,0,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,1,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,2,0.36025118827819824,0.31134921312332153,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,3,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,4,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,5,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,6,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,7,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,8,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,50,9,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,0,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,1,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,2,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,3,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,4,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,5,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,6,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,7,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,8,0.36025118827819824,0.31808942556381226,0.0,11
+sentence-transformers/all-MiniLM-L6-v2,1200,120,obs_sync_zh,中子电流测量高同步通道无时间滞后,observation_derived,zh,51,9,0.36025118827819824,0.31808942556381226,0.0,11
