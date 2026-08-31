@@ -1,12 +1,14 @@
 
-\subsection{Operational definitions and auditable interface}
+\subsubsection{Operational definitions and auditable interface}
 \label{sec:operational-definitions}
 Let $\mathbf{X}=\{x_{t,c}\}$ denote a chronologically sorted multichannel record, where $t$ indexes the sample and $c$ indexes the detector channel. The system does not ask the planner to estimate these quantities. Deterministic probes compute them and write their results to the workspace blackboard; the LLM only selects registered probes and organizes the resulting evidence.
 
 For each channel, the anomaly probe uses a centered rolling window $W_t$ of 31 samples. Its local baseline and robust local deviation are
 \begin{equation}
-m_{t,c}=\operatorname{median}_{\tau\in W_t}x_{\tau,c}, \qquad
-d_{t,c}=\operatorname{median}_{\tau\in W_t}\left|x_{\tau,c}-m_{\tau,c}\right|.
+\begin{aligned}
+m_{t,c}&=\operatorname{median}_{\tau\in W_t}x_{\tau,c},\\
+d_{t,c}&=\operatorname{median}_{\tau\in W_t}\left|x_{\tau,c}-m_{\tau,c}\right|.
+\end{aligned}
 \label{eq:rolling-mad}
 \end{equation}
 The implementation marks a sample as a spike candidate only when both a local and a global-amplitude condition hold:
@@ -23,14 +25,22 @@ Contiguous positive samples are merged into one spike episode. An isolated zero 
 
 For a channel pair $(i,j)$, the discovery probe computes Pearson correlation
 \begin{equation}
-r_{ij}=\frac{\sum_t(x_{t,i}-\bar{x}_i)(x_{t,j}-\bar{x}_j)}
+\begin{aligned}
+r_{ij}&=\frac{\sum_t(x_{t,i}-\bar{x}_i)(x_{t,j}-\bar{x}_j)}
 {\sqrt{\sum_t(x_{t,i}-\bar{x}_i)^2}\sqrt{\sum_t(x_{t,j}-\bar{x}_j)^2}}.
+\end{aligned}
 \label{eq:pearson}
 \end{equation}
 The current implementation flags near-redundancy at $r_{ij}\geq0.99$ and strong co-movement for $0.85\leq r_{ij}<0.99$. Together with lag, extremes, and spatial-snapshot outputs, these quantities form a structured alert interface
 \begin{equation}
-\mathbf{a}=g(\mathbf{X})=\{\mathbf{a}_{\mathrm{health}},\mathbf{a}_{\mathrm{morph}},
-\mathbf{a}_{\mathrm{anom}},\mathbf{a}_{\mathrm{lag}},\mathbf{a}_{\mathrm{spatial}}\},
+\begin{aligned}
+\mathbf{a}=g(\mathbf{X})=\{&\mathbf{a}_{\mathrm{health}},\mathbf{a}_{\mathrm{morph}},
+\mathbf{a}_{\mathrm{anom}},\\
+&\mathbf{a}_{\mathrm{lag}},\mathbf{a}_{\mathrm{spatial}}\},
+\end{aligned}
 \label{eq:alert-summary}
 \end{equation}
 which is passed to retrieval. This separation prevents free-form text from becoming the sole interface between measurement analysis and manual-grounded explanation.
+
+\subsubsection{Observation packet, condition report, and structured alert summary}
+Each completed probe contributes to an observation packet that records the analysis scope, the registered probe and its operational parameters, observed signal events, and relevant uncertainty or data-health cues. The human-readable condition report preserves these results in chronological form for audit and engineering inspection. Its compact alert summary retains only the fields needed downstream---for example, data-health indicators, morphology, spike and zero summaries, co-movement, lag, extremes, and snapshot cues. This report/summary separation preserves auditability without forcing retrieval to operate on a long, unstructured narrative; neither artifact is a fault label or a confirmed diagnosis.

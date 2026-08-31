@@ -2,10 +2,11 @@
 %% Revision draft: evidence-constrained diagnostic workflow
 %% This file leaves main.tex and sections/ untouched.
 %% =====================================================================
-\documentclass[preprint,12pt,authoryear]{elsarticle}
+\documentclass[final,5p,numbers]{elsarticle}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -16,18 +17,23 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{cleveref}
+\usepackage{microtype}
 \usepackage{lineno}
 \usepackage{siunitx}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\setcitestyle{numbers,super,sort&compress}
 
 \graphicspath{{figs/}}
+% Permit small, visually unobtrusive adjustments before TeX stretches interword
+% spaces. This prevents sparse justified lines in the two-column manuscript.
+\setlength{\emergencystretch}{2.5em}
 \journal{Annals of Nuclear Energy}
 
 \begin{document}
 \begin{frontmatter}
 
-\title{Evidence-Constrained Diagnostic Assistance for Weakly Labeled Neutron Measurement Data: A Tool-Using Workflow and Retrieval Robustness Study}
+\title{Evidence-Constrained Diagnostic Assistance for Unlabeled Neutron-Current Time Series: A Tool-Using Workflow and Retrieval Robustness Study}
 
 \author[addr1]{Author One}
 \author[addr1]{Author Two\corref{cor1}}
@@ -36,7 +42,7 @@
 \address[addr1]{Affiliation, City, Country}
 
 \begin{abstract}
-Neutron-instrumentation records from nuclear power plants are high-volume and only weakly labeled, whereas their interpretation must remain traceable to authoritative technical evidence. We present an evidence-constrained diagnostic-assistance workflow rather than an autonomous fault classifier. A zero-prior, tool-using agent first converts neutron-current CSV records into an auditable condition report by applying deterministic probes for data health, morphology, anomalies, lag, extremes, and spatial snapshots. A compact structured alert summary then drives multi-stage retrieval over nuclear instrumentation and control manuals, enabling a citation-bearing diagnostic memo. We evaluate the retrieval layer under controlled expansion of a fixed IAEA core library with same-domain supplementary documents, using Chinese and English queries, chunking configurations, and both strict chunk and document-level relevance criteria. In the evaluated setup, cosine similarity can increase while the priority of pre-designated IAEA sources decreases; short Chinese queries are especially sensitive to corpus expansion, whereas the tested chunk-size and overlap changes have a smaller effect. The results show that similarity alone is insufficient to govern evidence retrieval in this setting and motivate terminology-rich queries, explicit source-priority policies, and human review of diagnostic conclusions.
+Neutron-instrumentation records from nuclear power plants are high-volume raw time series that commonly lack a uniform sample-level fault ground truth, whereas their interpretation must remain traceable to authoritative technical evidence. We present an evidence-constrained diagnostic-assistance workflow rather than an autonomous fault classifier. A zero-prior, tool-using agent first converts unlabeled neutron-current CSV records into an auditable condition report by applying deterministic probes for data health, morphology, anomalies, lag, extremes, and spatial snapshots. A compact structured alert summary then drives multi-stage retrieval over nuclear instrumentation and control manuals, enabling a citation-bearing diagnostic memo. We evaluate the retrieval layer under controlled expansion of a fixed IAEA core library with same-domain supplementary documents, using Chinese and English queries, chunking configurations, and both strict chunk and document-level relevance criteria. In the evaluated setup, cosine similarity can increase while the priority of pre-designated IAEA sources decreases; short Chinese queries are especially sensitive to corpus expansion, whereas the tested chunk-size and overlap changes have a smaller effect. The results show that similarity alone is insufficient to govern evidence retrieval in this setting and motivate terminology-rich queries, explicit source-priority policies, and human review of diagnostic conclusions.
 \end{abstract}
 
 \begin{keyword}
@@ -48,12 +54,24 @@ neutron instrumentation \sep online monitoring \sep diagnostic assistance \sep r
 \label{sec:intro}
 \input{sections_v2/01_introduction}
 
-\section{System design}
+\section{System Design and Methodology}
 \label{sec:system}
-\input{sections/03_system}
-\input{sections_v2/03_operational_definitions}
+This section specifies the evidence-constrained transformation contract used throughout the study: a raw measurement record is converted into an auditable observation packet, compressed into a structured alert summary, linked to retrieved manual evidence, and expressed as a citation-bearing memo for engineering review. The automated chain produces derived observations and candidate interpretations; engineering review remains outside that chain and retains decision authority.
 
-\section{Evaluation protocol}
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig1_overview}
+  \caption{Evidence-constrained diagnostic-assistance architecture. The condition report and structured alert summary form the auditable interface between raw measurement analysis and manual retrieval. The evaluation module stress-tests the retrieval layer under corpus, query, and chunking variation; engineering review remains outside the automated chain and retains decision authority.}
+  \label{fig:overview}
+\end{figure}
+
+\input{sections_v2/02_data_resources}
+\input{sections_v2/03_measurement_observation}
+\input{sections_v2/03_operational_definitions}
+\input{sections_v2/04_report_retrieval}
+\input{sections_v2/05_runtime_reliability}
+
+\section{Evaluation Protocol}
 \label{sec:eval}
 \input{sections_v2/04_evaluation}
 
@@ -61,13 +79,17 @@ neutron instrumentation \sep online monitoring \sep diagnostic assistance \sep r
 \label{sec:results}
 \input{sections_v2/05_results}
 
+\section{Limitations and Threats to Validity}
+\label{sec:limitations}
+\input{sections_v2/06_limitations}
+
 \section{Conclusions}
 \label{sec:concl}
-\input{sections_v2/06_conclusions}
+\input{sections_v2/07_conclusions}
 
 \section*{Acknowledgments}
 This work was supported by \ldots\ (grant information to be added).
 
-\bibliographystyle{elsarticle-harv}
+\bibliographystyle{elsarticle-num}
 \bibliography{refs}
 \end{document}

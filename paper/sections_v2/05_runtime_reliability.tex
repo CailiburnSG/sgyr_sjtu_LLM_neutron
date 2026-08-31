@@ -1,0 +1,35 @@
+\subsection{Constrained tool use and runtime reliability}
+\label{sec:agent-design}
+
+The workflow treats runtime reliability as a methodological requirement rather than an implementation afterthought. In early multi-step prototypes, the planner was allowed to restate absolute paths, emit unrestricted tool calls, and pass lengthy condition text directly into downstream diagnosis. This produced path drift, malformed structured output, invented analyzers, and poorly grounded diagnostic prose. The final protocol converts these observed failure modes into explicit runtime constraints, summarized in \cref{tab:agent-design}.
+
+\begin{table}[H]
+  \centering
+  \footnotesize
+  \caption{Observed failure modes in early tool-using prototypes and runtime constraints in the final protocol.}
+  \label{tab:agent-design}
+  \begin{tabular}{@{}p{0.30\linewidth}p{0.62\linewidth}@{}}
+    \toprule
+    Failure mode & Runtime constraint \\
+    \midrule
+    Path restatement drift across tool steps &
+    Only load-and-profile accepts a CSV path; later probes receive a workspace directory and resolve the active record from the blackboard. \\
+    Markdown-wrapped, truncated, or malformed tool JSON &
+    Strip Markdown fences; extract the first brace-balanced JSON object or array; validate the requested action before execution. \\
+    Invented or unregistered analyzer names &
+    Accept only registered probe identifiers; unknown actions fail closed. \\
+    Oversized condition narratives for downstream reasoning &
+    Retain a human-readable report for audit but expose a compact structured alert summary to retrieval. \\
+    Ungrounded diagnostic prose &
+    Construct retrieval from the alert summary and require evidence-linked, citation-bearing memo output. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{State ownership and constrained actions}
+The local LLM planner selects the next analysis action, but it does not own the authoritative state. The Python router executes registered analyzers and updates the workspace blackboard. Once initialization has completed, probes cannot silently switch to another raw or sorted file because the active record is resolved from that state. Missing initialization causes the workflow to fail closed. This moves data-path ownership from mutable model strings to a runtime contract.
+
+At the action interface, the router tolerates common presentation noise while retaining a narrow execution boundary. It extracts the first brace-balanced JSON object or array even when the model adds Markdown fences or short commentary, then validates that the \texttt{action} field names a registered probe. The protocol does not claim perfect structured generation; instead, it makes malformed or invented actions visible and non-executable~\citep{yao2023react,patil2024gorilla,schick2023toolformer}.
+
+\subsubsection{Evidence-constrained output boundary}
+The runtime constraints continue beyond tool execution. A multi-page condition narrative is useful for audit but unsuitable as the sole retrieval query, because it mixes many observations with incidental detail. The system therefore exposes a compact alert summary to the retrieval layer and requires memo claims to remain linked to retrieved passages. This reduces the opportunity for fluent but unsupported interpretation~\citep{ji2023hallucination}. The automated chain produces observations and evidence-linked candidate interpretations; an engineer remains responsible for judging context, support adequacy, and any physical conclusion before use.

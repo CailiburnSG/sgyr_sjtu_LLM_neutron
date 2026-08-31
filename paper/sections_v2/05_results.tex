@@ -1,21 +1,21 @@
-\subsection{Case study: from observation to evidence}
-On representative A1/A2 workspaces, the measurement-side probes produce reports containing synchronized zero events, spike episodes, and strongly co-moving channel groups. For example, the A1\_1 report identifies high-sensitivity morphology across channels, several highly collinear detectors, repeated spike episodes on one channel, and zero dropouts on others. \Cref{fig:case-waveforms} displays downsampled A1\_1 traces; all probe outputs are computed on the full-resolution series.
+\subsection{Traceable case study: from observation to evidence}
+Across representative workflow executions, the measurement-side probes produce condition reports containing synchronized zero events, spike episodes, and strongly co-moving channel groups. One representative record exhibits pronounced differences in channel morphology, several highly collinear detectors, repeated spike episodes on one channel, and zero dropouts on others. \Cref{fig:case-waveforms} displays downsampled traces from this record; all probe outputs are computed at full resolution.
 
 This result demonstrates that the workflow can produce an auditable observation record and use it to organize manual retrieval. It should not be interpreted as independent confirmation of a physical fault or a root cause. In the present study, the memo is an evidence-linked aid for subsequent engineering review; no uniformly aligned fault-label set is available for estimating end-to-end diagnostic accuracy.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.95\linewidth]{fig3_case_waveforms}
-  \caption{Example neutron-current traces from dataset A1\_1 (three channels; downsampled for readability). The full-resolution series is analyzed by the workspace probes.}
+\caption{Example neutron-current traces from a representative multichannel record (three channels; downsampled for readability). The full-resolution series is analyzed by the workspace probes.}
   \label{fig:case-waveforms}
 \end{figure}
 
-\Cref{fig:a2-events} and \Cref{tab:a2-events} provide a second, tabulated case view from the checked-in A2\_1 report snapshot. The seven channels contain 30--34 detected spike episodes (mean 32.4) and each contains 12 isolated zero events. The repeated zero timestamps across channels are a concrete example of why the report preserves cross-channel timing rather than converting events immediately into a component-fault label: the observation supports a synchronized signal-quality event, while its physical mechanism requires external review.
+\Cref{fig:a2-events} and \Cref{tab:a2-events} provide a tabulated view of one representative condition-report output. Its seven channels contain 30--34 detected spike episodes (mean 32.4) and each contains 12 isolated zero events. The repeated zero timestamps across channels are a concrete example of why the workflow preserves cross-channel timing rather than converting events immediately into a component-fault label: the observation supports a synchronized signal-quality event, while its physical mechanism requires external review.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.88\linewidth]{fig6_a2_event_summary}
-  \caption{Detected event counts from the A2\_1 condition-report snapshot. These are deterministic signal-event counts under \cref{eq:spike-rule}, not confirmed equipment-fault counts.}
+  \caption{Detected event counts from a representative condition-report output. These are deterministic signal-event counts under \cref{eq:spike-rule}, not confirmed equipment-fault counts.}
   \label{fig:a2-events}
 \end{figure}
 
@@ -49,7 +49,7 @@ Self-retrieval exposes a systematic strict--document-level gap. \Cref{fig:self-r
 \end{figure}
 
 \subsection{Real CPU embedding-model comparison}
-To test whether the observed behavior is tied only to the historical embedding index, we ran a separate CPU benchmark over the checked-in 64-document corpus. This benchmark uses 240-word chunks with 24-word overlap (11,199 chunks), the same 13-document IAEA core and 51-document supplementary pool, the same four fixed bilingual queries, top-$10$ retrieval, and ten random expansion trials. It compares a multilingual MiniLM encoder with an English-oriented MiniLM encoder; it is reported separately from the historical \texttt{nomic-embed-text} experiments because the chunk construction differs.
+To test whether the observed behavior is tied only to the historical embedding index, we ran the independent CPU encoder protocol specified in \cref{sec:eval}. It compares a multilingual MiniLM encoder with an English-oriented MiniLM encoder and is reported separately from the historical \texttt{nomic-embed-text} experiments because the chunk construction differs.
 
 \Cref{fig:real-embedding-comparison,tab:real-embedding-comparison} show that embedding choice changes cosine scales and source-priority trajectories, but does not collapse the problem into one scalar. The multilingual model gives materially higher Chinese phrase cosine scores (0.62--0.64 versus 0.27 for the English-oriented model), while both models undergo source-priority decay as the supplementary pool grows. Thus multilingual semantic alignment and authoritative-source preference are complementary deployment requirements rather than interchangeable objectives.
 
@@ -62,5 +62,5 @@ To test whether the observed behavior is tied only to the historical embedding i
 
 \input{tables/table_real_embedding_comparison}
 
-\subsection{Implications and limitations}
-The pipeline provides traceable observations and evidence retrieval, but it does not replace engineering judgment. The current evidence is limited by case-level rather than gold-standard diagnostic evaluation, one embedding model, a small fixed query set for the scope study, and no human assessment of generated citation support. A next validation stage should separately assess observation correctness, passage support for each memo claim, and the usefulness of the resulting memo to domain experts.
+\subsection{Discussion and deployment implications}
+The pipeline provides traceable observations and evidence retrieval, but it does not replace engineering judgment. In a deployment where particular source families must be surfaced first, the results support terminology-rich condition-report queries together with source metadata, filtering, or reranking. The remaining validation boundaries and threats to interpretation are stated separately in \cref{sec:limitations}.

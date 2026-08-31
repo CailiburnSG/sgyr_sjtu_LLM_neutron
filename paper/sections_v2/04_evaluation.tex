@@ -1,30 +1,70 @@
-\subsection{Evaluation objective}
-The evaluation assesses the reliability of the \emph{evidence-retrieval layer}, not diagnostic accuracy or root-cause identification. We ask whether retrieval continues to honor a deployment policy that prioritizes a fixed IAEA core library when same-domain supplementary manuals are admitted, and how this behavior depends on query language, query formulation, and chunking.
+\subsection{Evaluation questions and scope}
+The evaluation assesses the reliability of the \emph{evidence-retrieval layer}, not diagnostic accuracy, root-cause identification, or generation-side factuality. It asks whether retrieval maintains a deployment policy that prioritizes a fixed IAEA core when same-domain supplementary manuals are admitted, and how that behavior changes with corpus scope, query formulation, chunking, and encoder choice.
 
-\subsection{Corpus and index configurations}
-The corpus contains a fixed core pool of 13 IAEA manuals and up to 46 same-domain supplementary manuals, for 59 documents in total. The supplementary pool is relevant nuclear instrumentation material; it is not treated as meaningless noise. Seventeen Markdown index configurations vary chunk size $\{800,1000,1200,1500\}$ and overlap $\{50,80,100,120,150\}$ for valid pairs. The embedding model is fixed as \texttt{nomic-embed-text}.
+\subsection{Corpus, source policy, and protocol variants}
+The retrieval collection contains 64 technical documents: a fixed 13-document IAEA core and 51 same-domain supplementary documents. The supplementary material is relevant nuclear instrumentation and control evidence, not meaningless noise. The source-priority policy therefore does not assert that IAEA passages are the only relevant passages; it asks whether a deployment that requires a pre-designated authority set can maintain that preference as the searchable corpus expands.
 
-\subsection{Corpus-scope experiment}
-Let $\mathcal{D}_{\mathrm{core}}$ be the fixed IAEA pool and $\mathcal{D}_{\mathrm{sup}}^{(m)}$ the $m$ admitted supplementary documents. Each retrieval pool is $\mathcal{D}_m=\mathcal{D}_{\mathrm{core}}\cup\mathcal{D}_{\mathrm{sup}}^{(m)}$. Four fixed Chinese and English nuclear terms or phrases are issued while $m$ increases in increments. We report top-$k$ cosine scores, IAEA priority@10, and the rank of the first IAEA hit. For a query $q$ and its ordered retrieval list $R_k(q)=\{d_1,\ldots,d_k\}$,
+Two protocol variants are reported separately. The historical robustness experiments use \texttt{nomic-embed-text} and 17 Markdown index configurations with chunk sizes $\{800,1000,1200,1500\}$ and overlaps $\{50,80,100,120,150\}$ for valid combinations. The independent CPU encoder benchmark uses 240-word chunks, 24-word overlap, and two MiniLM encoders. Its absolute score scale is therefore not compared directly with the historical index; it tests whether the source-priority phenomenon persists under a separate encoder and chunk construction.
+
+\subsection{Queries and controlled corpus expansion}
+All corpus-scope protocols use the four fixed bilingual queries in \cref{tab:retrieval-queries}. The Chinese entries are represented by Unicode code points solely because the manuscript is compiled with \texttt{pdfLaTeX}; the benchmark metadata stores and submits the corresponding UTF-8 strings. The queries intentionally include short core terms and more specific phrase queries, so the experiment evaluates both query language and query formulation rather than claiming an intrinsic language ranking.
+
+\begin{table}[H]
+  \centering
+  \caption{Fixed queries used in corpus-scope retrieval experiments.}
+  \label{tab:retrieval-queries}
+  \small
+  \begin{tabular}{@{}p{0.15\linewidth}p{0.44\linewidth}p{0.29\linewidth}@{}}
+    \toprule
+    Query type & Chinese code points & English \\
+    \midrule
+    Core term & \texttt{U+4E2D U+5B50} & neutron \\
+    Phrase & \texttt{U+4E2D U+5B50 U+6D4B U+91CF U+7535 U+6D41} & neutron measurement current \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Let $\mathcal{D}_{\mathrm{core}}$ be the fixed IAEA pool and let $\mathcal{D}_{\mathrm{sup}}^{(m,t)}$ denote the supplementary documents sampled for expansion size $m$ and trial $t$. The active retrieval pool is
+\begin{equation}
+\mathcal{D}_{m,t}=\mathcal{D}_{\mathrm{core}}\cup\mathcal{D}_{\mathrm{sup}}^{(m,t)}, \qquad
+m\in\{0,5,10,\ldots,51\}.
+\end{equation}
+For $m=0$, the core-only pool is evaluated once. In the historical index experiments, each non-zero $m$ uses 100 random supplementary-document draws per query and index configuration. In the independent CPU benchmark, each non-zero $m$ uses ten random draws per query and encoder. Retrieval returns the top $k=10$ chunks.
+
+\subsection{Historical robustness and self-retrieval experiments}
+The historical corpus-scope experiment records top-1, top-3 mean, and top-10 mean cosine scores, IAEA priority@10, and the rank of the first IAEA result. The primary score plotted in \cref{fig:scope-priority} is the top-1 cosine score. For a query $q$ and ordered retrieval list $R_k(q)=\{d_1,\ldots,d_k\}$,
 \begin{equation}
 \operatorname{Priority@}k(q)=\frac{1}{k}\sum_{i=1}^{k}
 \mathbb{I}\left(d_i\in\mathcal{D}_{\mathrm{core}}\right).
 \label{eq:priority}
 \end{equation}
-This is the fraction of top-$k$ chunks from the pre-designated IAEA core. It measures adherence to a \emph{source-priority policy}; it is not a substitute for human relevance judgment, because a supplementary document may also be substantively relevant.
+Priority@k measures adherence to a source-priority policy, not human-judged relevance.
 
-\subsection{Self-retrieval experiment}
-IAEA chunks are sampled as probes. Queries are constructed from a first sentence, title, random window, or terminology-rich domain sentence. For a probe chunk $n_j^\ast$ and retrieved set $R_k(q_j)$, strict and document-level recall are
+Self-retrieval samples IAEA chunks as probes and forms queries using four modes: \texttt{first\_sentence}, \texttt{title}, \texttt{random\_window}, and \texttt{domain\_term}. For the corpus-decay condition visualized in \cref{fig:self-retrieval}, the first-sentence mode is used. The core-only pool uses 80 probes. Each non-zero expansion size uses ten trials of 80 probes each. For a probe chunk $n_j^\ast$, its source document $d_j^\ast=\operatorname{doc}(n_j^\ast)$, and retrieved set $R_k(q_j)$, strict and document-level recall are
 \begin{equation}
 \begin{aligned}
-\operatorname{Recall@}k_{\mathrm{strict}}&=\frac{1}{N}\sum_{j=1}^{N}
+\mathrm{R}^{\mathrm{strict}}_k&=\frac{1}{N}\sum_{j=1}^{N}
 \mathbb{I}\left(n_j^\ast\in R_k(q_j)\right),\\
-\operatorname{Recall@}k_{\mathrm{doc}}&=\frac{1}{N}\sum_{j=1}^{N}
-\mathbb{I}\left(\exists n\in R_k(q_j):\operatorname{doc}(n)=\operatorname{doc}(n_j^\ast)\right).
+\mathrm{R}^{\mathrm{doc}}_k&=\frac{1}{N}\sum_{j=1}^{N}
+\mathbb{I}\left(\exists n\in R_k(q_j):\operatorname{doc}(n)=d_j^\ast\right).
 \end{aligned}
 \label{eq:recall}
 \end{equation}
-We additionally report mean reciprocal rank. The distinction prevents overlap-induced near-duplicate chunks from being mischaracterized as entirely irrelevant.
+We additionally report mean reciprocal rank, where $r_j$ is the rank of the first relevant result and $r_j=\infty$ when the top-$k$ list has no relevant result:
+\begin{equation}
+\operatorname{MRR}=\frac{1}{N}\sum_{j=1}^{N}
+\begin{cases}
+1/r_j, & r_j\leq k,\\
+0, & r_j>k.
+\end{cases}
+\label{eq:mrr}
+\end{equation}
+The strict/document distinction prevents overlap-induced neighboring chunks from being characterized as wholly irrelevant.
 
-\subsection{Interpretation boundary}
-The experiments establish retrieval behavior for the corpus, embedding model, query set, and index grid studied here. They do not establish a universal ranking of languages or chunking strategies, nor do they evaluate the factual correctness of generated memos. Those questions require additional multilingual models, relevance annotation, and generation-side review.
+\subsection{Independent CPU encoder comparison}
+The independent benchmark compares \url{sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} with \url{sentence-transformers/all-MiniLM-L6-v2} on CPU. It uses the same 64-document collection, the four queries in \cref{tab:retrieval-queries}, normalized embeddings, top-$10$ retrieval, 240-word chunks with 24-word overlap, and 11,199 chunks in total. For every trial it reports top-1 and top-10 mean cosine scores, IAEA priority@10, and first-IAEA rank. This benchmark is a direct measured comparison, not an extrapolation from the historical index.
+
+\subsection{Aggregation and interpretation boundary}
+Within each historical index configuration, the stored standard deviations quantify variation across random supplementary-document draws. The error bands in \cref{fig:scope-priority,fig:self-retrieval} have a different meaning: each configuration is first reduced to its mean, and the displayed bands are one standard deviation across the 17 available chunking configurations. The CPU comparison reports standard deviations across its ten random document draws. These distinct sources of variation are not pooled.
+
+The experiments establish retrieval behavior for the corpus, encoders, query set, and index grids studied here. They do not establish a universal ranking of languages or chunking strategies, human relevance of every retrieved passage, or the factual correctness of generated memos. Those questions require relevance annotation and generation-side review.

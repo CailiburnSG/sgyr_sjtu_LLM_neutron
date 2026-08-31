@@ -1,182 +1,109 @@
-\begin{thebibliography}{17}
-\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
-\providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\href}[2]{#2}
-\providecommand{\path}[1]{#1}
-\providecommand{\DOIprefix}{doi:}
-\providecommand{\ArXivprefix}{arXiv:}
-\providecommand{\URLprefix}{URL: }
-\providecommand{\Pubmedprefix}{pmid:}
-\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
-\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
-\providecommand{\bibinfo}[2]{#2}
-\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
-%Type = Article
-\bibitem[{Demazi{\`e}re et~al.(2022)Demazi{\`e}re, Sanchez-Espinoza and
-  Zentner}]{demaziere2022cortex}
-\bibinfo{author}{Demazi{\`e}re, C.}, \bibinfo{author}{Sanchez-Espinoza, V.H.},
-  \bibinfo{author}{Zentner, I.}, \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Advanced numerical simulation and modeling for
-  reactor safety -- contributions from the {CORTEX}, {McSAFER}, and {METIS}
-  projects}.
-\newblock \bibinfo{journal}{EPJ Nuclear Sciences \& Technologies}
-  \bibinfo{volume}{8}, \bibinfo{pages}{29}.
-\newblock \DOIprefix\doi{10.1051/epjn/2022026}.
-%Type = Article
-\bibitem[{Elbordany et~al.(2024)Elbordany, Kandil, Youness and
-  Abdelaal}]{elbordany2024fault}
-\bibinfo{author}{Elbordany, A.A.}, \bibinfo{author}{Kandil, M.},
-  \bibinfo{author}{Youness, H.}, \bibinfo{author}{Abdelaal, H.M.},
-  \bibinfo{year}{2024}.
-\newblock \bibinfo{title}{An efficient {AI} algorithm for fault diagnosis in
-  nuclear power plants based on machine deep learning techniques}.
-\newblock \bibinfo{journal}{Progress in Nuclear Energy} \bibinfo{volume}{180},
-  \bibinfo{pages}{105580}.
-%Type = Article
-\bibitem[{Hashemian(2011)}]{hashemian2011online}
-\bibinfo{author}{Hashemian, H.M.}, \bibinfo{year}{2011}.
-\newblock \bibinfo{title}{On-line monitoring for improving performance of
-  nuclear power plants}.
-\newblock \bibinfo{journal}{Nuclear Engineering and Design}
-  \bibinfo{volume}{241}, \bibinfo{pages}{4650--4661}.
-%Type = Techreport
-\bibitem[{{International Atomic Energy Agency}(2008a)}]{iaea2008olm1}
-\bibinfo{author}{{International Atomic Energy Agency}}, \bibinfo{year}{2008}a.
-\newblock \bibinfo{title}{On-line Monitoring for Improving Performance of
-  Nuclear Power Plants, Part 1: Instrument Channel Monitoring}.
-\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{NP-T-1.1}. IAEA.
-  \bibinfo{address}{Vienna}.
-%Type = Techreport
-\bibitem[{{International Atomic Energy Agency}(2008b)}]{iaea2008olm2}
-\bibinfo{author}{{International Atomic Energy Agency}}, \bibinfo{year}{2008}b.
-\newblock \bibinfo{title}{On-line Monitoring for Improving Performance of
-  Nuclear Power Plants, Part 2: Process and Component Condition Monitoring and
-  Diagnostics}.
-\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{NP-T-1.2}. IAEA.
-  \bibinfo{address}{Vienna}.
-%Type = Article
-\bibitem[{Ji et~al.(2023)Ji, Lee, Frieske, Yu, Su, Xu, Ishii, Bang, Madotto and
-  Fung}]{ji2023hallucination}
-\bibinfo{author}{Ji, Z.}, \bibinfo{author}{Lee, N.}, \bibinfo{author}{Frieske,
-  R.}, \bibinfo{author}{Yu, T.}, \bibinfo{author}{Su, D.}, \bibinfo{author}{Xu,
-  Y.}, \bibinfo{author}{Ishii, E.}, \bibinfo{author}{Bang, Y.},
-  \bibinfo{author}{Madotto, A.}, \bibinfo{author}{Fung, P.},
-  \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{Survey of hallucination in natural language
-  generation}.
-\newblock \bibinfo{journal}{ACM Computing Surveys} \bibinfo{volume}{55},
-  \bibinfo{pages}{1--38}.
-\newblock \DOIprefix\doi{10.1145/3571730}.
-%Type = Inproceedings
-\bibitem[{Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
-  K{\"u}ttler, Lewis, Yih, Rockt{\"a}schel, Riedel and Kiela}]{lewis2020rag}
-\bibinfo{author}{Lewis, P.}, \bibinfo{author}{Perez, E.},
-  \bibinfo{author}{Piktus, A.}, \bibinfo{author}{Petroni, F.},
-  \bibinfo{author}{Karpukhin, V.}, \bibinfo{author}{Goyal, N.},
-  \bibinfo{author}{K{\"u}ttler, H.}, \bibinfo{author}{Lewis, M.},
-  \bibinfo{author}{Yih, W.t.}, \bibinfo{author}{Rockt{\"a}schel, T.},
-  \bibinfo{author}{Riedel, S.}, \bibinfo{author}{Kiela, D.},
-  \bibinfo{year}{2020}.
-\newblock \bibinfo{title}{Retrieval-augmented generation for
-  knowledge-intensive {NLP} tasks}, in: \bibinfo{booktitle}{Advances in Neural
-  Information Processing Systems (NeurIPS)}.
-%Type = Techreport
-\bibitem[{Lin et~al.(2025)Lin, Reeves and Agarwal}]{lin2025cws}
-\bibinfo{author}{Lin, L.}, \bibinfo{author}{Reeves, T.},
-  \bibinfo{author}{Agarwal, V.}, \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Using a Large Language Model for Accurate Technical
-  Language Generation in the Predictive Maintenance of Circulating Water
-  Systems in Nuclear Power Plants}.
-\newblock \bibinfo{type}{Technical Report}. Idaho National Laboratory.
-\newblock \bibinfo{note}{{OSTI}~3024553; {RAG} over work orders and technical
-  documents for {NPP} predictive maintenance}.
-%Type = Misc
-\bibitem[{Liu(2022)}]{liu2023llamaindex}
-\bibinfo{author}{Liu, J.}, \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{{LlamaIndex}: A data framework for {LLM}
-  applications}.
-\newblock \bibinfo{howpublished}{\url{https://www.llamaindex.ai/}}.
-%Type = Inproceedings
-\bibitem[{Mapes et~al.(2025)Mapes, Giraud, Wilcken, Al~Rashdan and
-  De~Queiroz}]{mapes2025uprate}
-\bibinfo{author}{Mapes, J.N.}, \bibinfo{author}{Giraud, K.M.},
-  \bibinfo{author}{Wilcken, B.M.}, \bibinfo{author}{Al~Rashdan, A.Y.},
-  \bibinfo{author}{De~Queiroz, M.}, \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{{AI} for interpreting nuclear power plant documents
-  for power uprates}, in: \bibinfo{booktitle}{American Nuclear Society Annual
-  Meeting}.
-\newblock \bibinfo{note}{{INL/CON-25-83082}, {OSTI}~3024448}.
-%Type = Article
-\bibitem[{Ndum et~al.(2026)Ndum, Tao, Ford, Yim and Liu}]{ndum2026radiant}
-\bibinfo{author}{Ndum, Z.N.}, \bibinfo{author}{Tao, J.}, \bibinfo{author}{Ford,
-  J.}, \bibinfo{author}{Yim, M.}, \bibinfo{author}{Liu, Y.},
-  \bibinfo{year}{2026}.
-\newblock \bibinfo{title}{{RADIANT}-{LLM}: an agentic retrieval augmented
-  generation framework for reliable decision support in safety-critical nuclear
-  engineering}.
-\newblock \bibinfo{journal}{arXiv preprint arXiv:2604.22755}
-  \bibinfo{note}{Local-first agentic Visual-{RAG} with citation-backed nuclear
-  decision support}.
-%Type = Inproceedings
-\bibitem[{Patil et~al.(2024)Patil, Zhang, Wang and Gonzalez}]{patil2024gorilla}
-\bibinfo{author}{Patil, S.G.}, \bibinfo{author}{Zhang, T.},
-  \bibinfo{author}{Wang, X.}, \bibinfo{author}{Gonzalez, J.E.},
-  \bibinfo{year}{2024}.
-\newblock \bibinfo{title}{Gorilla: Large language model connected with massive
-  {APIs}}, in: \bibinfo{booktitle}{Advances in Neural Information Processing
-  Systems (NeurIPS)}.
-%Type = Incollection
-\bibitem[{P{\'a}zsit and Demazi{\`e}re(2010)}]{pazsit2010noise}
-\bibinfo{author}{P{\'a}zsit, I.}, \bibinfo{author}{Demazi{\`e}re, C.},
-  \bibinfo{year}{2010}.
-\newblock \bibinfo{title}{Noise techniques in nuclear systems}, in:
-  \bibinfo{editor}{Cacuci, D.G.} (Ed.), \bibinfo{booktitle}{Handbook of Nuclear
-  Engineering}. \bibinfo{publisher}{Springer}, \bibinfo{address}{New York}, pp.
-  \bibinfo{pages}{1629--1737}.
-\newblock \DOIprefix\doi{10.1007/978-0-387-98149-9_14}.
-%Type = Techreport
-\bibitem[{Reeves et~al.(2024)Reeves, Lin, Walker and
-  Agarwal}]{reeves2024reliability}
-\bibinfo{author}{Reeves, T.E.}, \bibinfo{author}{Lin, L.},
-  \bibinfo{author}{Walker, C.M.}, \bibinfo{author}{Agarwal, V.},
-  \bibinfo{year}{2024}.
-\newblock \bibinfo{title}{Improving Reliability of Large Language Models for
-  Nuclear Power Plant Diagnostics}.
-\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{INL/MIS-24-79312}.
-  Idaho National Laboratory.
-\newblock \bibinfo{note}{{OSTI}~2440146,
-  \url{https://doi.org/10.2172/2440146}}.
-%Type = Inproceedings
-\bibitem[{Schick et~al.(2023)Schick, Dwivedi-Yu, Dess{\`i}, Raileanu, Lomeli,
-  Hambro, Zettlemoyer, Cancedda and Scialom}]{schick2023toolformer}
-\bibinfo{author}{Schick, T.}, \bibinfo{author}{Dwivedi-Yu, J.},
-  \bibinfo{author}{Dess{\`i}, R.}, \bibinfo{author}{Raileanu, R.},
-  \bibinfo{author}{Lomeli, M.}, \bibinfo{author}{Hambro, E.},
-  \bibinfo{author}{Zettlemoyer, L.}, \bibinfo{author}{Cancedda, N.},
-  \bibinfo{author}{Scialom, T.}, \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{Toolformer: Language models can teach themselves to
-  use tools}, in: \bibinfo{booktitle}{Advances in Neural Information Processing
-  Systems (NeurIPS)}.
-%Type = Inproceedings
-\bibitem[{Tambouratzis et~al.(2020)Tambouratzis, Pantera and
-  Stulik}]{tambouratzis2020neutron}
-\bibinfo{author}{Tambouratzis, T.}, \bibinfo{author}{Pantera, L.},
-  \bibinfo{author}{Stulik, P.}, \bibinfo{year}{2020}.
-\newblock \bibinfo{title}{A study on the minimum requirements for the on-line,
-  efficient and robust validation of neutron detector operation and monitoring
-  of neutron noise signals using harmony theory networks}, in:
-  \bibinfo{booktitle}{Proceedings of the 2nd International Conference on
-  Machine Learning \& Applications (CMLA)}.
-\newblock \DOIprefix\doi{10.5121/csit.2020.101113}.
-%Type = Inproceedings
-\bibitem[{Yao et~al.(2023)Yao, Zhao, Yu, Du, Shafran, Narasimhan and
-  Cao}]{yao2023react}
-\bibinfo{author}{Yao, S.}, \bibinfo{author}{Zhao, J.}, \bibinfo{author}{Yu,
-  D.}, \bibinfo{author}{Du, N.}, \bibinfo{author}{Shafran, I.},
-  \bibinfo{author}{Narasimhan, K.}, \bibinfo{author}{Cao, Y.},
-  \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{{ReAct}: Synergizing reasoning and acting in language
-  models}, in: \bibinfo{booktitle}{International Conference on Learning
-  Representations (ICLR)}.
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{iaea2008olm1}
+{International Atomic Energy Agency}, On-line monitoring for improving
+  performance of nuclear power plants, part 1: Instrument channel monitoring,
+  Tech. Rep. NP-T-1.1, IAEA, Vienna (2008).
+
+\bibitem{iaea2008olm2}
+{International Atomic Energy Agency}, On-line monitoring for improving
+  performance of nuclear power plants, part 2: Process and component condition
+  monitoring and diagnostics, Tech. Rep. NP-T-1.2, IAEA, Vienna (2008).
+
+\bibitem{hashemian2011online}
+H.~M. Hashemian, On-line monitoring for improving performance of nuclear power
+  plants, Nuclear Engineering and Design 241~(10) (2011) 4650--4661.
+
+\bibitem{pazsit2010noise}
+I.~P{\'a}zsit, C.~Demazi{\`e}re, Noise techniques in nuclear systems, in: D.~G.
+  Cacuci (Ed.), Handbook of Nuclear Engineering, Springer, New York, 2010, pp.
+  1629--1737.
+\newblock \href {https://doi.org/10.1007/978-0-387-98149-9_14}
+  {\path{doi:10.1007/978-0-387-98149-9_14}}.
+
+\bibitem{demaziere2022cortex}
+C.~Demazi{\`e}re, V.~H. Sanchez-Espinoza, I.~Zentner, Advanced numerical
+  simulation and modeling for reactor safety -- contributions from the
+  {CORTEX}, {McSAFER}, and {METIS} projects, EPJ Nuclear Sciences \&
+  Technologies 8 (2022) 29.
+\newblock \href {https://doi.org/10.1051/epjn/2022026}
+  {\path{doi:10.1051/epjn/2022026}}.
+
+\bibitem{tambouratzis2020neutron}
+T.~Tambouratzis, L.~Pantera, P.~Stulik, A study on the minimum requirements for
+  the on-line, efficient and robust validation of neutron detector operation
+  and monitoring of neutron noise signals using harmony theory networks, in:
+  Proceedings of the 2nd International Conference on Machine Learning \&
+  Applications (CMLA), 2020.
+\newblock \href {https://doi.org/10.5121/csit.2020.101113}
+  {\path{doi:10.5121/csit.2020.101113}}.
+
+\bibitem{elbordany2024fault}
+A.~A. Elbordany, M.~Kandil, H.~Youness, H.~M. Abdelaal, An efficient {AI}
+  algorithm for fault diagnosis in nuclear power plants based on machine deep
+  learning techniques, Progress in Nuclear Energy 180 (2024) 105580.
+
+\bibitem{lewis2020rag}
+P.~Lewis, E.~Perez, A.~Piktus, F.~Petroni, V.~Karpukhin, N.~Goyal,
+  H.~K{\"u}ttler, M.~Lewis, W.-t. Yih, T.~Rockt{\"a}schel, S.~Riedel, D.~Kiela,
+  Retrieval-augmented generation for knowledge-intensive {NLP} tasks, in:
+  Advances in Neural Information Processing Systems (NeurIPS), 2020.
+
+\bibitem{reeves2024reliability}
+T.~E. Reeves, L.~Lin, C.~M. Walker, V.~Agarwal, Improving reliability of large
+  language models for nuclear power plant diagnostics, Tech. Rep.
+  INL/MIS-24-79312, Idaho National Laboratory, {OSTI}~2440146,
+  \url{https://doi.org/10.2172/2440146} (2024).
+
+\bibitem{lin2025cws}
+L.~Lin, T.~Reeves, V.~Agarwal, Using a large language model for accurate
+  technical language generation in the predictive maintenance of circulating
+  water systems in nuclear power plants, Tech. rep., Idaho National Laboratory,
+  {OSTI}~3024553; {RAG} over work orders and technical documents for {NPP}
+  predictive maintenance (2025).
+
+\bibitem{mapes2025uprate}
+J.~N. Mapes, K.~M. Giraud, B.~M. Wilcken, A.~Y. Al~Rashdan, M.~De~Queiroz, {AI}
+  for interpreting nuclear power plant documents for power uprates, in:
+  American Nuclear Society Annual Meeting, 2025, {INL/CON-25-83082},
+  {OSTI}~3024448.
+
+\bibitem{ndum2026radiant}
+Z.~N. Ndum, J.~Tao, J.~Ford, M.~Yim, Y.~Liu, {RADIANT}-{LLM}: an agentic
+  retrieval augmented generation framework for reliable decision support in
+  safety-critical nuclear engineering, arXiv preprint
+  arXiv:2604.22755Local-first agentic Visual-{RAG} with citation-backed nuclear
+  decision support (2026).
+
+\bibitem{liu2023llamaindex}
+J.~Liu, {LlamaIndex}: A data framework for {LLM} applications,
+  \url{https://www.llamaindex.ai/} (2022).
+
+\bibitem{yao2023react}
+S.~Yao, J.~Zhao, D.~Yu, N.~Du, I.~Shafran, K.~Narasimhan, Y.~Cao, {ReAct}:
+  Synergizing reasoning and acting in language models, in: International
+  Conference on Learning Representations (ICLR), 2023.
+
+\bibitem{patil2024gorilla}
+S.~G. Patil, T.~Zhang, X.~Wang, J.~E. Gonzalez, Gorilla: Large language model
+  connected with massive {APIs}, in: Advances in Neural Information Processing
+  Systems (NeurIPS), Vol.~37, 2024.
+
+\bibitem{schick2023toolformer}
+T.~Schick, J.~Dwivedi-Yu, R.~Dess{\`i}, R.~Raileanu, M.~Lomeli, E.~Hambro,
+  L.~Zettlemoyer, N.~Cancedda, T.~Scialom, Toolformer: Language models can
+  teach themselves to use tools, in: Advances in Neural Information Processing
+  Systems (NeurIPS), 2023.
+
+\bibitem{ji2023hallucination}
+Z.~Ji, N.~Lee, R.~Frieske, T.~Yu, D.~Su, Y.~Xu, E.~Ishii, Y.~Bang, A.~Madotto,
+  P.~Fung, Survey of hallucination in natural language generation, ACM
+  Computing Surveys 55~(12) (2023) 1--38.
+\newblock \href {https://doi.org/10.1145/3571730} {\path{doi:10.1145/3571730}}.
 
 \end{thebibliography}

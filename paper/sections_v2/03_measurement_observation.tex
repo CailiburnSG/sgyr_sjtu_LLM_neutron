@@ -1,0 +1,56 @@
+\subsection{Measurement-side observation construction}
+\label{sec:agent}
+
+\subsubsection{Objective and zero-prior scope}
+The measurement-side objective is to convert one raw neutron-current CSV record into a structured, human-readable condition report. ``Zero-prior'' does not mean that the system ignores the data format or the relative channel layout described in \cref{sec:data}. Rather, it does not assume a labeled fault library, a pre-specified mapping from an observed pattern to a physical cause, or handcrafted diagnostic frequency bands. The workflow treats channel identifiers as operational identifiers and uses deterministic statistics to expose morphology, redundancy, anomalies, lag, extremes, and cross-channel snapshots. Its output is an observation record, not a confirmed fault class.
+
+\subsubsection{Workspace initialization and data health}
+The load-and-profile probe is the mandatory entry point. Given a CSV path, it creates a dedicated workspace, parses and chronologically sorts the time column, writes a cleaned active record, and records shape, nominal sampling interval, missingness, and inactive-channel indicators in a persistent blackboard (\texttt{state.json}). All later probes resolve the active record from this workspace rather than accepting a new free-text data path. This establishes one analysis unit per record and preserves the provenance of every subsequent observation.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\linewidth]{fig2_agent_workflow}
+  \caption{Measurement-side observation workflow. Profiling initializes a workspace blackboard; deterministic probes operate on the active record and accumulate an auditable condition report.}
+  \label{fig:agent-workflow}
+\end{figure}
+
+\subsubsection{Deterministic observation probes}
+After initialization, the planner may select only the registered probes in \cref{tab:agent-tools}. The discovery probe performs a global longitudinal scan: uniqueness and coefficient of variation assign coarse morphological roles, while pairwise correlations identify near-redundant pairs and strongly co-moving groups. Given known relative channel placement, such co-movement can motivate inspection of spatial proximity or shared instrumentation context; it is not, by itself, a physical diagnosis.
+
+The anomaly/regime probe segments channels into steady and transient regimes and enumerates spike episodes and isolated zero events. The time-lag probe distinguishes lead--lag patterns from near-synchronous groups. Extremes are localized with their timestamps, and the snapshot probe records a multi-channel cross-section at a selected time. Together, these operations form a reproducible inventory of signal events and relationships.
+
+\begin{table}[H]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Deterministic probes used to construct the condition report. The implementation identifier is included for reproducibility.}
+  \label{tab:agent-tools}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth}
+                    >{\raggedright\arraybackslash}p{0.40\linewidth}
+                    >{\raggedright\arraybackslash\ttfamily\scriptsize}p{0.33\linewidth}@{}}
+    \toprule
+    \textrm{\normalfont Probe} &
+    \textrm{\normalfont Observation role} &
+    \textrm{\normalfont Implementation ID} \\
+    \midrule
+    Load-and-profile &
+    Initializes the workspace, sorts timestamps, and records data-health indicators. &
+    \path{load_and_profile_csv_tool} \\
+    Zero-prior discovery &
+    Identifies morphology and co-moving or near-redundant channel groups. &
+    \path{zero_prior_discovery_tool} \\
+    Anomaly and regime &
+    Segments regimes and enumerates spikes and isolated zero events. &
+    \path{anomaly_detector} \\
+    Time-lag scan &
+    Estimates lead--lag versus near-synchronous channel groups. &
+    \path{global_time_lag_scan_tool} \\
+    Extremes scan &
+    Localizes global maxima/minima and their timestamps. &
+    \path{global_extremes_scan_tool} \\
+    Spatial snapshot &
+    Captures the multi-channel state at a selected time. &
+    \path{get_spatial_snapshot_tool} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

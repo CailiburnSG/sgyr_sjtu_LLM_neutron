@@ -1,0 +1,8 @@
+\subsection{Report-driven evidence retrieval}
+\label{sec:rag-diag}
+
+The condition report serves two audiences. Its chronological narrative and optional JSON snapshots support human inspection and audit, whereas its compact alert summary is the machine-facing interface to retrieval. The summary contains variable-wise alerts, spike and zero-event counts, morphology, collinearity, lag, and selected spatial-snapshot cues. Queries are constructed from this structured representation rather than from a short operator phrase or an unreviewed free-text diagnosis hypothesis.
+
+Source PDFs are page-cropped when required, converted to Markdown, chunked, and embedded in a vector store~\citep{liu2023llamaindex}. At retrieval time, the system first searches for passages relevant to the observed phenomenon or mechanism, then may supplement them with passages on redundancy, topology, monitoring practice, or recommended checks. A memo composer links candidate interpretations to the retrieved passages with numbered citations. It must not convert this support into an automatically confirmed root cause.
+
+This design makes the report the semantic bridge between the measurement and evidence resources introduced in \cref{sec:data}. It also explains why the retrieval experiments in \cref{sec:eval} are part of the system contribution: they stress-test whether this evidence layer preserves the intended source policy under controlled corpus expansion, query variation, and chunking.
