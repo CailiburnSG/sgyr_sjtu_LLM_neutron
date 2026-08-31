@@ -3,7 +3,7 @@
 \label{sec:operational-definitions}
 Let $\mathbf{X}=\{x_{t,c}\}$ denote a chronologically sorted multichannel record, where $t$ indexes the sample and $c$ indexes the detector channel. The system does not ask the planner to estimate these quantities. Deterministic probes compute them and write their results to the workspace blackboard; the LLM only selects registered probes and organizes the resulting evidence.
 
-For each channel, the anomaly probe uses a centered rolling window $W_t$ of 31 samples. Its local baseline and robust local deviation are
+For each channel, the anomaly probe uses a centered rolling window $W_t$ of 31 samples. The local baseline and robust local deviation used by the spike rule in \cref{eq:spike-rule} are defined in \cref{eq:rolling-mad}.
 \begin{equation}
 \begin{aligned}
 m_{t,c}&=\operatorname{median}_{\tau\in W_t}x_{\tau,c},\\
@@ -11,7 +11,7 @@ d_{t,c}&=\operatorname{median}_{\tau\in W_t}\left|x_{\tau,c}-m_{\tau,c}\right|.
 \end{aligned}
 \label{eq:rolling-mad}
 \end{equation}
-The implementation marks a sample as a spike candidate only when both a local and a global-amplitude condition hold:
+Because $d_{t,c}$ is recomputed at every $t$ from the deviations within $W_t$, it adapts to local scatter rather than to the absolute current level: a more variable window produces a larger $d_{t,c}$ and hence a wider local threshold band. The two-condition spike decision is then specified in \cref{eq:spike-rule}:
 \begin{equation}
 \begin{aligned}
 I^{\mathrm{spike}}_{t,c}&=
@@ -21,9 +21,16 @@ R_c&=\max_t x_{t,c}-\min_t x_{t,c}.
 \end{aligned}
 \label{eq:spike-rule}
 \end{equation}
-Contiguous positive samples are merged into one spike episode. An isolated zero event is separately recorded by $I^{\mathrm{zero}}_{t,c}=\mathbb{I}(x_{t,c}=0)$. These rules define detected signal events, not physical fault labels.
+Contiguous positive samples are merged into one spike episode. An isolated zero event is separately recorded by $I^{\mathrm{zero}}_{t,c}=\mathbb{I}(x_{t,c}=0)$. These rules define detected signal events, not physical fault labels. \Cref{fig:spike-rule-example} applies \cref{eq:rolling-mad,eq:spike-rule} to a representative 5,000-sample raw-record excerpt. Its shaded band changes with local scatter, and the orange line and emphasized red marker identify the largest rule-positive departure in that excerpt.
 
-For a channel pair $(i,j)$, the discovery probe computes Pearson correlation
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig3_spike_rule_example}
+  \caption{Representative robust-deviation calculation based on \cref{eq:rolling-mad,eq:spike-rule}.}
+  \label{fig:spike-rule-example}
+\end{figure}
+
+For a channel pair $(i,j)$, the discovery probe computes the Pearson coefficient defined in \cref{eq:pearson}.
 \begin{equation}
 \begin{aligned}
 r_{ij}&=\frac{\sum_t(x_{t,i}-\bar{x}_i)(x_{t,j}-\bar{x}_j)}
@@ -31,7 +38,22 @@ r_{ij}&=\frac{\sum_t(x_{t,i}-\bar{x}_i)(x_{t,j}-\bar{x}_j)}
 \end{aligned}
 \label{eq:pearson}
 \end{equation}
-The current implementation flags near-redundancy at $r_{ij}\geq0.99$ and strong co-movement for $0.85\leq r_{ij}<0.99$. Together with lag, extremes, and spatial-snapshot outputs, these quantities form a structured alert interface
+The current implementation flags near-redundancy at $r_{ij}\geq0.99$ and strong co-movement for $0.85\leq r_{ij}<0.99$. \Cref{fig:pearson-example} visualizes \cref{eq:pearson} for one selected pair in the same representative excerpt. It is a statistical co-movement display, not evidence of an instrument relationship or physical mechanism. Timing is inspected separately by the correlation--lag scan in \cref{fig:lag-example}; its peak is an association, not a causal direction. Together with lag, extremes, and spatial-snapshot outputs, these quantities form the structured alert interface in \cref{eq:alert-summary}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig4_pearson_example}
+  \caption{Representative Pearson co-movement density view based on \cref{eq:pearson}.}
+  \label{fig:pearson-example}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig5_lag_example}
+  \caption{Representative correlation--lag scan for the selected channel pair.}
+  \label{fig:lag-example}
+\end{figure}
+
 \begin{equation}
 \begin{aligned}
 \mathbf{a}=g(\mathbf{X})=\{&\mathbf{a}_{\mathrm{health}},\mathbf{a}_{\mathrm{morph}},

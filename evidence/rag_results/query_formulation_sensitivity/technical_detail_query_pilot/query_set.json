@@ -1,0 +1,65 @@
+{
+  "benchmark": "Technical-detail query formulation sensitivity pilot",
+  "version": "1.0",
+  "generation_mode": "expert-authored technical-detail queries informed by documented signal observations; no LLM was used",
+  "source_artifacts": [
+    "evidence/case_A1_1/report.txt",
+    "evidence/case_A2_1/report.txt"
+  ],
+  "baseline_queries": [
+    {"query_id": "baseline_zh_core", "language": "zh", "query": "中子", "family": "baseline", "query_type": "core_term"},
+    {"query_id": "baseline_en_core", "language": "en", "query": "neutron", "family": "baseline", "query_type": "core_term"},
+    {"query_id": "baseline_zh_phrase", "language": "zh", "query": "中子测量电流", "family": "baseline", "query_type": "phrase"},
+    {"query_id": "baseline_en_phrase", "language": "en", "query": "neutron measurement current", "family": "baseline", "query_type": "phrase"}
+  ],
+  "technical_detail_queries": [
+    {
+      "query_id": "obs_spike_en",
+      "language": "en",
+      "query": "neutron current measurement repeated spike events",
+      "family": "observation_derived",
+      "observation_rule": "Repeated spike episodes are present in the condition reports.",
+      "support_cases": ["case_A1_1", "case_A2_1"]
+    },
+    {
+      "query_id": "obs_spike_zh",
+      "language": "zh",
+      "query": "中子电流测量重复尖峰事件",
+      "family": "observation_derived",
+      "observation_rule": "Repeated spike episodes are present in the condition reports.",
+      "support_cases": ["case_A1_1", "case_A2_1"]
+    },
+    {
+      "query_id": "obs_zero_en",
+      "language": "en",
+      "query": "neutron current measurement synchronized zero-value dropout across channels",
+      "family": "observation_derived",
+      "observation_rule": "Zero-value dropouts recur across multiple channels at common timestamps.",
+      "support_cases": ["case_A1_1", "case_A2_1"]
+    },
+    {
+      "query_id": "obs_zero_zh",
+      "language": "zh",
+      "query": "中子电流测量跨通道同步零值闪断",
+      "family": "observation_derived",
+      "observation_rule": "Zero-value dropouts recur across multiple channels at common timestamps.",
+      "support_cases": ["case_A1_1", "case_A2_1"]
+    },
+    {
+      "query_id": "obs_sync_en",
+      "language": "en",
+      "query": "neutron current measurement highly synchronized channels without time lag",
+      "family": "observation_derived",
+      "observation_rule": "Highly co-moving channel groups are observed, with no detected lagged propagation chain.",
+      "support_cases": ["case_A1_1", "case_A2_1"]
+    },
+    {
+      "query_id": "obs_sync_zh",
+      "language": "zh",
+      "query": "中子电流测量高同步通道无时间滞后",
+      "family": "observation_derived",
+      "observation_rule": "Highly co-moving channel groups are observed, with no detected lagged propagation chain.",
+      "support_cases": ["case_A1_1", "case_A2_1"]
+    }
+  ]
+}

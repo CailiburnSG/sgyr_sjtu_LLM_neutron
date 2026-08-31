@@ -1,10 +1,12 @@
 \subsection{Evaluation questions and scope}
 The evaluation assesses the reliability of the \emph{evidence-retrieval layer}, not diagnostic accuracy, root-cause identification, or generation-side factuality. It asks whether retrieval maintains a deployment policy that prioritizes a fixed IAEA core when same-domain supplementary manuals are admitted, and how that behavior changes with corpus scope, query formulation, chunking, and encoder choice.
 
+The retrieval experiments are deliberately separated from generative-LLM behavior. Query texts are manually fixed formulations, and retrieved chunks are ranked through embedding similarity; the experiments do not evaluate LLM-generated queries, tool-use trajectories, memo quality, or generation-side factuality. This separation makes the reported source-priority and self-retrieval metrics attributable to the retrieval configuration rather than to variation in a generative model's wording or reasoning.
+
 \subsection{Corpus, source policy, and protocol variants}
 The retrieval collection contains 64 technical documents: a fixed 13-document IAEA core and 51 same-domain supplementary documents. The supplementary material is relevant nuclear instrumentation and control evidence, not meaningless noise. The source-priority policy therefore does not assert that IAEA passages are the only relevant passages; it asks whether a deployment that requires a pre-designated authority set can maintain that preference as the searchable corpus expands.
 
-Two protocol variants are reported separately. The historical robustness experiments use \texttt{nomic-embed-text} and 17 Markdown index configurations with chunk sizes $\{800,1000,1200,1500\}$ and overlaps $\{50,80,100,120,150\}$ for valid combinations. The independent CPU encoder benchmark uses 240-word chunks, 24-word overlap, and two MiniLM encoders. Its absolute score scale is therefore not compared directly with the historical index; it tests whether the source-priority phenomenon persists under a separate encoder and chunk construction.
+Two protocol variants are reported separately. The historical robustness experiments use \texttt{nomic-embed-text} and 17 Markdown index configurations with chunk sizes $\{800,1000,1200,1500\}$ and overlaps $\{50,80,100,120,150\}$ for valid combinations. The independent embedding-model comparison uses 240-word chunks, 24-word overlap, and two MiniLM encoders. Its absolute score scale is therefore not compared directly with the historical index; it tests whether the source-priority phenomenon persists under a separate encoder and chunk construction.
 
 \subsection{Queries and controlled corpus expansion}
 All corpus-scope protocols use the four fixed bilingual queries in \cref{tab:retrieval-queries}. The Chinese entries are represented by Unicode code points solely because the manuscript is compiled with \texttt{pdfLaTeX}; the benchmark metadata stores and submits the corresponding UTF-8 strings. The queries intentionally include short core terms and more specific phrase queries, so the experiment evaluates both query language and query formulation rather than claiming an intrinsic language ranking.
@@ -29,7 +31,7 @@ Let $\mathcal{D}_{\mathrm{core}}$ be the fixed IAEA pool and let $\mathcal{D}_{\
 \mathcal{D}_{m,t}=\mathcal{D}_{\mathrm{core}}\cup\mathcal{D}_{\mathrm{sup}}^{(m,t)}, \qquad
 m\in\{0,5,10,\ldots,51\}.
 \end{equation}
-For $m=0$, the core-only pool is evaluated once. In the historical index experiments, each non-zero $m$ uses 100 random supplementary-document draws per query and index configuration. In the independent CPU benchmark, each non-zero $m$ uses ten random draws per query and encoder. Retrieval returns the top $k=10$ chunks.
+For $m=0$, the core-only pool is evaluated once. In the historical index experiments, each non-zero $m$ uses 100 random supplementary-document draws per query and index configuration. In the independent embedding-model comparison, each non-zero $m$ uses ten random draws per query and encoder. Retrieval returns the top $k=10$ chunks.
 
 \subsection{Historical robustness and self-retrieval experiments}
 The historical corpus-scope experiment records top-1, top-3 mean, and top-10 mean cosine scores, IAEA priority@10, and the rank of the first IAEA result. The primary score plotted in \cref{fig:scope-priority} is the top-1 cosine score. For a query $q$ and ordered retrieval list $R_k(q)=\{d_1,\ldots,d_k\}$,
@@ -61,10 +63,10 @@ We additionally report mean reciprocal rank, where $r_j$ is the rank of the firs
 \end{equation}
 The strict/document distinction prevents overlap-induced neighboring chunks from being characterized as wholly irrelevant.
 
-\subsection{Independent CPU encoder comparison}
-The independent benchmark compares \url{sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} with \url{sentence-transformers/all-MiniLM-L6-v2} on CPU. It uses the same 64-document collection, the four queries in \cref{tab:retrieval-queries}, normalized embeddings, top-$10$ retrieval, 240-word chunks with 24-word overlap, and 11,199 chunks in total. For every trial it reports top-1 and top-10 mean cosine scores, IAEA priority@10, and first-IAEA rank. This benchmark is a direct measured comparison, not an extrapolation from the historical index.
+\subsection{Independent embedding-model comparison}
+The independent comparison contrasts \url{sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} with \url{sentence-transformers/all-MiniLM-L6-v2}. It uses the same 64-document collection, the four queries in \cref{tab:retrieval-queries}, normalized embeddings, top-$10$ retrieval, 240-word chunks with 24-word overlap, and 11,199 chunks in total. For every trial it reports top-1 and top-10 mean cosine scores, IAEA priority@10, and first-IAEA rank. This benchmark is a direct measured comparison, not an extrapolation from the historical index.
 
 \subsection{Aggregation and interpretation boundary}
-Within each historical index configuration, the stored standard deviations quantify variation across random supplementary-document draws. The error bands in \cref{fig:scope-priority,fig:self-retrieval} have a different meaning: each configuration is first reduced to its mean, and the displayed bands are one standard deviation across the 17 available chunking configurations. The CPU comparison reports standard deviations across its ten random document draws. These distinct sources of variation are not pooled.
+Within each historical index configuration, the stored standard deviations quantify variation across random supplementary-document draws. The error bands in \cref{fig:scope-priority,fig:self-retrieval} have a different meaning: each configuration is first reduced to its mean, and the displayed bands are one standard deviation across the 17 available chunking configurations. The independent model comparison reports standard deviations across its ten random document draws. These distinct sources of variation are not pooled.
 
 The experiments establish retrieval behavior for the corpus, encoders, query set, and index grids studied here. They do not establish a universal ranking of languages or chunking strategies, human relevance of every retrieved passage, or the factual correctness of generated memos. Those questions require relevance annotation and generation-side review.

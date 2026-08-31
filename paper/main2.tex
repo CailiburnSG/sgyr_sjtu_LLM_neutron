@@ -22,7 +22,9 @@
 \usepackage{siunitx}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-\setcitestyle{numbers,super,sort&compress}
+% elsarticle passes these to natbib before it loads: citations are sorted, and
+% only consecutive runs of three or more are compressed (1,2 vs. 1--4).
+\biboptions{super,comma,sort&compress}
 
 \graphicspath{{figs/}}
 % Permit small, visually unobtrusive adjustments before TeX stretches interword
@@ -58,10 +60,12 @@ neutron instrumentation \sep online monitoring \sep diagnostic assistance \sep r
 \label{sec:system}
 This section specifies the evidence-constrained transformation contract used throughout the study: a raw measurement record is converted into an auditable observation packet, compressed into a structured alert summary, linked to retrieved manual evidence, and expressed as a citation-bearing memo for engineering review. The automated chain produces derived observations and candidate interpretations; engineering review remains outside that chain and retains decision authority.
 
+The complete transformation contract is summarized in \cref{fig:overview}: it distinguishes the auditable measurement-side artifacts from retrieved documentary evidence and from the external engineering-review decision point.
+
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.98\linewidth]{fig1_overview}
-  \caption{Evidence-constrained diagnostic-assistance architecture. The condition report and structured alert summary form the auditable interface between raw measurement analysis and manual retrieval. The evaluation module stress-tests the retrieval layer under corpus, query, and chunking variation; engineering review remains outside the automated chain and retains decision authority.}
+  \caption{Evidence-constrained diagnostic-assistance architecture.}
   \label{fig:overview}
 \end{figure}
 

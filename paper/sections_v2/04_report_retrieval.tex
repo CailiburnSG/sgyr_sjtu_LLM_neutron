@@ -3,6 +3,28 @@
 
 The condition report serves two audiences. Its chronological narrative and optional JSON snapshots support human inspection and audit, whereas its compact alert summary is the machine-facing interface to retrieval. The summary contains variable-wise alerts, spike and zero-event counts, morphology, collinearity, lag, and selected spatial-snapshot cues. Queries are constructed from this structured representation rather than from a short operator phrase or an unreviewed free-text diagnosis hypothesis.
 
-Source PDFs are page-cropped when required, converted to Markdown, chunked, and embedded in a vector store~\citep{liu2023llamaindex}. At retrieval time, the system first searches for passages relevant to the observed phenomenon or mechanism, then may supplement them with passages on redundancy, topology, monitoring practice, or recommended checks. A memo composer links candidate interpretations to the retrieved passages with numbered citations. It must not convert this support into an automatically confirmed root cause.
+The alert-summary schema constrains retrieval intent without prescribing a fixed set of queries. As shown in \cref{tab:alert-query-intents}, each human-specified cue family is translated into a technical evidence target; wording can then be adapted to the observed record, the query language, and the available terminology. This mapping does not claim that queries are generated automatically, and it does not turn an observed cue into a physical mechanism or fault label.
+
+\begin{table}[H]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Abstract mapping from alert-summary cue families to retrieval intents.}
+  \label{tab:alert-query-intents}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.30\linewidth}
+                    >{\raggedright\arraybackslash}p{0.31\linewidth}
+                    >{\raggedright\arraybackslash}p{0.29\linewidth}@{}}
+    \toprule
+    Alert-summary cue family & Retrieval intent & Evidence focus \\
+    \midrule
+    Spike or isolated-zero event & Signal-integrity and anomalous-measurement context & Definitions, checks, and diagnostic considerations \\
+    Co-movement or lag cue & Redundancy, shared context, and timing behavior & Instrumentation and monitoring guidance \\
+    Morphology or data-health cue & Stability, noise, availability, and monitoring practice & Data-quality and monitoring guidance \\
+    Extremum or cross-channel snapshot & Operating context and cross-channel comparison & Operating guidance and recommended checks \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Source PDFs are page-cropped when required and processed with LlamaIndex~\citep{liu2023llamaindex}: they are converted to Markdown, chunked, and embedded in a vector store. At retrieval time, the system first searches for passages relevant to the observed phenomenon or mechanism, then may supplement them with passages on redundancy, topology, monitoring practice, or recommended checks. A memo composer links candidate interpretations to the retrieved passages with numbered citations. It must not convert this support into an automatically confirmed root cause.
 
 This design makes the report the semantic bridge between the measurement and evidence resources introduced in \cref{sec:data}. It also explains why the retrieval experiments in \cref{sec:eval} are part of the system contribution: they stress-test whether this evidence layer preserves the intended source policy under controlled corpus expansion, query variation, and chunking.

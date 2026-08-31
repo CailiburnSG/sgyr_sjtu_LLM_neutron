@@ -1,0 +1,13 @@
+{
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "documents": 64,
+  "core_documents": 13,
+  "chunks": 11199,
+  "chunk_words": 240,
+  "overlap_words": 24,
+  "top_k": 10,
+  "trials": 10,
+  "seed": 20260831,
+  "query_set": "evidence/rag_results/query_formulation_sensitivity/technical_detail_query_pilot/query_set.json",
+  "generation_mode": "expert-authored technical-detail queries informed by documented signal observations; no LLM was used"
+}

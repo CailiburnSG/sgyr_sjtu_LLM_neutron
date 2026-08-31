@@ -33,6 +33,15 @@ The corpus-scope results show a consistent deployment risk: increasing the suppl
 
 \input{tables/table_scope_aggregate}
 
+The aggregate curves conceal substantial configuration-level structure. \Cref{fig:retrieval-atlas} therefore provides a complementary retrieval-reliability atlas. Its gradient maps retain the 17 individual index configurations rather than averaging them, and its quadrant view encodes the joint change in cosine score and IAEA priority relative to the core-only pool. The dense lower-right concentration makes the deployment-risk pattern directly visible: many Chinese phrase-query conditions gain nearest-neighbor cosine score while losing almost all IAEA priority. The embedding retrieval profiles are descriptive views of three raw metrics at one fixed expansion size, not a composite model ranking.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{fig8_retrieval_atlas}
+  \caption{Retrieval-reliability atlas derived from existing phrase-query experiments. (A) IAEA priority@10 across individual historical index configurations and supplementary-corpus sizes. (B) Each point is a configuration--corpus condition, positioned by its change in top-1 cosine score and IAEA priority@10 relative to the IAEA-only pool; the lower-right quadrant identifies conditions in which similarity rises while source priority falls. (C) Independent embedding retrieval profiles at ten supplementary documents, using the raw top-1 cosine, top-10 mean cosine, and IAEA priority@10 values. The radar views are descriptive and are not a composite score or a universal encoder ranking.}
+  \label{fig:retrieval-atlas}
+\end{figure*}
+
 These results do not imply that supplementary documents are irrelevant. Rather, when an application requires IAEA sources to be surfaced first, nearest-neighbor similarity alone is not enough to enforce that policy. Source metadata, filtering, or reranking should be considered before a generated memo is presented as authority-backed evidence.
 
 \subsection{Language and query formulation dominate the tested chunking range}
@@ -48,15 +57,15 @@ Self-retrieval exposes a systematic strict--document-level gap. \Cref{fig:self-r
   \label{fig:self-retrieval}
 \end{figure}
 
-\subsection{Real CPU embedding-model comparison}
-To test whether the observed behavior is tied only to the historical embedding index, we ran the independent CPU encoder protocol specified in \cref{sec:eval}. It compares a multilingual MiniLM encoder with an English-oriented MiniLM encoder and is reported separately from the historical \texttt{nomic-embed-text} experiments because the chunk construction differs.
+\subsection{Independent embedding-model comparison}
+To test whether the observed behavior is tied only to the historical embedding index, we ran the independent embedding-model protocol specified in \cref{sec:eval}. It compares a multilingual MiniLM encoder with an English-oriented MiniLM encoder and is reported separately from the historical \texttt{nomic-embed-text} experiments because the chunk construction differs.
 
 \Cref{fig:real-embedding-comparison,tab:real-embedding-comparison} show that embedding choice changes cosine scales and source-priority trajectories, but does not collapse the problem into one scalar. The multilingual model gives materially higher Chinese phrase cosine scores (0.62--0.64 versus 0.27 for the English-oriented model), while both models undergo source-priority decay as the supplementary pool grows. Thus multilingual semantic alignment and authoritative-source preference are complementary deployment requirements rather than interchangeable objectives.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.98\linewidth]{fig7_real_embedding_comparison}
-  \caption{Actual CPU embedding benchmark on the same 64-document corpus. Curves compare a multilingual MiniLM encoder and an English-oriented MiniLM encoder; bands show standard deviation over random supplementary-document selections. This is a newly run benchmark, not an extrapolation of the historical index.}
+  \caption{Independent embedding-model comparison on the same 64-document corpus. Curves compare a multilingual MiniLM encoder and an English-oriented MiniLM encoder; bands show standard deviation over random supplementary-document selections. This is a newly run benchmark, not an extrapolation of the historical index.}
   \label{fig:real-embedding-comparison}
 \end{figure}
 
