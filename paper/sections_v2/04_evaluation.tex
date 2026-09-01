@@ -1,40 +1,92 @@
 \subsection{Evaluation questions and scope}
 The evaluation assesses the reliability of the \emph{evidence-retrieval layer}, not diagnostic accuracy, root-cause identification, or generation-side factuality. It asks whether retrieval maintains a deployment policy that prioritizes a fixed IAEA core when same-domain supplementary manuals are admitted, and how that behavior changes with corpus scope, query formulation, chunking, and encoder choice.
 
-The retrieval experiments are deliberately separated from generative-LLM behavior. Query texts are manually fixed formulations, and retrieved chunks are ranked through embedding similarity; the experiments do not evaluate LLM-generated queries, tool-use trajectories, memo quality, or generation-side factuality. This separation makes the reported source-priority and self-retrieval metrics attributable to the retrieval configuration rather than to variation in a generative model's wording or reasoning.
+The retrieval experiments are deliberately separated from generative-LLM behavior. Query texts are manually specified formulations, and retrieved chunks are ranked through embedding similarity; the experiments do not evaluate LLM-generated queries, tool-use trajectories, memo quality, or generation-side factuality. This separation makes the reported source-priority and self-retrieval metrics attributable to retrieval configuration rather than to variation in a generative model's wording or reasoning.
 
 \subsection{Corpus, source policy, and protocol variants}
 The retrieval collection contains 64 technical documents: a fixed 13-document IAEA core and 51 same-domain supplementary documents. The supplementary material is relevant nuclear instrumentation and control evidence, not meaningless noise. The source-priority policy therefore does not assert that IAEA passages are the only relevant passages; it asks whether a deployment that requires a pre-designated authority set can maintain that preference as the searchable corpus expands.
 
-Two protocol variants are reported separately. The historical robustness experiments use \texttt{nomic-embed-text} and 17 Markdown index configurations with chunk sizes $\{800,1000,1200,1500\}$ and overlaps $\{50,80,100,120,150\}$ for valid combinations. The independent embedding-model comparison uses 240-word chunks, 24-word overlap, and two MiniLM encoders. Its absolute score scale is therefore not compared directly with the historical index; it tests whether the source-priority phenomenon persists under a separate encoder and chunk construction.
+Three non-pooled protocol families are used. As summarized in \cref{tab:retrieval-protocols}, the historical \texttt{nomic-embed-text} index supplies the broadest legacy robustness and self-retrieval results. The primary new comparison, denoted P0, reuses the historical character-based chunking regime at three scopes and evaluates two MiniLM encoders with both baseline and manually authored technical-detail queries. The 240-word MiniLM setting is retained last as a fixed-word cross-check, rather than being treated as the reference scale for the other protocols.
+
+\Cref{fig:evaluation-design} visualizes the shared inputs, controlled corpus expansion, non-pooled protocol families, and recorded outcomes. It makes explicit that query text is manually fixed in every protocol and that absolute cosine scales are interpreted only within a protocol family.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{fig6_evaluation_design}
+  \caption{Retrieval evaluation design. A shared 64-document corpus and controlled expansion policy feed manually fixed query suites into three separately interpreted protocol families. The recorded metrics characterize retrieval and source-policy behavior; they do not estimate fault accuracy or generation quality.}
+  \label{fig:evaluation-design}
+\end{figure*}
+
+\begin{table*}[t]
+  \centering
+  \caption{Retrieval protocol families. Metrics are interpreted within, not pooled across, protocol families.}
+  \label{tab:retrieval-protocols}
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}p{0.16\textwidth}p{0.22\textwidth}p{0.19\textwidth}p{0.19\textwidth}p{0.14\textwidth}@{}}
+    \toprule
+    Protocol & Encoder / index & Chunk construction & Queries and sampling & Primary role \\
+    \midrule
+    Historical robustness & \texttt{nomic-embed-text}; 17 saved indexes & Character chunks: 800--1500 characters; valid overlaps 50--150 & Four baseline bilingual queries; 100 non-zero draws & Legacy robustness and self-retrieval \\
+    P0 chunking grid & Multilingual MiniLM and English-oriented MiniLM & Character chunks: 800/80, 1200/120, 1500/150 & Ten bilingual queries; 10 non-zero draws & Query--language--chunking interaction \\
+    Fixed-word cross-check & Same two MiniLM encoders & 240 words, 24-word overlap & Four baseline queries, plus a small technical-detail pilot; 10 non-zero draws & Independent tokenization check \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+Because the encoders and chunk boundaries differ, an absolute cosine value from one protocol is not compared directly with a value from another. Comparisons instead use the source-priority trajectory, rank summaries, and within-protocol differences.
 
 \subsection{Queries and controlled corpus expansion}
-All corpus-scope protocols use the four fixed bilingual queries in \cref{tab:retrieval-queries}. The Chinese entries are represented by Unicode code points solely because the manuscript is compiled with \texttt{pdfLaTeX}; the benchmark metadata stores and submits the corresponding UTF-8 strings. The queries intentionally include short core terms and more specific phrase queries, so the experiment evaluates both query language and query formulation rather than claiming an intrinsic language ranking.
+The baseline suite contains four manually fixed bilingual queries: short core-term and measurement-phrase formulations in Chinese and English. \Cref{tab:retrieval-queries} lists the semantic forms. The query suite and the retrieval intents it operationalizes are author-defined and manually reviewed protocol choices, rather than labels or LLM-generated outputs. Chinese strings are represented by Unicode code points solely because the manuscript is compiled with \texttt{pdfLaTeX}; the benchmark metadata stores and submits the corresponding UTF-8 strings. The suite intentionally includes both short and specific phrasings, so the study evaluates query wording and language under a fixed corpus rather than claiming an intrinsic language ranking.
 
-\begin{table}[H]
+\begin{table}[t]
   \centering
-  \caption{Fixed queries used in corpus-scope retrieval experiments.}
+  \caption{Baseline queries used in every corpus-scope protocol.}
   \label{tab:retrieval-queries}
   \small
-  \begin{tabular}{@{}p{0.15\linewidth}p{0.44\linewidth}p{0.29\linewidth}@{}}
+  \begin{tabular}{@{}p{0.24\linewidth}p{0.32\linewidth}p{0.32\linewidth}@{}}
     \toprule
-    Query type & Chinese code points & English \\
+    Formulation & Chinese & English \\
     \midrule
     Core term & \texttt{U+4E2D U+5B50} & neutron \\
-    Phrase & \texttt{U+4E2D U+5B50 U+6D4B U+91CF U+7535 U+6D41} & neutron measurement current \\
+    Measurement phrase & \texttt{U+4E2D U+5B50 U+7535 U+6D41 U+6D4B U+91CF} & neutron current measurement \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-Let $\mathcal{D}_{\mathrm{core}}$ be the fixed IAEA pool and let $\mathcal{D}_{\mathrm{sup}}^{(m,t)}$ denote the supplementary documents sampled for expansion size $m$ and trial $t$. The active retrieval pool is
+P0 additionally tests six manually authored technical-detail queries, three in each language. Their wording is derived from the cue families that the workflow preserves in a condition report, but they are not automatically generated. As listed in \cref{tab:technical-queries}, the added formulations describe repeated spikes, synchronized zero-value dropouts, and high cross-channel synchrony without time lag. They test whether adding a particular technical detail changes the source-priority outcome; they do not assert that longer or more detailed queries are uniformly better.
+
+\begin{table}[t]
+  \centering
+  \caption{Manual technical-detail query families added in P0. Each family has one Chinese and one English formulation.}
+  \label{tab:technical-queries}
+  \small
+  \begin{tabular}{@{}p{0.28\linewidth}p{0.58\linewidth}@{}}
+    \toprule
+    Observation cue & English formulation (Chinese semantic counterpart in benchmark) \\
+    \midrule
+    Repeated spikes & neutron current measurement repeated spike events \\
+    Synchronized zeros & neutron current measurement synchronized zero-value dropout across channels \\
+    High synchrony & neutron current measurement highly synchronized channels without time lag \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Let $\mathcal{D}_{\mathrm{core}}$ be the fixed IAEA pool and let $\mathcal{D}_{\mathrm{sup}}^{(m,t)}$ denote the supplementary documents sampled for expansion size $m$ and trial $t$. As defined in \cref{eq:corpus-expansion}, the active retrieval pool is
 \begin{equation}
 \mathcal{D}_{m,t}=\mathcal{D}_{\mathrm{core}}\cup\mathcal{D}_{\mathrm{sup}}^{(m,t)}, \qquad
 m\in\{0,5,10,\ldots,51\}.
+\label{eq:corpus-expansion}
 \end{equation}
-For $m=0$, the core-only pool is evaluated once. In the historical index experiments, each non-zero $m$ uses 100 random supplementary-document draws per query and index configuration. In the independent embedding-model comparison, each non-zero $m$ uses ten random draws per query and encoder. Retrieval returns the top $k=10$ chunks.
+For $m=0$, the core-only pool is evaluated once. The historical index experiments use 100 random supplementary-document draws for every non-zero $m$, query, and index configuration. P0 and the fixed-word MiniLM cross-check each use ten draws. Retrieval returns the top $k=10$ chunks.
 
 \subsection{Historical robustness and self-retrieval experiments}
-The historical corpus-scope experiment records top-1, top-3 mean, and top-10 mean cosine scores, IAEA priority@10, and the rank of the first IAEA result. The primary score plotted in \cref{fig:scope-priority} is the top-1 cosine score. For a query $q$ and ordered retrieval list $R_k(q)=\{d_1,\ldots,d_k\}$,
+The historical corpus-scope experiment records top-1, top-3 mean, and top-10 mean cosine scores, IAEA priority@10, and the rank of the first IAEA result. For normalized query and chunk embeddings, cosine similarity is defined in \cref{eq:cosine}, and chunks are ranked in descending order of this score:
+\begin{equation}
+s(q,d)=\frac{\mathbf{e}(q)^\top\mathbf{e}(d)}{\lVert\mathbf{e}(q)\rVert_2\lVert\mathbf{e}(d)\rVert_2}.
+\label{eq:cosine}
+\end{equation}
+The primary score plotted in \cref{fig:scope-priority} is the top-1 cosine score. For a query $q$ and ordered retrieval list $R_k(q)=\{d_1,\ldots,d_k\}$, source priority is defined in \cref{eq:priority}:
 \begin{equation}
 \operatorname{Priority@}k(q)=\frac{1}{k}\sum_{i=1}^{k}
 \mathbb{I}\left(d_i\in\mathcal{D}_{\mathrm{core}}\right).
@@ -42,7 +94,7 @@ The historical corpus-scope experiment records top-1, top-3 mean, and top-10 mea
 \end{equation}
 Priority@k measures adherence to a source-priority policy, not human-judged relevance.
 
-Self-retrieval samples IAEA chunks as probes and forms queries using four modes: \texttt{first\_sentence}, \texttt{title}, \texttt{random\_window}, and \texttt{domain\_term}. For the corpus-decay condition visualized in \cref{fig:self-retrieval}, the first-sentence mode is used. The core-only pool uses 80 probes. Each non-zero expansion size uses ten trials of 80 probes each. For a probe chunk $n_j^\ast$, its source document $d_j^\ast=\operatorname{doc}(n_j^\ast)$, and retrieved set $R_k(q_j)$, strict and document-level recall are
+Self-retrieval samples IAEA chunks as probes and forms queries using four modes: \texttt{first\_sentence}, \texttt{title}, \texttt{random\_window}, and \texttt{domain\_term}. For the corpus-decay condition visualized in \cref{fig:self-retrieval}, the first-sentence mode is used. The core-only pool uses 80 probes. Each non-zero expansion size uses ten trials of 80 probes each. For a probe chunk $n_j^\ast$, its source document $d_j^\ast=\operatorname{doc}(n_j^\ast)$, and retrieved set $R_k(q_j)$, strict and document-level recall are defined in \cref{eq:recall}:
 \begin{equation}
 \begin{aligned}
 \mathrm{R}^{\mathrm{strict}}_k&=\frac{1}{N}\sum_{j=1}^{N}
@@ -52,7 +104,7 @@ Self-retrieval samples IAEA chunks as probes and forms queries using four modes:
 \end{aligned}
 \label{eq:recall}
 \end{equation}
-We additionally report mean reciprocal rank, where $r_j$ is the rank of the first relevant result and $r_j=\infty$ when the top-$k$ list has no relevant result:
+We additionally report mean reciprocal rank in \cref{eq:mrr}, where $r_j$ is the rank of the first relevant result and $r_j=\infty$ when the top-$k$ list has no relevant result:
 \begin{equation}
 \operatorname{MRR}=\frac{1}{N}\sum_{j=1}^{N}
 \begin{cases}
@@ -63,10 +115,17 @@ We additionally report mean reciprocal rank, where $r_j$ is the rank of the firs
 \end{equation}
 The strict/document distinction prevents overlap-induced neighboring chunks from being characterized as wholly irrelevant.
 
-\subsection{Independent embedding-model comparison}
-The independent comparison contrasts \url{sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} with \url{sentence-transformers/all-MiniLM-L6-v2}. It uses the same 64-document collection, the four queries in \cref{tab:retrieval-queries}, normalized embeddings, top-$10$ retrieval, 240-word chunks with 24-word overlap, and 11,199 chunks in total. For every trial it reports top-1 and top-10 mean cosine scores, IAEA priority@10, and first-IAEA rank. This benchmark is a direct measured comparison, not an extrapolation from the historical index.
+\subsection{P0 MiniLM chunking-grid comparison}
+P0 is the principal new controlled comparison. It holds the 64-document collection, top-$10$ retrieval rule, source-policy metric, and ten-query suite fixed while varying three historical character-chunk settings (800/80, 1200/120, and 1500/150) and two MiniLM encoders. This design exposes interactions among query family, language, chunking, and encoder without mixing their score scales with the historical \texttt{nomic-embed-text} index.
+
+For each model--chunk setting, the protocol records top-1 and top-10 mean cosine scores, IAEA priority@10, and first-IAEA rank for every scope and random draw. The core-only value at $m=0$ is deterministic under this construction. At $m=51$, every supplementary document is present, so a zero across-draw standard deviation reflects an identical full pool rather than evidence of robust retrieval. The primary P0 visualizations therefore compare priority at $m=10$, its change through $m=51$, and the complete scope trajectory.
+
+\subsection{Fixed-word MiniLM cross-check}
+The fixed-word comparison is retained as a separate cross-check after P0. It contrasts \url{sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} with \url{sentence-transformers/all-MiniLM-L6-v2} using 240-word chunks, 24-word overlap, normalized embeddings, and the same 64-document collection. The baseline benchmark uses the four queries in \cref{tab:retrieval-queries}; a small companion pilot uses the six manual technical-detail queries in \cref{tab:technical-queries} on the already saved fixed-word chunks. Both use ten random supplementary-document draws for non-zero scope values.
+
+This protocol is a direct measured check, not an extrapolation from the historical index. It tests whether an observed source-priority risk is confined to one tokenization scheme, but its absolute cosine scale and chunk count are intentionally not merged with P0.
 
 \subsection{Aggregation and interpretation boundary}
-Within each historical index configuration, the stored standard deviations quantify variation across random supplementary-document draws. The error bands in \cref{fig:scope-priority,fig:self-retrieval} have a different meaning: each configuration is first reduced to its mean, and the displayed bands are one standard deviation across the 17 available chunking configurations. The independent model comparison reports standard deviations across its ten random document draws. These distinct sources of variation are not pooled.
+Within each historical index configuration, stored standard deviations quantify variation across random supplementary-document draws. The error bands in \cref{fig:scope-priority,fig:self-retrieval} have a different meaning: each configuration is first reduced to its mean, and the displayed bands are one standard deviation across the 17 available chunking configurations. For P0 and the fixed-word MiniLM cross-check, standard deviations are computed over their ten random draws for each query--encoder--chunk--scope condition. These distinct sources of variation are not pooled.
 
-The experiments establish retrieval behavior for the corpus, encoders, query set, and index grids studied here. They do not establish a universal ranking of languages or chunking strategies, human relevance of every retrieved passage, or the factual correctness of generated memos. Those questions require relevance annotation and generation-side review.
+The experiments establish retrieval behavior for the corpus, encoders, query sets, and index grids studied here. They do not establish a universal ranking of languages, technical-detail phrasing, chunking strategies, or encoders; human relevance of every retrieved passage; or the factual correctness of generated memos. Those questions require relevance annotation and generation-side review.

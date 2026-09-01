@@ -7,6 +7,7 @@
 ### A. 论文定位与主张边界
 
 - **论文定位**：面向没有统一故障真值标注的原始中子电流时序数据，提出证据约束的诊断辅助工作流（evidence-constrained diagnostic assistance）。
+- **标签问题的准确动机**：完整 archive 的逐段、逐通道 fault label 需要结合运行背景、维护信息和仪表知识进行专家复核，在规模上不可作为常规前置工作。本文因此使用“可审计的描述性观测语义”作为中间层，而不是把无标签简单表述为数据缺陷。
 - **不能宣称的事**：系统不自动确认故障、不证明根因、不替代工程师、更不直接支持运行决策。
 - **应当强调的链条**：原始测量记录 → 可审计观测 → 结构化 alert summary → 技术手册证据 → 带引用的辅助诊断 memo → 人工复核。
 - **术语约束**：避免把原始数据称为“弱标签数据”。更准确的说法是 *unlabeled / without a unified fault ground truth*；LLM 生成的 condition report 不是标签，也不是 ground truth。
@@ -38,7 +39,7 @@
 
 ### E. 当前结构决定（2026-08-31）
 
-- **保留六个一级章节**：Introduction → System Design and Methodology → Evaluation Protocol → Results and Discussion → Limitations and Threats to Validity → Conclusions。它们已经适合本研究，不应为了模仿 MCP-SIM 改成“Results / Methods”倒置的 Nature 式版式。
+- **保留六个一级章节**：Introduction → System Design and Methodology → Experimental Design and Retrieval Evaluation → Results and Discussion → Limitations and Threats to Validity → Conclusions。第 3 节名称明确限定其对象为 retrieval，而不是整个诊断工作流或 fault accuracy；整体结构不应为了模仿 MCP-SIM 改成“Results / Methods”倒置的 Nature 式版式。
 - **只做内部重排（已落实）**：总览工作流图与“转换契约”说明已从 Introduction 移至第 2 节开头；第 2.1 仍以 Data Resources 开始；第 2.2 已调整为“初始化 → probes → 操作定义 → observation packet / alert summary”的因果顺序。
 - **第 3 节保持独立**：它负责验证阶梯，不和第 2 节的方法实现混写。
 - **第 4 节加强而不拆分**：保留 Results and Discussion 合并形式，但让 4.1 成为完整 trace case，4.6 成为综合讨论与部署含义。
@@ -175,13 +176,15 @@ condition report 是测量侧的派生产物，alert summary 是用于检索的�
 
 ---
 
-## 3. Evaluation Protocol
+## 3. Experimental Design and Retrieval Evaluation
 
 ### 3.1 评测对象与边界
 
 评测对象是 **evidence-retrieval layer** 的行为，而不是诊断准确率、根因识别率或生成文本的事实正确性。应先说明：第 3 节检验的是当部署政策要求优先一组预定义权威来源时，检索能否在 corpus 扩展后维持该偏好。
 
-**结构判断。** 第 3 节当前的“评测问题 → corpus/source policy → queries/expansion → metrics/self-retrieval → independent embedding-model comparison → interpretation boundary”顺序是正确的，应保留。需要加强的是开头的验证阶梯图或一张简表，使读者一眼知道此节只验证证据链的哪些层次。
+**结构判断（已调整）。** 第 3 节采用“评测问题 → corpus/source policy/三套 protocol → queries/expansion → historical metrics/self-retrieval → P0 MiniLM chunking grid → fixed-word 240 cross-check → interpretation boundary”的顺序。P0 是当前主要的新对照，240-word 是最后的独立 tokenization 交叉验证；protocol 总表已说明各自改变了什么、不能比较什么。
+
+**Chapter 3 视觉锚点（已加入 Fig. 6）。** Fig. 6 是 evaluation-design map，不是结果图：它在一张图内组织共享 64-document corpus、controlled expansion、人工固定 query、历史/P0/fixed-word 三套不混池 protocol，以及检索指标的解释边界。热图、散点与 trajectory 仍留在第 4 节，避免方法设计与实测结果混写。
 
 ### 3.2 Corpus、source policy 与实验变体
 
@@ -206,6 +209,14 @@ condition report 是测量侧的派生产物，alert summary 是用于检索的�
 
 ### 3.5 待补强但不能虚构的评估
 
+**P0 主对照已完成。** P0 使用历史字符切块的三档代表设置 800/80、1200/120、1500/150，分别配 multilingual MiniLM 与 English-oriented MiniLM、四条 baseline 和六条人工技术细节 query、十次非零 scope 随机 draw。它现在是第 3 章的主实验；240-word/24-word MiniLM 结果改为最后的固定词切块交叉验证，绝对 cosine 不与 P0 或历史 nomic index 混合。
+
+**P0 的可写结论边界。** source priority 随 supplementary corpus 扩张在所有三档字符切块中均会衰减，但 query family、语言、chunking 和 encoder 会交互。不能写“技术细节 query 更好”或“语言主导 chunking”的普适结论。$m=10$ 的六个 model--chunk setting 描述性平均中，English technical-detail 为 0.65、English baseline 为 0.60；Chinese technical-detail 为 0.52、Chinese baseline 为 0.62，正好说明效果并不单向。
+
+**查询定义补充。** P0 的六条技术细节 query 是人工撰写：重复尖峰、跨通道同步零值闪断、高同步无时滞，各有中英文版本。它们受 condition-report 保存的 cue family 启发，但不是自动 observation-derived query，也不是 LLM 生成。3.4 现已把 cosine 以 $s(q,d)$ 明确定义为检索排序分数。
+
+**作者审阅边界（已写入正文）。** retrieval intent 与 query suite 是作者定义并在 workflow protocol 设计中人工审阅的可追溯选择；这不是独立专家 relevance assessment，也不应被命名为 expert validation。当前无需为了补实验而重复做单人作者标注；独立 passage-level relevance 或 memo-support 审查仅在将来有合格外部复核者时再开展。
+
 - [ ] 小规模人工 query--document relevance / citation-support 标注，以连接 source priority 与真实证据适切性。
 - [ ] generation-side factuality 或 citation correctness 评测。
 - [ ] 在资源允许时测试 reranker、metadata filter 或更多多语 encoder；未实测前不能写入结果。
@@ -218,23 +229,23 @@ condition report 是测量侧的派生产物，alert summary 是用于检索的�
 
 **检索与生成 LLM 的评测边界（已写入正文）。** 本文 RAG 实验以人工固定 query 和 embedding similarity ranking 评估 retrieval component；MiniLM / `nomic-embed-text` 是 embedding encoders，不是本文被比较的生成式 LLM。正文已明确不评估 LLM 生成 query、agent tool-use trajectory、memo 的事实性或写作质量；这些是后续独立评测任务。
 
-**待在实验室环境完成的任务（中文说明已整理）。** 优先完成的 GPU chunking 鲁棒性检查仅测试 `800/80`、`1200/120`、`1500/150` 三档历史字符级 chunking，配两种已用 MiniLM、四条 baseline 与六条技术细节 query、同一 64 文档 corpus 和 corpus-expansion protocol。它不是全 17 组重跑，也不是历史 nomic index 的复现；其目标只是检查 query formulation 敏感性是否跨代表性 chunk 长度出现。具体命令和验证见 `paper/SERVER_CURSOR_QUERY_CHUNKING_TASK.md`。实验室的完整优先级、全 archive 流程覆盖核查、人工证据审查和非必要扩展见 `paper/LAB_ENVIRONMENT_EXECUTION_PLAN.md`。在结果完成前，正文只将这些工作列为 planned validation，不把它们写成已验证结论。
+**实验室后续任务（中文说明已整理）。** P0 chunking grid 已完成，不再把它列为 planned validation。实验室优先级应转为：(1) 全 archive 的流程覆盖核查；(2) 小规模人工 query--document relevance / citation-support 标注；(3) 如资源允许，再测 reranker、metadata filter 或更多 encoder。完整优先级见 `paper/LAB_ENVIRONMENT_EXECUTION_PLAN.md`。
 
 ---
 
 ## 4. Results and Discussion
 
-### 4.1 Case study: from observation to evidence
+### 4.1 Traceable semantic handoff: from observation to evidence
 
 **应呈现的链条。** 对代表性多通道记录展示：可复核的观测 → alert summary → 检索到的手册证据 → 带引用 memo → 仍需人工核查的部分。
 
 **必须避免。** 不使用样例文件名代表整个 archive；不把 spike episode、isolated-zero 或共线性统计写成确认的设备故障。
 
-**图表方向。** 代表性波形是必要但不充分的。后续可在已有统计支持下加入分布图、矩阵/热图、分象限图或九宫格式多面板图；每一幅图必须回答一个具体问题，不为“看起来丰富”而外推或造数。
+**图表方向（已调整）。** 原始波形不是本节的结果中心；来源不可复现、难以审计的旧波形图已从主文移除。4.1 应展示可审计的 observation inventory、alert-summary cue 与对应 retrieval intent；若将来补图，只能用可复现的活跃窗口，并明确它不估计 archive-wide event prevalence。
 
-**可迁移的“困难案例”设计。** 只保留一个最能暴露流程约束的代表性案例，但展示完整 trace，而不是只给漂亮波形：原始窗口与数据健康结果 → observation packet / alert summary → 检索证据卡片 → memo 中的候选解释与人工核查项。它在本文的作用是证明可审计链条如何工作，不是作为故障正确性的单例证明。
+**可迁移的“困难案例”设计。** 只保留一个最能暴露流程约束的代表性案例，但从 description 而非漂亮波形开始：observation packet / alert summary → 检索证据卡片 → memo 中的候选解释与人工核查项。它在本文的作用是证明可审计链条如何工作，不是作为故障正确性的单例证明。
 
-**已落实的结构调整。** 本小节保留为第 4 节第一节，标题已改为 `Traceable case study: from observation to evidence`；波形图被定位为 trace 的第一证据，而非独占案例。后续仍应加入一个 compact alert-summary / evidence-card / memo-excerpt 面板或表格，而不必增加更多无上下文的单例波形。
+**已落实的结构调整。** 本小节保留为第 4 节第一节，标题已改为 `Traceable semantic handoff: from observation to evidence`。当前以 condition-report event inventory 说明语义交接；后续可加入 compact alert-summary / evidence-card / memo-excerpt 面板或表格，而不必增加无上下文的单例波形。
 
 ### 4.2 Similarity and source priority can diverge
 
@@ -242,9 +253,11 @@ condition report 是测量侧的派生产物，alert summary 是用于检索的�
 
 **讨论要求。** 解释 non-core 排前不必然错误；本研究考察的是一项部署政策下的权威来源优先级。将其与一般 relevance 明确分开，并在第 5 节承认未进行人工 relevance 标注。
 
-**Retrieval reliability atlas（已加入）。** 新的跨双栏 atlas 将已有 phrase-query 结果从三个互补角度呈现：(A) 17 个历史 index configurations 在不同 corpus expansion 下的 IAEA priority@10 梯度热图；(B) 以 IAEA-only 为基线的 cosine change--priority change 象限散点，直接标出“相似度上升、来源优先级下降”的 deployment-risk region；(C) 在 ten-supplement condition 下、用三个原始 $[0,1]$ 指标绘制的 embedding retrieval radar profiles。雷达图不是 composite score 或通用模型排名，只是固定条件下的描述性 profile。该图补充而不替代已有聚合趋势图和全 trajectory embedding-model comparison。
+**Retrieval reliability atlas（已重构）。** 跨双栏 atlas 现在只保留两个互补面板：(A) 英文 phrase 在 17 个历史 index configurations、不同 corpus expansion 下的 IAEA priority@10 梯度热图；(B) 中英文共同的、以 IAEA-only 为基线的 cosine change--priority change 象限散点，直接标出“相似度上升、来源优先级下降”的 deployment-risk region。原先信息密度很低的中文热图不再单列，但中文结果仍完整保留在 B 的红色点与正文数值中。
 
-### 4.3 Language and query formulation dominate the tested chunking range
+**P0 query-effect figure（已加入）。** 原 atlas 的 encoder radar 已拆出并替换为独立 P0 图：六个 encoder--character-chunk settings 分别给出 manual technical-detail query family 相对 baseline family 的 Priority@10 改变量，左右比较 English/Chinese。它直接支持“query effect depends on language and configuration”，不能写成技术细节 query 的统一提升。
+
+### 4.3 Query formulation interacts with language and chunking
 
 **已支持的发现。** 在已测试的 encoder、语料、queries 和 chunk/overlap grid 中，语言与 query 信息量的影响通常大于 overlap 的微调。
 

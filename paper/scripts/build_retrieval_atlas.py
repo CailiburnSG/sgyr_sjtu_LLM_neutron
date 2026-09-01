@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from matplotlib.colors import LinearSegmentedColormap
-from matplotlib.lines import Line2D
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -21,8 +20,6 @@ INK = "#102B46"
 MUTED = "#64798B"
 EN = "#2878B5"
 ZH = "#D35F5F"
-MULTI = "#169A94"
-ENGLISH = "#7B67B7"
 
 
 def config_from_path(path: Path) -> str:
@@ -35,6 +32,8 @@ def config_from_path(path: Path) -> str:
 def historical() -> pd.DataFrame:
     frames = []
     for path in sorted(EVIDENCE.glob("rag_results/**/scope_summary*.csv")):
+        if not re.search(r"_o\d+_c\d+", str(path.parent)):
+            continue
         data = pd.read_csv(path, encoding="utf-8-sig")
         data["config"] = config_from_path(path)
         frames.append(data)
@@ -42,16 +41,6 @@ def historical() -> pd.DataFrame:
     for col in ("extra_docs", "top1_score_mean", "iaea_purity_topk_mean"):
         data[col] = pd.to_numeric(data[col], errors="coerce")
     return data[(data["query_tag"] == "phrase") & data["extra_docs"].between(0, 45)].copy()
-
-
-def embedding_comparison() -> pd.DataFrame:
-    frames = []
-    for path in sorted(EVIDENCE.glob("embedding_benchmark/**/scope_summary.csv")):
-        frames.append(pd.read_csv(path, encoding="utf-8-sig"))
-    data = pd.concat(frames, ignore_index=True)
-    for col in ("extra_docs", "top1_score_mean", "top10_mean_score_mean", "iaea_priority_top10_mean"):
-        data[col] = pd.to_numeric(data[col], errors="coerce")
-    return data[(data["query_tag"] == "phrase") & data["extra_docs"].eq(10)].copy()
 
 
 def sort_config(value: str) -> tuple[int, int]:
@@ -74,52 +63,29 @@ def draw_heatmap(ax, data: pd.DataFrame, lang: str, cmap):
     return im
 
 
-def draw_radar(ax, data: pd.DataFrame, lang: str):
-    subset = data[data["lang"].eq(lang)].copy()
-    axes = ["Top-1\ncosine", "Top-10 mean\ncosine", "IAEA\npriority@10"]
-    angles = np.linspace(0, 2 * np.pi, len(axes), endpoint=False).tolist()
-    angles += angles[:1]
-    styles = [("multilingual", MULTI, "Multilingual MiniLM-L12"), ("English", ENGLISH, "English MiniLM-L6")]
-    for key, color, label in styles:
-        row = subset[subset["model"].str.contains("multilingual", case=False) if key == "multilingual" else subset["model"].str.contains("all-MiniLM", case=False)].iloc[0]
-        values = [row["top1_score_mean"], row["top10_mean_score_mean"], row["iaea_priority_top10_mean"]]
-        values += values[:1]
-        ax.plot(angles, values, color=color, linewidth=1.9, label=label)
-        ax.fill(angles, values, color=color, alpha=.12)
-    ax.set_xticks(angles[:-1], axes, fontsize=7, color=INK)
-    ax.set_yticks([.25, .5, .75, 1.0], ["", ".5", "", "1.0"], fontsize=6, color=MUTED)
-    ax.set_ylim(0, 1)
-    ax.grid(color="#D6E0E7", linewidth=.7)
-    ax.spines["polar"].set_color("#B9CAD5")
-    ax.set_title("English" if lang == "en" else "Chinese", fontsize=9, color=INK, fontweight="bold", pad=10)
-
-
 def main() -> None:
     OUT.mkdir(exist_ok=True)
     scope = historical()
-    embedding_data = embedding_comparison()
     cmap = LinearSegmentedColormap.from_list("priority", ["#F7D9D9", "#F4E6A8", "#77C7B8", "#0B6774"])
 
-    fig = plt.figure(figsize=(15.0, 6.15), facecolor="white")
-    grid = fig.add_gridspec(2, 14, height_ratios=[.18, 1], left=.045, right=.985, bottom=.11, top=.93, wspace=.92)
+    fig = plt.figure(figsize=(12.2, 5.35), facecolor="white")
+    grid = fig.add_gridspec(2, 11, height_ratios=[.18, 1], left=.055, right=.98, bottom=.13, top=.92, wspace=.68)
     title_ax = fig.add_subplot(grid[0, :])
     title_ax.axis("off")
     title_ax.text(0, .72, "Retrieval reliability atlas: similarity gain can mask source-priority loss",
                   fontsize=18, fontweight="bold", color=INK, va="center")
     title_ax.text(0, .14,
-                  "All marks derive from existing phrase-query experiments; no new model runs or relevance labels are introduced.",
+                  "All marks derive from existing phrase-query experiments; the quadrant retains both languages.",
                   fontsize=9.5, color=MUTED, va="center")
 
-    ax_h1 = fig.add_subplot(grid[1, 0:2])
-    ax_h2 = fig.add_subplot(grid[1, 2:4])
+    ax_h1 = fig.add_subplot(grid[1, 0:3])
     im = draw_heatmap(ax_h1, scope, "en", cmap)
-    draw_heatmap(ax_h2, scope, "zh", cmap)
-    cbar = fig.colorbar(im, ax=[ax_h1, ax_h2], fraction=.045, pad=.04)
+    cbar = fig.colorbar(im, ax=ax_h1, fraction=.048, pad=.04)
     cbar.ax.tick_params(labelsize=7)
     cbar.set_label("IAEA priority@10", fontsize=8, color=MUTED)
-    fig.text(.045, .80, "A  GRADIENT MAPS", fontsize=9.5, color=INK, fontweight="bold")
+    fig.text(.055, .80, "A  ENGLISH CONFIGURATION GRADIENT", fontsize=9.5, color=INK, fontweight="bold")
 
-    ax_q = fig.add_subplot(grid[1, 4:10])
+    ax_q = fig.add_subplot(grid[1, 4:11])
     ax_q.axhspan(-1, 0, color="#FBE9E9", zorder=0)
     ax_q.axhspan(0, 1, color="#EDF7F2", zorder=0)
     ax_q.axvline(0, color="#8DA1AF", lw=.9)
@@ -141,18 +107,7 @@ def main() -> None:
     ax_q.tick_params(labelsize=7.5)
     ax_q.grid(alpha=.16)
     ax_q.legend(frameon=False, loc="lower left", fontsize=8)
-    ax_q.set_title("B  CONFIGURATION-SCOPE QUADRANT", fontsize=10.5, color=INK, fontweight="bold", pad=6)
-
-    ax_r1 = fig.add_subplot(grid[1, 10:12], polar=True)
-    ax_r2 = fig.add_subplot(grid[1, 12:14], polar=True)
-    draw_radar(ax_r1, embedding_data, "en")
-    draw_radar(ax_r2, embedding_data, "zh")
-    ax_r1.text(-.25, 1.25, "C  EMBEDDING RETRIEVAL PROFILES", transform=ax_r1.transAxes, fontsize=9.5, color=INK, fontweight="bold")
-    handles = [Line2D([0], [0], color=MULTI, lw=2, label="multilingual MiniLM-L12"),
-               Line2D([0], [0], color=ENGLISH, lw=2, label="English MiniLM-L6")]
-    fig.legend(handles=handles, loc="lower right", bbox_to_anchor=(.986, .03), frameon=False, fontsize=7.1)
-    fig.text(.787, .11, "Phrase query, 10 supplementary documents,\n240-word chunks. Radar axes are raw 0–1 metrics, not a composite score.",
-             fontsize=6.9, color=MUTED)
+    ax_q.set_title("B  BILINGUAL CONFIGURATION-SCOPE QUADRANT", fontsize=10.5, color=INK, fontweight="bold", pad=6)
 
     for ext in ("pdf", "png"):
         fig.savefig(OUT / f"fig8_retrieval_atlas.{ext}", dpi=300 if ext == "png" else None,

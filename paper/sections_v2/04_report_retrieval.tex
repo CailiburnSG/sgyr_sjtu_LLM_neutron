@@ -1,9 +1,9 @@
 \subsection{Report-driven evidence retrieval}
 \label{sec:rag-diag}
 
-The condition report serves two audiences. Its chronological narrative and optional JSON snapshots support human inspection and audit, whereas its compact alert summary is the machine-facing interface to retrieval. The summary contains variable-wise alerts, spike and zero-event counts, morphology, collinearity, lag, and selected spatial-snapshot cues. Queries are constructed from this structured representation rather than from a short operator phrase or an unreviewed free-text diagnosis hypothesis.
+The condition report serves two audiences. Its chronological narrative and optional JSON snapshots support human inspection and audit, whereas its compact alert summary is the machine-facing interface to retrieval. The summary contains variable-wise alerts, spike and zero-event counts, morphology, collinearity, lag, and selected spatial-snapshot cues. This descriptive semantic layer lets a reviewer move from a large unlabeled record to a bounded technical question before consulting manuals. Queries are constructed from this structured representation rather than from a short operator phrase or an unreviewed free-text diagnosis hypothesis.
 
-The alert-summary schema constrains retrieval intent without prescribing a fixed set of queries. As shown in \cref{tab:alert-query-intents}, each human-specified cue family is translated into a technical evidence target; wording can then be adapted to the observed record, the query language, and the available terminology. This mapping does not claim that queries are generated automatically, and it does not turn an observed cue into a physical mechanism or fault label.
+The alert-summary schema constrains retrieval intent without prescribing a fixed set of queries. As shown in \cref{tab:alert-query-intents}, each human-specified cue family is translated into a technical evidence target; wording can then be adapted to the observed record, the query language, and the available terminology. The retrieval intents and query formulations are author-defined and manually reviewed as part of the workflow protocol. This mapping does not claim that queries are generated automatically, and it does not turn an observed cue into a physical mechanism or fault label.
 
 \begin{table}[H]
   \centering
