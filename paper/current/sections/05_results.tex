@@ -5,7 +5,7 @@ At archive scale, the useful intermediate result is not an exhaustive fault labe
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\linewidth]{fig6_a2_event_summary}
+  \includegraphics[width=0.88\linewidth]{fig07_a2_event_summary}
   \caption{Detected event counts from a representative condition-report output. These are deterministic signal-event counts under \cref{eq:spike-rule}, not confirmed equipment-fault counts.}
   \label{fig:a2-events}
 \end{figure}
@@ -17,7 +17,7 @@ The corpus-scope results show a consistent deployment risk: increasing the suppl
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig4_scope_priority}
+  \includegraphics[width=0.98\linewidth]{fig08_scope_priority}
   \caption{Phrase-query corpus-scope results averaged across 17 index configurations; shaded bands show one standard deviation across configurations. Source priority can decline while the nearest-neighbor cosine score rises.}
   \label{fig:scope-priority}
 \end{figure}
@@ -28,14 +28,14 @@ The aggregate curves conceal substantial configuration-level structure. \Cref{fi
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig8_retrieval_atlas_gradient}
+  \includegraphics[width=0.98\linewidth]{fig09_retrieval_gradient}
   \caption{English IAEA priority@10 across individual historical index configurations and supplementary-corpus sizes.}
   \label{fig:retrieval-atlas-gradient}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig8_retrieval_atlas_quadrant}
+  \includegraphics[width=0.98\linewidth]{fig10_retrieval_quadrant}
   \caption{Bilingual retrieval-reliability quadrant. Each point is a configuration--corpus condition positioned by its change from the core-only pool; the lower-right quadrant marks conditions in which similarity rises while source priority falls.}
   \label{fig:retrieval-atlas}
 \end{figure}
@@ -47,14 +47,14 @@ The P0 results make the interaction visible rather than reducing it to a single 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig10_p0_query_effect_en}
+  \includegraphics[width=0.98\linewidth]{fig11_p0_query_effect_en}
   \caption{English P0 query-formulation effect at ten admitted supplementary documents. Each point is the technical-detail family mean IAEA Priority@10 minus the baseline-family mean for one encoder--chunk setting.}
   \label{fig:p0-query-effect}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig10_p0_query_effect_zh}
+  \includegraphics[width=0.98\linewidth]{fig12_p0_query_effect_zh}
   \caption{Chinese P0 query-formulation effect under the same settings. Positive values favor the technical-detail family; the sign changes across language and configuration.}
   \label{fig:p0-query-effect-zh}
 \end{figure}
@@ -63,14 +63,14 @@ The complete ten-query landscape in \cref{fig:p0-priority-landscape,fig:p0-prior
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig9_p0_priority_landscape_heatmap}
+  \includegraphics[width=0.98\linewidth]{fig13_p0_priority_heatmap}
   \caption{Mean P0 IAEA priority@10 at ten admitted supplementary documents for every manually fixed query and model--chunk setting. Technical-detail queries are manually authored from preserved observation cues, not LLM-generated.}
   \label{fig:p0-priority-landscape}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig9_p0_priority_landscape_retention}
+  \includegraphics[width=0.98\linewidth]{fig14_p0_priority_retention}
   \caption{P0 priority retention after all 51 supplementary documents are admitted. Points below the diagonal lose source priority relative to $m=10$.}
   \label{fig:p0-priority-retention}
 \end{figure}
@@ -79,14 +79,14 @@ The complete ten-query landscape in \cref{fig:p0-priority-landscape,fig:p0-prior
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig10_p0_priority_trajectory_en}
+  \includegraphics[width=0.98\linewidth]{fig15_p0_priority_trajectory_en}
   \caption{English P0 source-priority trajectories over corpus expansion for both encoders. Colour denotes character chunking and line style denotes the manually fixed query family.}
   \label{fig:p0-priority-trajectory}
 \end{figure}
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig10_p0_priority_trajectory_zh}
+  \includegraphics[width=0.98\linewidth]{fig16_p0_priority_trajectory_zh}
   \caption{Chinese P0 source-priority trajectories under the same protocol. Curves average queries within a family and use the Priority@10 definition in \cref{eq:priority}.}
   \label{fig:p0-priority-trajectory-zh}
 \end{figure}
@@ -97,14 +97,14 @@ Self-retrieval exposes a systematic strict--document-level gap. \Cref{fig:self-r
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig5_self_retrieval_recall}
+  \includegraphics[width=0.98\linewidth]{fig17_self_retrieval_recall}
   \caption{First-sentence self-retrieval Recall@10 under corpus expansion, aggregated over available result directories. Shaded bands show one standard deviation across configurations.}
   \label{fig:self-retrieval}
 \end{figure}
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig5_self_retrieval_mrr}
+  \includegraphics[width=0.98\linewidth]{fig18_self_retrieval_mrr}
   \caption{First-sentence self-retrieval MRR under the same corpus-expansion conditions. Document-level relevance remains higher than exact-node matching because overlapping chunks can preserve relevant text within the same document.}
   \label{fig:self-retrieval-mrr}
 \end{figure}
@@ -117,14 +117,14 @@ The language-specific panels in \cref{fig:real-embedding-comparison,fig:real-emb
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig7_real_embedding_comparison_en}
+  \includegraphics[width=0.98\linewidth]{fig19_embedding_comparison_en}
   \caption{Fixed-word MiniLM cross-check for the English phrase query. The upper panel reports IAEA priority@10 and the lower panel reports top-1 cosine score over corpus expansion.}
   \label{fig:real-embedding-comparison}
 \end{figure}
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig7_real_embedding_comparison_zh}
+  \includegraphics[width=0.98\linewidth]{fig20_embedding_comparison_zh}
   \caption{Fixed-word MiniLM cross-check for the Chinese phrase query under the same 64-document protocol. The multilingual encoder raises the cosine scale, but both encoders still exhibit source-priority decay.}
   \label{fig:real-embedding-comparison-zh}
 \end{figure}

@@ -1,6 +1,5 @@
 %% =====================================================================
-%% Revision draft: evidence-constrained diagnostic workflow
-%% This file leaves main.tex and sections/ untouched.
+%% Current manuscript: evidence-constrained diagnostic workflow
 %% =====================================================================
 \documentclass[final,5p,numbers]{elsarticle}
 
@@ -29,7 +28,7 @@
 \biboptions{super,comma,sort&compress}
 
 \graphicspath{{figs/}}
-\newcommand{\chapterthreeevaluationfigure}{\includegraphics[width=\textwidth]{fig6_evaluation_design}}
+\newcommand{\chapterthreeevaluationfigure}{\includegraphics[width=\textwidth]{fig06_evaluation_design}}
 % Permit small, visually unobtrusive adjustments before TeX stretches interword
 % spaces. This prevents sparse justified lines in the two-column manuscript.
 \setlength{\emergencystretch}{2.5em}
@@ -57,7 +56,7 @@ neutron instrumentation \sep online monitoring \sep diagnostic assistance \sep r
 
 \section{Introduction}
 \label{sec:intro}
-\input{sections_v2/01_introduction}
+\input{sections/01_introduction}
 
 \section{System Design and Methodology}
 \label{sec:system}
@@ -67,16 +66,16 @@ The complete transformation contract is summarized in \cref{fig:overview}: it di
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig1_overview}
+  \includegraphics[width=0.98\linewidth]{fig01_overview}
   \caption{Evidence-constrained diagnostic-assistance architecture.}
   \label{fig:overview}
 \end{figure}
 
-\input{sections_v2/02_data_resources}
-\input{sections_v2/03_measurement_observation}
-\input{sections_v2/03_operational_definitions}
-\input{sections_v2/04_report_retrieval}
-\input{sections_v2/05_runtime_reliability}
+\input{sections/02_data_resources}
+\input{sections/03_measurement_observation}
+\input{sections/03_operational_definitions}
+\input{sections/04_report_retrieval}
+\input{sections/05_runtime_reliability}
 
 \twocolumn[
 \begin{@twocolumnfalse}
@@ -105,22 +104,22 @@ The complete transformation contract is summarized in \cref{fig:overview}: it di
 \vspace{0.85em}
 \end{@twocolumnfalse}
 ]
-\input{sections_v2/04_evaluation}
+\input{sections/04_evaluation}
 
 \section{Results and discussion}
 \label{sec:results}
-\input{sections_v2/05_results}
+\input{sections/05_results}
 
 \section{Limitations and Threats to Validity}
 \label{sec:limitations}
-\input{sections_v2/06_limitations}
+\input{sections/06_limitations}
 
 \section{Conclusions}
 \label{sec:concl}
-\input{sections_v2/07_conclusions}
+\input{sections/07_conclusions}
 
 \clearpage
-\input{sections_v2/08_appendix}
+\input{sections/08_appendix}
 \clearpage
 
 \section*{Acknowledgments}

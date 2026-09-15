@@ -39,7 +39,7 @@ P0 是唯一需要立即做的 GPU 实验。P1 推荐做，但不应替代 P0。
 
 - 提交六个 `chunking × encoder` 输出目录、验证结果和失败日志（如有）。
 - 生成 trajectory、heatmap 和两档 scope 的 summary。
-- 在结果审核前不改 `main2.tex`。
+- 在结果审核前不改 `current/main.tex`。
 - 不把 6 条技术细节 query 写成自动生成 query；不重跑完整 17 配置历史网格；不引入 LLM、API 或 DeepSeek Harness。
 
 ---
@@ -118,4 +118,4 @@ P0 是唯一需要立即做的 GPU 实验。P1 推荐做，但不应替代 P0。
 3. 与导师或领域人员确认 P2 的抽样和 rubric 后，再开始人工审查。
 4. P3 需要研究问题与资源确认后才可启动。
 
-P0 成功结果可能补入第 3 节 Evaluation Protocol 与第 4 节 Results and Discussion；P1 只在第 2 节或补充材料报告流程覆盖；P2 是第 5 节“缺少 relevance / citation-support 人工审查”的直接补充。在这些任务完成并审核前，`main2.tex` 的当前结论保持不变。
+P0 成功结果可能补入第 3 节 Evaluation Protocol 与第 4 节 Results and Discussion；P1 只在第 2 节或补充材料报告流程覆盖；P2 是第 5 节“缺少 relevance / citation-support 人工审查”的直接补充。在这些任务完成并审核前，`current/main.tex` 的当前结论保持不变。

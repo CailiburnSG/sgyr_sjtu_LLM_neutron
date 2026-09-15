@@ -14,7 +14,7 @@ from matplotlib.colors import LinearSegmentedColormap
 
 ROOT = Path(__file__).resolve().parents[2]
 EVIDENCE = ROOT / "evidence"
-OUT = ROOT / "paper" / "figs"
+OUT = ROOT / "paper" / "current" / "figs"
 
 INK = "#102B46"
 MUTED = "#64798B"
@@ -106,9 +106,6 @@ def main() -> None:
     ax_q.legend(frameon=False, loc="lower left", fontsize=8)
     ax_q.set_title("B  BILINGUAL CONFIGURATION-SCOPE QUADRANT", fontsize=10.5, color=INK, fontweight="bold", pad=6)
 
-    for ext in ("pdf", "png"):
-        fig.savefig(OUT / f"fig8_retrieval_atlas.{ext}", dpi=300 if ext == "png" else None,
-                    bbox_inches="tight", pad_inches=.03)
     plt.close(fig)
 
     heat_fig, heat_ax = plt.subplots(figsize=(4.8, 3.5), constrained_layout=True)
@@ -116,8 +113,7 @@ def main() -> None:
     cbar = heat_fig.colorbar(im, ax=heat_ax, fraction=.048, pad=.04)
     cbar.ax.tick_params(labelsize=7)
     cbar.set_label("IAEA priority@10", fontsize=8, color=MUTED)
-    heat_fig.savefig(OUT / "fig8_retrieval_atlas_gradient.pdf", bbox_inches="tight")
-    heat_fig.savefig(OUT / "fig8_retrieval_atlas_gradient.png", dpi=300, bbox_inches="tight")
+    heat_fig.savefig(OUT / "fig09_retrieval_gradient.pdf", bbox_inches="tight")
     plt.close(heat_fig)
 
     quadrant_fig, quadrant_ax = plt.subplots(figsize=(4.8, 3.5), constrained_layout=True)
@@ -140,8 +136,7 @@ def main() -> None:
     quadrant_ax.tick_params(labelsize=7.5)
     quadrant_ax.grid(alpha=.16)
     quadrant_ax.legend(frameon=False, loc="lower left", fontsize=8)
-    quadrant_fig.savefig(OUT / "fig8_retrieval_atlas_quadrant.pdf", bbox_inches="tight")
-    quadrant_fig.savefig(OUT / "fig8_retrieval_atlas_quadrant.png", dpi=300, bbox_inches="tight")
+    quadrant_fig.savefig(OUT / "fig10_retrieval_quadrant.pdf", bbox_inches="tight")
     plt.close(quadrant_fig)
 
 

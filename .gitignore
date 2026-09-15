@@ -23,6 +23,13 @@ paper/*.aux
 paper/*.out
 paper/*.blg
 paper/*.spl
+paper/current/*.log
+paper/current/*.fls
+paper/current/*.fdb_latexmk
+paper/current/*.aux
+paper/current/*.out
+paper/current/*.blg
+paper/current/*.spl
 
 # Local experiment runtime (not for GitHub)
 .venv/

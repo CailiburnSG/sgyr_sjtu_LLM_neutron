@@ -7,7 +7,7 @@ from matplotlib.patches import FancyBboxPatch, Circle, FancyArrowPatch
 
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "paper" / "figs"
+OUT = ROOT / "paper" / "current" / "figs"
 
 INK = "#18324B"
 MUTED = "#5B6B7A"
@@ -144,8 +144,7 @@ def main():
     flow_arrow(ax, (0.758, 0.448), (0.758, 0.402))
     flow_arrow(ax, (0.915, 0.448), (0.915, 0.402))
 
-    fig.savefig(OUT / "fig6_evaluation_design.pdf", bbox_inches="tight")
-    fig.savefig(OUT / "fig6_evaluation_design.png", dpi=280, bbox_inches="tight")
+    fig.savefig(OUT / "fig06_evaluation_design.pdf", bbox_inches="tight")
 
 
 if __name__ == "__main__":

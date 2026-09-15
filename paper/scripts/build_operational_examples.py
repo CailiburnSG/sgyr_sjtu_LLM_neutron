@@ -20,7 +20,7 @@ from matplotlib.transforms import Bbox
 
 ROOT = Path(__file__).resolve().parents[2]
 SAMPLE = ROOT / "evidence" / "data_samples" / "A1_1_head5000.csv"
-OUT = ROOT / "paper" / "figs"
+OUT = ROOT / "paper" / "current" / "figs"
 
 INK = "#17324D"
 MUTED = "#657B8D"
@@ -144,17 +144,13 @@ def main() -> None:
         ax.spines[["top", "right"]].set_visible(False)
         ax.tick_params(labelsize=7.2, colors=MUTED)
 
-    # Keep a composite preview for working purposes, but export each panel as a
-    # separate one-column figure. In the manuscript each image then sits next
-    # to the definition it explains instead of forming a page-wide interruption.
-    fig.savefig(OUT / "fig3_operational_examples.pdf", bbox_inches="tight")
-    fig.savefig(OUT / "fig3_operational_examples.png", dpi=320, bbox_inches="tight")
+    # Export only the one-column panels used by the manuscript.
     fig.canvas.draw()
     renderer = fig.canvas.get_renderer()
     panel_specs = [
-        ("fig3_spike_rule_example", axes[0].get_tightbbox(renderer), [axes[0]]),
-        ("fig4_pearson_example", Bbox.union([axes[1].get_tightbbox(renderer), cbar.ax.get_tightbbox(renderer)]), [axes[1], cbar.ax]),
-        ("fig5_lag_example", axes[2].get_tightbbox(renderer), [axes[2]]),
+        ("fig03_spike_rule_example", axes[0].get_tightbbox(renderer), [axes[0]]),
+        ("fig04_pearson_example", Bbox.union([axes[1].get_tightbbox(renderer), cbar.ax.get_tightbbox(renderer)]), [axes[1], cbar.ax]),
+        ("fig05_lag_example", axes[2].get_tightbbox(renderer), [axes[2]]),
     ]
     all_axes = [*axes, cbar.ax]
     for name, box, visible_axes in panel_specs:
@@ -164,7 +160,6 @@ def main() -> None:
         # bbox coordinates are display pixels; savefig expects inches.
         box_inches = box.transformed(fig.dpi_scale_trans.inverted()).expanded(1.01, 1.12)
         fig.savefig(OUT / f"{name}.pdf", bbox_inches=box_inches, pad_inches=.02)
-        fig.savefig(OUT / f"{name}.png", dpi=320, bbox_inches=box_inches, pad_inches=.02)
     for panel in all_axes:
         panel.set_visible(True)
     print("Wrote one-column panels:", ", ".join(name for name, _, _ in panel_specs))

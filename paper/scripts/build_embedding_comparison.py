@@ -9,8 +9,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "evidence" / "embedding_benchmark"
-FIGS = ROOT / "paper" / "figs"
-TABLES = ROOT / "paper" / "tables"
+FIGS = ROOT / "paper" / "current" / "figs"
+TABLES = ROOT / "paper" / "current" / "tables"
 FIGS.mkdir(exist_ok=True)
 TABLES.mkdir(exist_ok=True)
 
@@ -55,8 +55,6 @@ def main() -> None:
         for row in range(2):
             axes[row, col].grid(alpha=0.24)
     axes[0, 0].legend(frameon=False, loc="upper right")
-    fig.savefig(FIGS / "fig7_real_embedding_comparison.pdf", bbox_inches="tight")
-    fig.savefig(FIGS / "fig7_real_embedding_comparison.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
     # Language-specific variants preserve both metrics while fitting a single
@@ -87,9 +85,8 @@ def main() -> None:
         panel_axes[1].set_xlabel("Supplementary documents admitted")
         for ax in panel_axes:
             ax.grid(alpha=0.24)
-        panel.savefig(FIGS / f"fig7_real_embedding_comparison_{lang}.pdf", bbox_inches="tight")
-        panel.savefig(FIGS / f"fig7_real_embedding_comparison_{lang}.png", dpi=300,
-                      bbox_inches="tight")
+        number = {"en": 19, "zh": 20}[lang]
+        panel.savefig(FIGS / f"fig{number:02d}_embedding_comparison_{lang}.pdf", bbox_inches="tight")
         plt.close(panel)
 
     rows = []
@@ -111,7 +108,7 @@ def main() -> None:
         latex.append(f"    {model} & {lang} & {extra} & {priority:.2f} $\\pm$ {0.0 if pd.isna(std) else std:.2f} & {score:.2f} \\\\")
     latex += ["    \\bottomrule", "  \\end{tabular}", "  }", "\\end{table}", ""]
     (TABLES / "table_real_embedding_comparison.tex").write_text("\n".join(latex), encoding="utf-8")
-    print("Wrote", FIGS / "fig7_real_embedding_comparison.pdf")
+    print("Wrote language-specific embedding comparison panels")
 
 
 if __name__ == "__main__":

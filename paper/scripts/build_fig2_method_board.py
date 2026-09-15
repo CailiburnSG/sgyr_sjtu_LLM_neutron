@@ -20,7 +20,7 @@ from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch, Polygon
 
 ROOT = Path(__file__).resolve().parents[2]
 PAPER = ROOT / "paper"
-OUT = PAPER / "figs"
+OUT = PAPER / "current" / "figs"
 SAMPLE = ROOT / "evidence" / "data_samples" / "A1_1_head5000.csv"
 STATE = ROOT / "evidence" / "case_A1_1" / "state.json"
 REPORT = ROOT / "evidence" / "case_A1_1" / "A1_1_sorted_进阶全局工况报告_数据快照.json"
@@ -201,9 +201,7 @@ def main():
             "Microvisuals are derived from a representative archived record and its workflow artifacts; they illustrate probe outputs, not confirmed fault labels.",
             fontsize=7.0, color=MUTED)
 
-    for ext in ("pdf", "png"):
-        fig.savefig(OUT / f"fig2_method_board.{ext}", dpi=300 if ext == "png" else None,
-                    bbox_inches="tight", pad_inches=.03)
+    fig.savefig(OUT / "fig02_method_board.pdf", bbox_inches="tight", pad_inches=.03)
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@
 
 ## 禁止修改或声称的内容
 
-- 在结果审核前，不修改 `paper/main2.tex`、论文已有图或正文结论。
+- 在结果审核前，不修改 `paper/current/main.tex`、论文已有图或正文结论。
 - 不覆盖 `evidence/rag_results/output_mdselfcompare_*` 或 `evidence/rag_results/output_mdselfretrival_*`；它们是历史结果。
 - 不运行 `--all-configs` 的完整 17 组网格。
 - 不增加 LLM、API key 或外部服务；本任务仅为 embedding retrieval。

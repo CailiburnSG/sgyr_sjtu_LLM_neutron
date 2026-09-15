@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "figs"
+PAPER = Path(__file__).resolve().parents[1]
+OUT = PAPER / "current" / "figs"
 
 INK = "#18324A"
 MUTED = "#59738A"
@@ -117,9 +117,7 @@ def main():
     ax.text(3.71, 0.70, "evaluation / human-governance link", va="center", fontsize=7.8, color=MUTED)
 
     fig.subplots_adjust(left=0, right=1, top=1, bottom=0)
-    for ext in ("pdf", "png"):
-        fig.savefig(OUT / f"fig1_overview.{ext}", dpi=300 if ext == "png" else None,
-                    bbox_inches="tight", pad_inches=0.03)
+    fig.savefig(OUT / "fig01_overview.pdf", bbox_inches="tight", pad_inches=0.03)
 
 
 if __name__ == "__main__":

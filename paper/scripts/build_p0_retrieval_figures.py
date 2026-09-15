@@ -15,7 +15,7 @@ from matplotlib.lines import Line2D
 
 ROOT = Path(__file__).resolve().parents[2]
 RESULTS = ROOT / "evidence/rag_results/query_formulation_sensitivity/historical_chunk_grid_minilm"
-OUT = ROOT / "paper/figs"
+OUT = ROOT / "paper/current/figs"
 
 CHUNKS = [(800, 80), (1200, 120), (1500, 150)]
 MODEL_ORDER = [
@@ -59,7 +59,6 @@ def load_scope():
 def save(fig, name):
     OUT.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT / f"{name}.pdf", bbox_inches="tight")
-    fig.savefig(OUT / f"{name}.png", dpi=260, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -140,7 +139,7 @@ def build_landscape(scope):
         *[Line2D([0], [0], marker="o", color="w", markerfacecolor=CHUNK_COLOURS[c], markersize=7, label=f"{c[0]}/{c[1]}") for c in CHUNKS],
     ]
     axs.legend(handles=legend, title="marker / colour", loc="lower right", fontsize=7.5, title_fontsize=8, frameon=True)
-    save(fig, "fig9_p0_priority_landscape")
+    plt.close(fig)
 
     heat_fig, heat_ax = plt.subplots(figsize=(4.8, 5.1), constrained_layout=True)
     im = heat_ax.imshow(values, vmin=0, vmax=1, cmap="YlGnBu", aspect="auto")
@@ -158,7 +157,7 @@ def build_landscape(scope):
                          fontsize=6.3, color=colour)
     cb = heat_fig.colorbar(im, ax=heat_ax, shrink=0.85, pad=0.02)
     cb.set_label("mean IAEA priority@10")
-    save(heat_fig, "fig9_p0_priority_landscape_heatmap")
+    save(heat_fig, "fig13_p0_priority_heatmap")
 
     retention_fig, retention_ax = plt.subplots(figsize=(4.8, 4.2), constrained_layout=True)
     for (model, chunk, overlap), group in merged.groupby(["model", "chunk_size", "chunk_overlap"], sort=False):
@@ -182,7 +181,7 @@ def build_landscape(scope):
                       transform=retention_ax.transAxes, fontsize=8, color="#4b5563")
     retention_ax.legend(handles=legend, title="marker / colour", loc="lower right",
                         fontsize=7, title_fontsize=7.5, frameon=True)
-    save(retention_fig, "fig9_p0_priority_landscape_retention")
+    save(retention_fig, "fig14_p0_priority_retention")
 
 
 def build_trajectory(scope):
@@ -219,7 +218,7 @@ def build_trajectory(scope):
         *[Line2D([0], [0], color=CHUNK_COLOURS[c], lw=2, label=f"character chunks {c[0]}/{c[1]}") for c in CHUNKS],
     ]
     fig.legend(handles=handles, ncol=5, loc="lower center", bbox_to_anchor=(0.5, -0.055), frameon=False, fontsize=8)
-    save(fig, "fig10_p0_priority_trajectory")
+    plt.close(fig)
 
     for language in ("en", "zh"):
         panel_fig, panel_axes = plt.subplots(2, 1, figsize=(4.8, 5.7), sharex=True,
@@ -243,7 +242,8 @@ def build_trajectory(scope):
         panel_fig.legend(handles=handles, ncol=2, loc="lower center",
                          bbox_to_anchor=(0.5, 0.01), frameon=False, fontsize=6.5)
         panel_fig.subplots_adjust(left=0.16, right=0.98, top=0.91, bottom=0.19, hspace=0.18)
-        save(panel_fig, f"fig10_p0_priority_trajectory_{language}")
+        number = {"en": 15, "zh": 16}[language]
+        save(panel_fig, f"fig{number:02d}_p0_priority_trajectory_{language}")
 
 
 def build_query_effect(scope):
@@ -290,7 +290,7 @@ def build_query_effect(scope):
     fig.supylabel("encoder / character chunks")
     fig.suptitle("P0 query-formulation effect is configuration dependent", x=0.5, y=1.02,
                  fontsize=13, fontweight="bold")
-    save(fig, "fig10_p0_query_effect")
+    plt.close(fig)
 
     for language, title in (("en", "English queries"), ("zh", "Chinese queries")):
         panel_data = pivot[pivot.language.eq(language)].copy()
@@ -317,7 +317,8 @@ def build_query_effect(scope):
         panel_ax.tick_params(axis="y", length=0)
         panel_ax.text(0.02, 0.04, "positive = technical-detail family higher",
                       transform=panel_ax.transAxes, fontsize=7.2, color="#64748B")
-        save(panel_fig, f"fig10_p0_query_effect_{language}")
+        number = {"en": 11, "zh": 12}[language]
+        save(panel_fig, f"fig{number:02d}_p0_query_effect_{language}")
 
 
 if __name__ == "__main__":

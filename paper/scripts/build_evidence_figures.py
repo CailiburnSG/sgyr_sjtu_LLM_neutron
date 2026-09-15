@@ -18,8 +18,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 EVIDENCE = ROOT / "evidence"
-FIGS = ROOT / "paper" / "figs"
-TABLES = ROOT / "paper" / "tables"
+FIGS = ROOT / "paper" / "current" / "figs"
+TABLES = ROOT / "paper" / "current" / "tables"
 FIGS.mkdir(exist_ok=True)
 TABLES.mkdir(exist_ok=True)
 
@@ -88,8 +88,7 @@ def plot_scope(scope: pd.DataFrame) -> pd.DataFrame:
     axes[0].set_ylim(-0.03, 1.05)
     axes[0].legend(frameon=False, loc="upper right")
     axes[1].legend(frameon=False, loc="lower right")
-    fig.savefig(FIGS / "fig4_scope_priority.pdf", bbox_inches="tight")
-    fig.savefig(FIGS / "fig4_scope_priority.png", dpi=300, bbox_inches="tight")
+    fig.savefig(FIGS / "fig08_scope_priority.pdf", bbox_inches="tight")
     plt.close(fig)
     return grouped
 
@@ -136,8 +135,6 @@ def plot_self_retrieval(summary: pd.DataFrame) -> pd.DataFrame:
     axes[1].set_ylim(0, 1.03)
     axes[0].legend(frameon=False, loc="lower left")
     axes[1].legend(frameon=False, loc="lower left")
-    fig.savefig(FIGS / "fig5_self_retrieval.pdf", bbox_inches="tight")
-    fig.savefig(FIGS / "fig5_self_retrieval.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
     # Single-column variants let the two metrics sit beside the discussion in
@@ -159,8 +156,8 @@ def plot_self_retrieval(summary: pd.DataFrame) -> pd.DataFrame:
         ax.set_ylim(0, 1.03)
         ax.grid(alpha=0.25)
         ax.legend(frameon=False, loc="lower left")
-        panel.savefig(FIGS / f"fig5_self_retrieval_{suffix}.pdf", bbox_inches="tight")
-        panel.savefig(FIGS / f"fig5_self_retrieval_{suffix}.png", dpi=300, bbox_inches="tight")
+        number = {"recall": 17, "mrr": 18}[suffix]
+        panel.savefig(FIGS / f"fig{number:02d}_self_retrieval_{suffix}.pdf", bbox_inches="tight")
         plt.close(panel)
     return grouped
 
@@ -190,8 +187,7 @@ def plot_case(events: pd.DataFrame) -> None:
     ax.set_ylim(0, max(events["spike_events"].max(), events["isolated_zeros"].max()) + 6)
     ax.grid(axis="y", alpha=0.25)
     ax.legend(frameon=False, ncol=2, loc="upper center")
-    fig.savefig(FIGS / "fig6_a2_event_summary.pdf", bbox_inches="tight")
-    fig.savefig(FIGS / "fig6_a2_event_summary.png", dpi=300, bbox_inches="tight")
+    fig.savefig(FIGS / "fig07_a2_event_summary.pdf", bbox_inches="tight")
     plt.close(fig)
 
 
