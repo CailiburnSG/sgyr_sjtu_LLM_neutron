@@ -6,18 +6,25 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{iaea2008olm1}
-{International Atomic Energy Agency}, On-line monitoring for improving
-  performance of nuclear power plants, part 1: Instrument channel monitoring,
-  Tech. Rep. NP-T-1.1, IAEA, Vienna (2008).
+{International Atomic Energy Agency},
+  \href{https://www.iaea.org/publications/7790/on-line-monitoring-for-improving-performance-of-nuclear-power-plants-part-1-instrument-channel-monitoring}{On-line
+  monitoring for improving performance of nuclear power plants, part 1:
+  Instrument channel monitoring}, Tech. Rep. NP-T-1.1, IAEA, Vienna (2008).
+\newline\urlprefix\url{https://www.iaea.org/publications/7790/on-line-monitoring-for-improving-performance-of-nuclear-power-plants-part-1-instrument-channel-monitoring}
 
 \bibitem{iaea2008olm2}
-{International Atomic Energy Agency}, On-line monitoring for improving
-  performance of nuclear power plants, part 2: Process and component condition
-  monitoring and diagnostics, Tech. Rep. NP-T-1.2, IAEA, Vienna (2008).
+{International Atomic Energy Agency},
+  \href{https://www.iaea.org/publications/7908/on-line-monitoring-for-improving-performance-of-nuclear-power-plants-part-2-process-and-component-condition-monitoring-and-diagnostics}{On-line
+  monitoring for improving performance of nuclear power plants, part 2: Process
+  and component condition monitoring and diagnostics}, Tech. Rep. NP-T-1.2,
+  IAEA, Vienna (2008).
+\newline\urlprefix\url{https://www.iaea.org/publications/7908/on-line-monitoring-for-improving-performance-of-nuclear-power-plants-part-2-process-and-component-condition-monitoring-and-diagnostics}
 
 \bibitem{hashemian2011online}
-H.~M. Hashemian, On-line monitoring for improving performance of nuclear power
-  plants, Nuclear Engineering and Design 241~(10) (2011) 4650--4661.
+H.~M. Hashemian, On-line monitoring applications in nuclear power plants,
+  Progress in Nuclear Energy 53~(2) (2011) 167--181.
+\newblock \href {https://doi.org/10.1016/j.pnucene.2010.08.003}
+  {\path{doi:10.1016/j.pnucene.2010.08.003}}.
 
 \bibitem{pazsit2010noise}
 I.~P{\'a}zsit, C.~Demazi{\`e}re, Noise techniques in nuclear systems, in: D.~G.
@@ -39,66 +46,79 @@ T.~Tambouratzis, L.~Pantera, P.~Stulik, A study on the minimum requirements for
   the on-line, efficient and robust validation of neutron detector operation
   and monitoring of neutron noise signals using harmony theory networks, in:
   Proceedings of the 2nd International Conference on Machine Learning \&
-  Applications (CMLA), 2020.
+  Applications (CMLA), 2020, pp. 141--154.
 \newblock \href {https://doi.org/10.5121/csit.2020.101113}
   {\path{doi:10.5121/csit.2020.101113}}.
 
 \bibitem{elbordany2024fault}
-A.~A. Elbordany, M.~Kandil, H.~Youness, H.~M. Abdelaal, An efficient {AI}
+A.~A. Elbordany, M.~M. Kandil, H.~A. Youness, H.~M. Abdelaal, An efficient {AI}
   algorithm for fault diagnosis in nuclear power plants based on machine deep
-  learning techniques, Progress in Nuclear Energy 180 (2024) 105580.
+  learning techniques, Progress in Nuclear Energy 180 (2025) 105580.
+\newblock \href {https://doi.org/10.1016/j.pnucene.2024.105580}
+  {\path{doi:10.1016/j.pnucene.2024.105580}}.
 
 \bibitem{lewis2020rag}
 P.~Lewis, E.~Perez, A.~Piktus, F.~Petroni, V.~Karpukhin, N.~Goyal,
   H.~K{\"u}ttler, M.~Lewis, W.-t. Yih, T.~Rockt{\"a}schel, S.~Riedel, D.~Kiela,
-  Retrieval-augmented generation for knowledge-intensive {NLP} tasks, in:
-  Advances in Neural Information Processing Systems (NeurIPS), 2020.
+  \href{https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html}{Retrieval-augmented
+  generation for knowledge-intensive {NLP} tasks}, in: Advances in Neural
+  Information Processing Systems (NeurIPS), Vol.~33, 2020, pp. 9459--9474.
+\newline\urlprefix\url{https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html}
 
 \bibitem{reeves2024reliability}
 T.~E. Reeves, L.~Lin, C.~M. Walker, V.~Agarwal, Improving reliability of large
-  language models for nuclear power plant diagnostics, Tech. Rep.
-  INL/MIS-24-79312, Idaho National Laboratory, {OSTI}~2440146,
-  \url{https://doi.org/10.2172/2440146} (2024).
+  language models for nuclear power plant diagnostics [poster], Tech. Rep.
+  INL/MIS-24-79312, Idaho National Laboratory (2024).
+\newblock \href {https://doi.org/10.2172/2440146} {\path{doi:10.2172/2440146}}.
 
 \bibitem{lin2025cws}
-L.~Lin, T.~Reeves, V.~Agarwal, Using a large language model for accurate
-  technical language generation in the predictive maintenance of circulating
-  water systems in nuclear power plants, Tech. rep., Idaho National Laboratory,
-  {OSTI}~3024553; {RAG} over work orders and technical documents for {NPP}
-  predictive maintenance (2025).
+L.~Lin, T.~Reeves, V.~Agarwal, \href{https://www.osti.gov/biblio/3024553}{Using
+  a large language model for accurate technical language generation in the
+  predictive maintenance of circulating water systems in nuclear power plants},
+  Conference contribution OSTI 3024553, Idaho National Laboratory (2025).
+\newline\urlprefix\url{https://www.osti.gov/biblio/3024553}
 
 \bibitem{mapes2025uprate}
 J.~N. Mapes, K.~M. Giraud, B.~M. Wilcken, A.~Y. Al~Rashdan, M.~De~Queiroz, {AI}
-  for interpreting nuclear power plant documents for power uprates, in:
-  American Nuclear Society Annual Meeting, 2025, {INL/CON-25-83082},
-  {OSTI}~3024448.
+  for interpreting nuclear power plant documents for power uprates, in: Nuclear
+  Plant Instrumentation and Control \& Human-Machine Interface Technology
+  (NPIC\&HMIT), 2025, pp. 1180--1187, {INL/CON-25-83082}; {OSTI}~3024448.
+\newblock \href {https://doi.org/10.13182/xyz-46334}
+  {\path{doi:10.13182/xyz-46334}}.
 
 \bibitem{ndum2026radiant}
 Z.~N. Ndum, J.~Tao, J.~Ford, M.~Yim, Y.~Liu, {RADIANT}-{LLM}: an agentic
   retrieval augmented generation framework for reliable decision support in
-  safety-critical nuclear engineering, arXiv preprint
-  arXiv:2604.22755Local-first agentic Visual-{RAG} with citation-backed nuclear
-  decision support (2026).
+  safety-critical nuclear engineering, arXiv preprint arXiv:2604.22755 (2026).
+\newblock \href {https://doi.org/10.48550/arXiv.2604.22755}
+  {\path{doi:10.48550/arXiv.2604.22755}}.
 
 \bibitem{liu2023llamaindex}
-J.~Liu, {LlamaIndex}: A data framework for {LLM} applications,
-  \url{https://www.llamaindex.ai/} (2022).
+J.~Liu, \href{https://www.llamaindex.ai/}{{LlamaIndex}: A data framework for
+  {LLM} applications}, LlamaIndex project documentation (2022).
+\newline\urlprefix\url{https://www.llamaindex.ai/}
 
 \bibitem{yao2023react}
 S.~Yao, J.~Zhao, D.~Yu, N.~Du, I.~Shafran, K.~Narasimhan, Y.~Cao, {ReAct}:
-  Synergizing reasoning and acting in language models, in: International
-  Conference on Learning Representations (ICLR), 2023.
+  Synergizing reasoning and acting in language models, International Conference
+  on Learning Representations (ICLR) (2023).
+\newblock \href {https://doi.org/10.48550/arXiv.2210.03629}
+  {\path{doi:10.48550/arXiv.2210.03629}}.
 
 \bibitem{patil2024gorilla}
 S.~G. Patil, T.~Zhang, X.~Wang, J.~E. Gonzalez, Gorilla: Large language model
   connected with massive {APIs}, in: Advances in Neural Information Processing
-  Systems (NeurIPS), Vol.~37, 2024.
+  Systems (NeurIPS), Vol.~37, 2024, pp. 126544--126565.
+\newblock \href {https://doi.org/10.52202/079017-4020}
+  {\path{doi:10.52202/079017-4020}}.
 
 \bibitem{schick2023toolformer}
 T.~Schick, J.~Dwivedi-Yu, R.~Dess{\`i}, R.~Raileanu, M.~Lomeli, E.~Hambro,
   L.~Zettlemoyer, N.~Cancedda, T.~Scialom, Toolformer: Language models can
   teach themselves to use tools, in: Advances in Neural Information Processing
-  Systems (NeurIPS), 2023.
+  Systems (NeurIPS), Vol.~36, 2023, pp. 68539--68551.
+\newblock \href {https://doi.org/10.52202/075280-2997}
+  {\path{doi:10.52202/075280-2997}}.
 
 \bibitem{ji2023hallucination}
 Z.~Ji, N.~Lee, R.~Frieske, T.~Yu, D.~Su, Y.~Xu, E.~Ishii, Y.~Bang, A.~Madotto,
