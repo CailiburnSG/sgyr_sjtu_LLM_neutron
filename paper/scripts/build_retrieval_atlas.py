@@ -74,9 +74,6 @@ def main() -> None:
     title_ax.axis("off")
     title_ax.text(0, .72, "Retrieval reliability atlas: similarity gain can mask source-priority loss",
                   fontsize=18, fontweight="bold", color=INK, va="center")
-    title_ax.text(0, .14,
-                  "All marks derive from existing phrase-query experiments; the quadrant retains both languages.",
-                  fontsize=9.5, color=MUTED, va="center")
 
     ax_h1 = fig.add_subplot(grid[1, 0:3])
     im = draw_heatmap(ax_h1, scope, "en", cmap)
@@ -112,6 +109,40 @@ def main() -> None:
     for ext in ("pdf", "png"):
         fig.savefig(OUT / f"fig8_retrieval_atlas.{ext}", dpi=300 if ext == "png" else None,
                     bbox_inches="tight", pad_inches=.03)
+    plt.close(fig)
+
+    heat_fig, heat_ax = plt.subplots(figsize=(4.8, 3.5), constrained_layout=True)
+    im = draw_heatmap(heat_ax, scope, "en", cmap)
+    cbar = heat_fig.colorbar(im, ax=heat_ax, fraction=.048, pad=.04)
+    cbar.ax.tick_params(labelsize=7)
+    cbar.set_label("IAEA priority@10", fontsize=8, color=MUTED)
+    heat_fig.savefig(OUT / "fig8_retrieval_atlas_gradient.pdf", bbox_inches="tight")
+    heat_fig.savefig(OUT / "fig8_retrieval_atlas_gradient.png", dpi=300, bbox_inches="tight")
+    plt.close(heat_fig)
+
+    quadrant_fig, quadrant_ax = plt.subplots(figsize=(4.8, 3.5), constrained_layout=True)
+    quadrant_ax.axhspan(-1, 0, color="#FBE9E9", zorder=0)
+    quadrant_ax.axhspan(0, 1, color="#EDF7F2", zorder=0)
+    quadrant_ax.axvline(0, color="#8DA1AF", lw=.9)
+    quadrant_ax.axhline(0, color="#8DA1AF", lw=.9)
+    for lang, color, label in (("en", EN, "English phrase"), ("zh", ZH, "Chinese phrase")):
+        part = points[points["lang"].eq(lang)]
+        quadrant_ax.scatter(part["delta_score"], part["delta_priority"],
+                            s=12 + 1.1 * part["extra_docs"], color=color,
+                            edgecolor="white", linewidth=.35, alpha=.78, label=label)
+    quadrant_ax.text(.03, .91, "priority retained", transform=quadrant_ax.transAxes,
+                     fontsize=8, color="#438060", fontweight="bold")
+    quadrant_ax.text(.60, .08, "deployment-risk region\n(similarity rises; priority falls)",
+                     transform=quadrant_ax.transAxes, fontsize=8, color="#B75A5A",
+                     fontweight="bold", ha="center")
+    quadrant_ax.set_xlabel("Change in top-1 cosine from IAEA-only", fontsize=8.6, color=MUTED)
+    quadrant_ax.set_ylabel("Change in IAEA priority@10 from IAEA-only", fontsize=8.6, color=MUTED)
+    quadrant_ax.tick_params(labelsize=7.5)
+    quadrant_ax.grid(alpha=.16)
+    quadrant_ax.legend(frameon=False, loc="lower left", fontsize=8)
+    quadrant_fig.savefig(OUT / "fig8_retrieval_atlas_quadrant.pdf", bbox_inches="tight")
+    quadrant_fig.savefig(OUT / "fig8_retrieval_atlas_quadrant.png", dpi=300, bbox_inches="tight")
+    plt.close(quadrant_fig)
 
 
 if __name__ == "__main__":

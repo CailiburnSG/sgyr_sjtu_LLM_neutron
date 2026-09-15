@@ -3,7 +3,7 @@ At archive scale, the useful intermediate result is not an exhaustive fault labe
 
 \Cref{fig:a2-events} and \cref{tab:a2-events} illustrate the form of this semantic handoff for one representative condition-report output. Its seven channels contain 30--34 detected spike episodes (mean 32.4) and each contains 12 isolated zero events. The repeated zero timestamps across channels are a concrete reason to retain cross-channel timing in the description and retrieve signal-integrity or instrumentation context before advancing a physical interpretation. The figure is therefore evidence of an auditable observation inventory, not an archive-wide event-prevalence estimate.
 
-\begin{figure}[t]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.88\linewidth]{fig6_a2_event_summary}
   \caption{Detected event counts from a representative condition-report output. These are deterministic signal-event counts under \cref{eq:spike-rule}, not confirmed equipment-fault counts.}
@@ -15,7 +15,7 @@ At archive scale, the useful intermediate result is not an exhaustive fault labe
 \subsection{Similarity and source priority can diverge}
 The corpus-scope results show a consistent deployment risk: increasing the supplementary pool can raise cosine scores while reducing IAEA priority@10. \Cref{fig:scope-priority,tab:scope-aggregate} aggregate the phrase-query results over all 17 available index configurations. For Chinese, mean IAEA priority@10 falls from $1.00$ in the IAEA-only pool to $0.10\pm0.09$ after five supplementary documents and to $0.00$ after ten, while the mean top-1 cosine rises from $0.55$ to $0.63$. English is more gradual: priority@10 remains $0.86\pm0.05$ after five documents and is $0.38\pm0.05$ at 45 documents, while the corresponding cosine stays near $0.69$--$0.70$.
 
-\begin{figure}[t]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.98\linewidth]{fig4_scope_priority}
   \caption{Phrase-query corpus-scope results averaged across 17 index configurations; shaded bands show one standard deviation across configurations. Source priority can decline while the nearest-neighbor cosine score rises.}
@@ -24,68 +24,113 @@ The corpus-scope results show a consistent deployment risk: increasing the suppl
 
 \input{tables/table_scope_aggregate}
 
-The aggregate curves conceal substantial configuration-level structure. \Cref{fig:retrieval-atlas} therefore provides a complementary retrieval-reliability atlas. Its English gradient map retains the 17 individual index configurations rather than averaging them, and its bilingual quadrant view encodes the joint change in cosine score and IAEA priority relative to the core-only pool. The dense lower-right concentration makes the deployment-risk pattern directly visible: many Chinese phrase-query conditions gain nearest-neighbor cosine score while losing almost all IAEA priority.
+The aggregate curves conceal substantial configuration-level structure. \Cref{fig:retrieval-atlas-gradient,fig:retrieval-atlas} retain all 17 individual index configurations and plot the joint change in cosine score and IAEA priority relative to the core-only pool. Together they confirm the same deployment-risk pattern without averaging away the configuration-level detail.
 
-\begin{figure*}[t]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{fig8_retrieval_atlas}
-  \caption{Retrieval-reliability atlas derived from existing phrase-query experiments. (A) English IAEA priority@10 across individual historical index configurations and supplementary-corpus sizes. (B) Each point is an English or Chinese configuration--corpus condition, positioned by its change in top-1 cosine score and IAEA priority@10 relative to the IAEA-only pool; the lower-right quadrant identifies conditions in which similarity rises while source priority falls.}
+  \includegraphics[width=0.98\linewidth]{fig8_retrieval_atlas_gradient}
+  \caption{English IAEA priority@10 across individual historical index configurations and supplementary-corpus sizes.}
+  \label{fig:retrieval-atlas-gradient}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig8_retrieval_atlas_quadrant}
+  \caption{Bilingual retrieval-reliability quadrant. Each point is a configuration--corpus condition positioned by its change from the core-only pool; the lower-right quadrant marks conditions in which similarity rises while source priority falls.}
   \label{fig:retrieval-atlas}
-\end{figure*}
+\end{figure}
 
 These results do not imply that supplementary documents are irrelevant. Rather, when an application requires IAEA sources to be surfaced first, nearest-neighbor similarity alone is not enough to enforce that policy. Source metadata, filtering, or reranking should be considered before a generated memo is presented as authority-backed evidence.
 
 \subsection{Query formulation interacts with language and chunking}
-The P0 results make the interaction visible rather than reducing it to a single encoder or language ranking. \Cref{fig:p0-query-effect} first isolates the effect of replacing the baseline family with manually authored technical-detail queries at $m=10$. Each point is the difference between the family means under one encoder--chunk setting. The English differences range from $-0.03$ to $+0.14$, whereas Chinese differences range from $-0.23$ to $+0.02$. Thus technical detail improves source priority in some settings and degrades it in others; it is not a generally beneficial query expansion.
+The P0 results make the interaction visible rather than reducing it to a single encoder or language ranking. \Cref{fig:p0-query-effect,fig:p0-query-effect-zh} first isolate the effect of replacing the baseline family with manually authored technical-detail queries at $m=10$. Each point is the difference between the family means under one encoder--chunk setting. The English differences range from $-0.03$ to $+0.14$, whereas Chinese differences range from $-0.23$ to $+0.02$. Thus technical detail improves source priority in some settings and degrades it in others; it is not a generally beneficial query expansion.
 
-\begin{figure*}[t]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{fig10_p0_query_effect}
-  \caption{P0 query-formulation effect at ten admitted supplementary documents. Each point is the mean IAEA Priority@10 of the manual technical-detail family minus that of the baseline family under one encoder--character-chunk setting. Positive values favor the technical-detail family; the sign changes across language and configuration.}
+  \includegraphics[width=0.98\linewidth]{fig10_p0_query_effect_en}
+  \caption{English P0 query-formulation effect at ten admitted supplementary documents. Each point is the technical-detail family mean IAEA Priority@10 minus the baseline-family mean for one encoder--chunk setting.}
   \label{fig:p0-query-effect}
-\end{figure*}
+\end{figure}
 
-\Cref{fig:p0-priority-landscape} then reports all ten manually fixed queries at $m=10$ for the six MiniLM--chunking conditions. English measurement phrases and some technical-detail queries retain high IAEA priority in several conditions, while the same intervention is not uniformly beneficial in Chinese. When averaged over the six model--chunk settings at $m=10$, the technical-detail English queries have mean priority@10 of $0.65$, compared with $0.60$ for the English baseline queries; the corresponding Chinese values are $0.52$ and $0.62$. These are descriptive aggregates over the recorded settings, not evidence that a particular language or longer formulation is universally preferable.
-
-\begin{figure*}[t]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{fig9_p0_priority_landscape}
-  \caption{P0 MiniLM chunking-grid comparison. Left: mean IAEA priority@10 at ten admitted supplementary documents for every manually fixed query and model--chunk setting. Right: the same conditions compared after all 51 supplementary documents are admitted; points below the diagonal lose source priority. Technical-detail queries are manually authored from preserved observation cues, not LLM-generated.}
+  \includegraphics[width=0.98\linewidth]{fig10_p0_query_effect_zh}
+  \caption{Chinese P0 query-formulation effect under the same settings. Positive values favor the technical-detail family; the sign changes across language and configuration.}
+  \label{fig:p0-query-effect-zh}
+\end{figure}
+
+The complete ten-query landscape in \cref{fig:p0-priority-landscape,fig:p0-priority-retention} provides the configuration-level values behind this summary. English measurement phrases and some technical-detail queries retain high IAEA priority in several conditions, while the same intervention is not uniformly beneficial in Chinese. When averaged over the six model--chunk settings at $m=10$, the technical-detail English queries have mean priority@10 of $0.65$, compared with $0.60$ for the English baseline queries; the corresponding Chinese values are $0.52$ and $0.62$. These are descriptive aggregates over the recorded settings, not evidence that a particular language or longer formulation is universally preferable.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig9_p0_priority_landscape_heatmap}
+  \caption{Mean P0 IAEA priority@10 at ten admitted supplementary documents for every manually fixed query and model--chunk setting. Technical-detail queries are manually authored from preserved observation cues, not LLM-generated.}
   \label{fig:p0-priority-landscape}
-\end{figure*}
+\end{figure}
 
-\Cref{fig:p0-priority-trajectory} adds the full corpus-expansion path. Every curve begins at one in the IAEA-only pool by definition, then generally falls as supplementary documents enter the retrieval pool. The separation and occasional crossings between solid baseline-family and dashed technical-detail-family curves show why the query effect cannot be stated as a universal improvement. The figure also shows that the source-priority risk persists across all three historical chunking scopes, even though its magnitude depends on the joint configuration.
-
-\begin{figure*}[t]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{fig10_p0_priority_trajectory}
-  \caption{P0 source-priority trajectories over corpus expansion. Each panel fixes an encoder and query language; colour denotes character chunking and line style denotes the manually fixed query family. Curves average queries within a family and are based on the Priority@10 definition in \cref{eq:priority}.}
+  \includegraphics[width=0.98\linewidth]{fig9_p0_priority_landscape_retention}
+  \caption{P0 priority retention after all 51 supplementary documents are admitted. Points below the diagonal lose source priority relative to $m=10$.}
+  \label{fig:p0-priority-retention}
+\end{figure}
+
+\Cref{fig:p0-priority-trajectory,fig:p0-priority-trajectory-zh} add the full corpus-expansion paths for the English and Chinese queries. Every curve begins at one in the IAEA-only pool by definition, then generally falls as supplementary documents enter the retrieval pool. The separation and occasional crossings between solid baseline-family and dashed technical-detail-family curves show why the query effect cannot be stated as a universal improvement. The figures also show that the source-priority risk persists across all three historical chunking scopes, even though its magnitude depends on the joint configuration.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig10_p0_priority_trajectory_en}
+  \caption{English P0 source-priority trajectories over corpus expansion for both encoders. Colour denotes character chunking and line style denotes the manually fixed query family.}
   \label{fig:p0-priority-trajectory}
-\end{figure*}
+\end{figure}
 
-\subsection{Strict and document-level relevance answer different questions}
-Self-retrieval exposes a systematic strict--document-level gap. \Cref{fig:self-retrieval} aggregates first-sentence corpus-decay results over the available result directories and shows the same separation for both Recall@10 and MRR. In one $800/50$ setting, IAEA-only Recall@10 is 0.7625 under exact-node matching and 0.8625 under document-level matching. The gap is expected when overlapping chunks preserve relevant content in a neighboring node. Conversely, terminology-rich domain sentences have substantially stronger document-level Recall@10 in the available results. Evaluation should therefore report both criteria: strict matching measures chunk re-identification, while document-level matching better reflects whether the correct manual was recovered.
-
-\begin{figure}[t]
+\begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig5_self_retrieval}
-  \caption{First-sentence self-retrieval under corpus expansion, aggregated over available result directories. Shaded bands show one standard deviation across configurations. Document-level relevance remains higher than exact-node matching because overlapping chunks can preserve relevant text within the same document.}
+  \includegraphics[width=0.98\linewidth]{fig10_p0_priority_trajectory_zh}
+  \caption{Chinese P0 source-priority trajectories under the same protocol. Curves average queries within a family and use the Priority@10 definition in \cref{eq:priority}.}
+  \label{fig:p0-priority-trajectory-zh}
+\end{figure}
+
+\FloatBarrier
+\subsection{Strict and document-level relevance answer different questions}
+Self-retrieval exposes a systematic strict--document-level gap. \Cref{fig:self-retrieval,fig:self-retrieval-mrr} show the complete corpus-decay curves separately for Recall@10 and MRR so that both panels remain readable within a single column. In one $800/50$ setting, IAEA-only Recall@10 is 0.7625 under exact-node matching and 0.8625 under document-level matching. The gap is expected when overlapping chunks preserve relevant content in a neighboring node. Conversely, terminology-rich domain sentences have substantially stronger document-level Recall@10 in the available results. Evaluation should therefore report both criteria: strict matching measures chunk re-identification, while document-level matching better reflects whether the correct manual was recovered.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig5_self_retrieval_recall}
+  \caption{First-sentence self-retrieval Recall@10 under corpus expansion, aggregated over available result directories. Shaded bands show one standard deviation across configurations.}
   \label{fig:self-retrieval}
 \end{figure}
 
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig5_self_retrieval_mrr}
+  \caption{First-sentence self-retrieval MRR under the same corpus-expansion conditions. Document-level relevance remains higher than exact-node matching because overlapping chunks can preserve relevant text within the same document.}
+  \label{fig:self-retrieval-mrr}
+\end{figure}
+
+\FloatBarrier
 \subsection{Fixed-word MiniLM cross-check}
 To test whether the observed behavior is tied only to the historical character-based chunking, we also ran the independent fixed-word MiniLM protocol specified in \cref{sec:eval}. It compares a multilingual MiniLM encoder with an English-oriented MiniLM encoder and is reported separately from P0 because the 240-word construction changes the retrieval units.
 
-\Cref{fig:real-embedding-comparison,tab:real-embedding-comparison} show that encoder choice changes cosine scales and source-priority trajectories, but does not collapse the problem into one scalar. The multilingual model gives materially higher Chinese phrase cosine scores (0.62--0.64 versus 0.27 for the English-oriented model), while both models undergo source-priority decay as the supplementary pool grows. Thus multilingual semantic alignment and authoritative-source preference are complementary deployment requirements rather than interchangeable objectives.
+The language-specific panels in \cref{fig:real-embedding-comparison,fig:real-embedding-comparison-zh} and the checkpoint values in \cref{tab:real-embedding-comparison} show that encoder choice changes cosine scales and source-priority trajectories, but does not collapse the problem into one scalar. The multilingual model gives materially higher Chinese phrase cosine scores (0.62--0.64 versus 0.27 for the English-oriented model), while both models undergo source-priority decay as the supplementary pool grows. Thus multilingual semantic alignment and authoritative-source preference are complementary deployment requirements rather than interchangeable objectives.
 
-\begin{figure}[t]
+\begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\linewidth]{fig7_real_embedding_comparison}
-  \caption{Fixed-word MiniLM cross-check on the same 64-document corpus. Curves compare a multilingual MiniLM encoder and an English-oriented MiniLM encoder; bands show standard deviation over random supplementary-document selections. This is a direct measured check, not an extrapolation of the historical index.}
+  \includegraphics[width=0.98\linewidth]{fig7_real_embedding_comparison_en}
+  \caption{Fixed-word MiniLM cross-check for the English phrase query. The upper panel reports IAEA priority@10 and the lower panel reports top-1 cosine score over corpus expansion.}
   \label{fig:real-embedding-comparison}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{fig7_real_embedding_comparison_zh}
+  \caption{Fixed-word MiniLM cross-check for the Chinese phrase query under the same 64-document protocol. The multilingual encoder raises the cosine scale, but both encoders still exhibit source-priority decay.}
+  \label{fig:real-embedding-comparison-zh}
 \end{figure}
 
 \input{tables/table_real_embedding_comparison}
 
+\FloatBarrier
 \subsection{Discussion and deployment implications}
 The pipeline provides traceable observations and evidence retrieval, but it does not replace engineering judgment. In a deployment where particular source families must be surfaced first, the results support terminology-rich condition-report queries together with source metadata, filtering, or reranking. The remaining validation boundaries and threats to interpretation are stated separately in \cref{sec:limitations}.

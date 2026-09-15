@@ -194,6 +194,8 @@ condition report 是测量侧的派生产物，alert summary 是用于检索的�
 
 ### 3.3 Queries 与受控 corpus expansion
 
+**附录迁移（已落实）。** 正文保留 query suite 的数量、cue family、构造逻辑与检索协议；完整的基线与 P0 中英文 query 字符串已从正文的密集表格移至 **Appendix A, Full Query Formulations**。附录位于 Conclusion 之后、References 之前，使读者可以复现实验输入，同时不打断第 3 章的方法叙述。
+
 - 固定四个双语 queries：`中子`、`neutron`、`中子测量电流`、`neutron measurement current`。中文 phrase 不得换成未实际运行的同义表达。
 - 以 13 篇 IAEA core 为固定池，supplementary documents 随 $m\in\{0,5,10,\ldots,51\}$ 受控加入。
 - $m=0$ 为固定 core-only pool。历史实验中，$m>0$ 时每个 query、每个 index configuration 随机抽样 100 次；独立模型比较中每个规模、query、encoder 随机抽样 10 次。

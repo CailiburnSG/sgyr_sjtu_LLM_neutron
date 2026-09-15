@@ -1,0 +1,45 @@
+\appendix
+\onecolumn
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
+\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+\renewcommand{\theHtable}{appendix.\Alph{section}.\arabic{table}}
+\renewcommand{\theHfigure}{appendix.\Alph{section}.\arabic{figure}}
+\section{Full Query Formulations}
+\label{app:query-formulations}
+
+This appendix records the exact manually specified query suite used in the corpus-scope experiments. The UTF-8 benchmark files store the Chinese formulations directly; Unicode code points are shown here because the manuscript is compiled with \texttt{pdfLaTeX}. The strings are author-defined protocol inputs, not fault labels and not LLM-generated queries.
+
+\begin{table}[H]
+  \centering
+  \caption{Exact baseline and manual technical-detail query formulations.}
+  \label{tab:appendix-queries}
+  \scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}p{0.12\textwidth}p{0.15\textwidth}p{0.31\textwidth}p{0.32\textwidth}@{}}
+    \toprule
+    Suite & Cue / form & Chinese UTF-8 representation (Unicode code points) & English formulation \\
+    \midrule
+    Baseline & Core term &
+    \texttt{U+4E2D U+5B50} &
+    neutron \\
+    Baseline & Measurement phrase &
+    \texttt{U+4E2D U+5B50 U+7535 U+6D41 U+6D4B U+91CF} &
+    neutron current measurement \\
+    \midrule
+    Technical detail & Repeated spikes &
+    \texttt{U+4E2D U+5B50 U+7535 U+6D41 U+6D4B U+91CF U+91CD U+590D U+5C16 U+5CF0 U+4E8B U+4EF6} &
+    neutron current measurement repeated spike events \\
+    Technical detail & Synchronized zeros &
+    \texttt{U+4E2D U+5B50 U+7535 U+6D41 U+6D4B U+91CF U+8DE8 U+901A U+9053 U+540C U+6B65 U+96F6 U+503C U+95EA U+65AD} &
+    neutron current measurement synchronized zero-value dropout across channels \\
+    Technical detail & High synchrony &
+    \texttt{U+4E2D U+5B50 U+7535 U+6D41 U+6D4B U+91CF U+9AD8 U+540C U+6B65 U+901A U+9053 U+65E0 U+65F6 U+95F4 U+6EDE U+540E} &
+    neutron current measurement highly synchronized channels without time lag \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\clearpage
+\twocolumn

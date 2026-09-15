@@ -128,10 +128,9 @@ def main() -> None:
     ax.fill_between(lags, lag_corr, np.min(lag_corr) - .005, color=BLUE, alpha=.12)
     ax.axvline(0, color=MUTED, lw=.8, ls="--")
     ax.scatter(lags[peak], lag_corr[peak], color=ORANGE, s=30, zorder=3)
-    ax.annotate(f"peak at {lags[peak]:+d} samples\n$r={lag_corr[peak]:.3f}$",
-                xy=(lags[peak], lag_corr[peak]), xytext=(.61, .22), textcoords="axes fraction",
-                color=INK, fontsize=7.8,
-                arrowprops=dict(arrowstyle="-", color=ORANGE, lw=.9))
+    ax.text(.97, .95, f"peak at {lags[peak]:+d} samples\n$r={lag_corr[peak]:.3f}$",
+            transform=ax.transAxes, ha="right", va="top", color=INK, fontsize=7.8,
+            bbox=dict(boxstyle="round,pad=.25", facecolor="white", edgecolor="none", alpha=.88))
     ax.set_title("Lead--lag scan", loc="left", color=INK, fontweight="bold")
     ax.set_xlabel("relative lag (samples)")
     ax.set_ylabel("Pearson correlation")

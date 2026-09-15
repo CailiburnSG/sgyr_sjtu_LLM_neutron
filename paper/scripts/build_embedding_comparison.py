@@ -59,6 +59,39 @@ def main() -> None:
     fig.savefig(FIGS / "fig7_real_embedding_comparison.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
+    # Language-specific variants preserve both metrics while fitting a single
+    # manuscript column, which keeps each comparison close to its discussion.
+    for lang in ("en", "zh"):
+        subset = data[data["lang"].eq(lang)]
+        panel, panel_axes = plt.subplots(2, 1, figsize=(4.8, 6.0), sharex=True,
+                                         constrained_layout=True)
+        for model, group in subset.groupby("model"):
+            group = group.sort_values("extra_docs")
+            label = MODEL_LABELS[model]
+            color = COLORS[model]
+            panel_axes[0].plot(group["extra_docs"], group["iaea_priority_top10_mean"],
+                               marker="o", lw=2.2, color=color, label=label)
+            panel_axes[0].fill_between(
+                group["extra_docs"],
+                group["iaea_priority_top10_mean"] - group["iaea_priority_top10_std"].fillna(0),
+                group["iaea_priority_top10_mean"] + group["iaea_priority_top10_std"].fillna(0),
+                color=color, alpha=0.14,
+            )
+            panel_axes[1].plot(group["extra_docs"], group["top1_score_mean"],
+                               marker="o", lw=2.2, color=color, label=label)
+        panel_axes[0].set_title(language_names[lang])
+        panel_axes[0].set_ylim(-0.03, 1.05)
+        panel_axes[0].set_ylabel("IAEA priority@10")
+        panel_axes[0].legend(frameon=False, loc="upper right")
+        panel_axes[1].set_ylabel("Top-1 cosine score")
+        panel_axes[1].set_xlabel("Supplementary documents admitted")
+        for ax in panel_axes:
+            ax.grid(alpha=0.24)
+        panel.savefig(FIGS / f"fig7_real_embedding_comparison_{lang}.pdf", bbox_inches="tight")
+        panel.savefig(FIGS / f"fig7_real_embedding_comparison_{lang}.png", dpi=300,
+                      bbox_inches="tight")
+        plt.close(panel)
+
     rows = []
     for model, label in MODEL_LABELS.items():
         for lang in ("en", "zh"):

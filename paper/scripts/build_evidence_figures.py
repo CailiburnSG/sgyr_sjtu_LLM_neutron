@@ -139,6 +139,29 @@ def plot_self_retrieval(summary: pd.DataFrame) -> pd.DataFrame:
     fig.savefig(FIGS / "fig5_self_retrieval.pdf", bbox_inches="tight")
     fig.savefig(FIGS / "fig5_self_retrieval.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
+
+    # Single-column variants let the two metrics sit beside the discussion in
+    # a two-column manuscript instead of forcing the wide composite onto a
+    # separate float page.
+    for metric, spread, ylabel, suffix in [
+        ("recall_mean", "recall_std", "Recall@10", "recall"),
+        ("mrr_mean", "mrr_std", "MRR", "mrr"),
+    ]:
+        panel, ax = plt.subplots(figsize=(4.8, 3.5), constrained_layout=True)
+        for relevance in ("strict", "relaxed_doc"):
+            part = grouped[grouped["relevance"].eq(relevance)].sort_values("extra_docs")
+            ax.plot(part["extra_docs"], part[metric], marker="o", lw=2,
+                    color=colors[relevance], label=labels[relevance])
+            ax.fill_between(part["extra_docs"], part[metric] - part[spread],
+                            part[metric] + part[spread], color=colors[relevance], alpha=0.16)
+        ax.set_xlabel("Supplementary documents admitted")
+        ax.set_ylabel(ylabel)
+        ax.set_ylim(0, 1.03)
+        ax.grid(alpha=0.25)
+        ax.legend(frameon=False, loc="lower left")
+        panel.savefig(FIGS / f"fig5_self_retrieval_{suffix}.pdf", bbox_inches="tight")
+        panel.savefig(FIGS / f"fig5_self_retrieval_{suffix}.png", dpi=300, bbox_inches="tight")
+        plt.close(panel)
     return grouped
 
 

@@ -142,6 +142,48 @@ def build_landscape(scope):
     axs.legend(handles=legend, title="marker / colour", loc="lower right", fontsize=7.5, title_fontsize=8, frameon=True)
     save(fig, "fig9_p0_priority_landscape")
 
+    heat_fig, heat_ax = plt.subplots(figsize=(4.8, 5.1), constrained_layout=True)
+    im = heat_ax.imshow(values, vmin=0, vmax=1, cmap="YlGnBu", aspect="auto")
+    heat_ax.set_title("P0 source priority at $m=10$", loc="left", fontsize=11, fontweight="bold")
+    heat_ax.set_xlabel("encoder × character chunking")
+    heat_ax.set_ylabel("manual query formulation")
+    heat_ax.set_xticks(np.arange(6), ["800/80", "1200/120", "1500/150"] * 2, fontsize=7)
+    heat_ax.set_yticks(np.arange(10), query_order, fontsize=7.2)
+    heat_ax.axvline(2.5, color="#1f2937", lw=1.25)
+    heat_ax.axhline(4.5, color="white", lw=2.4)
+    for i in range(values.shape[0]):
+        for j in range(values.shape[1]):
+            colour = "white" if values[i, j] > 0.56 else "#172033"
+            heat_ax.text(j, i, f"{values[i, j]:.2f}", ha="center", va="center",
+                         fontsize=6.3, color=colour)
+    cb = heat_fig.colorbar(im, ax=heat_ax, shrink=0.85, pad=0.02)
+    cb.set_label("mean IAEA priority@10")
+    save(heat_fig, "fig9_p0_priority_landscape_heatmap")
+
+    retention_fig, retention_ax = plt.subplots(figsize=(4.8, 4.2), constrained_layout=True)
+    for (model, chunk, overlap), group in merged.groupby(["model", "chunk_size", "chunk_overlap"], sort=False):
+        colour = CHUNK_COLOURS[(chunk, overlap)]
+        for family, family_group in group.groupby("family"):
+            retention_ax.scatter(
+                family_group.iaea_priority_top10_mean_m10,
+                family_group.iaea_priority_top10_mean_m51,
+                s=48, marker=FAMILY_MARKERS[family], facecolor=colour,
+                edgecolor="white", linewidth=0.7, alpha=0.92,
+            )
+    retention_ax.plot([0, 1], [0, 1], ls="--", lw=1, color="#6b7280", zorder=0)
+    retention_ax.set_xlim(0, 1.02)
+    retention_ax.set_ylim(0, 1.02)
+    retention_ax.set_aspect("equal", adjustable="box")
+    retention_ax.grid(color="#d1d5db", lw=0.7, alpha=0.7)
+    retention_ax.set_title("Priority retention after full expansion", loc="left", fontsize=11, fontweight="bold")
+    retention_ax.set_xlabel("mean IAEA priority@10 at $m=10$")
+    retention_ax.set_ylabel("mean IAEA priority@10 at $m=51$")
+    retention_ax.text(0.04, 0.93, "below diagonal = priority decay",
+                      transform=retention_ax.transAxes, fontsize=8, color="#4b5563")
+    retention_ax.legend(handles=legend, title="marker / colour", loc="lower right",
+                        fontsize=7, title_fontsize=7.5, frameon=True)
+    save(retention_fig, "fig9_p0_priority_landscape_retention")
+
 
 def build_trajectory(scope):
     data = (
@@ -178,6 +220,30 @@ def build_trajectory(scope):
     ]
     fig.legend(handles=handles, ncol=5, loc="lower center", bbox_to_anchor=(0.5, -0.055), frameon=False, fontsize=8)
     save(fig, "fig10_p0_priority_trajectory")
+
+    for language in ("en", "zh"):
+        panel_fig, panel_axes = plt.subplots(2, 1, figsize=(4.8, 5.7), sharex=True,
+                                             sharey=True)
+        for ax, model in zip(panel_axes, MODEL_ORDER):
+            panel = data[(data.model == model) & (data.language == language)]
+            for (family, chunk, overlap), group in panel.groupby(["family", "chunk_size", "chunk_overlap"]):
+                group = group.sort_values("extra_docs")
+                ax.plot(group.extra_docs, group.iaea_priority_top10_mean,
+                        color=CHUNK_COLOURS[(chunk, overlap)], lw=1.8,
+                        ls="-" if family == "baseline" else "--", alpha=0.92)
+            ax.set_title(MODEL_SHORT[model], fontsize=9, loc="left", fontweight="bold")
+            ax.set_xlim(0, 51)
+            ax.set_ylim(0, 1.03)
+            ax.grid(color="#d1d5db", lw=0.7, alpha=0.8)
+            ax.axvspan(0, 10, color="#e0f2fe", alpha=0.55, zorder=0)
+        panel_axes[1].set_xlabel("supplementary documents admitted ($m$)", labelpad=3)
+        panel_fig.supylabel("mean IAEA priority@10", x=0.02)
+        panel_fig.suptitle(f"{'English' if language == 'en' else 'Chinese'} query trajectories",
+                           y=0.97, fontsize=11, fontweight="bold")
+        panel_fig.legend(handles=handles, ncol=2, loc="lower center",
+                         bbox_to_anchor=(0.5, 0.01), frameon=False, fontsize=6.5)
+        panel_fig.subplots_adjust(left=0.16, right=0.98, top=0.91, bottom=0.19, hspace=0.18)
+        save(panel_fig, f"fig10_p0_priority_trajectory_{language}")
 
 
 def build_query_effect(scope):
@@ -225,6 +291,33 @@ def build_query_effect(scope):
     fig.suptitle("P0 query-formulation effect is configuration dependent", x=0.5, y=1.02,
                  fontsize=13, fontweight="bold")
     save(fig, "fig10_p0_query_effect")
+
+    for language, title in (("en", "English queries"), ("zh", "Chinese queries")):
+        panel_data = pivot[pivot.language.eq(language)].copy()
+        panel_data["model_order"] = panel_data.model.map({MODEL_ORDER[0]: 0, MODEL_ORDER[1]: 1})
+        panel_data = panel_data.sort_values(["model_order", "chunk_size"]).reset_index(drop=True)
+        panel_fig, panel_ax = plt.subplots(figsize=(4.8, 3.6), constrained_layout=True)
+        y = np.arange(len(panel_data))
+        colours = np.where(panel_data.delta >= 0, "#159A8A", "#D05A5A")
+        panel_ax.axvline(0, color="#64748B", lw=1.1, zorder=0)
+        panel_ax.hlines(y, 0, panel_data.delta, color=colours, lw=2.0, alpha=0.8)
+        panel_ax.scatter(panel_data.delta, y, s=78, color=colours,
+                         edgecolor="white", linewidth=0.8, zorder=3)
+        for yi, value in zip(y, panel_data.delta):
+            side = 0.008 if value >= 0 else -0.008
+            panel_ax.text(value + side, yi, f"{value:+.2f}",
+                          ha="left" if value >= 0 else "right", va="center",
+                          fontsize=7.7, color="#334155", fontweight="bold")
+        panel_ax.set_title(title, loc="left", fontsize=11, fontweight="bold")
+        panel_ax.set_yticks(y, panel_data.setting, fontsize=7.5)
+        panel_ax.set_xlim(-0.27, 0.18)
+        panel_ax.set_xlabel(r"$\Delta$ mean IAEA priority@10 at $m=10$")
+        panel_ax.grid(axis="x", color="#D1D5DB", lw=0.7)
+        panel_ax.spines[["top", "right", "left"]].set_visible(False)
+        panel_ax.tick_params(axis="y", length=0)
+        panel_ax.text(0.02, 0.04, "positive = technical-detail family higher",
+                      transform=panel_ax.transAxes, fontsize=7.2, color="#64748B")
+        save(panel_fig, f"fig10_p0_query_effect_{language}")
 
 
 if __name__ == "__main__":

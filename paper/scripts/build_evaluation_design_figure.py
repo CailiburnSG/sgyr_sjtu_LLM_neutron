@@ -37,11 +37,10 @@ def card(ax, x, y, w, h, title, subtitle, bullets, colour):
                 va="center", ha="left", fontsize=7.25)
 
 
-def arrow(ax, x1, y1, x2, y2, text):
-    ax.add_patch(FancyArrowPatch((x1, y1), (x2, y2), arrowstyle="-|>",
-                                 mutation_scale=12, lw=1.2, color="#64748B"))
-    ax.text((x1 + x2) / 2, max(y1, y2) + 0.035, text, ha="center", va="bottom",
-            fontsize=7, color=MUTED)
+def flow_arrow(ax, start, end):
+    """Draw an unlabeled connector only in the whitespace between panels."""
+    ax.add_patch(FancyArrowPatch(start, end, arrowstyle="-|>", mutation_scale=11,
+                                 lw=1.15, color="#64748B", zorder=5))
 
 
 def main():
@@ -50,14 +49,8 @@ def main():
     fig, ax = plt.subplots(figsize=(12.8, 5.3))
     fig.patch.set_facecolor("white")
     ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
+    ax.set_ylim(0.05, 0.92)
     ax.axis("off")
-
-    ax.text(0.02, 0.965, "Retrieval evaluation design", fontsize=15, fontweight="bold",
-            color=INK, ha="left", va="top")
-    ax.text(0.02, 0.925,
-            "A shared corpus-expansion policy is evaluated through three non-pooled protocol families.",
-            fontsize=8.1, color=MUTED, ha="left", va="top")
 
     # Shared inputs.
     ax.add_patch(FancyBboxPatch((0.02, 0.53), 0.20, 0.31,
@@ -100,27 +93,26 @@ def main():
     ax.plot([0.30, 0.44], [0.635, 0.635], color=LINE, lw=0.8)
     ax.text(0.30, 0.398, "No LLM-generated queries", fontsize=7.1, color=MUTED)
     ax.text(0.30, 0.365, "No pooled cosine scale", fontsize=7.1, color=MUTED)
+    ax.text(0.30, 0.316, "Shared corpus +", fontsize=7.0, color=MUTED)
+    ax.text(0.30, 0.288, "controlled expansion", fontsize=7.0, color=MUTED)
     ax.text(0.30, 0.245, "top-$k$ retrieval", fontsize=8.0, color=INK, fontweight="bold")
     ax.text(0.30, 0.210, r"$k=10$", fontsize=9.0, color=CORE, fontweight="bold")
 
-    arrow(ax, 0.22, 0.685, 0.27, 0.685, "same collection")
-    arrow(ax, 0.47, 0.54, 0.52, 0.54, "evaluate separately")
-
     # Protocol cards.
     card(ax, 0.52, 0.47, 0.145, 0.37, "HISTORICAL", "legacy robustness", [
-        "nomic-embed-text",
-        "17 index configurations",
-        "100 non-zero draws",
+        "nomic index",
+        "17 indexes",
+        "100 draws",
     ], HIST)
-    card(ax, 0.685, 0.47, 0.145, 0.37, "P0 GRID", "primary new comparison", [
-        "2 MiniLM encoders",
-        "800/80 · 1200/120 · 1500/150",
-        "10 non-zero draws",
+    card(ax, 0.685, 0.47, 0.145, 0.37, "P0 GRID", "primary comparison", [
+        "two MiniLMs",
+        "3 chunk grids",
+        "10 draws",
     ], P0)
     card(ax, 0.85, 0.47, 0.13, 0.37, "FIXED WORD", "cross-check", [
-        "2 MiniLM encoders",
-        "240 words / 24 overlap",
-        "10 non-zero draws",
+        "two MiniLMs",
+        "240 / 24 words",
+        "10 draws",
     ], WORD)
 
     # Metrics.
@@ -143,6 +135,14 @@ def main():
         ax.text(x + 0.014, y - 0.015, meaning, fontsize=6.75, color=MUTED)
     ax.text(0.54, 0.105, "Do not infer fault accuracy, universal model rankings, or generation quality.",
             fontsize=7.0, color="#9A3412")
+
+    # Unlabeled arrows encode the process while keeping all text inside panels.
+    flow_arrow(ax, (0.238, 0.68), (0.253, 0.68))
+    flow_arrow(ax, (0.238, 0.31), (0.253, 0.31))
+    flow_arrow(ax, (0.487, 0.655), (0.503, 0.655))
+    flow_arrow(ax, (0.592, 0.448), (0.592, 0.402))
+    flow_arrow(ax, (0.758, 0.448), (0.758, 0.402))
+    flow_arrow(ax, (0.915, 0.448), (0.915, 0.402))
 
     fig.savefig(OUT / "fig6_evaluation_design.pdf", bbox_inches="tight")
     fig.savefig(OUT / "fig6_evaluation_design.png", dpi=280, bbox_inches="tight")

@@ -13,6 +13,8 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{float}
+\usepackage{capt-of}
+\usepackage{placeins}
 \usepackage{xurl}
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -27,6 +29,7 @@
 \biboptions{super,comma,sort&compress}
 
 \graphicspath{{figs/}}
+\newcommand{\chapterthreeevaluationfigure}{\includegraphics[width=\textwidth]{fig6_evaluation_design}}
 % Permit small, visually unobtrusive adjustments before TeX stretches interword
 % spaces. This prevents sparse justified lines in the two-column manuscript.
 \setlength{\emergencystretch}{2.5em}
@@ -75,18 +78,38 @@ The complete transformation contract is summarized in \cref{fig:overview}: it di
 \input{sections_v2/04_report_retrieval}
 \input{sections_v2/05_runtime_reliability}
 
+\twocolumn[
+\begin{@twocolumnfalse}
 \section{Experimental Design and Retrieval Evaluation}
 \label{sec:eval}
+\centering
+\chapterthreeevaluationfigure\par
+\captionof{figure}{Retrieval evaluation design. A shared 64-document corpus and controlled expansion policy feed manually fixed query suites into three separately interpreted protocol families. The recorded metrics characterize retrieval and source-policy behavior; they do not estimate fault accuracy or generation quality.}
+\label{fig:evaluation-design}
+
+\vspace{0.65em}
+\captionof{table}{Retrieval protocol families. Metrics are interpreted within, not pooled across, protocol families.}
+\label{tab:retrieval-protocols}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{0.16\textwidth}p{0.22\textwidth}p{0.19\textwidth}p{0.19\textwidth}p{0.14\textwidth}@{}}
+  \toprule
+  Protocol & Encoder / index & Chunk construction & Queries and sampling & Primary role \\
+  \midrule
+  Historical robustness & \texttt{nomic-embed-text}; 17 saved indexes & Character chunks: 800--1500 characters; valid overlaps 50--150 & Four baseline bilingual queries; 100 non-zero draws & Legacy robustness and self-retrieval \\
+  P0 chunking grid & Multilingual MiniLM and English-oriented MiniLM & Character chunks: 800/80, 1200/120, 1500/150 & Ten bilingual queries; 10 non-zero draws & Query--language--chunking interaction \\
+  Fixed-word cross-check & Same two MiniLM encoders & 240 words, 24-word overlap & Four baseline queries, plus a small technical-detail pilot; 10 non-zero draws & Independent tokenization check \\
+  \bottomrule
+\end{tabular}
+\par
+\vspace{0.85em}
+\end{@twocolumnfalse}
+]
 \input{sections_v2/04_evaluation}
 
 \section{Results and discussion}
 \label{sec:results}
 \input{sections_v2/05_results}
-
-% Results figures must be placed before limitations, conclusions, and the
-% bibliography. This prevents queued two-column floats from appearing inside
-% the reference list after the P0 figure set was expanded.
-\clearpage
 
 \section{Limitations and Threats to Validity}
 \label{sec:limitations}
@@ -95,6 +118,10 @@ The complete transformation contract is summarized in \cref{fig:overview}: it di
 \section{Conclusions}
 \label{sec:concl}
 \input{sections_v2/07_conclusions}
+
+\clearpage
+\input{sections_v2/08_appendix}
+\clearpage
 
 \section*{Acknowledgments}
 This work was supported by \ldots\ (grant information to be added).
