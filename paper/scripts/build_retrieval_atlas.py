@@ -14,7 +14,7 @@ from matplotlib.colors import LinearSegmentedColormap
 
 ROOT = Path(__file__).resolve().parents[2]
 EVIDENCE = ROOT / "evidence"
-OUT = ROOT / "paper" / "current" / "figs"
+OUT = ROOT / "paper" / "v2" / "figs"
 
 INK = "#102B46"
 MUTED = "#64798B"

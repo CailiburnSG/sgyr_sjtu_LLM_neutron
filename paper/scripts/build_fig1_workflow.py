@@ -8,7 +8,7 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 
 PAPER = Path(__file__).resolve().parents[1]
-OUT = PAPER / "current" / "figs"
+OUT = PAPER / "v2" / "figs"
 
 INK = "#18324A"
 MUTED = "#59738A"

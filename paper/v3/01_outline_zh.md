@@ -1,0 +1,40 @@
+# V3 中文章节提纲
+
+## 1. 引言：为什么需要 measurement-to-evidence interface
+
+- 工程场景、无统一故障标签和审计要求。
+- 监督分类、自由 LLM 推断、单纯文档 RAG 的不足。
+- 本文问题、中心 idea、贡献和边界。
+
+## 2. 证据约束诊断辅助框架
+
+- 数据角色与披露边界。
+- 确定性测量观测层。
+- observation packet 与 structured alert summary。
+- authority-aware retrieval、citation-bearing candidate interpretation。
+- runtime/provenance 与工程师复核边界。
+
+## 3. 分层评价设计：验证接口，而非宣称诊断准确率
+
+- 评价问题与证据层级。
+- observation audit。
+- retrieval-governance：corpus expansion、query、language、encoder、chunking；说明相似度与权威来源可见性为何不能混同。
+- passage relevance、claim--evidence support 与 expert usefulness。
+
+## 4. 结果：接口为什么需要来源治理
+
+- 代表性 measurement-to-evidence trace case。
+- 观测层核查。
+- similarity--authority divergence。
+- P0 configuration interaction（作为来源治理的支持性证据，而非普适配置排名）。
+- claim--evidence support / expert usefulness。
+
+## 5. 讨论与局限
+
+- 安全关键部署中的来源策略与人机边界。
+- 没有故障真值、人工 relevance 与 memo 审计的限制。
+- 面向物理机理假设、运行历史和维护反馈的后续层次。
+
+## 6. 结论
+
+- 重申“先描述、后诊断”“相似度不等于权威性”“LLM 组织而不制造证据”。

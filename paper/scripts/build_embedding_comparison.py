@@ -9,8 +9,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "evidence" / "embedding_benchmark"
-FIGS = ROOT / "paper" / "current" / "figs"
-TABLES = ROOT / "paper" / "current" / "tables"
+FIGS = ROOT / "paper" / "v2" / "figs"
+TABLES = ROOT / "paper" / "v2" / "tables"
 FIGS.mkdir(exist_ok=True)
 TABLES.mkdir(exist_ok=True)
 

@@ -20,7 +20,7 @@ from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch, Polygon
 
 ROOT = Path(__file__).resolve().parents[2]
 PAPER = ROOT / "paper"
-OUT = PAPER / "current" / "figs"
+OUT = PAPER / "v2" / "figs"
 SAMPLE = ROOT / "evidence" / "data_samples" / "A1_1_head5000.csv"
 STATE = ROOT / "evidence" / "case_A1_1" / "state.json"
 REPORT = ROOT / "evidence" / "case_A1_1" / "A1_1_sorted_进阶全局工况报告_数据快照.json"

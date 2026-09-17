@@ -1,0 +1,16 @@
+# Evidence-Constrained Diagnostic Assistance for Unlabeled Neutron-Current Time Series
+
+> Status: English mirror, not started. The title is provisional and may be revised only after the Chinese source manuscript has stabilized.
+
+## Abstract
+
+> Not started. Translate and compress only after the Chinese abstract has been finalized.
+
+## Manuscript map
+
+1. [Introduction: Why a Measurement-to-Evidence Interface Is Needed](sections/01_introduction_en.md)
+2. [Scenario, Data Boundary, and Evidence-Constrained Interface](sections/02_framework_en.md)
+3. [Layered Evaluation Design](sections/03_evaluation_en.md)
+4. [Results: Interface Behavior and Source Governance](sections/04_results_en.md)
+5. [Discussion and Limitations](sections/05_discussion_en.md)
+6. [Conclusion](sections/06_conclusion_en.md)

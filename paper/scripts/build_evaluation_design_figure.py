@@ -7,7 +7,7 @@ from matplotlib.patches import FancyBboxPatch, Circle, FancyArrowPatch
 
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "paper" / "current" / "figs"
+OUT = ROOT / "paper" / "v2" / "figs"
 
 INK = "#18324B"
 MUTED = "#5B6B7A"

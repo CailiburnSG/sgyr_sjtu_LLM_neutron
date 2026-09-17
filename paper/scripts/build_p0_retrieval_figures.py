@@ -15,7 +15,7 @@ from matplotlib.lines import Line2D
 
 ROOT = Path(__file__).resolve().parents[2]
 RESULTS = ROOT / "evidence/rag_results/query_formulation_sensitivity/historical_chunk_grid_minilm"
-OUT = ROOT / "paper/current/figs"
+OUT = ROOT / "paper/v2/figs"
 
 CHUNKS = [(800, 80), (1200, 120), (1500, 150)]
 MODEL_ORDER = [

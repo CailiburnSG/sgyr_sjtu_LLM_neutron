@@ -20,7 +20,7 @@ from matplotlib.transforms import Bbox
 
 ROOT = Path(__file__).resolve().parents[2]
 SAMPLE = ROOT / "evidence" / "data_samples" / "A1_1_head5000.csv"
-OUT = ROOT / "paper" / "current" / "figs"
+OUT = ROOT / "paper" / "v2" / "figs"
 
 INK = "#17324D"
 MUTED = "#657B8D"
