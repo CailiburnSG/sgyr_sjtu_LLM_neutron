@@ -8,19 +8,20 @@
 
 ## 关键词（工作版）
 
-中子仪表；无标签时序；诊断辅助；可审计观测；检索增强；证据溯源
+中子仪表；无标签时序；诊断辅助；可追溯观测；检索增强；证据溯源
 
 ## 正文
 
 1. [引言：为什么需要测量—证据接口](sections/01_introduction_zh.md)
-2. [场景、数据边界与证据约束接口](sections/02_framework_zh.md)
-3. [分层评价设计](sections/03_evaluation_zh.md)
-4. [结果：接口与来源治理](sections/04_results_zh.md)
-5. [讨论与局限](sections/05_discussion_zh.md)
-6. [结论](sections/06_conclusion_zh.md)
+2. [相关工作](sections/02_related_work_zh.md)
+3. [场景、数据边界与证据约束接口](sections/03_framework_zh.md)
+4. [分层评价设计](sections/04_evaluation_zh.md)
+5. [结果：接口与来源治理](sections/05_results_zh.md)
+6. [讨论与局限](sections/06_discussion_zh.md)
+7. [结论](sections/07_conclusion_zh.md)
 
 ## 写作前检查
 
-- 该段是否服务于“可审计 measurement-to-evidence interface”这一中心主张？
+- 该段是否服务于“可追溯 measurement-to-evidence interface”这一中心主张？
 - 它是在描述观测、报告文献证据，还是作出工程判断？三者必须明确区分。
 - 若写入量化结果，它的评价对象是否真实可得，而非被误称为 fault accuracy？

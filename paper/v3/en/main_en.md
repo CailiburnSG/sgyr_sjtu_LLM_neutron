@@ -9,8 +9,9 @@
 ## Manuscript map
 
 1. [Introduction: Why a Measurement-to-Evidence Interface Is Needed](sections/01_introduction_en.md)
-2. [Scenario, Data Boundary, and Evidence-Constrained Interface](sections/02_framework_en.md)
-3. [Layered Evaluation Design](sections/03_evaluation_en.md)
-4. [Results: Interface Behavior and Source Governance](sections/04_results_en.md)
-5. [Discussion and Limitations](sections/05_discussion_en.md)
-6. [Conclusion](sections/06_conclusion_en.md)
+2. [Related Work](sections/02_related_work_en.md)
+3. [Scenario, Data Boundary, and Evidence-Constrained Interface](sections/03_framework_en.md)
+4. [Layered Evaluation Design](sections/04_evaluation_en.md)
+5. [Results: Interface Behavior and Source Governance](sections/05_results_en.md)
+6. [Discussion and Limitations](sections/06_discussion_en.md)
+7. [Conclusion](sections/07_conclusion_en.md)

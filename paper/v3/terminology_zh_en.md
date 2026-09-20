@@ -4,7 +4,7 @@
 |---|---|---|
 | 无统一故障真值 | without a unified fault ground truth | 不简称为“无数据”或“弱标签” |
 | 描述性观测 | descriptive observation | 不是 confirmed fault |
-| 可审计观测 | auditable observation | 可追溯到数据、工具与参数 |
+| 可追溯观测 | traceable observation | 可回溯到数据、工具与参数，并可由工程师核查 |
 | 测量—证据接口 | measurement-to-evidence interface | V3 的中心术语 |
 | 结构化告警摘要 | structured alert summary | 用于受控检索意图 |
 | 来源策略 | source policy | 不等于 universal relevance |
