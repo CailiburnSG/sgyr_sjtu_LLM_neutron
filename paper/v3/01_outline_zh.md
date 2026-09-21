@@ -27,22 +27,19 @@
 - 评价问题与证据层级。
 - observation verification（观测核查）。
 - retrieval-governance：corpus expansion、query、language、encoder、chunking；说明相似度与核心来源可见性为何不能混同。
-- self-retrieval 作为检索单元与分块影响的辅助核查；段落相关性、claim--evidence support 与 expert usefulness 留作后续验证层次。
+- self-retrieval 核查检索单元与分块边界的影响；段落相关性、claim--evidence support 与 expert usefulness 留作后续验证层次。
 
 ## 5. 结果：接口为什么需要来源治理
 
 - 代表性 measurement-to-evidence trace case。
 - 观测层核查。
 - similarity--authority divergence。
-- P0 configuration interaction（作为来源治理的支持性证据，而非普适配置排名）。
+- query、语言、encoder 与分块方式的配置交互（作为来源治理的支持性证据，而非普适配置排名）。
+- 分块边界与检索单元核查。
 - claim--evidence support / expert usefulness。
 
-## 6. 讨论与局限
+## 6. 结论
 
-- 安全关键部署中的来源策略与人机边界。
-- 没有故障真值、人工 relevance 与 memo 专家复核的限制。
-- 面向物理机理假设、运行历史和维护反馈的后续层次。
-
-## 7. 结论
-
-- 重申“先描述、后诊断”“相似度不等于权威性”“LLM 组织而不制造证据”。
+- 重申无标签档案中的任务定位、measurement-to-evidence interface 及其可回指观察链。
+- 总结资料扩展、来源可见性、encoder 对照、query 交互和分块检索单元的结论。
+- 收束“先描述、后判断”“相似度不等于权威性”“LLM 组织而不制造证据”的工程边界；以一句话指出运行/维护信息与专家复核的后续验证入口。

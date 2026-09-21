@@ -13,5 +13,4 @@
 3. [Traceable Observations and Evidence-Constrained Interpretation for Unlabeled Neutron-Current Archives](sections/03_framework_en.md)
 4. [Layered Evaluation Design](sections/04_evaluation_en.md)
 5. [Results: Interface Behavior and Source Governance](sections/05_results_en.md)
-6. [Discussion and Limitations](sections/06_discussion_en.md)
-7. [Conclusion](sections/07_conclusion_en.md)
+6. [Conclusion](sections/06_conclusion_en.md)
