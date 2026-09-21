@@ -14,20 +14,20 @@
 - 证据约束 AI 与安全关键 RAG：先交代通用 retrieval-grounded generation，再重点讨论核工程中的来源、引用和人工复核。
 - 研究缺口：收束到“无统一故障标签的核仪表原始时序”如何连接可追溯观察与受来源策略约束的证据侧解释。
 
-## 3. 证据约束诊断辅助框架
+## 3. 无标签中子电流档案的可追溯观测与证据约束解释
 
-- 数据角色与披露边界。
-- 确定性测量观测层。
-- observation packet 与 structured alert summary。
-- authority-aware retrieval、citation-bearing candidate interpretation。
-- runtime/provenance 与工程师复核边界。
+- 研究对象、数据结构与披露边界。
+- 测量侧：逐记录初始化、数据健康核查，以及形态、事件、共变、滞后、极值和快照等预先定义的分析工具。
+- observation packet：完整 condition report 与面向检索的 compact alert summary 的分工；操作性阈值与其非诊断属性。
+- 证据侧：带来源 metadata 的资料库、由告警字段约束的检索意图、段落定位及 evidence-linked memo。
+- 接口运行约束：active record、预先定义的分析工具、报告—摘要链接、引用关联与工程师复核边界。
 
 ## 4. 分层评价设计：验证接口，而非宣称诊断准确率
 
 - 评价问题与证据层级。
 - observation verification（观测核查）。
-- retrieval-governance：corpus expansion、query、language、encoder、chunking；说明相似度与权威来源可见性为何不能混同。
-- passage relevance、claim--evidence support 与 expert usefulness。
+- retrieval-governance：corpus expansion、query、language、encoder、chunking；说明相似度与核心来源可见性为何不能混同。
+- self-retrieval 作为检索单元与分块影响的辅助核查；段落相关性、claim--evidence support 与 expert usefulness 留作后续验证层次。
 
 ## 5. 结果：接口为什么需要来源治理
 

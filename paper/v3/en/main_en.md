@@ -10,7 +10,7 @@
 
 1. [Introduction: Why a Measurement-to-Evidence Interface Is Needed](sections/01_introduction_en.md)
 2. [Related Work](sections/02_related_work_en.md)
-3. [Scenario, Data Boundary, and Evidence-Constrained Interface](sections/03_framework_en.md)
+3. [Traceable Observations and Evidence-Constrained Interpretation for Unlabeled Neutron-Current Archives](sections/03_framework_en.md)
 4. [Layered Evaluation Design](sections/04_evaluation_en.md)
 5. [Results: Interface Behavior and Source Governance](sections/05_results_en.md)
 6. [Discussion and Limitations](sections/06_discussion_en.md)
