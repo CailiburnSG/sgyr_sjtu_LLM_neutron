@@ -25,7 +25,7 @@
 
 \texttt{nomic-embed-text} 字符分块扩库协议覆盖 17 个已保存的分块长度—重叠率配置，分块长度取 800、1000、1200 和 1500 字符，重叠率取 50、80、100、120 和 150 字符，并保留有效组合；每个非零扩库规模下均进行 100 次补充资料抽样。该协议考察资料范围、语言和分块边界，并同时提供 self-retrieval 所需的已保存索引。
 
-MiniLM encoder 对照协议在相同资料库、top-10 规则和来源指标下，使用多语种的 \texttt{sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} 与通用的 \texttt{sentence-transformers/all-MiniLM-L6-v2} 表示文本。字符分块设置为 800/80、1200/120 和 1500/150，并比较简短 query 与技术细节 query；独立的固定词数设置为 240 词、24 词重叠。各 MiniLM 非零扩库条件进行 10 次补充资料抽样。不同 encoder 或不同分块单位的余弦分数不直接横向比较；对照关注资料扩展后的来源可见性是否跨 encoder 出现，以及 query 表述的影响是否随表示模型和语言而改变。
+MiniLM encoder 对照协议在相同资料库、top-10 规则和来源指标下，使用多语种的 \nolinkurl{sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2} 与通用的 \nolinkurl{sentence-transformers/all-MiniLM-L6-v2} 表示文本。字符分块设置为 800/80、1200/120 和 1500/150，并比较简短 query 与技术细节 query；独立的固定词数设置为 240 词、24 词重叠。各 MiniLM 非零扩库条件进行 10 次补充资料抽样。不同 encoder 或不同分块单位的余弦分数不直接横向比较；对照关注资料扩展后的来源可见性是否跨 encoder 出现，以及 query 表述的影响是否随表示模型和语言而改变。
 
 \subsection{指标及其解释范围}
 

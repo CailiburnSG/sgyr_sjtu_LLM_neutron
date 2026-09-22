@@ -1,6 +1,6 @@
 # V3 中文 TeX 排版稿
 
-该目录是 V3 中文的原生 LaTeX 排版稿。`main.tex` 通过 `sections/` 中的六个 `.tex` 文件组织正文，`refs.bib` 是从 V2 固定的书目库副本。中文 Markdown 仍是论证内容的来源稿；修改稳定后需同步迁入对应 TeX 小节。
+该目录是 V3 中文的原生 LaTeX 排版稿，当前采用 A4 双栏版式。`main.tex` 通过 `sections/` 中的六个 `.tex` 文件组织正文，`refs.bib` 是从 V2 固定的书目库副本。中文 Markdown 仍是论证内容的来源稿；修改稳定后需同步迁入对应 TeX 小节。
 
 使用 XeLaTeX 编译：`xelatex main.tex`（需要时重复运行一次以更新目录和交叉引用）。
 

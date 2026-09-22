@@ -25,19 +25,18 @@
 
 配置交互并不意味着无法作出选择。在本资料库和来源要求下，已记录结果能够筛出来源可见性保持较好的候选组合。表 5.1 列出两类具有不同用途的例子：\texttt{nomic-embed-text} 的 800/120 字符分块配合英文核心术语 query，在加入 10 份补充资料时的 CorePriority@10 为 $0.92\pm0.12$，在全部 51 份补充资料加入后仍为 0.60；多语 MiniLM 的 800/80 设置配合“高度同步且无时间滞后”的英文观测 query，在相应条件下为 $0.83\pm0.18$ 和 0.40。前者更适合作为保持核心来源可见性的检索基线，后者则表明来自 observation packet 的具体线索也能形成具有较高来源可见性的案例检索表述。
 
-\begin{longtable}{p{0.18\linewidth} p{0.18\linewidth} p{0.18\linewidth} p{0.18\linewidth} p{0.18\linewidth}}
+\begin{table*}[t]
+\centering
+\footnotesize
+\begin{tabular}{p{0.16\textwidth} p{0.16\textwidth} p{0.22\textwidth} p{0.16\textwidth} p{0.16\textwidth}}
 \toprule
 候选用途 & encoder 与分块 & query 表述 & CorePriority@10（$m=10$） & CorePriority@10（$m=51$） \\
 \midrule
-\endfirsthead
-\toprule
-候选用途 & encoder 与分块 & query 表述 & CorePriority@10（$m=10$） & CorePriority@10（$m=51$） \\
-\midrule
-\endhead
 核心来源可见性基线 & \texttt{nomic-embed-text}，800/120 字符 & \texttt{neutron} & $0.92\pm0.12$ & 0.60 \\
 同步通道现象的案例检索 & 多语 MiniLM，800/80 字符 & \texttt{neutron current measurement highly synchronized channels without time lag} & $0.83\pm0.18$ & 0.40 \\
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table*}
 
 
 这些候选组合不是跨语料库、任务或评价目标的“最优配置”。特别是，短核心术语 query 的来源可见性较高，并不自动表示其最贴合某一条具体记录；而 observation-derived query 更接近案例现象，也仍需检验所返回段落的实际相关性。表 5.1 的作用是为检索协议提供可复核的条件性选择依据：在以核心来源可见性为目标时，应优先从这类在扩库后仍保持较高 CorePriority@10 的组合中选择，再结合段落相关性和工程复核确定实际部署配置。
@@ -53,4 +52,3 @@ MiniLM encoder 对照与 \texttt{nomic-embed-text} 字符分块扩库协议共�
 \subsection{小结}
 
 代表性 trace 说明，测量侧能够将无标签记录转换为可回指的检索线索；\texttt{nomic-embed-text} 字符分块扩库协议说明，证据侧若只依赖语义近邻，核心权威来源的可见性可能随相关资料的加入而丢失。MiniLM encoder 对照进一步表明：在本研究已测试的 encoder 范围内，这一风险并非单一向量表示所致；其幅度仍受 query、语言和分块方式共同影响，不能化约为某个组件的单一最优选择。与此同时，扩库后的来源可见性指标能够筛出条件性候选配置，为检索协议选择提供实证依据。由此，来源 metadata 与显式来源策略不是检索实现的附属信息，而是 measurement-to-evidence interface 中需要被设计和评价的部分。
-
