@@ -12,6 +12,8 @@
 
 测量侧的产物不是故障分类结果，而是一份 **observation packet**：它说明对哪一条记录、以哪些确定性规则、观察到了哪些数据质量和信号现象。确定性脚本将结构化观测写入记事板；其中稳定字段直接形成供后续检索使用的 compact alert summary，测量侧 agent 则只读取这些已保存结果，组织面向工程师阅读的 condition report。二者均不构成对物理机理、设备状态或根因的确认。
 
+<!-- 图 3.1：测量侧 artefact 关系。当前 TeX 暂以 V2 fig02_method_board 占位；正式版本应突出 active record、registered probes、observation packet、condition report 与 compact alert summary 的责任边界。 -->
+
 ### 3.2.1 初始化、数据健康与分析单元
 
 每次分析以一条记录为单位。初始化脚本解析时间列、按时间排序，并生成唯一的 active record；同时记录样本数、名义采样间隔、缺失情况和不活跃通道等数据健康信息。后续分析不再接受自由指定的原始文件路径，而是从该分析单元读取 active record。这样可以使一组观测始终对应同一输入记录，并保留输入、参数、脚本版本和派生产物之间的关联。
