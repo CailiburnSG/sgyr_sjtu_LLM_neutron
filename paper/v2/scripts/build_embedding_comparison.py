@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 INPUT = ROOT / "evidence" / "embedding_benchmark"
 FIGS = ROOT / "paper" / "v2" / "figs"
 TABLES = ROOT / "paper" / "v2" / "tables"

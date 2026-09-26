@@ -14,7 +14,7 @@
 | `paper/v2/` | V2 英文 LaTeX 稳定稿、图表与实验素材 | 否（历史参照） |
 | `paper/PAPER_DISCUSSION_GUIDE_zh.md` | 跨版本写作决策与修改蓝图 | 参考 |
 | `导师意见/` | 导师意见与推荐论文清单 | 参考 |
-| `paper/scripts/` | V2 图表、实验结果的生成脚本 | 复现实验时使用 |
+| `paper/v1/scripts/`、`paper/v2/scripts/`、`paper/v3/scripts/` | 各论文版本的图表、实验结果生成脚本 | 按对应版本复现时使用 |
 | `corpus/`、`evidence/` | 技术资料语料、检索实验配置与结果 | 复现实验时使用 |
 | `code_ref/` | 早期代码参考，不是当前论文编译入口 | 参考 |
 

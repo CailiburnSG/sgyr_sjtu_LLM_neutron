@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, Circle, FancyArrowPatch
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "paper" / "v2" / "figs"
 
 INK = "#18324B"

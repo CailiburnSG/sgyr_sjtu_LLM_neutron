@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 
-PAPER = Path(__file__).resolve().parents[1]
+PAPER = Path(__file__).resolve().parents[2]
 OUT = PAPER / "v2" / "figs"
 
 INK = "#18324A"

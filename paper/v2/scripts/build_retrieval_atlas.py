@@ -12,7 +12,7 @@ import pandas as pd
 from matplotlib.colors import LinearSegmentedColormap
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 EVIDENCE = ROOT / "evidence"
 OUT = ROOT / "paper" / "v2" / "figs"
 

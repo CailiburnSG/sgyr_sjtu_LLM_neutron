@@ -26,7 +26,7 @@
 |---|---|---|
 | 64 篇文档语料 | `corpus/md/` | 13 篇 IAEA core + 51 篇 supplementary documents |
 | Query 说明 | `evidence/rag_results/query_formulation_sensitivity/technical_detail_query_pilot/query_set.json` | 4 条 baseline query + 6 条人工技术细节 query |
-| 执行脚本 | `paper/scripts/run_query_formulation_old_chunk_grid.py` | 字符级 splitter、corpus expansion 与指标计算 |
+| 执行脚本 | `paper/v2/scripts/run_query_formulation_old_chunk_grid.py` | 字符级 splitter、corpus expansion 与指标计算 |
 | 已有轻量 pilot | `evidence/rag_results/query_formulation_sensitivity/technical_detail_query_pilot/` | 固定 240-word/24-word 的 MiniLM pilot；不得覆盖 |
 
 十条 query：
@@ -63,7 +63,7 @@ Corpus scope：13 篇固定 IAEA core + m 篇 supplementary documents，
 5. 启动前运行：
 
    ```bash
-   python -m py_compile paper/scripts/run_query_formulation_old_chunk_grid.py
+   python -m py_compile paper/v2/scripts/run_query_formulation_old_chunk_grid.py
    ```
 
 ## 运行命令
@@ -71,7 +71,7 @@ Corpus scope：13 篇固定 IAEA core + m 篇 supplementary documents，
 在完成并验证 device 参数后，运行：
 
 ```bash
-python paper/scripts/run_query_formulation_old_chunk_grid.py \
+python paper/v2/scripts/run_query_formulation_old_chunk_grid.py \
   --config 800:80 \
   --config 1200:120 \
   --config 1500:150 \

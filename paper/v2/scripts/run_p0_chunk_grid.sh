@@ -4,7 +4,7 @@
 # Corpus: paper_claude_pack/corpus/md
 # Outputs: evidence/rag_results/query_formulation_sensitivity/historical_chunk_grid_minilm/
 set -euo pipefail
-PACK="$(cd "$(dirname "$0")/../.." && pwd)"
+PACK="$(cd "$(dirname "$0")/../../.." && pwd)"
 cd "$PACK"
 export HF_HOME="$PACK/.cache/huggingface"
 export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
@@ -19,7 +19,7 @@ OUT_ROOT="$PACK/evidence/rag_results/query_formulation_sensitivity/historical_ch
 mkdir -p "$OUT_ROOT"
 LOG="$OUT_ROOT/run.log"
 
-"$PY" paper/scripts/run_query_formulation_old_chunk_grid.py \
+"$PY" paper/v2/scripts/run_query_formulation_old_chunk_grid.py \
   --config 800:80 \
   --config 1200:120 \
   --config 1500:150 \

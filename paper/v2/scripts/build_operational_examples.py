@@ -18,7 +18,7 @@ from matplotlib.ticker import MaxNLocator
 from matplotlib.transforms import Bbox
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 SAMPLE = ROOT / "evidence" / "data_samples" / "A1_1_head5000.csv"
 OUT = ROOT / "paper" / "v2" / "figs"
 

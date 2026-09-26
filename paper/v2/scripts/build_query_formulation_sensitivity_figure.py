@@ -6,7 +6,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 PILOT = ROOT / "evidence" / "rag_results" / "query_formulation_sensitivity" / "technical_detail_query_pilot"
 RESULTS = PILOT / "results"
 OUT = PILOT / "technical_detail_query_priority_pilot"

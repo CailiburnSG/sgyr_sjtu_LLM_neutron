@@ -18,7 +18,7 @@ import pandas as pd
 from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch, Polygon
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 PAPER = ROOT / "paper"
 OUT = PAPER / "v2" / "figs"
 SAMPLE = ROOT / "evidence" / "data_samples" / "A1_1_head5000.csv"

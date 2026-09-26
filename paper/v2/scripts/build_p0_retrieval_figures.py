@@ -13,7 +13,7 @@ import pandas as pd
 from matplotlib.lines import Line2D
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 RESULTS = ROOT / "evidence/rag_results/query_formulation_sensitivity/historical_chunk_grid_minilm"
 OUT = ROOT / "paper/v2/figs"
 

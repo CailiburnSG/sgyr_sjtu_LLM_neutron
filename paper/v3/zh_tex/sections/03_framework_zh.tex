@@ -12,11 +12,22 @@
 
 测量侧的产物不是故障分类结果，而是一份 \textbf{observation packet}：它说明对哪一条记录、以哪些确定性规则、观察到了哪些数据质量和信号现象。确定性脚本将结构化观测写入记事板；其中稳定字段直接形成供后续检索使用的 compact alert summary，测量侧 agent 则只读取这些已保存结果，组织面向工程师阅读的 condition report。二者均不构成对物理机理、设备状态或根因的确认。
 
-\begin{figure*}[t]
+\begin{figure*}[!t]
   \centering
-  \includegraphics[width=0.94\textwidth]{fig02_method_board}
-  \caption{测量侧的记录、确定性分析与派生产物关系（V2 占位图）。该层将时间排序后的 active record 交由预先定义的 probes 处理，保存 observation packet；condition report 与 compact alert summary 分别服务于人工阅读和受控检索。正式版本将按 V3 的 artefact 与责任边界重绘。}
-  \label{fig:measurement-artifacts}
+  \begin{minipage}[t]{0.263\textwidth}
+    \centering\textbf{(a)}\par\vspace{1mm}
+    \includegraphics[width=\linewidth]{fig03a_spike_rule_example}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.341\textwidth}
+    \centering\textbf{(b)}\par\vspace{1mm}
+    \includegraphics[width=\linewidth]{fig03b_pearson_example}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.296\textwidth}
+    \centering\textbf{(c)}\par\vspace{1mm}
+    \includegraphics[width=\linewidth]{fig03c_lag_example}
+  \end{minipage}
+  \caption{确定性 probes 所描述的统计现象示例：(a) 样本 2600--2720 的局部稳健偏离规则，纵轴为相应通道记录的中子电流值；(b) 通道间 Pearson 共变；(c) 相关--滞后扫描。它们用于说明 observation packet 中可保存的描述性证据，不构成已确认故障或因果方向。}
+  \label{fig:probe-examples}
 \end{figure*}
 
 \subsubsection{初始化、数据健康与分析单元}
@@ -27,27 +38,7 @@
 
 \subsubsection{预先定义的确定性分析工具}
 
-初始化完成后，脚本仅执行预先注册的 probes。各 probe 的作用、输出和解释边界如下表所示。
-
-\begin{table*}[t]
-\centering
-\small
-\begin{tabular}{p{0.29\textwidth} p{0.29\textwidth} p{0.29\textwidth}}
-\toprule
-Probe 家族 & 确定性处理 & 形成的描述性观察 \\
-\midrule
-数据健康与初始化 & 时间排序，采样、缺失和不活跃通道检查 & active record、数据健康标记 \\
-形态与共变扫描 & 计算通道变化程度及两两相关关系 & 粗略形态、强共变或近冗余通道组 \\
-事件与区段扫描 & 划分相对稳定区段和短时变化区段，枚举突刺与孤立零值 & 区段与事件清单 \\
-同步与滞后扫描 & 比较通道间的相关—滞后结构 & 近同步组、候选滞后关系 \\
-极值定位 & 定位各通道最大值、最小值及其时刻 & 极值及时间位置 \\
-截面快照 & 在选定时刻记录多通道状态 & 时间局部的通道状态向量 \\
-\bottomrule
-\end{tabular}
-\end{table*}
-
-
-形态和共变扫描提供的是信号关系的初步描述。例如，较高的两两相关性可以提示共享变化、可能的冗余或需要结合通道位置进一步核查的情形，但它本身不证明仪表关系或物理机制。相同地，相关—滞后扫描只区分近同步与时间错位的统计模式，不赋予因果方向。
+初始化完成后，脚本仅执行预先注册的 probes，覆盖数据健康、形态与共变、事件与区段、同步与滞后、极值定位和截面快照等观察。各工具将输入范围、参数与结构化输出写入 observation packet；图~\ref{fig:probe-examples} 展示其中三类统计现象。形态和共变扫描提供的是信号关系的初步描述。例如，较高的两两相关性可以提示共享变化、可能的冗余或需要结合通道位置进一步核查的情形，但它本身不证明仪表关系或物理机制。相同地，相关—滞后扫描只区分近同步与时间错位的统计模式，不赋予因果方向。
 
 为使事件识别可重复，当前实现对每个通道采用长度为 31 个样本的中心滑动窗口；记录边界处使用可获得的窗口样本。令 $W_t$ 为时刻 $t$ 的窗口，$x_{t,c}$ 为通道 $c$ 的电流值，则局部基线、点态绝对残差及其稳健局部尺度定义为
 
@@ -86,20 +77,22 @@ I^{\mathrm{spike}}_{t,c}=
 
 compact alert summary 是测量侧与证据侧之间唯一的受控连接。它不把突刺、零值、共变或滞后直接命名为某种故障，而是将这些现象映射为待核查的技术主题。查询的具体措辞由作者根据摘要、语种和资料术语人工设定并复核，而非从原始波形自动生成物理诊断假设。
 
-\begin{table*}[t]
+\begin{table}[H]
 \centering
-\small
-\begin{tabular}{p{0.29\textwidth} p{0.29\textwidth} p{0.29\textwidth}}
+\footnotesize
+\begin{tabular}{p{0.29\columnwidth} p{0.63\columnwidth}}
 \toprule
-摘要中的观察线索 & 检索意图 & 优先查找的证据 \\
+摘要中的观察线索 & 检索意图与优先查找的证据 \\
 \midrule
-突刺或孤立零值 & 信号完整性和异常测量背景 & 定义、核查步骤、诊断注意事项 \\
-共变或滞后 & 冗余、共享上下文与时序行为 & 仪表组织、在线监测与时间行为说明 \\
-形态或数据健康线索 & 稳定性、噪声、可用性与监测实践 & 数据质量和监测指南 \\
-极值或通道快照 & 运行上下文与通道间比较 & 运行指导和推荐检查项 \\
+突刺或孤立零值 & 信号完整性和异常测量背景；定义、核查步骤与诊断注意事项 \\
+共变或滞后 & 冗余、共享上下文与时序行为；仪表组织、在线监测与时间行为说明 \\
+形态或数据健康线索 & 稳定性、噪声、可用性与监测实践；数据质量和监测指南 \\
+极值或通道快照 & 运行上下文与通道间比较；运行指导和推荐检查项 \\
 \bottomrule
 \end{tabular}
-\end{table*}
+\caption{由 observation packet 中的稳定字段形成受控检索意图。}
+\label{tab:retrieval-intent}
+\end{table}
 
 
 该映射限制的是检索范围，而不是解释结论。例如，观察到某次零值事件时，系统可查找有关测量完整性或通道检查的资料段落；它不能据此自动声称出现了某一种仪表失效。
@@ -114,20 +107,22 @@ compact alert summary 是测量侧与证据侧之间唯一的受控连接。它�
 
 两侧任务的连接还需要运行约束来保证可追溯性。原始路径或分析状态若可随意改变，就无法确认某个摘要来自哪条记录；未预先定义的处理动作若能被自由执行，就无法复现观测；长篇报告若直接作为查询，又容易将偶然细节混入证据检索。因此，接口将这些风险转化为明确的运行规则。
 
-\begin{table*}[t]
+\begin{table}[!t]
 \centering
-\small
-\begin{tabular}{p{0.29\textwidth} p{0.29\textwidth} p{0.29\textwidth}}
+\footnotesize
+\begin{tabular}{p{0.29\columnwidth} p{0.63\columnwidth}}
 \toprule
-风险 & 运行约束 & 保留的关联产物 \\
+风险 & 运行约束与保留的关联产物 \\
 \midrule
-输入或状态漂移 & 仅初始化步骤接收原始路径，之后均解析同一 active record & active-record 标识与 probe 日志 \\
-未预先定义或格式错误的动作 & 只接受预先定义的分析工具；不符合要求的动作不执行 & 接受或拒绝记录 \\
-长叙述直接驱动检索 & condition report 留给人工复核，检索仅读取 compact alert summary & 报告—摘要链接 \\
-缺乏证据的文字解释 & memo 中每项候选表述关联到检索段落和引文 & evidence-linked memo \\
+输入或状态漂移 & 仅初始化步骤接收原始路径，之后均解析同一 active record；保留 active-record 标识与 probe 日志 \\
+未预先定义或格式错误的动作 & 只接受预先定义的分析工具，不符合要求的动作不执行；保留接受或拒绝记录 \\
+长叙述直接驱动检索 & condition report 留给人工复核，检索仅读取 compact alert summary；保留报告—摘要链接 \\
+缺乏证据的文字解释 & memo 中每项候选表述关联到检索段落和引文；形成 evidence-linked memo \\
 \bottomrule
 \end{tabular}
-\end{table*}
+\caption{measurement-to-evidence interface 的运行约束与可追溯产物。}
+\label{tab:interface-constraints}
+\end{table}
 
 
 测量侧 agent 只调用预先定义的分析工具，并基于记事板中已保存的观测组织 condition report；数值计算由确定性脚本完成，agent 不能任意更改分析状态或添加新的测量事实。证据侧 agent 以 compact alert summary 为受控输入，组织检索意图、资料段落与候选表述；资料来源与段落定位由检索层保留。工程师保留对运行上下文、物理机制、证据充分性和最终工程决定的判断权。接口的作用不是自动替代工程判断，而是将从原始记录到候选解释之间的测量依据与文献依据保持为可回溯、可核查的链条。

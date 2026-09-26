@@ -18,7 +18,7 @@ import numpy as np
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 CORPUS = ROOT / "corpus" / "md"
 EMBEDDINGS = ROOT / "evidence" / "embedding_benchmark"
 QUERY_SET = ROOT / "evidence" / "rag_results" / "query_formulation_sensitivity" / "technical_detail_query_pilot" / "query_set.json"

@@ -20,7 +20,7 @@ from llama_index.core import Document
 from llama_index.core.node_parser import TokenTextSplitter
 from sentence_transformers import SentenceTransformer
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 CORPUS = ROOT / "corpus" / "md"
 PILOT = ROOT / "evidence" / "rag_results" / "query_formulation_sensitivity" / "technical_detail_query_pilot"
 QUERY_SET = PILOT / "query_set.json"

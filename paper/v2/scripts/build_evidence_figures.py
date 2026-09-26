@@ -16,7 +16,7 @@ import numpy as np
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 EVIDENCE = ROOT / "evidence"
 FIGS = ROOT / "paper" / "v2" / "figs"
 TABLES = ROOT / "paper" / "v2" / "tables"

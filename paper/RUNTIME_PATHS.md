@@ -20,6 +20,6 @@
 ## 启动
 
 ```bash
-bash paper/scripts/run_p0_chunk_grid.sh
-# 显存不足时：BATCH_SIZE=32 bash paper/scripts/run_p0_chunk_grid.sh
+bash paper/v2/scripts/run_p0_chunk_grid.sh
+# 显存不足时：BATCH_SIZE=32 bash paper/v2/scripts/run_p0_chunk_grid.sh
 ```
