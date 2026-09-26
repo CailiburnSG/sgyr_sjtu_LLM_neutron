@@ -92,7 +92,7 @@ def main() -> None:
     colorbar.set_label("mean IAEA priority@10")
 
     OUT.mkdir(parents=True, exist_ok=True)
-    fig.savefig(OUT / "fig05c_configuration_heatmap.pdf", bbox_inches="tight")
+    fig.savefig(OUT / "fig06_configuration_heatmap.pdf", bbox_inches="tight")
 
 
 if __name__ == "__main__":

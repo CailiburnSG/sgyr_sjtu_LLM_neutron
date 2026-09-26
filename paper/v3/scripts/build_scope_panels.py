@@ -84,8 +84,8 @@ def main() -> None:
         .fillna(0.0)
     )
     OUT.mkdir(exist_ok=True)
-    plot_metric(grouped, "priority_mean", "priority_std", "IAEA priority@10", "fig05a_scope_priority.pdf")
-    plot_metric(grouped, "score_mean", "score_std", "Mean top-1 cosine score", "fig05b_top1_cosine.pdf")
+    plot_metric(grouped, "priority_mean", "priority_std", "IAEA priority@10", "fig04a_scope_priority.pdf")
+    plot_metric(grouped, "score_mean", "score_std", "Mean top-1 cosine score", "fig04b_top1_cosine.pdf")
 
 
 if __name__ == "__main__":
