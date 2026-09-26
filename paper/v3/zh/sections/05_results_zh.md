@@ -18,9 +18,9 @@
 
 ## 5.3 MiniLM encoder 对照：query、语言与分块的交互
 
-在保持资料库、top-10 规则和来源指标不变的 MiniLM 核查中，以两种 encoder 和三种字符分块设置比较简短基线 query 与由 observation packet 线索形成的技术细节 query。Fig.5 的每个点表示固定 encoder--分块设置下，技术细节 query 家族相对基线 query 家族的平均 CorePriority@10 变化。在此口径下，英文设置的变化介于 $-0.03$ 至 $+0.14$，中文设置介于 $-0.23$ 至 $+0.02$。因此，向 query 中加入观察细节并非总能提高核心来源可见性。
+为避免将中文 query 与英文向 encoder 的语言失配混入主比较，Fig.5 仅保留多语 MiniLM encoder，并在三种字符分块设置下比较简短基线 query 与由 observation packet 线索形成的技术细节 query。每个点表示固定分块设置下，技术细节 query 家族相对基线 query 家族的平均 CorePriority@10 变化。英文设置的变化介于 $+0.05$ 至 $+0.14$，中文设置介于 $-0.23$ 至 $+0.02$。因此，向 query 中加入观察细节并非总能提高核心来源可见性。
 
-Fig.5(a)--(b) 直接给出该差值：每个点对应一个 encoder--字符分块配置，数值为技术细节 query 家族平均值减去基线 query 家族平均值。正值表示技术细节 query 家族的核心来源可见性（CorePriority@10）较高；正负号随语言和配置改变。
+Fig.5(a)--(b) 直接给出该差值：每个点对应一个多语 MiniLM 的字符分块配置，数值为技术细节 query 家族平均值减去基线 query 家族平均值。正值表示技术细节 query 家族的核心来源可见性（CorePriority@10）较高，正负号随语言和配置改变。
 
 在两种 MiniLM encoder 分别配合三种字符分块设置所形成的六种配置上，平均结果也体现了这种不对称性：英文技术细节 query 的 CorePriority@10 为 0.65，高于英文基线 query 的 0.60；中文技术细节 query 为 0.52，低于中文基线 query 的 0.62。完整扩库轨迹进一步显示，各曲线均从 core-only 条件下的 1.00 出发，但其下降速度、交叉位置和对 query 细节的响应随语言与配置而变。Fig.6 以紧凑热图呈现这一交互，并补充 Fig.5 的家族均值比较。
 

@@ -15,6 +15,7 @@ MODELS = [
     "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
     "sentence-transformers/all-MiniLM-L6-v2",
 ]
+PLOT_MODEL = MODELS[0]
 
 
 def load_scope() -> pd.DataFrame:
@@ -40,26 +41,25 @@ def main() -> None:
     ).reset_index()
     effects["delta"] = effects["observation_derived"] - effects["baseline"]
     effects["setting"] = effects.apply(
-        lambda row: f"{'Multi' if row.model == MODELS[0] else 'English'}\n"
-        f"{int(row.chunk_size)}/{int(row.chunk_overlap)}",
+        lambda row: f"{int(row.chunk_size)}/{int(row.chunk_overlap)}",
         axis=1,
     )
 
     OUT.mkdir(parents=True, exist_ok=True)
-    for language, title, filename in (
-        ("en", "English queries", "fig05a_query_effect_en.pdf"),
-        ("zh", "Chinese queries", "fig05b_query_effect_zh.pdf"),
+    for language, filename, show_y_labels in (
+        ("en", "fig05a_query_effect_en.pdf", True),
+        ("zh", "fig05b_query_effect_zh.pdf", False),
     ):
-        panel = effects[effects.language.eq(language)].copy()
-        panel["model_order"] = panel.model.map({MODELS[0]: 0, MODELS[1]: 1})
-        panel = panel.sort_values(["model_order", "chunk_size"]).reset_index(drop=True)
+        panel = effects[
+            effects.language.eq(language) & effects.model.eq(PLOT_MODEL)
+        ].sort_values("chunk_size").reset_index(drop=True)
         y = np.arange(len(panel))
         colours = np.where(panel.delta >= 0, "#159A8A", "#D05A5A")
 
-        # These panels are displayed side by side inside one manuscript column.
-        # Keep each source panel narrow and tall so its typography remains legible
-        # after placement at roughly half a column width.
-        fig, ax = plt.subplots(figsize=(2.15, 4.45), constrained_layout=True)
+        # The panels are placed side by side in one manuscript column. Both
+        # use the multilingual encoder; the left panel carries their shared
+        # chunking labels.
+        fig, ax = plt.subplots(figsize=(2.35, 2.25), constrained_layout=True)
         ax.axvline(0, color="#64748B", lw=1.1, zorder=0)
         ax.hlines(y, 0, panel.delta, color=colours, lw=2.0, alpha=0.8)
         ax.scatter(panel.delta, y, s=78, color=colours, edgecolor="white", linewidth=0.8, zorder=3)
@@ -67,8 +67,11 @@ def main() -> None:
             side = 0.008 if value >= 0 else -0.008
             ax.text(value + side, yi, f"{value:+.2f}", ha="left" if value >= 0 else "right",
                     va="center", fontsize=7.7, color="#334155", fontweight="bold")
-        ax.set_title(title, loc="left", fontsize=9, fontweight="bold")
-        ax.set_yticks(y, panel.setting, fontsize=7.2)
+        if show_y_labels:
+            ax.set_yticks(y, panel.setting, fontsize=7.0)
+            ax.set_ylabel("chunk / overlap", fontsize=8)
+        else:
+            ax.set_yticks(y, [""] * len(y))
         ax.set_xlim(-0.27, 0.18)
         ax.set_xlabel(r"$\Delta$ CorePriority@10", fontsize=8)
         ax.grid(axis="x", color="#D1D5DB", lw=0.7)
