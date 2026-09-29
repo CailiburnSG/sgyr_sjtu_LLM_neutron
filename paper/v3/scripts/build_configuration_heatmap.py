@@ -74,16 +74,27 @@ def main() -> None:
                 raise ValueError(f"Expected one result for {label}, {model}, {chunk}/{overlap}")
             values[row, column] = result.iloc[0]
 
-    fig, ax = plt.subplots(figsize=(5.0, 5.3), constrained_layout=True)
+    # A wide, low canvas gives the six chunking configurations enough horizontal
+    # room while keeping the heatmap compact in the manuscript column.
+    fig, ax = plt.subplots(figsize=(6.8, 4.6), constrained_layout=True)
     image = ax.imshow(values, vmin=0, vmax=1, cmap="YlGnBu", aspect="auto")
     ax.set_xlabel("encoder × character chunking")
     ax.set_ylabel("manual query formulation")
-    ax.set_xticks(np.arange(6), ["800/80", "1200/120", "1500/150"] * 2, fontsize=7.5)
+    ax.set_xticks(
+        np.arange(6),
+        ["800/80", "1200/120", "1500/150"] * 2,
+        fontsize=6.3,
+        rotation=35,
+        ha="right",
+        rotation_mode="anchor",
+    )
     ax.set_yticks(np.arange(10), query_order, fontsize=7.5)
     ax.axvline(2.5, color="#1f2937", lw=1.25)
     ax.axhline(4.5, color="white", lw=2.4)
-    ax.text(1, -1.18, "Multilingual", ha="center", va="center", fontsize=8.5, fontweight="bold")
-    ax.text(4, -1.18, "English-oriented", ha="center", va="center", fontsize=8.5, fontweight="bold")
+    # Both encoder groups are evaluated with the EN and ZH queries shown on
+    # the y-axis. Use concise architecture labels rather than language labels.
+    ax.text(1, -1.18, "MiniLM-L12", ha="center", va="center", fontsize=8.3, fontweight="bold")
+    ax.text(4, -1.18, "MiniLM-L6", ha="center", va="center", fontsize=8.3, fontweight="bold")
     for row in range(values.shape[0]):
         for column in range(values.shape[1]):
             color = "white" if values[row, column] > 0.56 else "#172033"
