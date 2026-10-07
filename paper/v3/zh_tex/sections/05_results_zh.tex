@@ -103,21 +103,16 @@ MiniLM encoder 对照与 \texttt{nomic-embed-text} 字符分块扩库协议共�
 
 固定词数分块的 MiniLM 对照表明，上述风险并非只出现在 \texttt{nomic-embed-text} 的字符分块中。多语种 MiniLM 对中文短语产生的最高余弦相似度约为 0.62--0.64，高于另一 MiniLM 的约 0.27；但随着补充资料加入，两种 encoder 的 CorePriority@10 均出现下降。语义表示对不同语言的近邻得分具有实质影响，却不能替代来源要求。
 
-\texttt{nomic-embed-text} 索引上的自检索则说明，检索单元的定义也会影响“找回”的含义。在一个 800/50 设置的仅核心资料条件下，严格同分块的前十名召回率为 0.7625，而同文档的前十名召回率为 0.8625。该差异来自重叠分块：原始段落未必以同一节点返回，但同一文档中的相邻段落可能已包含对应信息。因此，自检索结果用于解释分块边界与段落定位，而不应与来源可见性混为同一种证据。
+\texttt{nomic-embed-text} 索引上的自检索则说明，检索单元的定义也会影响“找回”的含义。图~\ref{fig:self-retrieval} 选取 800/50、1000/80 与 1200/150 三个配置：800/50 是此前使用的基准；在完整的 $4\times4$ 网格中，1000/80 在加入 45 份补充资料时两种匹配标准的平均倒数排名差距最小（0.026），1200/150 的差距最大（0.157）。因此，后二者用于展示边界效应由弱到强的两个端点，而非宣称配置优劣。
 
-\begin{figure*}[!t]
+图中的空心点是仅核心资料时的参考基线；非零扩库点则是补充资料随机抽样后的聚合结果。两者的抽样结构不同，故基线与第一个扩库点之间以虚线连接，不应将图首端的张开或收拢解释为“加入少量资料”带来的确定性性能跃迁。对每个非零扩库规模，两条实线之间的距离才表示严格同分块与同文档匹配在相同资料范围下的差异：原始段落未必以同一节点返回，但同一文档中的相邻分块可能已包含对应信息。因此，自检索结果用于解释分块边界与段落定位，而不应与来源可见性混为同一种证据。
+
+\begin{figure}[!t]
   \centering
-  \begin{minipage}[t]{0.43\textwidth}
-    \centering\textbf{(a)}\par\vspace{1mm}
-    \includegraphics[width=\linewidth]{fig08a_self_retrieval_recall}
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.43\textwidth}
-    \centering\textbf{(b)}\par\vspace{1mm}
-    \includegraphics[width=\linewidth]{fig08b_self_retrieval_mrr}
-  \end{minipage}
-  \caption{自检索的检索单元核查：（a）前十名召回率；（b）平均倒数排名。两图均区分严格同分块与同文档两种匹配标准，用于说明重叠分块下“找回”的指标边界，不衡量工程正确性。}
+  \includegraphics[width=0.84\columnwidth]{fig08_self_retrieval_selected}
+  \caption{三个代表性 \texttt{nomic-embed-text} 分块配置下的自检索结果。蓝线为严格同分块匹配，橙线为同文档匹配；两线之间的半透明带表示同一扩库规模下两种匹配标准的差距。纵轴为平均倒数排名，越高表示目标段落首次出现的位置越靠前。空心点为仅核心资料基线，虚线仅连接该基线与首个扩库点；实线比较相同扩库规模下的两种匹配标准。800/50 为原始基准，1000/80 与 1200/150 分别展示差距较小和较大的端点，不构成分块性能排名，也不衡量工程正确性。}
   \label{fig:self-retrieval}
-\end{figure*}
+\end{figure}
 
 \FloatBarrier
 \subsection{小结}
