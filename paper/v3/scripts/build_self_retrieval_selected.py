@@ -35,7 +35,7 @@ def load_config(chunk: int, overlap: int) -> pd.DataFrame:
 
 
 def main() -> None:
-    fig, axes = plt.subplots(3, 1, figsize=(3.35, 5.55), sharex=True, sharey=True)
+    fig, axes = plt.subplots(1, 3, figsize=(7.05, 2.48), sharex=True, sharey=True)
     panel_labels = ("(a)", "(b)", "(c)")
     for ax, panel, (chunk, overlap) in zip(axes, panel_labels, CONFIGS):
         data = load_config(chunk, overlap)
@@ -57,10 +57,10 @@ def main() -> None:
         ax.fill_between(strict["extra_docs"], strict["mrr_mean"], document["mrr_mean"],
                         color="#CBD5E1", alpha=0.44, zorder=0)
         ax.set_title(f"{panel} {chunk}/{overlap}", fontsize=9, pad=5)
-        ax.text(0.975, 0.915, ROLES[(chunk, overlap)], transform=ax.transAxes,
-                ha="right", va="top", fontsize=6.8, color="#334155", fontweight="bold",
-                bbox={"boxstyle": "round,pad=0.28", "facecolor": "#E2E8F0",
-                      "edgecolor": "none", "alpha": 0.95})
+        ax.text(0.97, 0.09, ROLES[(chunk, overlap)], transform=ax.transAxes,
+                ha="right", va="bottom", fontsize=6.7, color="#475569",
+                bbox={"boxstyle": "round,pad=0.25", "facecolor": "#F1F5F9",
+                      "edgecolor": "none", "alpha": 0.96})
         ax.set_xlim(0, 51)
         ax.set_ylim(0.35, 0.85)
         ax.set_xticks((0, 10, 25, 40, 50))
@@ -72,12 +72,12 @@ def main() -> None:
             ax.spines[spine].set_visible(False)
         for spine in ("left", "bottom"):
             ax.spines[spine].set_color("#334155")
-    fig.supylabel("Mean reciprocal rank", fontsize=8, x=0.02)
-    axes[-1].set_xlabel("Supplementary documents admitted", fontsize=8)
+    fig.supylabel("Mean reciprocal rank", fontsize=8, x=0.01)
+    fig.supxlabel("Supplementary documents admitted", fontsize=8, y=0.01)
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="upper center", ncol=2, fontsize=7.4,
                frameon=False, bbox_to_anchor=(0.54, 0.995))
-    fig.subplots_adjust(left=0.18, right=0.98, bottom=0.09, top=0.91, hspace=0.42)
+    fig.subplots_adjust(left=0.09, right=0.995, bottom=0.20, top=0.80, wspace=0.19)
     OUT.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT / "fig08_self_retrieval_selected.pdf", bbox_inches="tight")
 

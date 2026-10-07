@@ -76,26 +76,28 @@
 
 两组 encoder 的峰值位置也不同。MiniLM-L6 的英文测量短语在三种分块下保持在 0.65--0.77；中文“重复短时偏离”和“同步零值”则只在 1500/150 时达到 0.70，而中文“高同步”仍仅为 0.41--0.52。因此，图中并不存在可由 encoder 名称、层数或跨配置平均值直接推出的统一最优分块。它支持的部署结论是：应先固定目标语言和 query 表述，再在相应 encoder--分块组合内按核心资料在前 10 个结果中的占比筛选，并对返回段落进行相关性复核。
 
-配置交互并不意味着无法作出选择。在本资料库和来源要求下，已记录结果能够筛出来源可见性保持较好的候选组合。表 5.1 列出两类具有不同用途的例子：\texttt{nomic-embed-text} 的 800/120 字符分块配合英文核心术语 query，在加入 10 份补充资料时的 CorePriority@10 为 $0.92\pm0.12$，在全部 51 份补充资料加入后仍为 0.60；多语 MiniLM 的 800/80 设置配合“高度同步且无时间滞后”的英文观测 query，在相应条件下为 $0.83\pm0.18$ 和 0.40。前者更适合作为保持核心来源可见性的检索基线，后者则表明来自 observation packet 的具体线索也能形成具有较高来源可见性的案例检索表述。
+配置交互并不意味着无法作出选择。在本资料库和来源要求下，已记录结果能够筛出来源可见性保持较好的候选组合。表~\ref{tab:conditional-candidates} 列出两类具有不同用途的例子：\texttt{nomic-embed-text} 的 800/120 字符分块配合英文核心术语 query，在加入 10 份补充资料时的 CorePriority@10 为 $0.92\pm0.12$，在全部 51 份补充资料加入后仍为 0.60；多语 MiniLM 的 800/80 设置配合“高度同步且无时间滞后”的英文观测 query，在相应条件下为 $0.83\pm0.18$ 和 0.40。前者更适合作为保持核心来源可见性的检索基线，后者则表明来自 observation packet 的具体线索也能形成具有较高来源可见性的案例检索表述。
 
 \begin{table}[H]
 \centering
 \footnotesize
-\renewcommand{\arraystretch}{1.15}
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{p{0.16\columnwidth} p{0.22\columnwidth} p{0.34\columnwidth} p{0.20\columnwidth}}
+\renewcommand{\arraystretch}{1.20}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.23\columnwidth} >{\raggedright\arraybackslash}p{0.69\columnwidth}}
 \toprule
-候选用途 & encoder 与分块 & query 表述 & \shortstack{CorePriority@10\\$m=10$ / $m=51$} \\
+候选用途 & 编码器、分块、查询与核心资料前十名占比 \\
 \midrule
-核心来源可见性基线 & \texttt{nomic-embed-text}，800/120 字符 & \texttt{neutron} & $0.92\pm0.12$ / 0.60 \\
-同步通道现象的案例检索 & 多语 MiniLM，800/80 字符 & \texttt{neutron current measurement highly synchronized channels without time lag} & $0.83\pm0.18$ / 0.40 \\
+核心来源可见性基线 & \texttt{nomic-embed-text}，800/120 字符；\texttt{neutron}；$m=10$ 时为 $0.92\pm0.12$，$m=51$ 时为 0.60 \\
+同步通道现象的案例检索 & 多语 MiniLM，800/80 字符；\texttt{neutron current measurement highly synchronized channels without time lag}；$m=10$ 时为 $0.83\pm0.18$，$m=51$ 时为 0.40 \\
 \bottomrule
 \end{tabular}
 \renewcommand{\arraystretch}{1}
+\caption{用于来源可见性与案例检索的条件性候选组合。}
+\label{tab:conditional-candidates}
 \end{table}
 
 
-这些候选组合不是跨语料库、任务或评价目标的“最优配置”。特别是，短核心术语 query 的来源可见性较高，并不自动表示其最贴合某一条具体记录；而 observation-derived query 更接近案例现象，也仍需检验所返回段落的实际相关性。表 5.1 的作用是为检索协议提供可复核的条件性选择依据：在以核心来源可见性为目标时，应优先从这类在扩库后仍保持较高 CorePriority@10 的组合中选择，再结合段落相关性和工程复核确定实际部署配置。
+这些候选组合不是跨语料库、任务或评价目标的“最优配置”。特别是，短核心术语 query 的来源可见性较高，并不自动表示其最贴合某一条具体记录；而 observation-derived query 更接近案例现象，也仍需检验所返回段落的实际相关性。表~\ref{tab:conditional-candidates} 的作用是为检索协议提供可复核的条件性选择依据：在以核心来源可见性为目标时，应优先从这类在扩库后仍保持较高 CorePriority@10 的组合中选择，再结合段落相关性和工程复核确定实际部署配置。
 
 MiniLM encoder 对照与 \texttt{nomic-embed-text} 字符分块扩库协议共同表明：在本研究固定的资料库、检索规则和已测试 encoder 范围内，相关补充资料扩展后核心来源可见性下降的风险并非单一表示模型所致。由于两类协议的 query 集和部分分块设置不同，本文不直接比较其绝对余弦分数，也不据此排列 encoder 优劣；比较重点是各自协议内 CorePriority@10 随扩库规模的变化。技术细节 query 在不同语言和配置下的作用并不一致，因此结构化摘要应被理解为受控的检索表述，而非必然提高权威来源可见性的查询扩展。
 
@@ -107,12 +109,12 @@ MiniLM encoder 对照与 \texttt{nomic-embed-text} 字符分块扩库协议共�
 
 图中的空心点是仅核心资料时的参考基线；非零扩库点则是补充资料随机抽样后的聚合结果。两者的抽样结构不同，故基线与第一个扩库点之间以虚线连接，不应将图首端的张开或收拢解释为“加入少量资料”带来的确定性性能跃迁。对每个非零扩库规模，两条实线之间的距离才表示严格同分块与同文档匹配在相同资料范围下的差异：原始段落未必以同一节点返回，但同一文档中的相邻分块可能已包含对应信息。因此，自检索结果用于解释分块边界与段落定位，而不应与来源可见性混为同一种证据。
 
-\begin{figure}[!t]
+\begin{figure*}[!t]
   \centering
-  \includegraphics[width=0.84\columnwidth]{fig08_self_retrieval_selected}
-  \caption{三个代表性 \texttt{nomic-embed-text} 分块配置下的自检索结果。蓝线为严格同分块匹配，橙线为同文档匹配；两线之间的半透明带表示同一扩库规模下两种匹配标准的差距。纵轴为平均倒数排名，越高表示目标段落首次出现的位置越靠前。空心点为仅核心资料基线，虚线仅连接该基线与首个扩库点；实线比较相同扩库规模下的两种匹配标准。800/50 为原始基准，1000/80 与 1200/150 分别展示差距较小和较大的端点，不构成分块性能排名，也不衡量工程正确性。}
+  \includegraphics[width=0.94\textwidth]{fig08_self_retrieval_selected}
+  \caption{三个代表性 \texttt{nomic-embed-text} 分块配置下的自检索结果。蓝线为严格同分块匹配，橙线为同文档匹配，阴影表示两种匹配标准的差距；纵轴为平均倒数排名，越高表示目标段落首次出现的位置越靠前。空心点为仅核心资料基线，虚线只连接基线与首个扩库点，实线比较相同扩库规模下的两种匹配标准。}
   \label{fig:self-retrieval}
-\end{figure}
+\end{figure*}
 
 \FloatBarrier
 \subsection{小结}
