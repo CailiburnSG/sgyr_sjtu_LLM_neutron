@@ -29,7 +29,16 @@
   \label{fig:scope-priority}
 \end{figure}
 
-这一结果不表示补充资料不相关。相反，它表明当部署要求前 10 个结果保留核心权威资料时，相关补充资料本身就足以改变无来源约束语义检索的结果构成。图~\ref{fig:scope-priority} 同时呈现核心资料在前 10 个结果中的占比和最高余弦相似度随扩库规模的轨迹，使读者直接看到“相似度提高或稳定”与“核心资料占比下降”可以同时发生。
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.98\columnwidth]{fig05_nomic_loss_landscapes}
+  \caption{全数据库条件下 \texttt{nomic-embed-text} 的中英文平均语义匹配程度。每个曲面为同一语言两条固定 query 的平均值；横轴为分块长度，纵轴为重叠长度，高度为前 10 个结果的平均余弦相似度。箭头标出各语言的最高点。}
+  \label{fig:nomic-loss-landscape}
+\end{figure}
+
+图~\ref{fig:scope-priority} 回答的是扩库的影响：相关补充资料可以使语义相似度提高或保持稳定，同时挤出前 10 个结果中的核心资料。因此，相似度不能单独作为来源治理的选择依据。
+
+图~\ref{fig:nomic-loss-landscape} 则固定为全数据库条件，考察语言与字符分块对平均匹配度的影响。英文 query 的平均余弦相似度为 0.665--0.674，高于中文的 0.635--0.647；但两张曲面在各自范围内均较平缓，分块--重叠组合带来的变化分别不超过 0.009 和 0.012。英文峰值位于 800/120，中文峰值位于 800/150。该图说明语言和分块会影响绝对分数，却不足以给出跨语言的通用最优配置；实际选择仍须与图~\ref{fig:scope-priority} 的来源可见性及返回段落的相关性共同核查。
 
 \subsection{MiniLM encoder 对照：query、语言与分块的交互}
 
@@ -95,26 +104,6 @@ MiniLM encoder 对照与 \texttt{nomic-embed-text} 字符分块扩库协议共�
 固定词数分块的 MiniLM 对照表明，上述风险并非只出现在 \texttt{nomic-embed-text} 的字符分块中。多语种 MiniLM 对中文短语产生的最高余弦相似度约为 0.62--0.64，高于另一 MiniLM 的约 0.27；但随着补充资料加入，两种 encoder 的 CorePriority@10 均出现下降。语义表示对不同语言的近邻得分具有实质影响，却不能替代来源要求。
 
 \texttt{nomic-embed-text} 索引上的 self-retrieval 则说明，检索单元的定义也会影响“找回”的含义。在一个 800/50 设置的 core-only 条件下，exact-chunk Recall@10 为 0.7625，而 same-document Recall@10 为 0.8625。该差异来自重叠分块：原始段落未必以同一 node 返回，但同一文档中的相邻段落可能已包含对应信息。因此，self-retrieval 结果用于解释 chunk 边界与段落定位，而不应与 CorePriority@10 混为同一种证据。
-
-为保留不同扩库终点与检索单元定义下的完整证据，图~\ref{fig:priority-retention} 和图~\ref{fig:self-retrieval} 将相关结果置于本节后段。它们用于展开前述条件性选择和指标边界，不替代前文的主结论图。
-
-\begin{figure*}[!t]
-  \centering
-  \begin{minipage}[t]{0.29\textwidth}
-    \centering\textbf{(a)}\par\vspace{1mm}
-    \includegraphics[width=\linewidth]{fig07a_priority_retention}
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.31\textwidth}
-    \centering\textbf{(b)}\par\vspace{1mm}
-    \includegraphics[width=\linewidth]{fig07b_priority_trajectory_en}
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.31\textwidth}
-    \centering\textbf{(c)}\par\vspace{1mm}
-    \includegraphics[width=\linewidth]{fig07c_priority_trajectory_zh}
-  \end{minipage}
-  \caption{扩库后的来源可见性保持能力：（a）不同配置在 $m=10$ 与 $m=51$ 的对应关系，落在对角线下方表示进一步衰减；（b）英文 query 的完整扩库轨迹；（c）中文 query 的相应轨迹。该图组展开候选配置的条件性选择，不建立跨语言或跨 encoder 的普适排名。}
-  \label{fig:priority-retention}
-\end{figure*}
 
 \begin{figure*}[!t]
   \centering
