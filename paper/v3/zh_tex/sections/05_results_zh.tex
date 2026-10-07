@@ -65,9 +65,9 @@
 
 在两种 MiniLM 编码器分别配合三种字符分块设置所形成的六种配置上，平均结果也体现了这种不对称性：英文技术细节查询的核心资料前十名占比为 0.65，高于英文基线查询的 0.60；中文技术细节查询为 0.52，低于中文基线查询的 0.62。完整扩库轨迹进一步显示，各曲线均从仅核心资料条件下的 1.00 出发，但其下降速度、交叉位置和对查询细节的响应随语言与配置而变。图~\ref{fig:configuration-interaction} 以一张热图压缩呈现这一交互，并补充图~\ref{fig:query-effect} 的家族均值比较。
 
-\begin{figure}[H]
+\begin{figure}[!t]
   \centering
-  \includegraphics[width=0.98\columnwidth]{fig06_configuration_heatmap}
+  \includegraphics[width=0.92\columnwidth]{fig06_configuration_heatmap}
   \caption{$m=10$ 时查询、语言、编码器与字符分块方式的交互。每个单元格为核心资料前十名占比的平均值；横向分隔线区分英文与中文查询，纵向分隔线区分两种编码器。由观测包线索形成的技术细节查询并不在所有语言和配置下提高核心来源可见性。}
   \label{fig:configuration-interaction}
 \end{figure}
@@ -109,12 +109,12 @@ MiniLM encoder 对照与 \texttt{nomic-embed-text} 字符分块扩库协议共�
 
 图中的空心点是仅核心资料时的参考基线；非零扩库点则是补充资料随机抽样后的聚合结果。两者的抽样结构不同，故基线与第一个扩库点之间以虚线连接，不应将图首端的张开或收拢解释为“加入少量资料”带来的确定性性能跃迁。对每个非零扩库规模，两条实线之间的距离才表示严格同分块与同文档匹配在相同资料范围下的差异：原始段落未必以同一节点返回，但同一文档中的相邻分块可能已包含对应信息。因此，自检索结果用于解释分块边界与段落定位，而不应与来源可见性混为同一种证据。
 
-\begin{figure*}[!t]
+\begin{figure}[!t]
   \centering
-  \includegraphics[width=0.94\textwidth]{fig08_self_retrieval_selected}
+  \includegraphics[width=0.96\columnwidth]{fig08_self_retrieval_selected}
   \caption{三个代表性 \texttt{nomic-embed-text} 分块配置下的自检索结果。蓝线为严格同分块匹配，橙线为同文档匹配，阴影表示两种匹配标准的差距；纵轴为平均倒数排名，越高表示目标段落首次出现的位置越靠前。空心点为仅核心资料基线，虚线只连接基线与首个扩库点，实线比较相同扩库规模下的两种匹配标准。}
   \label{fig:self-retrieval}
-\end{figure*}
+\end{figure}
 
 \FloatBarrier
 \subsection{小结}

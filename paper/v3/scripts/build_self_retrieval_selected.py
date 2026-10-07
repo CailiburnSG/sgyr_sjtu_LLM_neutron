@@ -35,7 +35,7 @@ def load_config(chunk: int, overlap: int) -> pd.DataFrame:
 
 
 def main() -> None:
-    fig, axes = plt.subplots(1, 3, figsize=(7.05, 2.48), sharex=True, sharey=True)
+    fig, axes = plt.subplots(3, 1, figsize=(3.30, 5.05), sharex=True, sharey=True)
     panel_labels = ("(a)", "(b)", "(c)")
     for ax, panel, (chunk, overlap) in zip(axes, panel_labels, CONFIGS):
         data = load_config(chunk, overlap)
@@ -72,12 +72,12 @@ def main() -> None:
             ax.spines[spine].set_visible(False)
         for spine in ("left", "bottom"):
             ax.spines[spine].set_color("#334155")
-    fig.supylabel("Mean reciprocal rank", fontsize=8, x=0.01)
-    fig.supxlabel("Supplementary documents admitted", fontsize=8, y=0.01)
+    fig.supylabel("Mean reciprocal rank", fontsize=8, x=0.02)
+    axes[-1].set_xlabel("Supplementary documents admitted", fontsize=8)
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="upper center", ncol=2, fontsize=7.4,
                frameon=False, bbox_to_anchor=(0.54, 0.995))
-    fig.subplots_adjust(left=0.09, right=0.995, bottom=0.20, top=0.80, wspace=0.19)
+    fig.subplots_adjust(left=0.18, right=0.98, bottom=0.09, top=0.91, hspace=0.42)
     OUT.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT / "fig08_self_retrieval_selected.pdf", bbox_inches="tight")
 
