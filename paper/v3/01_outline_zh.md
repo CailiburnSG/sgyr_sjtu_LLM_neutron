@@ -29,12 +29,12 @@
 - retrieval-governance：corpus expansion、query、language、encoder、chunking；说明相似度与核心来源可见性为何不能混同。
 - self-retrieval 核查检索单元与分块边界的影响；段落相关性、claim--evidence support 与 expert usefulness 留作后续验证层次。
 
-## 5. 结果：接口为什么需要来源治理
+## 5. 结果：接口为什么需要证据来源约束
 
 - 代表性 measurement-to-evidence trace case。
 - 观测层核查。
 - similarity--authority divergence。
-- query、语言、encoder 与分块方式的配置交互（作为来源治理的支持性证据，而非普适配置排名）。
+- query、语言、encoder 与分块方式的配置交互（作为证据来源约束的支持性证据，而非普适配置排名）。
 - 分块边界与检索单元核查。
 - claim--evidence support / expert usefulness。
 

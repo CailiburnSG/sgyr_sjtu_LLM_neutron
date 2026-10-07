@@ -16,7 +16,7 @@
 2. [相关工作](sections/02_related_work_zh.md)
 3. [无标签中子电流档案的可追溯观测与证据约束解释](sections/03_framework_zh.md)
 4. [分层评价设计](sections/04_evaluation_zh.md)
-5. [结果：接口与来源治理](sections/05_results_zh.md)
+5. [结果：接口与证据来源约束](sections/05_results_zh.md)
 6. [结论](sections/06_conclusion_zh.md)
 
 ## 写作前检查
