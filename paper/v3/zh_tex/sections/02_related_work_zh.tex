@@ -1,5 +1,23 @@
 \section{相关工作}
 
+\begin{figure*}[!t]
+  \centering
+  \begin{minipage}[t]{0.263\textwidth}
+    \centering\textbf{(a)}\par\vspace{1mm}
+    \includegraphics[width=\linewidth]{fig03a_spike_rule_example}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.341\textwidth}
+    \centering\textbf{(b)}\par\vspace{1mm}
+    \includegraphics[width=\linewidth]{fig03b_pearson_example}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.296\textwidth}
+    \centering\textbf{(c)}\par\vspace{1mm}
+    \includegraphics[width=\linewidth]{fig03c_lag_example}
+  \end{minipage}
+  \caption{确定性分析工具所描述的统计现象示例：(a) 样本 2600--2720 的局部稳健偏离规则，纵轴为相应通道记录的中子电流值；(b) 通道间皮尔逊相关；(c) 相关--滞后扫描。它们用于说明观测包中可保存的描述性证据，不构成已确认故障或因果方向。}
+  \label{fig:probe-examples}
+\end{figure*}
+
 数据驱动的工业时序故障诊断已形成成熟路线，其通常以预先定义的诊断任务、可用标签或可控的故障场景为基础。这些前提使模型性能能够通过分类或识别指标进行比较，但也限制了方法直接迁移到缺乏统一故障真值的现场历史档案。
 
 核工程数据方法的范围远不止中子信号分析。一类工作依托物理模型、状态重建和先进数值模拟服务于反应堆监测与安全研究；CORTEX、McSAFER 和 METIS 等项目体现了这一建模与验证路线 \citep{demaziere2022cortex}。另一类工作面向核电厂运行中的在线监测与仪表通道评估，已形成明确的工程和维护支持基础 \citep{iaea2008olm1,iaea2008olm2,hashemian2011online}。在信号层面，中子噪声研究为非侵入式分析反应堆运行和中子测量系统相关现象提供了方法基础；围绕中子探测器验证和核电厂故障诊断的数据驱动研究，也已在预设信号构造或故障场景下开展 \citep{pazsit2010noise,tambouratzis2020neutron,tambouratzis2020decomposition,elbordany2024fault}。

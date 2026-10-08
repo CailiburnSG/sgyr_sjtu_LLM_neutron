@@ -10,24 +10,6 @@
 
 测量侧产出的是\textbf{观测包}，记录对哪条记录、以哪些确定性规则观察到哪些数据质量与信号现象。确定性脚本将结构化观测写入记事板，其中稳定字段形成供检索使用的紧凑告警字段（compact alert summary）；测量侧代理仅据此组织面向工程师的状况报告，不确认物理机理、设备状态或根因。
 
-\begin{figure*}[!t]
-  \centering
-  \begin{minipage}[t]{0.263\textwidth}
-    \centering\textbf{(a)}\par\vspace{1mm}
-    \includegraphics[width=\linewidth]{fig03a_spike_rule_example}
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.341\textwidth}
-    \centering\textbf{(b)}\par\vspace{1mm}
-    \includegraphics[width=\linewidth]{fig03b_pearson_example}
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.296\textwidth}
-    \centering\textbf{(c)}\par\vspace{1mm}
-    \includegraphics[width=\linewidth]{fig03c_lag_example}
-  \end{minipage}
-  \caption{确定性分析工具所描述的统计现象示例：(a) 样本 2600--2720 的局部稳健偏离规则，纵轴为相应通道记录的中子电流值；(b) 通道间皮尔逊相关；(c) 相关--滞后扫描。它们用于说明观测包中可保存的描述性证据，不构成已确认故障或因果方向。}
-  \label{fig:probe-examples}
-\end{figure*}
-
 每次分析以一条记录为单位。初始化脚本解析时间列、按时间排序并生成唯一的活跃记录，同时记录样本数、名义采样间隔、缺失和不活跃通道等数据健康信息。后续分析只读取该记录，从而保留输入、参数、脚本版本和派生产物之间的关联；通道标识和组内相对关系仅用于组织观察，不被延伸为预设故障知识。
 
 初始化后，脚本仅执行预先注册的分析工具，覆盖数据健康、形态与共变、事件与区段、同步与滞后、极值定位和截面快照；各工具将输入范围、参数与结构化输出写入观测包。图~\ref{fig:probe-examples} 展示其中三类统计现象；相关与滞后只描述共享变化、近同步或时间错位，不赋予仪表关系或因果方向。
