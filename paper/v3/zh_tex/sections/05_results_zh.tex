@@ -29,16 +29,19 @@
   \label{fig:scope-priority}
 \end{figure}
 
-\begin{figure}[!b]
+图~\ref{fig:scope-priority} 表明，相关补充资料可使语义相似度提高或保持稳定，同时挤出前 10 个结果中的核心资料；相似度因此不能单独作为证据来源约束的依据。
+
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.90\columnwidth]{fig05_nomic_loss_landscapes}
   \caption{全数据库条件下 \texttt{nomic-embed-text} 的中英文平均语义匹配程度。每个曲面为同一语言两条固定查询的平均值；横轴为分块长度，纵轴为重叠长度，高度为前 10 个结果的平均余弦相似度。箭头标出各语言的最高点。}
   \label{fig:nomic-loss-landscape}
 \end{figure}
 
-图~\ref{fig:scope-priority} 表明，相关补充资料可使语义相似度提高或保持稳定，同时挤出前 10 个结果中的核心资料；相似度因此不能单独作为证据来源约束的依据。
-
 图~\ref{fig:nomic-loss-landscape} 固定全数据库条件，考察语言与字符分块对平均匹配度的影响。英文查询的平均余弦相似度为 0.665--0.674，高于中文的 0.635--0.647；但两张曲面均较平缓，分块--重叠组合带来的变化分别不超过 0.009 和 0.012，峰值分别位于英文 800/120 和中文 800/150。语言和分块会影响绝对分数，却不足以给出跨语言的通用最优配置；实际选择仍须结合图~\ref{fig:scope-priority} 的权威资料可见性及返回段落的相关性核查。
+
+% Do not let the forced in-text Fig. 6 overtake this preceding float.
+\FloatBarrier
 
 \subsection{MiniLM encoder 对照：query、语言与分块的交互}
 
