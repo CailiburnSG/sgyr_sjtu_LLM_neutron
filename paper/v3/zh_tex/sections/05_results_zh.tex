@@ -29,9 +29,9 @@
   \label{fig:scope-priority}
 \end{figure}
 
-\begin{figure}[!t]
+\begin{figure}[!b]
   \centering
-  \includegraphics[width=0.98\columnwidth]{fig05_nomic_loss_landscapes}
+  \includegraphics[width=0.90\columnwidth]{fig05_nomic_loss_landscapes}
   \caption{全数据库条件下 \texttt{nomic-embed-text} 的中英文平均语义匹配程度。每个曲面为同一语言两条固定查询的平均值；横轴为分块长度，纵轴为重叠长度，高度为前 10 个结果的平均余弦相似度。箭头标出各语言的最高点。}
   \label{fig:nomic-loss-landscape}
 \end{figure}
@@ -84,7 +84,7 @@ MiniLM encoder 对照与 \texttt{nomic-embed-text} 字符分块扩库协议共�
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=0.96\columnwidth]{fig08_self_retrieval_selected}
+  \includegraphics[width=0.84\columnwidth]{fig08_self_retrieval_selected}
   \caption{三个代表性 \texttt{nomic-embed-text} 分块配置下的自检索结果。蓝线为严格同分块匹配，橙线为同文档匹配，阴影表示两种匹配标准的差距；纵轴为平均倒数排名，越高表示目标段落首次出现的位置越靠前。空心点为仅核心资料基线，虚线只连接基线与首个扩库点，实线比较相同扩库规模下的两种匹配标准。}
   \label{fig:self-retrieval}
 \end{figure}
