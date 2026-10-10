@@ -125,6 +125,21 @@ def action_scores(rows: list[dict]) -> tuple[dict, float]:
     return details, sum(item["f1"] for item in details.values()) / len(details)
 
 
+def latency_summary(rows: list[dict]) -> dict[str, float | int]:
+    values = sorted(float(row.get("api", {}).get("elapsed_seconds")) for row in rows if isinstance(row.get("api", {}).get("elapsed_seconds"), (int, float)))
+    if not values:
+        return {"case_count": 0, "total_seconds": 0.0, "mean_seconds": 0.0, "p50_seconds": 0.0, "p95_seconds": 0.0}
+
+    def percentile(fraction: float) -> float:
+        position = (len(values) - 1) * fraction
+        lower, upper = int(position), min(int(position) + 1, len(values) - 1)
+        return values[lower] + (values[upper] - values[lower]) * (position - lower)
+
+    return {
+        "case_count": len(values), "total_seconds": round(sum(values), 3), "mean_seconds": round(sum(values) / len(values), 3),
+        "p50_seconds": round(percentile(0.50), 3), "p95_seconds": round(percentile(0.95), 3),
+    }
+
 def evaluate(rows: list[dict], metadata: dict) -> dict:
     valid_rows = [row for row in rows if not row["validation_errors"]]
     action_detail, macro_f1 = action_scores(rows)
@@ -138,6 +153,7 @@ def evaluate(rows: list[dict], metadata: dict) -> dict:
         "action_macro_f1": macro_f1,
         "action_per_class": action_detail,
         "error_counts": dict(Counter(error for row in rows for error in row["validation_errors"])),
+        "latency_seconds": latency_summary(rows),
         "usage": {
             "prompt_tokens": sum(row["api"].get("usage", {}).get("prompt_tokens", 0) or 0 for row in rows),
             "completion_tokens": sum(row["api"].get("usage", {}).get("completion_tokens", 0) or 0 for row in rows),

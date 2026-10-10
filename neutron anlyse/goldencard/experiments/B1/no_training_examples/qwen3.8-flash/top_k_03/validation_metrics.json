@@ -49,5 +49,12 @@
     "prompt_tokens": 43625,
     "completion_tokens": 1826,
     "total_tokens": 45451
+  },
+  "latency_seconds": {
+    "case_count": 20,
+    "total_seconds": 72.708,
+    "mean_seconds": 3.635,
+    "p50_seconds": 3.342,
+    "p95_seconds": 5.972
   }
 }

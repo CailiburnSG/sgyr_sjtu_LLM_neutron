@@ -25,8 +25,8 @@ B1/no_training_examples/
       analysis.md
 ```
 
-阶段根目录的 `summary_metrics.csv` 汇总所有模型 × K 运行，包含 prompt、completion 和 total token，供后续直接绘图、
-成本比较和结果比较。
+阶段根目录的 `summary_metrics.csv` 汇总所有模型 × K 运行，包含 prompt、completion 和 total token，以及单例延迟的
+均值、P50 和 P95，供后续直接绘图、成本比较和结果比较。
 语义指标使用 [`evidencecard/semantics/`](../../../../evidencecard/semantics/) 的 `semantic_unit_v1` 映射；该映射为
 可审计的第一版评分粒度，不能替代严格卡号指标。
 

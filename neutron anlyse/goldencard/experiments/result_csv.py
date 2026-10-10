@@ -42,6 +42,11 @@ def write_b1_csv(result_dir: Path, rows: list[dict], metrics: dict) -> None:
         "prompt_tokens": metrics["usage"].get("prompt_tokens", 0),
         "completion_tokens": metrics["usage"].get("completion_tokens", 0),
         "total_tokens": metrics["usage"].get("total_tokens", 0),
+        "latency_case_count": metrics.get("latency_seconds", {}).get("case_count", 0),
+        "latency_total_seconds": metrics.get("latency_seconds", {}).get("total_seconds", 0.0),
+        "latency_mean_seconds": metrics.get("latency_seconds", {}).get("mean_seconds", 0.0),
+        "latency_p50_seconds": metrics.get("latency_seconds", {}).get("p50_seconds", 0.0),
+        "latency_p95_seconds": metrics.get("latency_seconds", {}).get("p95_seconds", 0.0),
     })
     write_csv(result_dir / "b1_run_metrics.csv", [run_row], list(run_row))
     action_rows = [{"experiment_id": metrics["experiment_id"], "model": metrics["model"], "retrieval_top_k": metrics["retrieval_top_k"], "action_id": action, **values} for action, values in metrics["action_per_class"].items()]
@@ -82,6 +87,9 @@ def write_b1_stage_summary(stage_dir: Path) -> None:
             "prompt_tokens": metrics["usage"].get("prompt_tokens", 0),
             "completion_tokens": metrics["usage"].get("completion_tokens", 0),
             "total_tokens": metrics["usage"].get("total_tokens", 0),
+            "latency_mean_seconds": metrics.get("latency_seconds", {}).get("mean_seconds", 0.0),
+            "latency_p50_seconds": metrics.get("latency_seconds", {}).get("p50_seconds", 0.0),
+            "latency_p95_seconds": metrics.get("latency_seconds", {}).get("p95_seconds", 0.0),
             "result_directory": str(metrics_path.parent.relative_to(stage_dir)),
         })
-    write_csv(stage_dir / "summary_metrics.csv", rows, ["model", "retrieval_top_k", "split", "case_count", "json_valid_rate", "constraint_valid_rate", "action_accuracy", "action_macro_f1", "semantic_candidate_action_pair_f1_at_k", "prompt_tokens", "completion_tokens", "total_tokens", "result_directory"])
+    write_csv(stage_dir / "summary_metrics.csv", rows, ["model", "retrieval_top_k", "split", "case_count", "json_valid_rate", "constraint_valid_rate", "action_accuracy", "action_macro_f1", "semantic_candidate_action_pair_f1_at_k", "prompt_tokens", "completion_tokens", "total_tokens", "latency_mean_seconds", "latency_p50_seconds", "latency_p95_seconds", "result_directory"])
