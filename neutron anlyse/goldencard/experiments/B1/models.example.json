@@ -1,0 +1,25 @@
+{
+  "models": [
+    {
+      "alias": "strong_model",
+      "provider": "replace_with_provider",
+      "model": "replace_with_model_id",
+      "temperature": 0,
+      "max_output_tokens": 1200
+    },
+    {
+      "alias": "cost_reference_model",
+      "provider": "replace_with_provider",
+      "model": "replace_with_model_id",
+      "temperature": 0,
+      "max_output_tokens": 1200
+    },
+    {
+      "alias": "independent_model_family",
+      "provider": "replace_with_provider",
+      "model": "replace_with_model_id",
+      "temperature": 0,
+      "max_output_tokens": 1200
+    }
+  ]
+}

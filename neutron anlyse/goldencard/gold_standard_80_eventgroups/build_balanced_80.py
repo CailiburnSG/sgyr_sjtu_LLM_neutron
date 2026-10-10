@@ -14,7 +14,7 @@ from itertools import combinations
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-NEUTRON_ROOT = HERE.parents[2]
+NEUTRON_ROOT = HERE.parents[1]
 GROUP_DIR = NEUTRON_ROOT / "goldencard" / "event_groups"
 EVIDENCE_DIR = NEUTRON_ROOT / "evidencecard" / "cards"
 OUTPUT = HERE / "goldcase_balanced_80.jsonl"
@@ -158,7 +158,7 @@ def make_case(case_id: str, action_id: str, events: list[dict], ordinal: int, ev
     sources = [evidence[evidence_id] for evidence_id in evidence_ids]
     return {
         "goldcard_id": case_id,
-        "draft_status": "proposed_annotation_pending_human_review",
+        "dataset_status": "gold_standard_v1",
         "precheck_input": summarize(events, ordinal),
         "trace": {
             "event_source": "goldencard/event_groups",

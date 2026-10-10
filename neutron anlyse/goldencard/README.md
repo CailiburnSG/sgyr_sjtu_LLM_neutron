@@ -23,8 +23,8 @@
 草稿位于 [`drafts/precheck_case_draft_30/`](drafts/precheck_case_draft_30/)。此前的
 `drafts/precheck_case_draft_80/` 是按原始时间簇切分的探索稿，不作为当前训练/验证金标准。
 
-当前金标准草稿是
-[`drafts/precheck_case_balanced_80_eventgroups/`](drafts/precheck_case_balanced_80_eventgroups/)：仅从
+当前正式金标准是
+[`gold_standard_80_eventgroups/`](gold_standard_80_eventgroups/)：仅从
 `event_groups/` 的 80 个事件原子组合而成，四项建议各 20 例；每个预检案例包含 1--4 个事件、3 张
-同一检查意图的并列证据卡和 1 项建议。草稿状态总览见 [drafts/README.md](drafts/README.md)；正式任务、量化和单建议约束见
+同一检查意图的并列证据卡和 1 项建议。历史草稿状态总览见 [drafts/README.md](drafts/README.md)；正式任务、量化和单建议约束见
 [预检案例金标准与量化设计.md](预检案例金标准与量化设计.md)。

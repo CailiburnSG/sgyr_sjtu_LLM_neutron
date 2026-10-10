@@ -1,6 +1,6 @@
-# 平衡 80 例金标准草稿（仅来自 event_groups）
+# 平衡 80 例金标准集 v1（仅来自 event_groups）
 
-本目录是当前用于训练/验证设计的 80 例金标准草稿。事件来源**仅限** `goldencard/event_groups/` 的
+本目录是当前用于训练/验证设计的 80 例金标准集 v1。事件来源**仅限** `goldencard/event_groups/` 的
 8 组、共 80 张事件卡；不再从 `eventcard/output/` 追加切分事件。
 
 先固定每项建议 20 例，再构造事件组合：

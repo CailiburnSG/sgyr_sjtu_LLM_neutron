@@ -17,7 +17,7 @@
 
 当前唯一用于继续人工审阅和后续训练/验证设计的版本是：
 
-[`goldencard/drafts/precheck_case_balanced_80_eventgroups/`](goldencard/drafts/precheck_case_balanced_80_eventgroups/)
+[`goldencard/gold_standard_80_eventgroups/`](goldencard/gold_standard_80_eventgroups/)
 
 其核心文件：
 
@@ -33,7 +33,8 @@
 - `evidencecard/cards/`：正式的人工证据卡库，不得按段落自动重切；
 - `evidencecard/semantics/`：基于既有 `applicability` 标签生成的暂定功能归类，仅作筛选辅助；
 - `goldencard/event_groups/`：80 个事件原子来源；
-- `goldencard/drafts/`：当前 80 例及保留的历史试标/探索稿，具体状态见其中 README；
+- `goldencard/gold_standard_80_eventgroups/`：当前正式金标准；
+- `goldencard/drafts/`：保留的历史试标/探索稿，具体状态见其中 README；
 - `goldencard/archive/`：旧单事件候选和早期实验留档，不作为当前金标准输入。
 
 仓库根目录的 `corpus/`、`evidence/`、`paper/` 和 `参考文献/` 仍是原始资料、旧实验和论文材料；本目录不复制它们。

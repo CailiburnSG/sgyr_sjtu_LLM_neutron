@@ -1,6 +1,6 @@
 # 80 个预检案例草稿（探索稿，已被 event_groups 平衡稿替代）
 
-> 当前训练/验证金标准使用 `../precheck_case_balanced_80_eventgroups/`：它仅从 `event_groups/` 的
+> 当前训练/验证金标准使用 `../../gold_standard_80_eventgroups/`：它仅从 `event_groups/` 的
 > 80 个事件原子构造，并严格保证 A1–A4 各 20 例。本目录保留为原始时间簇切分方案的历史探索稿，
 > 不应作为当前实验集。
 

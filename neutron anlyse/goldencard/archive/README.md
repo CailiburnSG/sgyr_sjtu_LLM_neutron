@@ -3,4 +3,4 @@
 本目录保存早期单事件候选和助手初始草稿，仅用于追溯。它们不属于当前的“事件组合—三证据组合—固定检查建议”
 金标准，也不得作为训练或评估输入。
 
-当前金标准入口见 [`../drafts/precheck_case_balanced_80_eventgroups/`](../drafts/precheck_case_balanced_80_eventgroups/)。
+当前金标准入口见 [`../gold_standard_80_eventgroups/`](../gold_standard_80_eventgroups/)。

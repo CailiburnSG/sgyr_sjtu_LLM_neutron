@@ -1,0 +1,44 @@
+[
+  {
+    "top_k": 3,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/top_k_03/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "84ae6d0dd4246f4ccdd879f13a047f1071c66c8c23f89ca40e2867465ab50c83",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_03/b0_retrieval_predictions_original.jsonl"
+  },
+  {
+    "top_k": 5,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/top_k_05/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "6c0ee91261b98d3ab27683fe513dc36327ca7042ec6fccfe854e911c23880cf4",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_05/b0_retrieval_predictions_original.jsonl"
+  },
+  {
+    "top_k": 8,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/top_k_08/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "8188da286b544a894bbaa7fcb6f4b9dc2837ce3337ecca8727c13e3650be8dad",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_08/b0_retrieval_predictions_original.jsonl"
+  },
+  {
+    "top_k": 10,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/top_k_10/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "44556a7e8409f7737e8e916518b1f1a3322463ed7cd066223e79b55dedec6f28",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_10/b0_retrieval_predictions_original.jsonl"
+  },
+  {
+    "top_k": 12,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/top_k_12/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "6feb5181ba10be3f4e1f8964f34f11084dbabaf6b9fd7799e48875db7690caee",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_12/b0_retrieval_predictions_original.jsonl"
+  },
+  {
+    "top_k": 15,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/top_k_15/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "931a44e99495936fffa2177327244e43b65d0b61735f0b73577cd25c949b57bb",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_15/b0_retrieval_predictions_original.jsonl"
+  },
+  {
+    "top_k": 20,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/top_k_20/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "1f395bec1d1c1c79256292b0eb68f22940c6004bcad95a0ea6ef9f75778447b2",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_20/b0_retrieval_predictions_original.jsonl"
+  }
+]
