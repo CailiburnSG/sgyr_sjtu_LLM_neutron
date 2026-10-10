@@ -1,0 +1,53 @@
+{
+  "experiment_id": "B1_bm25_topk_llm_action_v3_all_topk",
+  "model": "qwen3.8-flash",
+  "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "retrieval_top_k": 3,
+  "split": "frozen_validation_20",
+  "run_at_utc": "2026-10-10T13:41:44.273275+00:00",
+  "case_count": 20,
+  "json_valid_rate": 1.0,
+  "constraint_valid_rate": 1.0,
+  "action_accuracy": 0.25,
+  "action_macro_f1": 0.22727272727272727,
+  "action_per_class": {
+    "on_site_operation_or_calibration_check": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1": 0.9090909090909091
+    },
+    "cross_channel_similar_anomaly_comparison": {
+      "tp": 0,
+      "fp": 10,
+      "fn": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "record_processing_and_timestamp_check": {
+      "tp": 0,
+      "fp": 4,
+      "fn": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "signal_transmission_path_check": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "error_counts": {},
+  "usage": {
+    "prompt_tokens": 43625,
+    "completion_tokens": 1826,
+    "total_tokens": 45451
+  }
+}
