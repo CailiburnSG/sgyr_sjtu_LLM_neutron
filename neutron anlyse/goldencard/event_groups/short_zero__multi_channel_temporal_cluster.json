@@ -1,0 +1,362 @@
+[
+  {
+    "event_id": "A1-1-short_zero-E0001",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 01:04:59",
+    "time_end": "01-21 01:04:59",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER"
+    ],
+    "channel_count": 2,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，2 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0001",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0001"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 2,
+      "atomic_observation_count": 2
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0006",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 01:49:15",
+    "time_end": "01-21 01:49:15",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER",
+      "BL.BL3.3RIC1013MA_VER",
+      "BL.BL3.3RIC1014MA_VER",
+      "BL.BL3.3RIC1015MA_VER",
+      "BL.BL3.3RIC1016MA_VER",
+      "BL.BL3.3RIC1017MA_VER"
+    ],
+    "channel_count": 7,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，7 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0006",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0006",
+      "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-C0001",
+      "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-C0001",
+      "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-C0001",
+      "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-C0001",
+      "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-C0001"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 7,
+      "atomic_observation_count": 7
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0010",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 01:57:02",
+    "time_end": "01-21 01:57:02",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER"
+    ],
+    "channel_count": 2,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，2 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0010",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0010"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 2,
+      "atomic_observation_count": 2
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0015",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 02:07:54",
+    "time_end": "01-21 02:07:54",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER"
+    ],
+    "channel_count": 2,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，2 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0015",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0015"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 2,
+      "atomic_observation_count": 2
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0020",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 02:13:46",
+    "time_end": "01-21 02:13:46",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER",
+      "BL.BL3.3RIC1013MA_VER",
+      "BL.BL3.3RIC1014MA_VER",
+      "BL.BL3.3RIC1015MA_VER",
+      "BL.BL3.3RIC1016MA_VER",
+      "BL.BL3.3RIC1017MA_VER"
+    ],
+    "channel_count": 7,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，7 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0020",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0020",
+      "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-C0006",
+      "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-C0006",
+      "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-C0006",
+      "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-C0006",
+      "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-C0006"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 7,
+      "atomic_observation_count": 7
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0024",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 02:38:28",
+    "time_end": "01-21 02:38:28",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER",
+      "BL.BL3.3RIC1013MA_VER",
+      "BL.BL3.3RIC1015MA_VER",
+      "BL.BL3.3RIC1016MA_VER",
+      "BL.BL3.3RIC1017MA_VER"
+    ],
+    "channel_count": 6,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，6 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0024",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0024",
+      "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-C0007",
+      "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-C0007",
+      "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-C0007",
+      "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-C0007"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 6,
+      "atomic_observation_count": 6
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0029",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 03:42:37",
+    "time_end": "01-21 03:42:37",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER",
+      "BL.BL3.3RIC1014MA_VER"
+    ],
+    "channel_count": 3,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，3 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0029",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0029",
+      "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-C0011"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 3,
+      "atomic_observation_count": 3
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0034",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 04:30:41",
+    "time_end": "01-21 04:30:41",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER",
+      "BL.BL3.3RIC1013MA_VER",
+      "BL.BL3.3RIC1015MA_VER",
+      "BL.BL3.3RIC1016MA_VER",
+      "BL.BL3.3RIC1017MA_VER"
+    ],
+    "channel_count": 6,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，6 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0033",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0034",
+      "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-C0011",
+      "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-C0011",
+      "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-C0011",
+      "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-C0011"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 6,
+      "atomic_observation_count": 6
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0038",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 04:34:31",
+    "time_end": "01-21 04:34:31",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER",
+      "BL.BL3.3RIC1013MA_VER",
+      "BL.BL3.3RIC1014MA_VER",
+      "BL.BL3.3RIC1015MA_VER",
+      "BL.BL3.3RIC1016MA_VER",
+      "BL.BL3.3RIC1017MA_VER"
+    ],
+    "channel_count": 7,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，7 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0037",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0038",
+      "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-C0013",
+      "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-C0016",
+      "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-C0013",
+      "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-C0013",
+      "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-C0013"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 7,
+      "atomic_observation_count": 7
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-short_zero-E0043",
+    "record_id": "A1_1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "01-21 05:01:59",
+    "time_end": "01-21 05:01:59",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER",
+      "BL.BL3.3RIC1012MA_VER",
+      "BL.BL3.3RIC1014MA_VER"
+    ],
+    "channel_count": 3,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，3 个通道出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-C0042",
+      "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-C0043",
+      "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-C0019"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 3,
+      "atomic_observation_count": 3
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  }
+]

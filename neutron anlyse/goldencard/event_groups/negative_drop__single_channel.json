@@ -1,0 +1,292 @@
+[
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0002",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-21 23:37:39",
+    "time_end": "2025-01-21 23:37:39",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1011MA-VER-negative_drop-C0001"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0012",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-21 23:45:17",
+    "time_end": "2025-01-21 23:45:18",
+    "channels": [
+      "BL.BL3.3RIC1015MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1015MA-VER-negative_drop-C0003"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0025",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-21 23:58:20",
+    "time_end": "2025-01-21 23:58:21",
+    "channels": [
+      "BL.BL3.3RIC1015MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1015MA-VER-negative_drop-C0006"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0037",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-22 00:10:42",
+    "time_end": "2025-01-22 00:10:42",
+    "channels": [
+      "BL.BL3.3RIC1017MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1017MA-VER-negative_drop-C0012"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0045",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-22 00:23:57",
+    "time_end": "2025-01-22 00:23:57",
+    "channels": [
+      "BL.BL3.3RIC1017MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1017MA-VER-negative_drop-C0014"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0051",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-22 00:27:56",
+    "time_end": "2025-01-22 00:27:56",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1011MA-VER-negative_drop-C0022"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0060",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-22 00:38:12",
+    "time_end": "2025-01-22 00:38:12",
+    "channels": [
+      "BL.BL3.3RIC1016MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1016MA-VER-negative_drop-C0016"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0064",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-22 00:42:57",
+    "time_end": "2025-01-22 00:42:57",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1011MA-VER-negative_drop-C0026"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0074",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-22 00:51:19",
+    "time_end": "2025-01-22 00:51:20",
+    "channels": [
+      "BL.BL3.3RIC1016MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1016MA-VER-negative_drop-C0023"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-negative_drop-E0083",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "negative_drop",
+    "time_start": "2025-01-22 00:57:49",
+    "time_end": "2025-01-22 00:57:49",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 negative_drop 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1011MA-VER-negative_drop-C0029"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "sampling_version": "v1",
+  "purpose": "First diverse annotation batch; not the final coverage-complete 100-case evaluation set.",
+  "strata": [
+    {"event_type": "short_zero", "scope": "multi_channel_temporal_cluster", "count": 12},
+    {"event_type": "positive_spike", "scope": "single_channel", "count": 6},
+    {"event_type": "positive_spike", "scope": "multi_channel_temporal_cluster", "count": 6},
+    {"event_type": "negative_drop", "scope": "single_channel", "count": 6},
+    {"event_type": "negative_drop", "scope": "multi_channel_temporal_cluster", "count": 6}
+  ],
+  "known_coverage_limitations": [
+    "short_zero cases come from the historical snapshot pathway and must retain that provenance.",
+    "No usable sustained_zero, upward_trend, downward_trend, transient_deviation, or no_anomaly event cards are currently available.",
+    "This 36-case batch is for annotation-rule calibration and multi-state coverage, not the final 100-case evaluation set."
+  ]
+}

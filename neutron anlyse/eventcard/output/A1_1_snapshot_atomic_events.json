@@ -1,0 +1,2186 @@
+[
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:04:59",
+    "time_end": "01-21 01:04:59",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0001"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:14:34",
+    "time_end": "01-21 01:14:34",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0002"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:40:31",
+    "time_end": "01-21 01:40:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0003"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:47:27",
+    "time_end": "01-21 01:47:27",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0004"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:48:28",
+    "time_end": "01-21 01:48:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0005"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:49:15",
+    "time_end": "01-21 01:49:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0006"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:50:02",
+    "time_end": "01-21 01:50:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0007"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:52:01",
+    "time_end": "01-21 01:52:01",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0008"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:53:56",
+    "time_end": "01-21 01:53:56",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0009"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 01:57:02",
+    "time_end": "01-21 01:57:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0010"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:01:02",
+    "time_end": "01-21 02:01:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0011"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:02:57",
+    "time_end": "01-21 02:02:57",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0012"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:03:28",
+    "time_end": "01-21 02:03:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0013"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:04:18",
+    "time_end": "01-21 02:04:18",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0014"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:07:54",
+    "time_end": "01-21 02:07:54",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0015"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:10:15",
+    "time_end": "01-21 02:10:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0016"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:10:58",
+    "time_end": "01-21 02:10:58",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0017"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:13:31",
+    "time_end": "01-21 02:13:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0018"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:13:44",
+    "time_end": "01-21 02:13:44",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0019"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:13:46",
+    "time_end": "01-21 02:13:46",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0020"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:14:52",
+    "time_end": "01-21 02:14:52",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0021"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:21:17",
+    "time_end": "01-21 02:21:17",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0022"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:38:22",
+    "time_end": "01-21 02:38:22",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0023"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 02:38:28",
+    "time_end": "01-21 02:38:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0024"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 03:18:31",
+    "time_end": "01-21 03:18:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0025"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 03:20:03",
+    "time_end": "01-21 03:20:03",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0026"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 03:42:01",
+    "time_end": "01-21 03:42:01",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0027"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 03:42:17",
+    "time_end": "01-21 03:42:17",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0028"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 03:42:37",
+    "time_end": "01-21 03:42:37",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0029"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:20:28",
+    "time_end": "01-21 04:20:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0030"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:25:32",
+    "time_end": "01-21 04:25:32",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0031"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:25:55",
+    "time_end": "01-21 04:25:55",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0032"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:30:41",
+    "time_end": "01-21 04:30:41",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0033"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:31:00",
+    "time_end": "01-21 04:31:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0034"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:32:04",
+    "time_end": "01-21 04:32:04",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0035"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:33:30",
+    "time_end": "01-21 04:33:30",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0036"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:34:31",
+    "time_end": "01-21 04:34:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0037"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:37:00",
+    "time_end": "01-21 04:37:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0038"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:37:38",
+    "time_end": "01-21 04:37:38",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0039"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:52:30",
+    "time_end": "01-21 04:52:30",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0040"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 04:55:20",
+    "time_end": "01-21 04:55:20",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0041"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1011MA_VER",
+    "time_start": "01-21 05:01:59",
+    "time_end": "01-21 05:01:59",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1011MA-VER-short_zero-A0042"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:04:59",
+    "time_end": "01-21 01:04:59",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0001"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:14:34",
+    "time_end": "01-21 01:14:34",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0002"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:40:31",
+    "time_end": "01-21 01:40:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0003"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:47:27",
+    "time_end": "01-21 01:47:27",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0004"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:48:28",
+    "time_end": "01-21 01:48:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0005"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:49:15",
+    "time_end": "01-21 01:49:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0006"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:50:02",
+    "time_end": "01-21 01:50:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0007"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:52:01",
+    "time_end": "01-21 01:52:01",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0008"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:53:56",
+    "time_end": "01-21 01:53:56",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0009"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 01:57:02",
+    "time_end": "01-21 01:57:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0010"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:01:02",
+    "time_end": "01-21 02:01:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0011"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:02:57",
+    "time_end": "01-21 02:02:57",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0012"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:03:28",
+    "time_end": "01-21 02:03:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0013"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:04:18",
+    "time_end": "01-21 02:04:18",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0014"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:07:54",
+    "time_end": "01-21 02:07:54",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0015"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:10:15",
+    "time_end": "01-21 02:10:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0016"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:10:58",
+    "time_end": "01-21 02:10:58",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0017"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:13:31",
+    "time_end": "01-21 02:13:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0018"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:13:44",
+    "time_end": "01-21 02:13:44",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0019"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:13:46",
+    "time_end": "01-21 02:13:46",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0020"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:14:52",
+    "time_end": "01-21 02:14:52",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0021"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:21:17",
+    "time_end": "01-21 02:21:17",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0022"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:38:22",
+    "time_end": "01-21 02:38:22",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0023"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 02:38:28",
+    "time_end": "01-21 02:38:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0024"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 03:18:31",
+    "time_end": "01-21 03:18:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0025"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 03:20:03",
+    "time_end": "01-21 03:20:03",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0026"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 03:42:01",
+    "time_end": "01-21 03:42:01",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0027"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 03:42:17",
+    "time_end": "01-21 03:42:17",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0028"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 03:42:37",
+    "time_end": "01-21 03:42:37",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0029"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 03:44:55",
+    "time_end": "01-21 03:44:55",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0030"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:20:28",
+    "time_end": "01-21 04:20:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0031"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:25:32",
+    "time_end": "01-21 04:25:32",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0032"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:25:55",
+    "time_end": "01-21 04:25:55",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0033"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:30:41",
+    "time_end": "01-21 04:30:41",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0034"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:31:00",
+    "time_end": "01-21 04:31:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0035"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:32:04",
+    "time_end": "01-21 04:32:04",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0036"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:33:30",
+    "time_end": "01-21 04:33:30",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0037"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:34:31",
+    "time_end": "01-21 04:34:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0038"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:37:00",
+    "time_end": "01-21 04:37:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0039"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:37:38",
+    "time_end": "01-21 04:37:38",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0040"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:52:30",
+    "time_end": "01-21 04:52:30",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0041"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 04:55:20",
+    "time_end": "01-21 04:55:20",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0042"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1012MA_VER",
+    "time_start": "01-21 05:01:59",
+    "time_end": "01-21 05:01:59",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1012MA-VER-short_zero-A0043"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 01:49:15",
+    "time_end": "01-21 01:49:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0001"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 02:01:02",
+    "time_end": "01-21 02:01:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0002"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 02:10:15",
+    "time_end": "01-21 02:10:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0003"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 02:10:58",
+    "time_end": "01-21 02:10:58",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0004"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 02:13:44",
+    "time_end": "01-21 02:13:44",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0005"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 02:13:46",
+    "time_end": "01-21 02:13:46",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0006"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 02:38:28",
+    "time_end": "01-21 02:38:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0007"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 03:20:03",
+    "time_end": "01-21 03:20:03",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0008"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 03:44:56",
+    "time_end": "01-21 03:44:56",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0009"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 04:20:28",
+    "time_end": "01-21 04:20:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0010"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 04:30:41",
+    "time_end": "01-21 04:30:41",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0011"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 04:31:00",
+    "time_end": "01-21 04:31:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0012"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1013MA_VER",
+    "time_start": "01-21 04:34:31",
+    "time_end": "01-21 04:34:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1013MA-VER-short_zero-A0013"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 01:49:15",
+    "time_end": "01-21 01:49:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0001"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 02:01:02",
+    "time_end": "01-21 02:01:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0002"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 02:10:15",
+    "time_end": "01-21 02:10:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0003"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 02:10:58",
+    "time_end": "01-21 02:10:58",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0004"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 02:13:44",
+    "time_end": "01-21 02:13:44",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0005"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 02:13:46",
+    "time_end": "01-21 02:13:46",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0006"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 02:14:52",
+    "time_end": "01-21 02:14:52",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0007"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 03:18:31",
+    "time_end": "01-21 03:18:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0008"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 03:20:03",
+    "time_end": "01-21 03:20:03",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0009"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 03:42:17",
+    "time_end": "01-21 03:42:17",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0010"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 03:42:37",
+    "time_end": "01-21 03:42:37",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0011"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 03:44:56",
+    "time_end": "01-21 03:44:56",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0012"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 04:20:28",
+    "time_end": "01-21 04:20:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0013"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 04:25:32",
+    "time_end": "01-21 04:25:32",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0014"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 04:31:00",
+    "time_end": "01-21 04:31:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0015"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 04:34:31",
+    "time_end": "01-21 04:34:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0016"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 04:37:38",
+    "time_end": "01-21 04:37:38",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0017"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 04:55:20",
+    "time_end": "01-21 04:55:20",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0018"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1014MA_VER",
+    "time_start": "01-21 05:01:59",
+    "time_end": "01-21 05:01:59",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1014MA-VER-short_zero-A0019"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 01:49:15",
+    "time_end": "01-21 01:49:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0001"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 02:01:02",
+    "time_end": "01-21 02:01:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0002"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 02:10:15",
+    "time_end": "01-21 02:10:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0003"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 02:10:58",
+    "time_end": "01-21 02:10:58",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0004"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 02:13:44",
+    "time_end": "01-21 02:13:44",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0005"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 02:13:46",
+    "time_end": "01-21 02:13:46",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0006"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 02:38:28",
+    "time_end": "01-21 02:38:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0007"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 03:20:03",
+    "time_end": "01-21 03:20:03",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0008"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 03:44:56",
+    "time_end": "01-21 03:44:56",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0009"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 04:20:28",
+    "time_end": "01-21 04:20:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0010"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 04:30:41",
+    "time_end": "01-21 04:30:41",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0011"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 04:31:00",
+    "time_end": "01-21 04:31:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0012"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1015MA_VER",
+    "time_start": "01-21 04:34:31",
+    "time_end": "01-21 04:34:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1015MA-VER-short_zero-A0013"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 01:49:15",
+    "time_end": "01-21 01:49:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0001"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 02:01:02",
+    "time_end": "01-21 02:01:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0002"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 02:10:15",
+    "time_end": "01-21 02:10:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0003"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 02:10:58",
+    "time_end": "01-21 02:10:58",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0004"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 02:13:44",
+    "time_end": "01-21 02:13:44",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0005"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 02:13:46",
+    "time_end": "01-21 02:13:46",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0006"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 02:38:28",
+    "time_end": "01-21 02:38:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0007"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 03:20:03",
+    "time_end": "01-21 03:20:03",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0008"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 03:44:56",
+    "time_end": "01-21 03:44:56",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0009"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 04:20:28",
+    "time_end": "01-21 04:20:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0010"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 04:30:41",
+    "time_end": "01-21 04:30:41",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0011"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 04:31:00",
+    "time_end": "01-21 04:31:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0012"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1016MA_VER",
+    "time_start": "01-21 04:34:31",
+    "time_end": "01-21 04:34:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1016MA-VER-short_zero-A0013"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 01:49:15",
+    "time_end": "01-21 01:49:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0001"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 02:01:02",
+    "time_end": "01-21 02:01:02",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0002"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 02:10:15",
+    "time_end": "01-21 02:10:15",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0003"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 02:10:58",
+    "time_end": "01-21 02:10:58",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0004"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 02:13:44",
+    "time_end": "01-21 02:13:44",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0005"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 02:13:46",
+    "time_end": "01-21 02:13:46",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0006"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 02:38:28",
+    "time_end": "01-21 02:38:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0007"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 03:20:03",
+    "time_end": "01-21 03:20:03",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0008"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 03:44:56",
+    "time_end": "01-21 03:44:56",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0009"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 04:20:28",
+    "time_end": "01-21 04:20:28",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0010"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 04:30:41",
+    "time_end": "01-21 04:30:41",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0011"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 04:31:00",
+    "time_end": "01-21 04:31:00",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0012"
+  },
+  {
+    "event_taxonomy_version": "v1",
+    "record_id": "A1_1",
+    "event_type": "short_zero",
+    "channel": "BL.BL3.3RIC1017MA_VER",
+    "time_start": "01-21 04:34:31",
+    "time_end": "01-21 04:34:31",
+    "source": {
+      "kind": "analysis_snapshot",
+      "path": "evidence/case_A1_1/A1_1_sorted_进阶全局工况报告_数据快照.json",
+      "field": "alerts.isolated_zeros"
+    },
+    "atomic_event_id": "A1-1-BL-BL3-3RIC1017MA-VER-short_zero-A0013"
+  }
+]

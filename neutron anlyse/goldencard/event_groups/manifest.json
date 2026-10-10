@@ -1,0 +1,53 @@
+{
+  "group_version": "v1",
+  "groups": [
+    {
+      "event_type": "short_zero",
+      "scope": "single_channel",
+      "count": 10,
+      "path": "goldencard/event_groups/short_zero__single_channel.json"
+    },
+    {
+      "event_type": "short_zero",
+      "scope": "multi_channel_temporal_cluster",
+      "count": 10,
+      "path": "goldencard/event_groups/short_zero__multi_channel_temporal_cluster.json"
+    },
+    {
+      "event_type": "sustained_zero",
+      "scope": "single_channel",
+      "count": 10,
+      "path": "goldencard/event_groups/sustained_zero__single_channel.json"
+    },
+    {
+      "event_type": "sustained_zero",
+      "scope": "multi_channel_temporal_cluster",
+      "count": 10,
+      "path": "goldencard/event_groups/sustained_zero__multi_channel_temporal_cluster.json"
+    },
+    {
+      "event_type": "positive_spike",
+      "scope": "single_channel",
+      "count": 10,
+      "path": "goldencard/event_groups/positive_spike__single_channel.json"
+    },
+    {
+      "event_type": "positive_spike",
+      "scope": "multi_channel_temporal_cluster",
+      "count": 10,
+      "path": "goldencard/event_groups/positive_spike__multi_channel_temporal_cluster.json"
+    },
+    {
+      "event_type": "negative_drop",
+      "scope": "single_channel",
+      "count": 10,
+      "path": "goldencard/event_groups/negative_drop__single_channel.json"
+    },
+    {
+      "event_type": "negative_drop",
+      "scope": "multi_channel_temporal_cluster",
+      "count": 10,
+      "path": "goldencard/event_groups/negative_drop__multi_channel_temporal_cluster.json"
+    }
+  ]
+}
