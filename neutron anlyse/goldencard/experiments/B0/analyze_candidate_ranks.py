@@ -5,12 +5,16 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
 
 HERE = Path(__file__).resolve().parent
 TOP_K_VALUES = (3, 5, 8, 10, 12, 15, 20)
+sys.path.insert(0, str(HERE.parent))
+
+from result_csv import write_csv  # noqa: E402
 
 
 def main() -> None:
@@ -47,6 +51,22 @@ def main() -> None:
     }
     results = HERE / "results"
     (results / "b0_first_acceptable_rank_analysis.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    write_csv(results / "b0_first_acceptable_rank_cases.csv", rows, ["goldcard_id", "gold_action_id", "first_acceptable_evidence_rank"])
+    hit_rows = [{
+        "retrieval_top_k": k,
+        "case_count": len(rows),
+        "cumulative_hit_case_count": sum(row["first_acceptable_evidence_rank"] <= k for row in rows),
+        "cumulative_hit_rate": sum(row["first_acceptable_evidence_rank"] <= k for row in rows) / len(rows),
+    } for k in TOP_K_VALUES]
+    write_csv(results / "b0_first_acceptable_rank_hit_at_k.csv", hit_rows, list(hit_rows[0]))
+    action_hit_rows = [{
+        "gold_action_id": action,
+        "retrieval_top_k": k,
+        "case_count": len(ranks),
+        "cumulative_hit_case_count": sum(rank <= k for rank in ranks),
+        "cumulative_hit_rate": sum(rank <= k for rank in ranks) / len(ranks),
+    } for action, ranks in by_action.items() for k in TOP_K_VALUES]
+    write_csv(results / "b0_first_acceptable_rank_by_action_at_k.csv", action_hit_rows, list(action_hit_rows[0]))
     lines = [
         "# B0：正确建议类别首张证据的 BM25 排名分析", "",
         "首张可接受证据是指：在该案例正确建议类别的 5 张人工确认直接支持卡中，BM25 排名最高的一张。", "",

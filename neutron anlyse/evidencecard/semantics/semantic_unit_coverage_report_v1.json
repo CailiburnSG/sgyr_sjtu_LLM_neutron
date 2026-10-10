@@ -1,0 +1,22 @@
+{
+  "semantic_version": "v1",
+  "unit_count": 10,
+  "card_count": 300,
+  "card_unit_relation_count": 620,
+  "unmapped_card_count": 0,
+  "semantic_unit_relation_counts": {
+    "SU01_observed_anomaly_qualification": 104,
+    "SU02_reference_and_temporal_pattern": 96,
+    "SU03_recording_timestamp_integrity": 46,
+    "SU04_signal_path_and_conditioning": 87,
+    "SU05_cross_channel_comparison": 57,
+    "SU06_operation_test_calibration_alignment": 34,
+    "SU07_neutron_measurement_architecture": 50,
+    "SU08_detector_response_and_calibration": 34,
+    "SU09_gamma_and_mixed_field_context": 14,
+    "SU10_signal_quality_and_monitoring_limit": 98
+  },
+  "gold_semantic_action_pair_relation_count": 456,
+  "scope": "Semantic units are an equivalence layer for scoring evidence meaning. They do not alter reviewed evidence cards or replace fixed A1-A4 actions.",
+  "review_status": "semantic_unit_v1_provisional"
+}

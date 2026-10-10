@@ -1,12 +1,6 @@
 {
-  "contract_version": "B1-v1",
+  "contract_version": "B1-v3-all-topk",
   "task_boundary": "预检建议，不做故障原因诊断或因果确认。",
-  "selected_evidence_maximum": 3,
-  "allowed_support_scores": [
-    0,
-    1,
-    2
-  ],
   "allowed_action_ids": [
     "on_site_operation_or_calibration_check",
     "cross_channel_similar_anomaly_comparison",
@@ -14,24 +8,13 @@
     "signal_transmission_path_check"
   ],
   "rules": [
-    "只可选择输入 bm25_candidates 中出现的 evidence_id。",
-    "selected_evidence 最多 3 张，evidence_id 不得重复。",
     "必须且只能输出一项 action_id。",
-    "action_evidence_ids 必须非空、是 selected_evidence 的子集，且其 support_score 必须为 2。",
+    "action_id 必须综合输入中的全部 bm25_candidates 后作出；候选卡作为完整的证据包呈现，不要求模型挑选子集。",
     "不得确认根因、部件损坏、因果关系或实际发生的现场操作。",
     "boundary_note 必须明确建议是待核查方向，而不是故障结论。"
   ],
   "output_schema": {
-    "selected_evidence": [
-      {
-        "evidence_id": "string",
-        "support_score": "integer 0|1|2"
-      }
-    ],
     "action_id": "one of allowed_action_ids",
-    "action_evidence_ids": [
-      "evidence_id selected with support_score=2"
-    ],
     "boundary_note": "string"
   }
 }

@@ -16,7 +16,7 @@ B3：金标准证据 + LLM 行动选择（消融）
 事件组合
   → BM25 top-K（与 B0 相同）
   → LLM 阅读 K 张候选证据正文 + 四项行动定义
-  → 最多 3 张证据 + 1 项固定检查建议
+  → 对完整 Top-K 候选证据包直接给出 1 项固定检查建议
 ```
 
 ## 冻结训练—验证分割
@@ -37,7 +37,7 @@ K = {3, 5, 8, 10, 12, 15, 20}
 ```
 
 每个 LLM × K 组合在 60 例训练集上开发，并在同一 20 例验证集上运行一次正式评估。模型必须使用同一事件输入、
-同一 BM25 排名、同一行动定义、同一提示词结构、温度 0、相同的最多三卡/单建议输出约束。
+同一 BM25 排名、同一行动定义、同一提示词结构、温度 0 和相同的单建议输出约束。
 
 ## 可直接运行时读取的材料
 
@@ -70,34 +70,41 @@ B0 原目录及其中间产物不被改写或删除。
 
 ```json
 {
-  "selected_evidence": [
-    {"evidence_id": "...", "support_score": 2},
-    {"evidence_id": "...", "support_score": 2},
-    {"evidence_id": "...", "support_score": 1}
-  ],
   "action_id": "on_site_operation_or_calibration_check",
-  "action_evidence_ids": ["..."],
   "boundary_note": "不确认故障原因"
 }
 ```
 
-`selected_evidence` 最多 3 张；`action_evidence_ids` 只能引用候选包内且 `support_score=2` 的卡；必须且只能在 A1--A4
+模型不输出证据子集：完整 Top-K 候选包随结果一同保留并呈现；模型必须且只能在 A1--A4
 中选择一个完整 `action_id`。禁止输出根因、故障确认或因果结论。机器可读的完整合同见
 [`data/output_contract.json`](data/output_contract.json)。
 
 ## 指标与错误归因
 
-每个模型 × K 分开报告三层指标：候选层的**金标准行动证据覆盖@K / 候选 Precision@K**，证据选择层的
-严格 Evidence Precision/Recall/F1@K，以及结论层的行动 Accuracy/Macro-F1、`(evidence_id, action_id)` 对 F1、
-JSON 合法率、未知 ID 率和无依据行动率。候选覆盖只说明 LLM 是否拿到了正确资料，不代表它已经得出正确结论。
+每个模型 × K 分开报告三层指标：
+
+1. **候选包质量**：严格 Evidence Precision/Recall/F1@K、语义 Evidence Precision/Recall/F1@K，以及
+   金标准行动证据覆盖@K。这些指标说明正确资料是否进入完整 Top-K 包；相同候选包下 B0 与 B1 的数值相同。
+2. **证据—行动连接**：语义—行动对 Precision/Recall/F1@K。将完整 Top-K 候选卡映射为语义单元，并与预测行动组成
+   `(semantic_unit, action_id)` 对；它是后续所有实验必须保留的核心指标。
+3. **最终行动与生成合规**：行动 Accuracy、Macro-F1、JSON 合法率和输出合同合规率。
+
+候选覆盖只说明模型是否拿到了正确资料，不代表它已经得出正确结论。
 
 错误按以下顺序归因：
 
 1. **候选缺失**：top-K 不含正确建议类别的任一可接受证据；
-2. **LLM 选择失误**：候选中有可接受证据，但 LLM 未选择；
-3. **LLM 行动失误**：LLM 选择了可接受证据，但建议错误；
-4. **约束失效**：格式、ID、证据支撑或边界不合规。
+2. **语义—行动连接失误**：候选包具有可接受证据，但预测行动未能与其语义正确连接；
+3. **行动失误**：最终建议与金标准行动不同；
+4. **约束失效**：格式或预检边界不合规。
 
 ## 实施状态
 
-实验矩阵和输出合同已冻结，尚待确定实际可调用的 LLM/API 后实现运行器。
+实验结果按“是否使用训练金标准”与模型名分开保存：
+
+- [`no_training_examples/`](no_training_examples/)：未使用训练示例的模型。它不读取 60 例训练标签；正式结果按
+  `no_training_examples/<模型名>/top_k_XX/` 保存。
+- [`with_training_examples/`](with_training_examples/)：使用固定训练示例的阶段。该阶段尚未运行，结果按
+  `with_training_examples/<模型名>/top_k_XX/` 保存。
+
+两阶段均继续读取同一份 `data/candidate_packages/top_k_XX/`，即 B0 冻结的 BM25 候选包；不能改变上游检索。

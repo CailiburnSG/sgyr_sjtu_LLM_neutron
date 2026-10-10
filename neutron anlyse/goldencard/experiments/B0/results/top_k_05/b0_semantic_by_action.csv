@@ -1,0 +1,5 @@
+experiment_id,retrieval_top_k,semantic_version,gold_action_id,case_count,semantic_candidate_precision_at_k,semantic_candidate_recall_at_k,semantic_candidate_f1_at_k,semantic_candidate_coverage_at_k,semantic_candidate_action_pair_precision_at_k,semantic_candidate_action_pair_recall_at_k,semantic_candidate_action_pair_f1_at_k
+B0_bm25_tag_vote_v1,5,v1,cross_channel_similar_anomaly_comparison,20,0.44571428571428573,0.8125,0.5698484848484848,1.0,0.0,0.0,0.0
+B0_bm25_tag_vote_v1,5,v1,on_site_operation_or_calibration_check,20,0.65,0.5533333333333333,0.5788095238095238,1.0,0.65,0.5533333333333333,0.5788095238095238
+B0_bm25_tag_vote_v1,5,v1,record_processing_and_timestamp_check,20,0.1819047619047619,0.6,0.2765873015873016,1.0,0.0,0.0,0.0
+B0_bm25_tag_vote_v1,5,v1,signal_transmission_path_check,20,0.39583333333333337,0.5,0.4378968253968254,1.0,0.0,0.0,0.0

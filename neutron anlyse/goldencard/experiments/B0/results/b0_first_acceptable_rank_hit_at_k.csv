@@ -1,0 +1,8 @@
+retrieval_top_k,case_count,cumulative_hit_case_count,cumulative_hit_rate
+3,80,20,0.25
+5,80,22,0.275
+8,80,49,0.6125
+10,80,71,0.8875
+12,80,74,0.925
+15,80,74,0.925
+20,80,77,0.9625

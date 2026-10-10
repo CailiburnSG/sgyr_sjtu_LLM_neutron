@@ -2,8 +2,8 @@
 """B0: BM25 retrieval plus applicability-tag voting, with no LLM.
 
 Unlike an event-type routing rule, this baseline never reads the gold action
-label.  It serializes the observed event combination, retrieves three cards
-from the full evidence library, and maps only the retrieved cards' existing
+label. It serializes the observed event combination, retrieves a candidate
+pool from the full evidence library, and maps all retrieved cards' existing
 applicability tags to an action score.
 """
 
@@ -19,8 +19,11 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 NEUTRON_ROOT = HERE.parents[2]
 sys.path.insert(0, str(NEUTRON_ROOT))
+sys.path.insert(0, str(HERE.parent))
 
 from evidencecard.workflow import load_cards, rank_candidates  # noqa: E402
+from result_csv import write_b0_csv, write_b0_semantic_csv  # noqa: E402
+from semantic_metrics import evaluate_b0_semantics, load_units  # noqa: E402
 
 
 GOLD = NEUTRON_ROOT / "goldencard" / "gold_standard_80_eventgroups" / "goldcase_balanced_80.jsonl"
@@ -142,11 +145,11 @@ def run(top_k: int) -> dict:
             category_precision_values.append(match_count / top_k)
         category_by_action[action] = {
             "acceptable_evidence_count": len(acceptable_by_action[action]),
-            "hit_at_3": hits / len(action_rows),
-            "precision_at_3": matched_cards / (3 * len(action_rows)),
+            "candidate_coverage_at_k": hits / len(action_rows),
+            "candidate_precision_at_k": matched_cards / (top_k * len(action_rows)),
         }
     metrics = {
-        "experiment_id": "B0_bm25_tag_vote_v1",
+        "experiment_id": "B0_bm25_tag_vote_v3_all_topk",
         "gold_standard": str(GOLD.relative_to(NEUTRON_ROOT.parent)),
         "case_count": len(rows),
         "evidence_library_card_count": len(cards),
@@ -161,19 +164,23 @@ def run(top_k: int) -> dict:
         "gold_action_evidence_candidate_coverage_at_k": sum(category_hit_values) / len(category_hit_values),
         "gold_action_evidence_candidate_precision_at_k": sum(category_precision_values) / len(category_precision_values),
         "gold_action_evidence_candidate_coverage_by_gold_action": category_by_action,
-        "scope_note": f"No LLM; no case-level gold action or gold evidence is used during prediction. Action is a vote over applicability tags of BM25 top-{top_k} cards.",
+        "scope_note": f"No LLM; no case-level gold action or gold evidence is used during prediction. All BM25 top-{top_k} cards are presented as the candidate evidence package and vote through their applicability tags.",
     }
     result_dir = HERE / "results" / f"top_k_{top_k:02d}"
     result_dir.mkdir(parents=True, exist_ok=True)
     (result_dir / "b0_bm25_tag_vote_predictions.jsonl").write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
     (result_dir / "b0_bm25_tag_vote_metrics.json").write_text(json.dumps(metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    write_b0_csv(result_dir, rows, metrics)
+    semantic_map = NEUTRON_ROOT / "evidencecard" / "semantics" / "card_semantic_units_v1.csv"
+    gold_evidence_by_case = {case["goldcard_id"]: [item["evidence_id"] for item in case["evidence"]] for case in cases}
+    write_b0_semantic_csv(result_dir, metrics, evaluate_b0_semantics(rows, gold_evidence_by_case, load_units(semantic_map)))
     print(json.dumps({"top_k": top_k, "action_accuracy": metrics["action_accuracy"], "macro_f1": metrics["macro_f1"], "evidence_f1_at_k": evidence_f1, "case_count": len(rows)}, ensure_ascii=False))
     return metrics
 
 
 def main() -> None:
     parser = ArgumentParser(description="B0 BM25 retrieval plus applicability-tag voting")
-    parser.add_argument("--top-k", type=int, default=3, help="number of BM25 candidates to retrieve")
+    parser.add_argument("--top-k", type=int, default=10, help="number of BM25 candidates to retrieve and vote over")
     args = parser.parse_args()
     run(args.top_k)
 
