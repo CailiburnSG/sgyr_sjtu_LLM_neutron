@@ -16,7 +16,7 @@ P/R/F1@K 与候选覆盖@K 属于上游 BM25 检索质量，只需报告一次�
 B1/no_training_examples/
   <模型名>/
     top_k_XX/
-      b1_run_metrics.csv         # 一次运行的标量指标
+      b1_run_metrics.csv         # 标量指标及 prompt/completion/total token
       b1_action_metrics.csv      # 每项行动的 P/R/F1 与 TP/FP/FN
       b1_semantic_metrics.csv    # 语义证据及语义—行动对 P/R/F1@K
       b1_semantic_by_action.csv  # 语义指标按正确行动拆分
@@ -25,7 +25,8 @@ B1/no_training_examples/
       analysis.md
 ```
 
-阶段根目录的 `summary_metrics.csv` 汇总所有模型 × K 运行，供后续直接绘图和比较。
+阶段根目录的 `summary_metrics.csv` 汇总所有模型 × K 运行，包含 prompt、completion 和 total token，供后续直接绘图、
+成本比较和结果比较。
 语义指标使用 [`evidencecard/semantics/`](../../../../evidencecard/semantics/) 的 `semantic_unit_v1` 映射；该映射为
 可审计的第一版评分粒度，不能替代严格卡号指标。
 

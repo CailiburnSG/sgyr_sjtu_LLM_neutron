@@ -14,7 +14,7 @@ from pathlib import Path
 def write_csv(path: Path, rows: list[dict], fieldnames: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore")
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -37,7 +37,13 @@ def write_b0_semantic_csv(result_dir: Path, metrics: dict, semantic: dict) -> No
 
 def write_b1_csv(result_dir: Path, rows: list[dict], metrics: dict) -> None:
     scalar_keys = [key for key, value in metrics.items() if not isinstance(value, (dict, list))]
-    write_csv(result_dir / "b1_run_metrics.csv", [{key: metrics[key] for key in scalar_keys}], scalar_keys)
+    run_row = {key: metrics[key] for key in scalar_keys}
+    run_row.update({
+        "prompt_tokens": metrics["usage"].get("prompt_tokens", 0),
+        "completion_tokens": metrics["usage"].get("completion_tokens", 0),
+        "total_tokens": metrics["usage"].get("total_tokens", 0),
+    })
+    write_csv(result_dir / "b1_run_metrics.csv", [run_row], list(run_row))
     action_rows = [{"experiment_id": metrics["experiment_id"], "model": metrics["model"], "retrieval_top_k": metrics["retrieval_top_k"], "action_id": action, **values} for action, values in metrics["action_per_class"].items()]
     write_csv(result_dir / "b1_action_metrics.csv", action_rows, ["experiment_id", "model", "retrieval_top_k", "action_id", "tp", "fp", "fn", "precision", "recall", "f1"])
     error_rows = [{"experiment_id": metrics["experiment_id"], "model": metrics["model"], "retrieval_top_k": metrics["retrieval_top_k"], "error_type": key, "case_count": value} for key, value in metrics["error_counts"].items()]
@@ -73,7 +79,9 @@ def write_b1_stage_summary(stage_dir: Path) -> None:
             "constraint_valid_rate": metrics["constraint_valid_rate"], "action_accuracy": metrics["action_accuracy"],
             "action_macro_f1": metrics["action_macro_f1"],
             "semantic_candidate_action_pair_f1_at_k": semantic.get("semantic_candidate_action_pair_f1_at_k"),
-            "total_tokens": metrics["usage"]["total_tokens"],
+            "prompt_tokens": metrics["usage"].get("prompt_tokens", 0),
+            "completion_tokens": metrics["usage"].get("completion_tokens", 0),
+            "total_tokens": metrics["usage"].get("total_tokens", 0),
             "result_directory": str(metrics_path.parent.relative_to(stage_dir)),
         })
-    write_csv(stage_dir / "summary_metrics.csv", rows, ["model", "retrieval_top_k", "split", "case_count", "json_valid_rate", "constraint_valid_rate", "action_accuracy", "action_macro_f1", "semantic_candidate_action_pair_f1_at_k", "total_tokens", "result_directory"])
+    write_csv(stage_dir / "summary_metrics.csv", rows, ["model", "retrieval_top_k", "split", "case_count", "json_valid_rate", "constraint_valid_rate", "action_accuracy", "action_macro_f1", "semantic_candidate_action_pair_f1_at_k", "prompt_tokens", "completion_tokens", "total_tokens", "result_directory"])

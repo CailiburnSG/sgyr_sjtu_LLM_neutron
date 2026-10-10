@@ -1,2 +1,2 @@
-experiment_id,model,base_url,retrieval_top_k,split,run_at_utc,case_count,json_valid_rate,constraint_valid_rate,action_accuracy,action_macro_f1
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,https://maas.qianwenaiapi.com/compatible-mode/v1,3,frozen_validation_20,2026-10-10T13:41:44.273275+00:00,20,1.0,1.0,0.25,0.22727272727272727
+experiment_id,model,base_url,retrieval_top_k,split,run_at_utc,case_count,json_valid_rate,constraint_valid_rate,action_accuracy,action_macro_f1,prompt_tokens,completion_tokens,total_tokens
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,https://maas.qianwenaiapi.com/compatible-mode/v1,3,frozen_validation_20,2026-10-10T13:41:44.273275+00:00,20,1.0,1.0,0.25,0.22727272727272727,43625,1826,45451

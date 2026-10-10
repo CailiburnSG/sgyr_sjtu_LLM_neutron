@@ -6,8 +6,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from result_csv import write_b0_csv, write_b0_semantic_csv, write_b1_csv, write_b1_semantic_csv, write_b1_stage_summary, write_csv
-from semantic_metrics import evaluate_b0_semantics, evaluate_b1_semantics, load_units
+from result_csv import write_b0_csv, write_b0_semantic_csv, write_b1_csv, write_b1_stage_summary, write_csv
+from semantic_metrics import evaluate_b0_semantics, load_units
 
 
 HERE = Path(__file__).resolve().parent
@@ -54,12 +54,11 @@ def export_b0() -> None:
 
 
 def export_b1() -> None:
-    for metrics_path in B1_ZS.glob("*/top_k_*/validation_metrics.json"):
+    for metrics_path in B1_NO_TRAINING.glob("*/top_k_*/validation_metrics.json"):
         folder = metrics_path.parent
         rows = read_jsonl(folder / "validation_predictions.jsonl")
         metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
         write_b1_csv(folder, rows, metrics)
-        write_b1_semantic_csv(folder, metrics, evaluate_b1_semantics(rows, load_units(SEMANTIC_MAP)))
     write_b1_stage_summary(B1_NO_TRAINING)
 
 
