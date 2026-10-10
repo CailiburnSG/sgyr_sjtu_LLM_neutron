@@ -154,9 +154,14 @@ def main() -> None:
     parser.add_argument("--key-file", type=Path, default=DEFAULT_KEY_FILE)
     parser.add_argument("--limit", type=int, default=0, help="0 means all frozen validation cases")
     args = parser.parse_args()
-    if args.top_k != 10:
-        raise ValueError("This first runner is frozen for the approved K=10 pilot.")
-    inputs = read_jsonl(DATA / "candidate_packages" / "top_k_10" / "validation_inputs.jsonl")
+    candidate_dir = DATA / "candidate_packages" / f"top_k_{args.top_k:02d}"
+    input_path = candidate_dir / "validation_inputs.jsonl"
+    if not input_path.exists():
+        raise FileNotFoundError(f"No frozen B0 candidate package for top_k={args.top_k}: {input_path}")
+    inputs = read_jsonl(input_path)
+    invalid_counts = [case["goldcard_id"] for case in inputs if len(case.get("bm25_candidates", [])) != args.top_k]
+    if invalid_counts:
+        raise ValueError(f"Candidate-count mismatch for top_k={args.top_k}: {', '.join(invalid_counts[:5])}")
     labels = {row["goldcard_id"]: row["target"] for row in read_jsonl(DATA / "labels" / "validation_gold_labels.jsonl")}
     actions = json.loads((DATA / "action_definitions.json").read_text(encoding="utf-8"))
     contract = json.loads((DATA / "output_contract.json").read_text(encoding="utf-8"))
@@ -199,7 +204,7 @@ def main() -> None:
     write_b1_semantic_csv(result_dir, metrics, evaluate_b0_semantics(semantic_rows, gold_evidence_by_case, load_units(semantic_map)))
     write_b1_stage_summary(HERE)
     (result_dir / "README.md").write_text(
-        "# B1 Qwen K=10 验证小试\n\n"
+        f"# B1 {args.model} Top-{args.top_k} 验证\n\n"
         "由 `../../run_no_training_qwen.py` 在冻结的 20 例验证集上生成。原始模型响应逐例保存在 "
         "`validation_predictions.jsonl`；聚合指标保存在 `validation_metrics.json`。密钥未写入本目录。\n",
         encoding="utf-8",

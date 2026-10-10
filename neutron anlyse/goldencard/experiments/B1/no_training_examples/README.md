@@ -29,7 +29,7 @@ B1/no_training_examples/
 语义指标使用 [`evidencecard/semantics/`](../../../../evidencecard/semantics/) 的 `semantic_unit_v1` 映射；该映射为
 可审计的第一版评分粒度，不能替代严格卡号指标。
 
-当前 Qwen 运行器为 [`run_no_training_qwen.py`](run_no_training_qwen.py)。它是经批准的 K=10 小试运行器；扩展到其余 K 前应保持
-同一输出合同、同一冻结验证集和同一 B0 候选包。
+当前 Qwen 运行器为 [`run_no_training_qwen.py`](run_no_training_qwen.py)。通过 `--top-k` 读取对应的冻结 B0 候选包；
+它会校验每例候选卡数与 K 一致，并保持同一输出合同、冻结验证集和 B0 候选包。
 
 正式全 Top-K 协议的结果直接写入 `<模型名>/top_k_XX/`；例如 `qwen3.8-flash/top_k_10/`。
