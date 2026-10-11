@@ -1,0 +1,2 @@
+experiment_id,model,base_url,retrieval_top_k,split,run_at_utc,case_count,json_valid_rate,constraint_valid_rate,action_accuracy,action_macro_f1,prompt_tokens,completion_tokens,total_tokens,latency_case_count,latency_total_seconds,latency_mean_seconds,latency_p50_seconds,latency_p95_seconds
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,https://maas.qianwenaiapi.com/compatible-mode/v1,20,frozen_validation_20,2026-10-11T10:48:37.306775+00:00,20,1.0,1.0,0.5,0.375,139003,1760,140763,20,73.271,3.664,3.481,4.822
