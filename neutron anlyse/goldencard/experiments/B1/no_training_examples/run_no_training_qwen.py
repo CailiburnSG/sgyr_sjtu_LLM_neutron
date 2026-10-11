@@ -56,12 +56,16 @@ def load_key(key_file: Path | None) -> str:
 
 
 def prompt_for(case: dict, actions: list[dict], contract: dict, template: str) -> list[dict]:
+    # Goldcard IDs are evaluation bookkeeping only.  Their numerical ranges
+    # correlate with action classes in this constructed set, so they are never
+    # exposed to any B1 model prompt.
+    model_case = {key: value for key, value in case.items() if key != "goldcard_id"}
     return [
         {"role": "system", "content": template},
         {"role": "user", "content": json.dumps({
             "action_definitions": actions,
             "output_contract": contract,
-            "case": case,
+            "case": model_case,
         }, ensure_ascii=False)},
     ]
 
@@ -162,7 +166,14 @@ def evaluate(rows: list[dict], metadata: dict) -> dict:
     }
 
 
-def write_b0_b1_comparison(result_dir: Path, b1_rows: list[dict], candidate_dir: Path, metrics: dict, b1_semantic: dict) -> None:
+def write_b0_b1_comparison(
+    result_dir: Path,
+    b1_rows: list[dict],
+    candidate_dir: Path,
+    metrics: dict,
+    b1_semantic: dict,
+    variant_label: str = "direct_judgment",
+) -> None:
     """Write a same-case, same-candidate-package B0/B1 comparison table."""
     raw_b0 = {row["goldcard_id"]: row for row in read_jsonl(candidate_dir / "b0_retrieval_predictions_original.jsonl")}
     b0_rows = [{
@@ -184,7 +195,7 @@ def write_b0_b1_comparison(result_dir: Path, b1_rows: list[dict], candidate_dir:
     top_k = metrics["retrieval_top_k"]
     rows = [
         {"method": f"B0_BM25_all_top{top_k}_tag_vote", "candidate_evidence_package": f"BM25_Top{top_k}_shared", "validation_case_count": len(b1_rows), "action_accuracy": b0_accuracy, "action_macro_f1": b0_macro_f1, "semantic_candidate_action_pair_f1_at_k": b0_semantic["totals"]["semantic_candidate_action_pair_f1_at_k"]},
-        {"method": f"B1_{metrics['model']}_all_top{top_k}_direct_judgment", "candidate_evidence_package": f"BM25_Top{top_k}_shared", "validation_case_count": len(b1_rows), "action_accuracy": metrics["action_accuracy"], "action_macro_f1": metrics["action_macro_f1"], "semantic_candidate_action_pair_f1_at_k": b1_semantic["totals"]["semantic_candidate_action_pair_f1_at_k"]},
+        {"method": f"B1_{metrics['model']}_all_top{top_k}_{variant_label}", "candidate_evidence_package": f"BM25_Top{top_k}_shared", "validation_case_count": len(b1_rows), "action_accuracy": metrics["action_accuracy"], "action_macro_f1": metrics["action_macro_f1"], "semantic_candidate_action_pair_f1_at_k": b1_semantic["totals"]["semantic_candidate_action_pair_f1_at_k"]},
     ]
     write_csv(result_dir / "b0_b1_action_comparison.csv", rows, list(rows[0]))
 

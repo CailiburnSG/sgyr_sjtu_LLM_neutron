@@ -1,0 +1,2 @@
+model,retrieval_top_k,split,case_count,json_valid_rate,constraint_valid_rate,action_accuracy,action_macro_f1,semantic_candidate_action_pair_f1_at_k,prompt_tokens,completion_tokens,total_tokens,latency_mean_seconds,latency_p50_seconds,latency_p95_seconds,result_directory
+qwen3.8-flash,10,frozen_validation_20_fixed_examples_8,20,1.0,1.0,0.85,0.854040404040404,0.4452525252525253,588912,857,589769,3.768,3.484,4.997,qwen3.8-flash/top_k_10
