@@ -14,3 +14,6 @@ qwen3.8-flash,10,16,03,nested_stratified_extension_of_n12_v1,1.0,1.0,1.0,1.0,110
 qwen3.8-flash,10,20,01,nested_exhaustive_extension_of_n16_v1,1.0,1.0,1.0,1.0,1356192,1357047,4.647,qwen3.8-flash/top_k_10/n_20/pool_01
 qwen3.8-flash,10,20,02,nested_exhaustive_extension_of_n16_v1,0.95,0.9494949494949495,1.0,1.0,1350852,1351706,5.375,qwen3.8-flash/top_k_10/n_20/pool_02
 qwen3.8-flash,10,20,03,nested_exhaustive_extension_of_n16_v1,1.0,1.0,1.0,1.0,1355452,1356305,5.296,qwen3.8-flash/top_k_10/n_20/pool_03
+qwen3.8-flash,10,24,01,nested_cyclic_reuse_extension_of_n20_v1,1.0,1.0,1.0,1.0,1608052,1608907,5.323,qwen3.8-flash/top_k_10/n_24/pool_01
+qwen3.8-flash,10,24,02,nested_cyclic_reuse_extension_of_n20_v1,1.0,1.0,1.0,1.0,1603892,1604752,5.822,qwen3.8-flash/top_k_10/n_24/pool_02
+qwen3.8-flash,10,24,03,nested_cyclic_reuse_extension_of_n20_v1,1.0,1.0,1.0,1.0,1609272,1610132,5.853,qwen3.8-flash/top_k_10/n_24/pool_03
