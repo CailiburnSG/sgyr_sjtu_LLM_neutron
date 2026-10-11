@@ -14,7 +14,7 @@ from pathlib import Path
 
 
 HERE = Path(__file__).resolve().parent
-B1_ROOT = HERE.parents[1]
+B1_ROOT = HERE.parent
 DATA = B1_ROOT / "data"
 TOP_K = 10
 

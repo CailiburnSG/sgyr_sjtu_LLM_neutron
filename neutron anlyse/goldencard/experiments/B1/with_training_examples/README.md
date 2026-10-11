@@ -1,13 +1,16 @@
-# B1：使用训练示例的 LLM 判断
+# B1：固定训练示例上下文
 
-本阶段将从 60 例训练集中预先冻结少量示例，作为每一次验证调用的固定上下文；模型仍不接触 20 例验证标签。
-它用于量化“使用训练金标准示例”相对未使用训练示例阶段的增益。
+这是少样本上下文学习实验，不更新模型参数；它与 `no_training_examples/` 并列，并复用零样本运行器的 API、冻结验证集、行动定义、输出合同和指标代码。
 
-尚未选择示例或运行模型。开始前必须冻结并记录：
+首个冻结配置为 Top-10 的 8 个训练例：A1--A4 各 2 个。选择规则与具体 ID 固化在 `data/fixed_examples_manifest.json`；完整可调用示例保存在 `data/fixed_examples_top_k_10.jsonl`。验证例及其标签绝不进入该文件。
 
-1. 训练示例的 `goldcard_id`、数量与选择规则；
-2. 每个示例所用的 B0 top-K 候选包和其正确输出；
-3. 与未使用训练示例阶段完全相同的系统提示、行动定义、输出合同、模型参数与验证集；
-4. 结果目录：`B1/with_training_examples/<模型名>/top_k_XX/`。
+案例 `goldcard_id` 仅在本地 manifest 和模型外评分记录中保留；由于编号区间与人工行动类别相关，它已从训练示例与验证提示中移除，防止编号捷径。
 
-不得把验证例或验证标签放入训练示例。
+运行：
+
+```bash
+python3 'neutron anlyse/goldencard/experiments/B1/with_training_examples/prepare_fixed_examples.py'
+python3 'neutron anlyse/goldencard/experiments/B1/with_training_examples/run_fixed_examples_qwen.py' --top-k 10 --model qwen3.8-flash
+```
+
+结果写入 `<模型名>/top_k_10/`。这应与同模型、同一 Top-10 候选包的零样本 B1 对照；唯一额外输入是固定的八个训练示例。

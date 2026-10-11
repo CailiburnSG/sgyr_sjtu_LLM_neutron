@@ -104,7 +104,8 @@ B0 原目录及其中间产物不被改写或删除。
 
 - [`no_training_examples/`](no_training_examples/)：未使用训练示例的模型。它不读取 60 例训练标签；正式结果按
   `no_training_examples/<模型名>/top_k_XX/` 保存。
-- [`with_training_examples/`](with_training_examples/)：使用固定训练示例的阶段。该阶段尚未运行，结果按
+- [`with_training_examples/`](with_training_examples/)：使用固定训练示例的少样本上下文阶段。首个去标识化 Top-10
+  结果已保存于 `with_training_examples/qwen3.8-flash/top_k_10/`；后续结果仍按
   `with_training_examples/<模型名>/top_k_XX/` 保存。
 
 两阶段均继续读取同一份 `data/candidate_packages/top_k_XX/`，即 B0 冻结的 BM25 候选包；不能改变上游检索。

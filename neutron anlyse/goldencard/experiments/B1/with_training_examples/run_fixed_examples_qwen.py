@@ -15,8 +15,8 @@ import sys
 
 
 HERE = Path(__file__).resolve().parent
-NO_TRAINING_ROOT = HERE.parent
-B1_ROOT = NO_TRAINING_ROOT.parent
+B1_ROOT = HERE.parent
+NO_TRAINING_ROOT = B1_ROOT / "no_training_examples"
 DATA = B1_ROOT / "data"
 sys.path.insert(0, str(NO_TRAINING_ROOT))
 
