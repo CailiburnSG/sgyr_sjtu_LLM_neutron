@@ -1,4 +1,7 @@
 model,retrieval_top_k,example_count,pool_id,selection_mode,action_accuracy,action_macro_f1,a3_f1,a4_f1,prompt_tokens,total_tokens,latency_mean_seconds,result_directory
+qwen3.8-flash,10,4,01,nested_stratified_subset_of_n08_v1,0.7,0.6201298701298701,0.0,1.0,340652,341521,3.302,qwen3.8-flash/top_k_10/n_04/pool_01
+qwen3.8-flash,10,4,02,nested_stratified_subset_of_n08_v1,0.9,0.8958333333333333,0.7499999999999999,1.0,341072,341931,3.662,qwen3.8-flash/top_k_10/n_04/pool_02
+qwen3.8-flash,10,4,03,nested_stratified_subset_of_n08_v1,0.75,0.6666666666666666,0.0,1.0,340852,341717,3.441,qwen3.8-flash/top_k_10/n_04/pool_03
 qwen3.8-flash,10,8,01,stratified_random_frozen_v1,0.95,0.9494949494949495,1.0,1.0,595192,596046,4.226,qwen3.8-flash/top_k_10/n_08/pool_01
 qwen3.8-flash,10,8,02,stratified_random_frozen_v1,0.95,0.9494949494949495,0.888888888888889,1.0,592372,593234,3.946,qwen3.8-flash/top_k_10/n_08/pool_02
 qwen3.8-flash,10,8,03,stratified_random_frozen_v1,0.95,0.9494949494949495,1.0,1.0,591872,592731,4.447,qwen3.8-flash/top_k_10/n_08/pool_03

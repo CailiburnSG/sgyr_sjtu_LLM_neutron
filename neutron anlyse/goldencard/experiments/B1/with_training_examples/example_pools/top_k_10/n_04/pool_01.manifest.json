@@ -1,0 +1,21 @@
+{
+  "pool_id": "01",
+  "selection_mode": "nested_stratified_subset_of_n08_v1",
+  "retrieval_top_k": 10,
+  "example_count": 4,
+  "per_action_count": 1,
+  "parent_pool": "n_08/pool_01",
+  "selected_parent_example_indices": [
+    2,
+    3,
+    5,
+    8
+  ],
+  "goldcard_ids_model_external_only": [
+    "GC-B80-009",
+    "GC-B80-035",
+    "GC-B80-044",
+    "GC-B80-079"
+  ],
+  "selection_rule": "One fixed example per action, selected as a subset of the corresponding pre-existing n08 pool before any n04 model call; no validation case or label is included."
+}
