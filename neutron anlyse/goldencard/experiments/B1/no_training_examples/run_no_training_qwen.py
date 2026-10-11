@@ -26,7 +26,7 @@ DATA = B1_ROOT / "data"
 EXPERIMENTS = B1_ROOT.parent
 sys.path.insert(0, str(EXPERIMENTS))
 
-from result_csv import write_b1_csv, write_b1_semantic_csv, write_b1_stage_summary  # noqa: E402
+from result_csv import write_b1_csv, write_b1_semantic_csv, write_b1_stage_summary, write_csv  # noqa: E402
 from semantic_metrics import evaluate_b0_semantics, load_units  # noqa: E402
 DEFAULT_KEY_FILE = EXPERIMENTS / "apikey.txt"
 DEFAULT_BASE_URL = "https://maas.qianwenaiapi.com/compatible-mode/v1"
@@ -162,6 +162,33 @@ def evaluate(rows: list[dict], metadata: dict) -> dict:
     }
 
 
+def write_b0_b1_comparison(result_dir: Path, b1_rows: list[dict], candidate_dir: Path, metrics: dict, b1_semantic: dict) -> None:
+    """Write a same-case, same-candidate-package B0/B1 comparison table."""
+    raw_b0 = {row["goldcard_id"]: row for row in read_jsonl(candidate_dir / "b0_retrieval_predictions_original.jsonl")}
+    b0_rows = [{
+        "prediction": {"action_id": raw_b0[row["goldcard_id"]]["predicted_action_id"]},
+        "gold": row["gold"],
+    } for row in b1_rows]
+    _, b0_macro_f1 = action_scores(b0_rows)
+    b0_accuracy = sum(row["prediction"]["action_id"] == row["gold"]["action_id"] for row in b0_rows) / len(b0_rows)
+    labels = {row["goldcard_id"]: row["target"] for row in read_jsonl(DATA / "labels" / "validation_gold_labels.jsonl")}
+    b0_semantic_rows = [{
+        "goldcard_id": row["goldcard_id"],
+        "retrieved_evidence": raw_b0[row["goldcard_id"]]["retrieved_evidence"],
+        "predicted_action_id": raw_b0[row["goldcard_id"]]["predicted_action_id"],
+        "gold_action_id": row["gold"]["action_id"],
+    } for row in b1_rows]
+    gold_evidence_by_case = {case_id: target["action_evidence_ids"] for case_id, target in labels.items()}
+    semantic_map = EXPERIMENTS.parents[1] / "evidencecard" / "semantics" / "card_semantic_units_v1.csv"
+    b0_semantic = evaluate_b0_semantics(b0_semantic_rows, gold_evidence_by_case, load_units(semantic_map))
+    top_k = metrics["retrieval_top_k"]
+    rows = [
+        {"method": f"B0_BM25_all_top{top_k}_tag_vote", "candidate_evidence_package": f"BM25_Top{top_k}_shared", "validation_case_count": len(b1_rows), "action_accuracy": b0_accuracy, "action_macro_f1": b0_macro_f1, "semantic_candidate_action_pair_f1_at_k": b0_semantic["totals"]["semantic_candidate_action_pair_f1_at_k"]},
+        {"method": f"B1_{metrics['model']}_all_top{top_k}_direct_judgment", "candidate_evidence_package": f"BM25_Top{top_k}_shared", "validation_case_count": len(b1_rows), "action_accuracy": metrics["action_accuracy"], "action_macro_f1": metrics["action_macro_f1"], "semantic_candidate_action_pair_f1_at_k": b1_semantic["totals"]["semantic_candidate_action_pair_f1_at_k"]},
+    ]
+    write_csv(result_dir / "b0_b1_action_comparison.csv", rows, list(rows[0]))
+
+
 def main() -> None:
     parser = ArgumentParser()
     parser.add_argument("--top-k", type=int, default=10)
@@ -217,7 +244,9 @@ def main() -> None:
         "gold_action_id": row["gold"]["action_id"],
     } for row in rows]
     semantic_map = EXPERIMENTS.parents[1] / "evidencecard" / "semantics" / "card_semantic_units_v1.csv"
-    write_b1_semantic_csv(result_dir, metrics, evaluate_b0_semantics(semantic_rows, gold_evidence_by_case, load_units(semantic_map)))
+    semantic = evaluate_b0_semantics(semantic_rows, gold_evidence_by_case, load_units(semantic_map))
+    write_b1_semantic_csv(result_dir, metrics, semantic)
+    write_b0_b1_comparison(result_dir, rows, candidate_dir, metrics, semantic)
     write_b1_stage_summary(HERE)
     (result_dir / "README.md").write_text(
         f"# B1 {args.model} Top-{args.top_k} 验证\n\n"
