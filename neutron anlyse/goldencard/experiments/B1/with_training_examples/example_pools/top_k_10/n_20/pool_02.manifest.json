@@ -1,0 +1,43 @@
+{
+  "pool_id": "02",
+  "selection_mode": "nested_exhaustive_extension_of_n16_v1",
+  "retrieval_top_k": 10,
+  "example_count": 20,
+  "per_action_count": 5,
+  "parent_pool": "n_16/pool_02",
+  "added_action_event_sizes": {
+    "on_site_operation_or_calibration_check": 3,
+    "cross_channel_similar_anomaly_comparison": 4,
+    "record_processing_and_timestamp_check": 2,
+    "signal_transmission_path_check": 1
+  },
+  "added_goldcard_ids_model_external_only": [
+    "GC-B80-013",
+    "GC-B80-038",
+    "GC-B80-049",
+    "GC-B80-065"
+  ],
+  "goldcard_ids_model_external_only": [
+    "GC-B80-015",
+    "GC-B80-017",
+    "GC-B80-022",
+    "GC-B80-028",
+    "GC-B80-047",
+    "GC-B80-057",
+    "GC-B80-063",
+    "GC-B80-075",
+    "GC-B80-003",
+    "GC-B80-034",
+    "GC-B80-058",
+    "GC-B80-068",
+    "GC-B80-007",
+    "GC-B80-037",
+    "GC-B80-045",
+    "GC-B80-072",
+    "GC-B80-013",
+    "GC-B80-038",
+    "GC-B80-049",
+    "GC-B80-065"
+  ],
+  "selection_rule": "Preserve all sixteen examples from the corresponding n16 pool; append the unique remaining training case for each fixed action × event-group-size stratum. Across the three pools, all 60 training cases are used exactly once."
+}
