@@ -8,3 +8,6 @@ qwen3.8-flash,10,8,03,stratified_random_frozen_v1,0.95,0.9494949494949495,1.0,1.
 qwen3.8-flash,10,12,01,nested_stratified_extension_of_n08_v1,0.95,0.9494949494949495,1.0,1.0,849812,850666,3.986,qwen3.8-flash/top_k_10/n_12/pool_01
 qwen3.8-flash,10,12,02,nested_stratified_extension_of_n08_v1,0.9,0.8994949494949496,0.888888888888889,1.0,845652,846508,4.459,qwen3.8-flash/top_k_10/n_12/pool_02
 qwen3.8-flash,10,12,03,nested_stratified_extension_of_n08_v1,0.95,0.9494949494949495,1.0,1.0,847212,848066,4.321,qwen3.8-flash/top_k_10/n_12/pool_03
+qwen3.8-flash,10,16,01,nested_stratified_extension_of_n12_v1,1.0,1.0,1.0,1.0,1102372,1103227,4.411,qwen3.8-flash/top_k_10/n_16/pool_01
+qwen3.8-flash,10,16,02,nested_stratified_extension_of_n12_v1,0.95,0.9494949494949495,1.0,1.0,1098992,1099846,4.414,qwen3.8-flash/top_k_10/n_16/pool_02
+qwen3.8-flash,10,16,03,nested_stratified_extension_of_n12_v1,1.0,1.0,1.0,1.0,1102412,1103267,5.669,qwen3.8-flash/top_k_10/n_16/pool_03
