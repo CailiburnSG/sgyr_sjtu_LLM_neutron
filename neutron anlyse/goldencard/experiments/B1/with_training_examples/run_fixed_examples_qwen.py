@@ -68,7 +68,9 @@ def main() -> None:
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--base-url", default=DEFAULT_BASE_URL)
     parser.add_argument("--key-file", type=Path, default=DEFAULT_KEY_FILE)
-    parser.add_argument("--examples-file", type=Path, default=HERE / "data" / "fixed_examples_top_k_10.jsonl")
+    parser.add_argument("--examples-file", type=Path, required=True, help="Frozen ID-free example-pool JSONL")
+    parser.add_argument("--pool-id", default="ad_hoc", help="Frozen example-pool identifier recorded with results")
+    parser.add_argument("--selection-mode", default="fixed_examples", help="Example selection rule recorded with results")
     parser.add_argument("--limit", type=int, default=0, help="0 means all frozen validation cases")
     args = parser.parse_args()
     examples = read_jsonl(args.examples_file)
@@ -107,7 +109,7 @@ def main() -> None:
             "api": api, "raw_response": raw,
         })
 
-    result_dir = HERE / args.model / f"top_k_{args.top_k:02d}"
+    result_dir = HERE / args.model / f"top_k_{args.top_k:02d}" / f"n_{len(examples):02d}" / f"pool_{args.pool_id}"
     write_jsonl(result_dir / "validation_predictions.jsonl", rows)
     metrics = evaluate(rows, {
         "model": args.model,
@@ -118,6 +120,9 @@ def main() -> None:
     })
     metrics["experiment_id"] = "B1_bm25_topk_fixed_examples_llm_action_v1"
     metrics["fixed_example_count"] = len(examples)
+    metrics["example_pool_id"] = args.pool_id
+    metrics["selection_mode"] = args.selection_mode
+    metrics["example_pool_file"] = str(args.examples_file.resolve().relative_to(HERE.resolve()))
     (result_dir / "validation_metrics.json").write_text(json.dumps(metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_b1_csv(result_dir, rows, metrics)
     input_by_case = {case["goldcard_id"]: case for case in inputs}
@@ -134,8 +139,8 @@ def main() -> None:
     write_b0_b1_comparison(result_dir, rows, candidate_dir, metrics, semantic, variant_label=f"fixed_examples_{len(examples)}")
     write_b1_stage_summary(HERE)
     (result_dir / "README.md").write_text(
-        f"# B1 {args.model} Top-{args.top_k}：固定 {len(examples)} 个训练示例\n\n"
-        "这是一项固定示例上下文（few-shot）实验，不更新模型参数。示例材料在上级 `data/`；"
+        f"# B1 {args.model} Top-{args.top_k}：固定 {len(examples)} 个训练示例，池 {args.pool_id}\n\n"
+        "这是一项固定示例上下文（few-shot）实验，不更新模型参数。训练示例池在 `example_pools/`；"
         "验证逐例输出在 `validation_predictions.jsonl`，聚合指标在 CSV/JSON 文件中。\n",
         encoding="utf-8",
     )

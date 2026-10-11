@@ -62,7 +62,8 @@ def main() -> None:
     action_counts = Counter(row["correct_output"]["action_id"] for row in rows)
     if len(action_counts) != 4 or sorted(action_counts.values()) != [2, 2, 2, 2]:
         raise ValueError(f"Examples are not action-balanced: {action_counts}")
-    output = HERE / "data" / f"fixed_examples_top_k_{TOP_K:02d}.jsonl"
+    output_root = HERE / "example_pools" / f"top_k_{TOP_K:02d}" / "n_08" / "pilot_direct_support"
+    output = output_root / f"fixed_examples_top_k_{TOP_K:02d}.jsonl"
     write_jsonl(output, rows)
     manifest = {
         "variant": "fixed_examples_context_v1",
@@ -75,7 +76,7 @@ def main() -> None:
         "source_inputs": str((DATA / "candidate_packages" / f"top_k_{TOP_K:02d}" / "train_inputs.jsonl").relative_to(B1_ROOT.parent)),
         "source_labels": str((DATA / "labels" / "train_gold_targets.jsonl").relative_to(B1_ROOT.parent)),
     }
-    (HERE / "data" / "fixed_examples_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (output_root / "fixed_examples_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"examples": len(rows), "actions": action_counts}, ensure_ascii=False))
 
 

@@ -71,7 +71,7 @@ def write_b1_semantic_csv(result_dir: Path, metrics: dict, semantic: dict) -> No
 
 def write_b1_stage_summary(stage_dir: Path) -> None:
     rows = []
-    for metrics_path in sorted(stage_dir.glob("*/top_k_*/validation_metrics.json")):
+    for metrics_path in sorted(stage_dir.rglob("validation_metrics.json")):
         metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
         semantic = {}
         semantic_path = metrics_path.parent / "b1_semantic_metrics.csv"
@@ -90,6 +90,9 @@ def write_b1_stage_summary(stage_dir: Path) -> None:
             "latency_mean_seconds": metrics.get("latency_seconds", {}).get("mean_seconds", 0.0),
             "latency_p50_seconds": metrics.get("latency_seconds", {}).get("p50_seconds", 0.0),
             "latency_p95_seconds": metrics.get("latency_seconds", {}).get("p95_seconds", 0.0),
+            "fixed_example_count": metrics.get("fixed_example_count", ""),
+            "example_pool_id": metrics.get("example_pool_id", ""),
+            "selection_mode": metrics.get("selection_mode", ""),
             "result_directory": str(metrics_path.parent.relative_to(stage_dir)),
         })
-    write_csv(stage_dir / "summary_metrics.csv", rows, ["model", "retrieval_top_k", "split", "case_count", "json_valid_rate", "constraint_valid_rate", "action_accuracy", "action_macro_f1", "semantic_candidate_action_pair_f1_at_k", "prompt_tokens", "completion_tokens", "total_tokens", "latency_mean_seconds", "latency_p50_seconds", "latency_p95_seconds", "result_directory"])
+    write_csv(stage_dir / "summary_metrics.csv", rows, ["model", "retrieval_top_k", "split", "case_count", "json_valid_rate", "constraint_valid_rate", "action_accuracy", "action_macro_f1", "semantic_candidate_action_pair_f1_at_k", "prompt_tokens", "completion_tokens", "total_tokens", "latency_mean_seconds", "latency_p50_seconds", "latency_p95_seconds", "fixed_example_count", "example_pool_id", "selection_mode", "result_directory"])

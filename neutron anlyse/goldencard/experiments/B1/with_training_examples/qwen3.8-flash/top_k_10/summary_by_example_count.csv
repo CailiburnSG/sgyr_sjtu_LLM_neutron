@@ -1,0 +1,2 @@
+model,retrieval_top_k,example_count,pool_count,action_accuracy_mean,action_accuracy_std,action_macro_f1_mean,action_macro_f1_std,a3_f1_mean,a3_f1_std,a4_f1_mean,a4_f1_std,prompt_tokens_mean,prompt_tokens_std,total_tokens_mean,total_tokens_std,latency_mean_seconds_mean,latency_mean_seconds_std
+qwen3.8-flash,10,8,3,0.95,0.0,0.9494949494949495,0.0,0.962962962962963,0.06415002990995838,1.0,0.0,593145.3333333334,1790.0093109627485,594003.6666666666,1786.5039415946815,4.206333333333333,0.2510783410279216

@@ -1,0 +1,31 @@
+{
+  "pool_id": "03",
+  "selection_mode": "stratified_random_frozen_v1",
+  "seed": 20261013,
+  "retrieval_top_k": 10,
+  "example_count": 8,
+  "per_action_count": 2,
+  "action_counts": {
+    "on_site_operation_or_calibration_check": 2,
+    "cross_channel_similar_anomaly_comparison": 2,
+    "record_processing_and_timestamp_check": 2,
+    "signal_transmission_path_check": 2
+  },
+  "event_group_size_counts": {
+    "1": 2,
+    "4": 2,
+    "2": 2,
+    "3": 2
+  },
+  "goldcard_ids_model_external_only": [
+    "GC-B80-005",
+    "GC-B80-018",
+    "GC-B80-030",
+    "GC-B80-033",
+    "GC-B80-042",
+    "GC-B80-055",
+    "GC-B80-070",
+    "GC-B80-078"
+  ],
+  "selection_rule": "Randomly selected from training-only cases within fixed action × event-group-size strata; no evidence-overlap or model-result criterion; no case reused across the three pools."
+}
