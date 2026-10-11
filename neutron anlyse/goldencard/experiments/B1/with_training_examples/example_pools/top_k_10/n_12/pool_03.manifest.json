@@ -1,0 +1,36 @@
+{
+  "pool_id": "03",
+  "selection_mode": "nested_stratified_extension_of_n08_v1",
+  "seed": 20261023,
+  "retrieval_top_k": 10,
+  "example_count": 12,
+  "per_action_count": 3,
+  "parent_pool": "n_08/pool_03",
+  "added_action_event_sizes": {
+    "on_site_operation_or_calibration_check": 2,
+    "cross_channel_similar_anomaly_comparison": 1,
+    "record_processing_and_timestamp_check": 4,
+    "signal_transmission_path_check": 3
+  },
+  "added_goldcard_ids_model_external_only": [
+    "GC-B80-008",
+    "GC-B80-024",
+    "GC-B80-059",
+    "GC-B80-074"
+  ],
+  "goldcard_ids_model_external_only": [
+    "GC-B80-005",
+    "GC-B80-018",
+    "GC-B80-030",
+    "GC-B80-033",
+    "GC-B80-042",
+    "GC-B80-055",
+    "GC-B80-070",
+    "GC-B80-078",
+    "GC-B80-008",
+    "GC-B80-024",
+    "GC-B80-059",
+    "GC-B80-074"
+  ],
+  "selection_rule": "Preserve all eight examples from the corresponding frozen n08 pool; append one training-only random case for each action within fixed action × event-group-size strata. No validation case or label is included."
+}
