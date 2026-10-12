@@ -1,0 +1,4 @@
+model,retrieval_top_k,example_count,pool_id,selection_mode,action_accuracy,action_macro_f1,a3_f1,a4_f1,prompt_tokens,total_tokens,latency_mean_seconds,result_directory
+qwen3.8-flash,3,4,01,same_case_ids_as_top_k_10_n04_v1,0.7,0.6201298701298701,0.0,1.0,142105,142969,2.064,qwen3.8-flash/top_k_03/n_04/pool_01
+qwen3.8-flash,3,4,02,same_case_ids_as_top_k_10_n04_v1,0.7,0.7041666666666666,0.7499999999999999,1.0,142405,143262,1.985,qwen3.8-flash/top_k_03/n_04/pool_02
+qwen3.8-flash,3,4,03,same_case_ids_as_top_k_10_n04_v1,0.7,0.6201298701298701,0.0,1.0,142165,143029,2.05,qwen3.8-flash/top_k_03/n_04/pool_03
