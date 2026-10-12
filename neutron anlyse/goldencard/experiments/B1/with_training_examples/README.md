@@ -1,20 +1,39 @@
-# B1：固定训练示例上下文
+# B1：固定示例上下文（现行入口）
 
-这是少样本上下文学习实验，不更新模型参数；它与 `no_training_examples/` 并列，并复用零样本运行器的 API、冻结验证集、行动定义、输出合同和指标代码。
+这里做的是**少样本上下文学习**：每一次独立调用都输入固定的 `n` 个示例、当前事件组合和同一份 BM25 Top-K 候选证据包；不更新模型参数，也不保留不同验证例之间的对话历史。
 
-首个 Top-10 直接支持卡优先配置已保留为 `example_pools/top_k_10/n_08/pilot_direct_support/`，只作为机制可行性的先导结果，不混入随机池平均值。正式数量实验使用 `example_pools/top_k_10/n_08/pool_01.jsonl` 至 `pool_03.jsonl`：三组均为 A1--A4 各 2 例、事件组大小 1--4 各 2 例的分层随机冻结池。验证例及其标签绝不进入模型可见 JSONL。
+现行程序只有三个：
 
-案例 `goldcard_id` 仅在本地 manifest 和模型外评分记录中保留；由于编号区间与人工行动类别相关，它已从训练示例与验证提示中移除，防止编号捷径。
+- `materialize_same_id_pool_for_topk.py`：把已冻结的 Top-10 示例池原样迁移至目标 K；只改变每例的候选证据包，示例案例、答案和顺序不变。
+- `run_fixed_examples_qwen.py`：对一个冻结池运行模型并生成该池的 JSON 个案结果和 CSV 指标。
+- `summarize_example_pools.py`：汇总同一模型、K、n 的三次重复，写出均值和标准差。
 
-运行：
+`example_pools/top_k_XX/n_YY/pool_01..03.jsonl` 是模型实际可见的固定示例。每个 `pool_XX.manifest.json` 记录示例 ID（仅供审计，绝不进入模型提示）、来源和选择规则。
+
+## 正式运行（以 K=3、n=16 为例）
+
+在 B1 材料已按同一 K 准备并校验后，先生成目标 K 的固定示例池：
 
 ```bash
-python3 'neutron anlyse/goldencard/experiments/B1/with_training_examples/prepare_random_example_pools.py'
-python3 'neutron anlyse/goldencard/experiments/B1/with_training_examples/run_fixed_examples_qwen.py' \
-  --top-k 10 --model qwen3.8-flash --pool-id 01 \
-  --selection-mode stratified_random_frozen_v1 \
-  --examples-file 'neutron anlyse/goldencard/experiments/B1/with_training_examples/example_pools/top_k_10/n_08/pool_01.jsonl'
+python3 'neutron anlyse/goldencard/experiments/B1/with_training_examples/materialize_same_id_pool_for_topk.py' \
+  --target-top-k 3 --example-count 16
+```
+
+依次运行三个冻结池（`pool-id`、示例文件和结果目录必须对应）：
+
+```bash
+for pool in 01 02 03; do
+  python3 'neutron anlyse/goldencard/experiments/B1/with_training_examples/run_fixed_examples_qwen.py' \
+    --top-k 3 --model qwen3.8-flash --pool-id "$pool" \
+    --selection-mode same_case_ids_as_top_k_10_n_16_v1 \
+    --examples-file "neutron anlyse/goldencard/experiments/B1/with_training_examples/example_pools/top_k_03/n_16/pool_${pool}.jsonl"
+done
+
 python3 'neutron anlyse/goldencard/experiments/B1/with_training_examples/summarize_example_pools.py'
 ```
 
-结果写入 `<模型名>/top_k_10/n_08/pool_XX/`，而 `top_k_10/summary_by_pool.csv` 与 `summary_by_example_count.csv` 汇总同一 K 下的池级和均值/标准差指标。这应与同模型、同一 Top-10 候选包的零样本 B1 对照；唯一额外输入是固定的八个训练示例。
+结果位于 `<模型>/top_k_XX/n_YY/pool_XX/`。个案结果保留 JSON；可比较的池级和均值/标准差统计为同级的 CSV。
+
+## 归档脚本
+
+[`historical_pool_builders/`](historical_pool_builders/) 中是早期逐个构造 n=4、8、12… 或早期 Top-3 池时使用的专用脚本。它们仅用于复现既有历史结果；**新实验不要运行它们**，统一使用上述通用迁移器。

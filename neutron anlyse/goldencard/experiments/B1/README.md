@@ -19,25 +19,29 @@ B3：金标准证据 + LLM 行动选择（消融）
   → 对完整 Top-K 候选证据包直接给出 1 项固定检查建议
 ```
 
-## 冻结训练—验证分割
+## 当前冻结数据与主流程
 
-80 例不直接混用。B1 使用固定、分层的 60/20 分割：训练集 60 例，验证集 20 例；四项行动在两部分中分别为
-15/5 例，1--4 个事件组成的案例也分别为 15/5 例。具体 ID、来源校验和计数在
-[`data/split_manifest.json`](data/split_manifest.json)。
+当前正式扩展集为 120 例：60 例可供固定示例池取样，60 例用于评估。黄金集、冻结评估 ID 和输出都保留在仓库中；模型提示不含 `goldcard_id` 和验证标签。各 K 的材料可以处于不同迁移阶段，因此每次运行必须以对应 `split_manifest.json` 和校验器的实际计数为准。
 
-训练部分用于确定提示词示例、开发/微调方案和模型调用参数；最终报告仅以冻结的 20 例验证集计分。验证输入不得附带
-`data/labels/validation_gold_labels.jsonl`。
+对任意一个尚未迁移至 60 例评估的 K，严格按以下顺序执行：
+
+1. B0 在完整 120 例上生成该 K 的 BM25 候选结果；
+2. `prepare_b1_materials.py` 从这份 B0 结果复制候选包并按冻结 ID 拆为 60/60；
+3. `validate_b1_materials.py` 校验候选数量、标签隔离和 B1-v3 输出合同；
+4. 运行零样本或固定示例 B1；固定示例设置使用三个冻结池重复；
+5. 汇总个案 JSON 和池级/跨池 CSV。
+
+可复制的完整命令见 [`EXECUTION_ORDER.md`](EXECUTION_ORDER.md)。
 
 ## 冻结实验矩阵
 
-所有模型均运行相同的 K 网格，不为特定模型挑选最有利的候选规模：
+目标 K 网格为：
 
 ```text
 K = {3, 5, 8, 10, 12, 15, 20}
 ```
 
-每个 LLM × K 组合在 60 例训练集上开发，并在同一 20 例验证集上运行一次正式评估。模型必须使用同一事件输入、
-同一 BM25 排名、同一行动定义、同一提示词结构、温度 0 和相同的单建议输出约束。
+每个 LLM × K 组合必须使用同一事件输入、同一 BM25 排名、同一行动定义、同一提示词结构、温度 0 和相同的单建议输出约束。不同 K 的正式数值只在它们均使用同一 60 例冻结评估集后才可横向比较。
 
 ## 可直接运行时读取的材料
 
@@ -49,8 +53,7 @@ K = {3, 5, 8, 10, 12, 15, 20}
 - `action_definitions.json` 给出 A1--A4 完整定义；`output_contract.json` 给出严格输出规则；
 - `labels/train_gold_targets.jsonl` 是训练目标；`labels/validation_gold_labels.jsonl` 仅供评估器读取。
 
-材料通过 `prepare_b1_materials.py` 从已冻结的 B0 结果复制并扩展。复制清单记录在 `data/b0_copy_manifest.json`；
-B0 原目录及其中间产物不被改写或删除。
+材料通过 `prepare_b1_materials.py` 从已冻结的 B0 结果复制并扩展。复制清单记录在 `data/b0_copy_manifest.json`；B0 原目录及其中间产物不被改写或删除。
 
 ## 多模型比较
 
@@ -102,10 +105,9 @@ B0 原目录及其中间产物不被改写或删除。
 
 实验结果按“是否使用训练金标准”与模型名分开保存：
 
-- [`no_training_examples/`](no_training_examples/)：未使用训练示例的模型。它不读取 60 例训练标签；正式结果按
+- [`no_training_examples/`](no_training_examples/)：未使用训练示例的模型。它不读取训练标签；正式结果按
   `no_training_examples/<模型名>/top_k_XX/` 保存。
-- [`with_training_examples/`](with_training_examples/)：使用固定训练示例的少样本上下文阶段。首个去标识化 Top-10
-  结果已保存于 `with_training_examples/qwen3.8-flash/top_k_10/`；后续结果仍按
-  `with_training_examples/<模型名>/top_k_XX/` 保存。
+- [`with_training_examples/`](with_training_examples/)：使用固定训练示例的少样本上下文阶段，现行入口见该目录 README；结果按
+  `with_training_examples/<模型名>/top_k_XX/n_YY/pool_ZZ/` 保存。
 
 两阶段均继续读取同一份 `data/candidate_packages/top_k_XX/`，即 B0 冻结的 BM25 候选包；不能改变上游检索。
