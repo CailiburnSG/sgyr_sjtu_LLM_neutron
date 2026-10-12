@@ -205,7 +205,7 @@ def main() -> None:
     (OUT / "action_definitions.json").write_text(json.dumps(ACTION_DEFINITIONS, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (OUT / "output_contract.json").write_text(json.dumps(OUTPUT_CONTRACT, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     manifest = {
-        "split_version": "B1-v1",
+        "split_version": "B1-split-v2",
         "method": "fixed stratified split by action and number of source events",
         "train_case_count": len(train_ids),
         "validation_case_count": len(validation_ids),

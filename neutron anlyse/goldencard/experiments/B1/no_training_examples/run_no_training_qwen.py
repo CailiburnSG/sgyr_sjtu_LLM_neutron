@@ -219,6 +219,8 @@ def main() -> None:
     labels = {row["goldcard_id"]: row["target"] for row in read_jsonl(DATA / "labels" / "validation_gold_labels.jsonl")}
     actions = json.loads((DATA / "action_definitions.json").read_text(encoding="utf-8"))
     contract = json.loads((DATA / "output_contract.json").read_text(encoding="utf-8"))
+    if contract.get("contract_version") != "B1-v3-all-topk":
+        raise RuntimeError("B1 runner only permits the frozen B1-v3-all-topk output contract")
     template = (DATA / "prompt_template.md").read_text(encoding="utf-8")
     key = load_key(args.key_file)
     inputs = inputs[:args.limit] if args.limit else inputs
