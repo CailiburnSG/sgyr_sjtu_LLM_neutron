@@ -27,7 +27,10 @@ def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:
 
 def main() -> None:
     all_rows = []
-    for metrics_path in sorted((HERE).glob("*/top_k_*/n_*/pool_*/validation_metrics.json")):
+    # Only active result directories use the exact ``n_XX`` shape.  Archived
+    # 20-case runs are named ``n_XX_eval20`` and must never be folded into a
+    # new 60-case formal summary.
+    for metrics_path in sorted((HERE).glob("*/top_k_*/n_[0-9][0-9]/pool_*/validation_metrics.json")):
         metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
         action_rows = {row["action_id"]: row for row in read_csv_row(metrics_path.parent / "b1_action_metrics.csv")}
         all_rows.append({

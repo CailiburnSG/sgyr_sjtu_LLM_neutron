@@ -1,5 +1,5 @@
 experiment_id,model,retrieval_top_k,semantic_version,gold_action_id,case_count,semantic_candidate_precision_at_k,semantic_candidate_recall_at_k,semantic_candidate_f1_at_k,semantic_candidate_coverage_at_k,semantic_candidate_action_pair_precision_at_k,semantic_candidate_action_pair_recall_at_k,semantic_candidate_action_pair_f1_at_k
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,v1,cross_channel_similar_anomaly_comparison,5,0.49714285714285716,0.85,0.6157575757575756,1.0,0.17142857142857143,0.35,0.2290909090909091
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,v1,on_site_operation_or_calibration_check,5,0.619047619047619,0.6666666666666666,0.6152380952380953,1.0,0.619047619047619,0.6666666666666666,0.6152380952380953
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,v1,record_processing_and_timestamp_check,5,0.19047619047619047,0.8,0.30317460317460315,1.0,0.0,0.0,0.0
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,v1,signal_transmission_path_check,5,0.33999999999999997,0.4333333333333333,0.3738095238095238,1.0,0.0,0.0,0.0
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,v1,cross_channel_similar_anomaly_comparison,15,0.4695238095238095,0.8166666666666667,0.5871717171717171,1.0,0.13047619047619047,0.21666666666666667,0.16080808080808082
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,v1,on_site_operation_or_calibration_check,15,0.6349206349206349,0.5888888888888889,0.5831746031746031,1.0,0.6349206349206349,0.5888888888888889,0.5831746031746031
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,v1,record_processing_and_timestamp_check,15,0.20285714285714285,0.7333333333333333,0.3137566137566138,1.0,0.0,0.0,0.0
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,v1,signal_transmission_path_check,15,0.3755555555555556,0.47777777777777775,0.41534391534391535,1.0,0.0,0.0,0.0

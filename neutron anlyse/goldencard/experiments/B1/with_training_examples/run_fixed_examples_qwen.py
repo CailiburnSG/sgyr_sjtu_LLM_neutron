@@ -117,7 +117,7 @@ def main() -> None:
         "model": args.model,
         "base_url": args.base_url,
         "retrieval_top_k": args.top_k,
-        "split": f"frozen_validation_20_fixed_examples_{len(examples)}",
+        "split": f"frozen_validation_{len(inputs)}_fixed_examples_{len(examples)}",
         "run_at_utc": datetime.now(timezone.utc).isoformat(),
     })
     metrics["experiment_id"] = "B1_bm25_topk_fixed_examples_llm_action_v1"

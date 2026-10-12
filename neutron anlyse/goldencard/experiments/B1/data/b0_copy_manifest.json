@@ -1,8 +1,8 @@
 [
   {
-    "top_k": 3,
-    "source": "neutron anlyse/goldencard/experiments/B0/results/evaluation_60/top_k_03/b0_bm25_tag_vote_predictions.jsonl",
-    "source_sha256": "997e0f6c9c7e0d2440d6de27746dbe1a3e2a925d6aa78d52b729a956354ab9b9",
-    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_03/b0_retrieval_predictions_original.jsonl"
+    "top_k": 8,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/evaluation_60/top_k_08/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "7d9de822f5b4501ecdffea38d0aadc9e04e96804bc9077b90e4d5cf97012bd13",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_08/b0_retrieval_predictions_original.jsonl"
   }
 ]

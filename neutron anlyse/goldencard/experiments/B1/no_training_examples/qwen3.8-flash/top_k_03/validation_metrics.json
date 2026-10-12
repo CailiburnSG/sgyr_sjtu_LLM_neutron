@@ -3,34 +3,34 @@
   "model": "qwen3.8-flash",
   "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
   "retrieval_top_k": 3,
-  "split": "frozen_validation_20",
-  "run_at_utc": "2026-10-10T13:41:44.273275+00:00",
-  "case_count": 20,
+  "split": "frozen_validation_60",
+  "run_at_utc": "2026-10-12T03:08:40.670085+00:00",
+  "case_count": 60,
   "json_valid_rate": 1.0,
   "constraint_valid_rate": 1.0,
-  "action_accuracy": 0.25,
-  "action_macro_f1": 0.22727272727272727,
+  "action_accuracy": 0.23333333333333334,
+  "action_macro_f1": 0.22580645161290322,
   "action_per_class": {
     "on_site_operation_or_calibration_check": {
-      "tp": 5,
-      "fp": 1,
-      "fn": 0,
-      "precision": 0.8333333333333334,
-      "recall": 1.0,
-      "f1": 0.9090909090909091
+      "tp": 14,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.875,
+      "recall": 0.9333333333333333,
+      "f1": 0.9032258064516129
     },
     "cross_channel_similar_anomaly_comparison": {
       "tp": 0,
-      "fp": 10,
-      "fn": 5,
+      "fp": 30,
+      "fn": 15,
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0
     },
     "record_processing_and_timestamp_check": {
       "tp": 0,
-      "fp": 4,
-      "fn": 5,
+      "fp": 14,
+      "fn": 15,
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0
@@ -38,23 +38,23 @@
     "signal_transmission_path_check": {
       "tp": 0,
       "fp": 0,
-      "fn": 5,
+      "fn": 15,
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0
     }
   },
   "error_counts": {},
-  "usage": {
-    "prompt_tokens": 43625,
-    "completion_tokens": 1826,
-    "total_tokens": 45451
-  },
   "latency_seconds": {
-    "case_count": 20,
-    "total_seconds": 72.708,
-    "mean_seconds": 3.635,
-    "p50_seconds": 3.342,
-    "p95_seconds": 5.972
+    "case_count": 60,
+    "total_seconds": 196.932,
+    "mean_seconds": 3.282,
+    "p50_seconds": 3.25,
+    "p95_seconds": 4.413
+  },
+  "usage": {
+    "prompt_tokens": 130307,
+    "completion_tokens": 5471,
+    "total_tokens": 135778
   }
 }

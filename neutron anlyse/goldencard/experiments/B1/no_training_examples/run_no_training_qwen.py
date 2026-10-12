@@ -243,7 +243,7 @@ def main() -> None:
         })
     result_dir = HERE / args.model / f"top_k_{args.top_k:02d}"
     write_jsonl(result_dir / "validation_predictions.jsonl", rows)
-    metrics = evaluate(rows, {"model": args.model, "base_url": args.base_url, "retrieval_top_k": args.top_k, "split": "frozen_validation_20", "run_at_utc": datetime.now(timezone.utc).isoformat()})
+    metrics = evaluate(rows, {"model": args.model, "base_url": args.base_url, "retrieval_top_k": args.top_k, "split": f"frozen_validation_{len(inputs)}", "run_at_utc": datetime.now(timezone.utc).isoformat()})
     (result_dir / "validation_metrics.json").write_text(json.dumps(metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_b1_csv(result_dir, rows, metrics)
     input_by_case = {case["goldcard_id"]: case for case in inputs}

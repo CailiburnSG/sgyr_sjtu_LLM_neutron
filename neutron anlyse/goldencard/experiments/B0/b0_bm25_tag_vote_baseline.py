@@ -90,13 +90,24 @@ def action_metrics(rows: list[dict]) -> dict:
     return result
 
 
-def run(top_k: int, gold_path: Path = GOLD, result_root: Path | None = None) -> dict:
+def run(
+    top_k: int,
+    gold_path: Path = GOLD,
+    result_root: Path | None = None,
+    evaluation_ids_path: Path | None = None,
+) -> dict:
     if top_k < 1:
         raise ValueError("top_k must be positive")
     gold_path = gold_path.resolve()
     result_root = result_root or (HERE / "results")
     result_root = result_root.resolve()
     cases = [json.loads(line) for line in gold_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    if evaluation_ids_path is not None:
+        evaluation_ids = set(json.loads(evaluation_ids_path.read_text(encoding="utf-8")))
+        cases = [case for case in cases if case["goldcard_id"] in evaluation_ids]
+        if len(cases) != len(evaluation_ids):
+            missing = evaluation_ids - {case["goldcard_id"] for case in cases}
+            raise ValueError(f"Evaluation IDs absent from gold set: {sorted(missing)}")
     cards = load_cards(CARD_PATHS, CATALOG)
     cards_by_id = {card["evidence_id"]: card for card in cards}
     source_tiers = sorted({card.get("source_tier") for card in cards if card.get("source_tier")})
@@ -154,6 +165,9 @@ def run(top_k: int, gold_path: Path = GOLD, result_root: Path | None = None) -> 
     metrics = {
         "experiment_id": "B0_bm25_tag_vote_v3_all_topk",
         "gold_standard": str(gold_path.relative_to(NEUTRON_ROOT.parent)),
+        "evaluation_ids_path": (
+            str(evaluation_ids_path.resolve().relative_to(NEUTRON_ROOT.parent)) if evaluation_ids_path else None
+        ),
         "case_count": len(rows),
         "evidence_library_card_count": len(cards),
         "retrieval_top_k": top_k,
@@ -186,8 +200,9 @@ def main() -> None:
     parser.add_argument("--top-k", type=int, default=10, help="number of BM25 candidates to retrieve and vote over")
     parser.add_argument("--gold-path", type=Path, default=GOLD, help="gold JSONL to retrieve for")
     parser.add_argument("--result-root", type=Path, default=HERE / "results", help="directory for this run's Top-K outputs")
+    parser.add_argument("--evaluation-ids-path", type=Path, help="optional JSON array of frozen IDs to score")
     args = parser.parse_args()
-    run(args.top_k, args.gold_path, args.result_root)
+    run(args.top_k, args.gold_path, args.result_root, args.evaluation_ids_path)
 
 
 if __name__ == "__main__":

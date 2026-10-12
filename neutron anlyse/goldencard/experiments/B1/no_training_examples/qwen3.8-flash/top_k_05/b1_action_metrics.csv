@@ -1,5 +1,5 @@
 experiment_id,model,retrieval_top_k,action_id,tp,fp,fn,precision,recall,f1
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,on_site_operation_or_calibration_check,5,3,0,0.625,1.0,0.7692307692307693
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,cross_channel_similar_anomaly_comparison,2,10,3,0.16666666666666666,0.4,0.23529411764705882
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,record_processing_and_timestamp_check,0,0,5,0.0,0.0,0.0
-B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,signal_transmission_path_check,0,0,5,0.0,0.0,0.0
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,on_site_operation_or_calibration_check,15,5,0,0.75,1.0,0.8571428571428571
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,cross_channel_similar_anomaly_comparison,4,30,11,0.11764705882352941,0.26666666666666666,0.163265306122449
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,record_processing_and_timestamp_check,0,6,15,0.0,0.0,0.0
+B1_bm25_topk_llm_action_v3_all_topk,qwen3.8-flash,5,signal_transmission_path_check,0,0,15,0.0,0.0,0.0
