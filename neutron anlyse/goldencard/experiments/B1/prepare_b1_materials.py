@@ -10,6 +10,7 @@ model inputs.
 from __future__ import annotations
 
 from collections import Counter
+from argparse import ArgumentParser
 from hashlib import sha256
 import json
 from pathlib import Path
@@ -76,23 +77,17 @@ ACTION_DEFINITIONS = [
 ]
 
 OUTPUT_CONTRACT = {
-    "contract_version": "B1-v1",
+    "contract_version": "B1-v3-all-topk",
     "task_boundary": "预检建议，不做故障原因诊断或因果确认。",
-    "selected_evidence_maximum": 3,
-    "allowed_support_scores": [0, 1, 2],
     "allowed_action_ids": list(ACTIONS),
     "rules": [
-        "只可选择输入 bm25_candidates 中出现的 evidence_id。",
-        "selected_evidence 最多 3 张，evidence_id 不得重复。",
         "必须且只能输出一项 action_id。",
-        "action_evidence_ids 必须非空、是 selected_evidence 的子集，且其 support_score 必须为 2。",
+        "action_id 必须综合输入中的全部 bm25_candidates 后作出；候选卡作为完整的证据包呈现，不要求模型挑选子集。",
         "不得确认根因、部件损坏、因果关系或实际发生的现场操作。",
         "boundary_note 必须明确建议是待核查方向，而不是故障结论。",
     ],
     "output_schema": {
-        "selected_evidence": [{"evidence_id": "string", "support_score": "integer 0|1|2"}],
         "action_id": "one of allowed_action_ids",
-        "action_evidence_ids": ["evidence_id selected with support_score=2"],
         "boundary_note": "string",
     },
 }
@@ -175,20 +170,32 @@ def model_input(case: dict, prediction: dict, cards: dict[str, dict], top_k: int
 
 
 def main() -> None:
-    cases = read_jsonl(GOLD_PATH)
+    parser = ArgumentParser(description="Freeze B1 train/evaluation materials from B0 candidate packages")
+    parser.add_argument("--gold-path", type=Path, default=GOLD_PATH)
+    parser.add_argument("--validation-ids-path", type=Path, default=None,
+                        help="JSON array of frozen evaluation IDs; default is the original B80 20-case split")
+    parser.add_argument("--top-ks", type=int, nargs="+", default=list(TOP_KS))
+    parser.add_argument("--b0-results-root", type=Path, default=B0_RESULTS)
+    args = parser.parse_args()
+    gold_path = args.gold_path.resolve()
+    b0_results_root = args.b0_results_root.resolve()
+    validation_ids = set(json.loads(args.validation_ids_path.resolve().read_text(encoding="utf-8"))) if args.validation_ids_path else set(VALIDATION_IDS)
+    cases = read_jsonl(gold_path)
     case_by_id = {case["goldcard_id"]: case for case in cases}
-    if len(cases) != 80 or len(VALIDATION_IDS) != 20 or not VALIDATION_IDS.issubset(case_by_id):
-        raise ValueError("80-case split is incomplete")
-    train_ids = {case["goldcard_id"] for case in cases} - VALIDATION_IDS
+    if not validation_ids or not validation_ids.issubset(case_by_id):
+        raise ValueError("validation IDs are incomplete")
+    train_ids = {case["goldcard_id"] for case in cases} - validation_ids
     action_for = lambda cid: case_by_id[cid]["gold_action_links"][0]["action_id"]
     size_for = lambda cid: len(case_by_id[cid]["trace"]["source_event_ids"])
-    if Counter(action_for(cid) for cid in VALIDATION_IDS) != Counter({action: 5 for action in ACTIONS}):
+    expected_validation_per_stratum = len(validation_ids) // len(ACTIONS)
+    expected_train_per_stratum = len(train_ids) // len(ACTIONS)
+    if len(validation_ids) % len(ACTIONS) or Counter(action_for(cid) for cid in validation_ids) != Counter({action: expected_validation_per_stratum for action in ACTIONS}):
         raise ValueError("validation action balance failed")
-    if Counter(size_for(cid) for cid in VALIDATION_IDS) != Counter({size: 5 for size in range(1, 5)}):
+    if Counter(size_for(cid) for cid in validation_ids) != Counter({size: expected_validation_per_stratum for size in range(1, 5)}):
         raise ValueError("validation event-count balance failed")
-    if Counter(action_for(cid) for cid in train_ids) != Counter({action: 15 for action in ACTIONS}):
+    if len(train_ids) % len(ACTIONS) or Counter(action_for(cid) for cid in train_ids) != Counter({action: expected_train_per_stratum for action in ACTIONS}):
         raise ValueError("training action balance failed")
-    if Counter(size_for(cid) for cid in train_ids) != Counter({size: 15 for size in range(1, 5)}):
+    if Counter(size_for(cid) for cid in train_ids) != Counter({size: expected_train_per_stratum for size in range(1, 5)}):
         raise ValueError("training event-count balance failed")
 
     # Do not delete the directory wholesale: it also contains the human-facing
@@ -201,41 +208,41 @@ def main() -> None:
         "split_version": "B1-v1",
         "method": "fixed stratified split by action and number of source events",
         "train_case_count": len(train_ids),
-        "validation_case_count": len(VALIDATION_IDS),
-        "validation_goldcard_ids": sorted(VALIDATION_IDS),
+        "validation_case_count": len(validation_ids),
+        "validation_goldcard_ids": sorted(validation_ids),
         "train_goldcard_ids": sorted(train_ids),
-        "validation_action_counts": Counter(action_for(cid) for cid in VALIDATION_IDS),
-        "validation_event_count_counts": Counter(size_for(cid) for cid in VALIDATION_IDS),
+        "validation_action_counts": Counter(action_for(cid) for cid in validation_ids),
+        "validation_event_count_counts": Counter(size_for(cid) for cid in validation_ids),
         "train_action_counts": Counter(action_for(cid) for cid in train_ids),
         "train_event_count_counts": Counter(size_for(cid) for cid in train_ids),
-        "gold_source": str(GOLD_PATH.relative_to(NEUTRON_ROOT.parent)),
-        "gold_source_sha256": digest(GOLD_PATH),
+        "gold_source": str(gold_path.relative_to(NEUTRON_ROOT.parent)),
+        "gold_source_sha256": digest(gold_path),
     }
     (OUT / "split_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     write_jsonl(OUT / "labels" / "train_gold_targets.jsonl", [gold_target(case) for case in cases if case["goldcard_id"] in train_ids])
-    write_jsonl(OUT / "labels" / "validation_gold_labels.jsonl", [gold_target(case) for case in cases if case["goldcard_id"] in VALIDATION_IDS])
+    write_jsonl(OUT / "labels" / "validation_gold_labels.jsonl", [gold_target(case) for case in cases if case["goldcard_id"] in validation_ids])
 
     cards = load_cards()
     copied_sources = []
-    for top_k in TOP_KS:
-        source = B0_RESULTS / f"top_k_{top_k:02d}" / "b0_bm25_tag_vote_predictions.jsonl"
+    for top_k in args.top_ks:
+        source = b0_results_root / f"top_k_{top_k:02d}" / "b0_bm25_tag_vote_predictions.jsonl"
         rows = read_jsonl(source)
-        if len(rows) != 80:
-            raise ValueError(f"B0 top-{top_k} is not an 80-case result")
+        if len(rows) != len(cases):
+            raise ValueError(f"B0 top-{top_k} case count does not match gold")
         prediction_by_id = {row["goldcard_id"]: row for row in rows}
         if set(prediction_by_id) != set(case_by_id):
             raise ValueError(f"B0 top-{top_k} case IDs differ from gold set")
         output_rows = [model_input(case, prediction_by_id[case["goldcard_id"]], cards, top_k) for case in cases]
         folder = OUT / "candidate_packages" / f"top_k_{top_k:02d}"
         write_jsonl(folder / "train_inputs.jsonl", [row for row in output_rows if row["goldcard_id"] in train_ids])
-        write_jsonl(folder / "validation_inputs.jsonl", [row for row in output_rows if row["goldcard_id"] in VALIDATION_IDS])
+        write_jsonl(folder / "validation_inputs.jsonl", [row for row in output_rows if row["goldcard_id"] in validation_ids])
         raw_copy = folder / "b0_retrieval_predictions_original.jsonl"
         shutil.copy2(source, raw_copy)
         copied_sources.append({"top_k": top_k, "source": str(source.relative_to(NEUTRON_ROOT.parent)), "source_sha256": digest(source), "copied_to": str(raw_copy.relative_to(NEUTRON_ROOT.parent))})
 
     (OUT / "b0_copy_manifest.json").write_text(json.dumps(copied_sources, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"train": len(train_ids), "validation": len(VALIDATION_IDS), "top_ks": TOP_KS, "candidate_cards": len(cards)}, ensure_ascii=False))
+    print(json.dumps({"train": len(train_ids), "validation": len(validation_ids), "top_ks": args.top_ks, "candidate_cards": len(cards)}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

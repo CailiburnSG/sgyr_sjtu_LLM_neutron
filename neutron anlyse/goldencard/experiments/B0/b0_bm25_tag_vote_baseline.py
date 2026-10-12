@@ -90,10 +90,13 @@ def action_metrics(rows: list[dict]) -> dict:
     return result
 
 
-def run(top_k: int) -> dict:
+def run(top_k: int, gold_path: Path = GOLD, result_root: Path | None = None) -> dict:
     if top_k < 1:
         raise ValueError("top_k must be positive")
-    cases = [json.loads(line) for line in GOLD.read_text(encoding="utf-8").splitlines() if line.strip()]
+    gold_path = gold_path.resolve()
+    result_root = result_root or (HERE / "results")
+    result_root = result_root.resolve()
+    cases = [json.loads(line) for line in gold_path.read_text(encoding="utf-8").splitlines() if line.strip()]
     cards = load_cards(CARD_PATHS, CATALOG)
     cards_by_id = {card["evidence_id"]: card for card in cards}
     source_tiers = sorted({card.get("source_tier") for card in cards if card.get("source_tier")})
@@ -150,7 +153,7 @@ def run(top_k: int) -> dict:
         }
     metrics = {
         "experiment_id": "B0_bm25_tag_vote_v3_all_topk",
-        "gold_standard": str(GOLD.relative_to(NEUTRON_ROOT.parent)),
+        "gold_standard": str(gold_path.relative_to(NEUTRON_ROOT.parent)),
         "case_count": len(rows),
         "evidence_library_card_count": len(cards),
         "retrieval_top_k": top_k,
@@ -166,7 +169,7 @@ def run(top_k: int) -> dict:
         "gold_action_evidence_candidate_coverage_by_gold_action": category_by_action,
         "scope_note": f"No LLM; no case-level gold action or gold evidence is used during prediction. All BM25 top-{top_k} cards are presented as the candidate evidence package and vote through their applicability tags.",
     }
-    result_dir = HERE / "results" / f"top_k_{top_k:02d}"
+    result_dir = result_root / f"top_k_{top_k:02d}"
     result_dir.mkdir(parents=True, exist_ok=True)
     (result_dir / "b0_bm25_tag_vote_predictions.jsonl").write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
     (result_dir / "b0_bm25_tag_vote_metrics.json").write_text(json.dumps(metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -181,8 +184,10 @@ def run(top_k: int) -> dict:
 def main() -> None:
     parser = ArgumentParser(description="B0 BM25 retrieval plus applicability-tag voting")
     parser.add_argument("--top-k", type=int, default=10, help="number of BM25 candidates to retrieve and vote over")
+    parser.add_argument("--gold-path", type=Path, default=GOLD, help="gold JSONL to retrieve for")
+    parser.add_argument("--result-root", type=Path, default=HERE / "results", help="directory for this run's Top-K outputs")
     args = parser.parse_args()
-    run(args.top_k)
+    run(args.top_k, args.gold_path, args.result_root)
 
 
 if __name__ == "__main__":

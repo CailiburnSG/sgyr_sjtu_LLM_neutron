@@ -32,7 +32,7 @@ def main() -> None:
         action_rows = {row["action_id"]: row for row in read_csv_row(metrics_path.parent / "b1_action_metrics.csv")}
         all_rows.append({
             "model": metrics["model"], "retrieval_top_k": metrics["retrieval_top_k"],
-            "example_count": metrics["fixed_example_count"], "pool_id": metrics["example_pool_id"],
+            "example_count": metrics["fixed_example_count"], "case_count": metrics["case_count"], "pool_id": metrics["example_pool_id"],
             "selection_mode": metrics["selection_mode"], "action_accuracy": metrics["action_accuracy"],
             "action_macro_f1": metrics["action_macro_f1"],
             "a3_f1": float(action_rows["record_processing_and_timestamp_check"]["f1"]),
@@ -50,13 +50,13 @@ def main() -> None:
         root = HERE / model / f"top_k_{top_k:02d}"
         fields = list(rows[0])
         write_csv(root / "summary_by_pool.csv", rows, fields)
-        grouped: dict[int, list[dict]] = {}
+        grouped: dict[tuple[int, int], list[dict]] = {}
         for row in rows:
-            grouped.setdefault(int(row["example_count"]), []).append(row)
+            grouped.setdefault((int(row["example_count"]), int(row["case_count"])), []).append(row)
         aggregate = []
         metrics = ("action_accuracy", "action_macro_f1", "a3_f1", "a4_f1", "prompt_tokens", "total_tokens", "latency_mean_seconds")
-        for count, group in sorted(grouped.items()):
-            summary = {"model": model, "retrieval_top_k": top_k, "example_count": count, "pool_count": len(group)}
+        for (count, case_count), group in sorted(grouped.items()):
+            summary = {"model": model, "retrieval_top_k": top_k, "example_count": count, "case_count": case_count, "pool_count": len(group)}
             for metric in metrics:
                 values = [float(row[metric]) for row in group]
                 summary[f"{metric}_mean"] = statistics.mean(values)
