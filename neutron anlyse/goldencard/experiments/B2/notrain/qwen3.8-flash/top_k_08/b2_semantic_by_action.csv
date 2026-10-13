@@ -1,0 +1,5 @@
+experiment_id,model,retrieval_top_k,run_id,semantic_version,gold_action_id,case_count,semantic_candidate_precision_at_k,semantic_candidate_recall_at_k,semantic_candidate_f1_at_k,semantic_candidate_coverage_at_k,semantic_candidate_action_pair_precision_at_k,semantic_candidate_action_pair_recall_at_k,semantic_candidate_action_pair_f1_at_k
+B2_llm_full_library_selection_then_action_v1,qwen3.8-flash,8,zero_shot_metadata_v1,v1,cross_channel_similar_anomaly_comparison,15,0.45,0.7277777777777777,0.5516402116402116,1.0,0.0,0.0,0.0
+B2_llm_full_library_selection_then_action_v1,qwen3.8-flash,8,zero_shot_metadata_v1,v1,on_site_operation_or_calibration_check,15,0.58,0.8833333333333333,0.6876767676767677,1.0,0.58,0.8833333333333333,0.6876767676767677
+B2_llm_full_library_selection_then_action_v1,qwen3.8-flash,8,zero_shot_metadata_v1,v1,record_processing_and_timestamp_check,15,0.3057142857142857,1.0,0.4621693121693122,1.0,0.0,0.0,0.0
+B2_llm_full_library_selection_then_action_v1,qwen3.8-flash,8,zero_shot_metadata_v1,v1,signal_transmission_path_check,15,0.45904761904761904,0.8444444444444444,0.5862626262626262,1.0,0.0,0.0,0.0

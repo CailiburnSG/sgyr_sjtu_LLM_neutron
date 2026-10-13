@@ -1,0 +1,16 @@
+model,retrieval_top_k,example_count,case_count,pool_id,selection_mode,action_accuracy,action_macro_f1,a3_f1,a4_f1,prompt_tokens,total_tokens,latency_mean_seconds,result_directory
+qwen3.8-flash,10,4,60,01,same_case_ids_as_top_k_10_n_04_v1,0.7333333333333333,0.6703869047619048,0.125,1.0,1022014,1024605,4.018,qwen3.8-flash/top_k_10/n_04/pool_01
+qwen3.8-flash,10,4,60,02,same_case_ids_as_top_k_10_n_04_v1,0.9333333333333333,0.93290770609319,0.888888888888889,1.0,1023274,1025844,2.752,qwen3.8-flash/top_k_10/n_04/pool_02
+qwen3.8-flash,10,4,60,03,same_case_ids_as_top_k_10_n_04_v1,0.7333333333333333,0.6703869047619048,0.125,1.0,1022614,1025205,2.945,qwen3.8-flash/top_k_10/n_04/pool_03
+qwen3.8-flash,10,8,60,01,same_case_ids_as_top_k_10_n_08_v1,0.9666666666666667,0.9665178571428572,1.0,1.0,1785634,1788197,2.685,qwen3.8-flash/top_k_10/n_08/pool_01
+qwen3.8-flash,10,8,60,02,same_case_ids_as_top_k_10_n_08_v1,0.95,0.9494949494949495,0.888888888888889,1.0,1777174,1779745,3.049,qwen3.8-flash/top_k_10/n_08/pool_02
+qwen3.8-flash,10,8,60,03,same_case_ids_as_top_k_10_n_08_v1,0.9666666666666667,0.9665178571428572,1.0,1.0,1775674,1778247,2.898,qwen3.8-flash/top_k_10/n_08/pool_03
+qwen3.8-flash,10,12,60,01,same_case_ids_as_top_k_10_n_12_v1,1.0,1.0,1.0,1.0,2549734,2552304,2.937,qwen3.8-flash/top_k_10/n_12/pool_01
+qwen3.8-flash,10,12,60,02,same_case_ids_as_top_k_10_n_12_v1,0.95,0.9498922413793104,0.9655172413793104,1.0,2537254,2539819,3.051,qwen3.8-flash/top_k_10/n_12/pool_02
+qwen3.8-flash,10,12,60,03,same_case_ids_as_top_k_10_n_12_v1,0.95,0.9498922413793104,0.9655172413793104,1.0,2541934,2544514,2.901,qwen3.8-flash/top_k_10/n_12/pool_03
+qwen3.8-flash,10,16,60,01,same_case_ids_as_top_k_10_n_16_v1,1.0,1.0,1.0,1.0,3307654,3310219,3.49,qwen3.8-flash/top_k_10/n_16/pool_01
+qwen3.8-flash,10,16,60,02,same_case_ids_as_top_k_10_n_16_v1,0.9666666666666667,0.9665178571428572,1.0,1.0,3297514,3300077,3.461,qwen3.8-flash/top_k_10/n_16/pool_02
+qwen3.8-flash,10,16,60,03,same_case_ids_as_top_k_10_n_16_v1,1.0,1.0,1.0,1.0,3307774,3310349,5.449,qwen3.8-flash/top_k_10/n_16/pool_03
+qwen3.8-flash,10,20,60,01,same_case_ids_as_top_k_10_n_20_v1,1.0,1.0,1.0,1.0,4069354,4071919,5.241,qwen3.8-flash/top_k_10/n_20/pool_01
+qwen3.8-flash,10,20,60,02,same_case_ids_as_top_k_10_n_20_v1,0.9666666666666667,0.9665178571428572,1.0,1.0,4053334,4055907,5.813,qwen3.8-flash/top_k_10/n_20/pool_02
+qwen3.8-flash,10,20,60,03,same_case_ids_as_top_k_10_n_20_v1,1.0,1.0,1.0,1.0,4067134,4069704,3.618,qwen3.8-flash/top_k_10/n_20/pool_03

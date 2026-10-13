@@ -1,21 +1,20 @@
 {
   "pool_id": "02",
-  "selection_mode": "nested_stratified_subset_of_n08_v1",
+  "selection_mode": "same_case_ids_as_top_k_10_n_04_v1",
   "retrieval_top_k": 10,
   "example_count": 4,
-  "per_action_count": 1,
-  "parent_pool": "n_08/pool_02",
-  "selected_parent_example_indices": [
-    2,
-    3,
-    5,
-    8
-  ],
+  "action_counts": {
+    "on_site_operation_or_calibration_check": 1,
+    "cross_channel_similar_anomaly_comparison": 1,
+    "record_processing_and_timestamp_check": 1,
+    "signal_transmission_path_check": 1
+  },
+  "source_pool": "top_k_10/n_04/pool_02.manifest.json",
   "goldcard_ids_model_external_only": [
     "GC-B80-017",
     "GC-B80-022",
     "GC-B80-047",
     "GC-B80-075"
   ],
-  "selection_rule": "One fixed example per action, selected as a subset of the corresponding pre-existing n08 pool before any n04 model call; no validation case or label is included."
+  "selection_rule": "Reuse exactly the frozen n04 training-case IDs and targets from Top-10; replace only candidate packages with frozen BM25 Top-10 versions. No validation case or goldcard_id enters the model prompt."
 }

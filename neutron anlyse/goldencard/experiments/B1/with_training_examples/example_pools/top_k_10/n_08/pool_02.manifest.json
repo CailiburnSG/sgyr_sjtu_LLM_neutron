@@ -1,22 +1,15 @@
 {
   "pool_id": "02",
-  "selection_mode": "stratified_random_frozen_v1",
-  "seed": 20261012,
+  "selection_mode": "same_case_ids_as_top_k_10_n_08_v1",
   "retrieval_top_k": 10,
   "example_count": 8,
-  "per_action_count": 2,
   "action_counts": {
     "on_site_operation_or_calibration_check": 2,
     "cross_channel_similar_anomaly_comparison": 2,
     "record_processing_and_timestamp_check": 2,
     "signal_transmission_path_check": 2
   },
-  "event_group_size_counts": {
-    "3": 2,
-    "4": 2,
-    "1": 2,
-    "2": 2
-  },
+  "source_pool": "top_k_10/n_08/pool_02.manifest.json",
   "goldcard_ids_model_external_only": [
     "GC-B80-015",
     "GC-B80-017",
@@ -27,5 +20,5 @@
     "GC-B80-063",
     "GC-B80-075"
   ],
-  "selection_rule": "Randomly selected from training-only cases within fixed action × event-group-size strata; no evidence-overlap or model-result criterion; no case reused across the three pools."
+  "selection_rule": "Reuse exactly the frozen n08 training-case IDs and targets from Top-10; replace only candidate packages with frozen BM25 Top-10 versions. No validation case or goldcard_id enters the model prompt."
 }

@@ -128,28 +128,28 @@
     "GC-B80-080"
   ],
   "validation_action_counts": {
-    "cross_channel_similar_anomaly_comparison": 15,
-    "record_processing_and_timestamp_check": 15,
     "signal_transmission_path_check": 15,
-    "on_site_operation_or_calibration_check": 15
+    "cross_channel_similar_anomaly_comparison": 15,
+    "on_site_operation_or_calibration_check": 15,
+    "record_processing_and_timestamp_check": 15
   },
   "validation_event_count_counts": {
-    "3": 15,
+    "4": 15,
     "2": 15,
     "1": 15,
-    "4": 15
+    "3": 15
   },
   "train_action_counts": {
     "signal_transmission_path_check": 15,
     "on_site_operation_or_calibration_check": 15,
-    "cross_channel_similar_anomaly_comparison": 15,
-    "record_processing_and_timestamp_check": 15
+    "record_processing_and_timestamp_check": 15,
+    "cross_channel_similar_anomaly_comparison": 15
   },
   "train_event_count_counts": {
-    "1": 15,
-    "3": 15,
     "4": 15,
-    "2": 15
+    "2": 15,
+    "3": 15,
+    "1": 15
   },
   "gold_source": "neutron anlyse/goldencard/gold_standard_120_eventgroups/goldcase_combined_120.jsonl",
   "gold_source_sha256": "d522641e6bfa305d5fdb008446405b91253591480bdc5710bba157504941eabd"

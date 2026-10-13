@@ -1,0 +1,5 @@
+model,retrieval_top_k,run_id,split,case_count,selection_contract_valid_rate,action_contract_valid_rate,action_accuracy,action_macro_f1,strict_gold_evidence_f1_at_k,semantic_candidate_action_pair_f1_at_k,selection_total_tokens,action_total_tokens,combined_total_tokens,result_directory
+qwen3.8-flash,3,zero_shot_metadata_v1,frozen_validation_60,60,1.0,1.0,0.26666666666666666,0.16517857142857142,0.06666666666666667,0.17083333333333334,4681614,113531,4795145,qwen3.8-flash/top_k_03
+qwen3.8-flash,5,zero_shot_metadata_v1,frozen_validation_60,60,1.0,1.0,0.25,0.11904761904761904,0.08750000000000001,0.17654401154401153,4682385,146169,4828554,qwen3.8-flash/top_k_05
+qwen3.8-flash,8,zero_shot_metadata_v1,frozen_validation_60,60,1.0,1.0,0.25,0.12096774193548389,0.11212121212121214,0.17191919191919192,4685548,195967,4881515,qwen3.8-flash/top_k_08
+qwen3.8-flash,10,zero_shot,frozen_validation_60,60,1.0,0.43333333333333335,0.23333333333333334,0.13289676425269648,0.15384615384615383,0.15371212121212122,4688307,229709,4918016,qwen3.8-flash/top_k_10
