@@ -1,0 +1,19 @@
+{
+  "pool_id": "01",
+  "example_count": 4,
+  "source_b1_manifest": "B1/with_training_examples/example_pools/top_k_05/n_04/pool_01.manifest.json",
+  "source_case_ids_model_external_only": [
+    "GC-B80-009",
+    "GC-B80-035",
+    "GC-B80-044",
+    "GC-B80-079"
+  ],
+  "model_visible_example_fields": [
+    "example_index",
+    "event_combination",
+    "human_evidence_core",
+    "correct_output"
+  ],
+  "forbidden_model_prompt_fields": [],
+  "selection_rule": "Reuse B1 frozen training-case IDs, then materialize each complete golden case as event + 3 reviewed human evidence cards + fixed action output."
+}

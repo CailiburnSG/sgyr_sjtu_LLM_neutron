@@ -50,3 +50,23 @@ marked by their case count and are never combined with the frozen 60-case run.
 
 Earlier text/source-only runs that omitted reviewed metadata and action
 definitions are retained under `ablations/`; they are not main B2 results.
+
+## Fixed complete-golden few-shot subexperiments (prepared; not yet run)
+
+Three sibling `with_training_*` directories keep the B2 variants. Their common
+example pool is materialized from frozen B1 training-side case IDs, but the
+model-visible example is ID-free and complete: event combination + the three
+reviewed human evidence cards + fixed action + boundary note.
+
+- `with_training_selector/` (B2-FS-R): complete examples enter the full-library
+  selector only; the action call remains zero-shot.
+- `with_training_action/` (B2-FS-A): the full-library selector remains zero-shot;
+  complete examples enter the action call only.
+- `with_training_both/` (B2-FS-RA): both calls receive the same complete
+  examples, while each evaluation case still selects its own evidence afresh.
+
+Every case/pool remains a fresh two-call end-to-end run. The selector's current
+case evidence cannot be reused by either variant, another pool, or a later
+repeat. The materializer and both runners expose `--validate-only`; this checks
+the 60-case split, 300-card library, stage-local example injection, and absence
+of `goldcard_id` and gold-evaluation fields in prompts before any API call.

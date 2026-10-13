@@ -1,0 +1,2 @@
+model,retrieval_top_k,fixed_example_count,pool_id,run_id,case_count,selection_contract_valid_rate,action_contract_valid_rate,action_accuracy,action_macro_f1,selection_total_tokens,action_total_tokens,combined_total_tokens,result_directory
+qwen3.8-flash,5,8,01,pool_01,60,1.0,1.0,0.75,0.7427471721826561,5200288,665183,5865471,qwen3.8-flash/top_k_05/n_08/pool_01
