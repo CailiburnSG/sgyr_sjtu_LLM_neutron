@@ -1,0 +1,1 @@
+# B2 selector\n\nFixed complete-golden examples: 12; Top-K: 8; pool: 01. Each evaluation case selects evidence afresh before its action call.\n

@@ -1,0 +1,1 @@
+# B2 both\n\nFixed complete-golden examples: 8; Top-K: 8; pool: 02. Each evaluation case selects evidence afresh before its action call.\n
