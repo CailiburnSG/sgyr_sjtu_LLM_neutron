@@ -1,0 +1,8 @@
+[
+  {
+    "top_k": 10,
+    "source": "neutron anlyse/goldencard/experiments/B0/results/evaluation_60/top_k_10/b0_bm25_tag_vote_predictions.jsonl",
+    "source_sha256": "f33c756bf68c2b1bd393ce4b7262d1f40c4bba4e8f0f344e9441448118da0d31",
+    "copied_to": "neutron anlyse/goldencard/experiments/B1/data/candidate_packages/top_k_10/b0_retrieval_predictions_original.jsonl"
+  }
+]

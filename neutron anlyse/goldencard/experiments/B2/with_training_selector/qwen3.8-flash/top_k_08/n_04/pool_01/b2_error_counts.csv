@@ -1,0 +1,3 @@
+experiment_id,model,retrieval_top_k,run_id,stage,error_type,case_count
+B2_llm_full_library_selection_then_action_fixed_examples_selector_v1,qwen3.8-flash,8,pool_01,selection,request_error,1
+B2_llm_full_library_selection_then_action_fixed_examples_selector_v1,qwen3.8-flash,8,pool_01,action,request_error,1

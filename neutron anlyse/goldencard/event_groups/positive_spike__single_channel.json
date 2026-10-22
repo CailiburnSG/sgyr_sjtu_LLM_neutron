@@ -1,0 +1,292 @@
+[
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0009",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-21 23:51:25",
+    "time_end": "2025-01-21 23:51:25",
+    "channels": [
+      "BL.BL3.3RIC1016MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1016MA-VER-positive_spike-C0003"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0018",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-21 23:57:16",
+    "time_end": "2025-01-21 23:57:16",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1011MA-VER-positive_spike-C0006"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0032",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-22 00:06:24",
+    "time_end": "2025-01-22 00:06:24",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1011MA-VER-positive_spike-C0014"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0040",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-22 00:13:56",
+    "time_end": "2025-01-22 00:13:56",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1011MA-VER-positive_spike-C0016"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0046",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-22 00:20:36",
+    "time_end": "2025-01-22 00:20:36",
+    "channels": [
+      "BL.BL3.3RIC1015MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1015MA-VER-positive_spike-C0011"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0060",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-22 00:27:05",
+    "time_end": "2025-01-22 00:27:05",
+    "channels": [
+      "BL.BL3.3RIC1016MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1016MA-VER-positive_spike-C0020"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0067",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-22 00:32:13",
+    "time_end": "2025-01-22 00:32:13",
+    "channels": [
+      "BL.BL3.3RIC1016MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1016MA-VER-positive_spike-C0023"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0083",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-22 00:44:04",
+    "time_end": "2025-01-22 00:44:04",
+    "channels": [
+      "BL.BL3.3RIC1012MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1012MA-VER-positive_spike-C0027"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0097",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-22 00:53:26",
+    "time_end": "2025-01-22 00:53:26",
+    "channels": [
+      "BL.BL3.3RIC1011MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1011MA-VER-positive_spike-C0035"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "A1-1-head5000-positive_spike-E0107",
+    "record_id": "A1_1_head5000",
+    "event_taxonomy_version": "v1",
+    "event_type": "positive_spike",
+    "time_start": "2025-01-22 00:59:55",
+    "time_end": "2025-01-22 00:59:55",
+    "channels": [
+      "BL.BL3.3RIC1012MA_VER"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "在 1 秒聚合窗口内，1 个通道出现 positive_spike 观测。"
+    ],
+    "source_channel_card_ids": [
+      "A1-1-head5000-BL-BL3-3RIC1012MA-VER-positive_spike-C0040"
+    ],
+    "provenance": {
+      "merge_window_seconds": 1,
+      "channel_card_count": 1,
+      "atomic_observation_count": 1
+    },
+    "limitations": [
+      "该卡片仅记录跨通道时间共现，不能据此确认共同失效机理或因果关系。"
+    ]
+  }
+]

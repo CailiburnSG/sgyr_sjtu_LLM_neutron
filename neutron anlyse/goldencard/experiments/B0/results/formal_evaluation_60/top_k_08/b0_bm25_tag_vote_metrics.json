@@ -1,0 +1,98 @@
+{
+  "experiment_id": "B0_bm25_tag_vote_v3_all_topk",
+  "gold_standard": "neutron anlyse/goldencard/gold_standard_120_eventgroups/goldcase_combined_120.jsonl",
+  "evaluation_ids_path": "neutron anlyse/goldencard/gold_standard_120_eventgroups/evaluation_60_ids.json",
+  "case_count": 60,
+  "evidence_library_card_count": 300,
+  "retrieval_top_k": 8,
+  "action_accuracy": 0.26666666666666666,
+  "macro_f1": 0.20792682926829267,
+  "per_action": {
+    "on_site_operation_or_calibration_check": {
+      "tp": 15,
+      "fp": 11,
+      "fn": 0,
+      "precision": 0.5769230769230769,
+      "recall": 1.0,
+      "f1": 0.7317073170731707
+    },
+    "cross_channel_similar_anomaly_comparison": {
+      "tp": 0,
+      "fp": 29,
+      "fn": 15,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "record_processing_and_timestamp_check": {
+      "tp": 1,
+      "fp": 4,
+      "fn": 14,
+      "precision": 0.2,
+      "recall": 0.06666666666666667,
+      "f1": 0.1
+    },
+    "signal_transmission_path_check": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 15,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "confusion_matrix": {
+    "on_site_operation_or_calibration_check": {
+      "on_site_operation_or_calibration_check": 15,
+      "cross_channel_similar_anomaly_comparison": 0,
+      "record_processing_and_timestamp_check": 0,
+      "signal_transmission_path_check": 0
+    },
+    "cross_channel_similar_anomaly_comparison": {
+      "on_site_operation_or_calibration_check": 11,
+      "cross_channel_similar_anomaly_comparison": 0,
+      "record_processing_and_timestamp_check": 4,
+      "signal_transmission_path_check": 0
+    },
+    "record_processing_and_timestamp_check": {
+      "on_site_operation_or_calibration_check": 0,
+      "cross_channel_similar_anomaly_comparison": 14,
+      "record_processing_and_timestamp_check": 1,
+      "signal_transmission_path_check": 0
+    },
+    "signal_transmission_path_check": {
+      "on_site_operation_or_calibration_check": 0,
+      "cross_channel_similar_anomaly_comparison": 15,
+      "record_processing_and_timestamp_check": 0,
+      "signal_transmission_path_check": 0
+    }
+  },
+  "strict_gold_evidence_precision_at_k": 0.06875,
+  "strict_gold_evidence_recall_at_k": 0.18333333333333332,
+  "strict_gold_evidence_f1_at_k": 0.1,
+  "gold_action_evidence_candidate_coverage_at_k": 0.5833333333333334,
+  "gold_action_evidence_candidate_precision_at_k": 0.10416666666666667,
+  "gold_action_evidence_candidate_coverage_by_gold_action": {
+    "on_site_operation_or_calibration_check": {
+      "acceptable_evidence_count": 5,
+      "candidate_coverage_at_k": 1.0,
+      "candidate_precision_at_k": 0.25
+    },
+    "cross_channel_similar_anomaly_comparison": {
+      "acceptable_evidence_count": 5,
+      "candidate_coverage_at_k": 0.06666666666666667,
+      "candidate_precision_at_k": 0.008333333333333333
+    },
+    "record_processing_and_timestamp_check": {
+      "acceptable_evidence_count": 5,
+      "candidate_coverage_at_k": 0.3333333333333333,
+      "candidate_precision_at_k": 0.041666666666666664
+    },
+    "signal_transmission_path_check": {
+      "acceptable_evidence_count": 5,
+      "candidate_coverage_at_k": 0.9333333333333333,
+      "candidate_precision_at_k": 0.11666666666666667
+    }
+  },
+  "scope_note": "No LLM; no case-level gold action or gold evidence is used during prediction. All BM25 top-8 cards are presented as the candidate evidence package and vote through their applicability tags."
+}

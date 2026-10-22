@@ -1,0 +1,5 @@
+experiment_id,retrieval_top_k,gold_action_id,acceptable_evidence_count,hit_at_3,precision_at_3
+B0_bm25_tag_vote_v1,15,on_site_operation_or_calibration_check,5,1.0,0.6666666666666666
+B0_bm25_tag_vote_v1,15,cross_channel_similar_anomaly_comparison,5,0.85,0.38333333333333336
+B0_bm25_tag_vote_v1,15,record_processing_and_timestamp_check,5,0.85,0.2833333333333333
+B0_bm25_tag_vote_v1,15,signal_transmission_path_check,5,1.0,0.43333333333333335

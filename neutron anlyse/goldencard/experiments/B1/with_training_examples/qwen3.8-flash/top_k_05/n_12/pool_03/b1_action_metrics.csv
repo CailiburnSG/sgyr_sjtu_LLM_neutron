@@ -1,0 +1,5 @@
+experiment_id,model,retrieval_top_k,action_id,tp,fp,fn,precision,recall,f1
+B1_bm25_topk_fixed_examples_llm_action_v1,qwen3.8-flash,5,on_site_operation_or_calibration_check,14,2,1,0.875,0.9333333333333333,0.9032258064516129
+B1_bm25_topk_fixed_examples_llm_action_v1,qwen3.8-flash,5,cross_channel_similar_anomaly_comparison,13,2,2,0.8666666666666667,0.8666666666666667,0.8666666666666667
+B1_bm25_topk_fixed_examples_llm_action_v1,qwen3.8-flash,5,record_processing_and_timestamp_check,14,0,1,1.0,0.9333333333333333,0.9655172413793104
+B1_bm25_topk_fixed_examples_llm_action_v1,qwen3.8-flash,5,signal_transmission_path_check,15,0,0,1.0,1.0,1.0

@@ -1,0 +1,5 @@
+experiment_id,retrieval_top_k,action_id,tp,fp,fn,precision,recall,f1
+B0_bm25_tag_vote_v1,10,on_site_operation_or_calibration_check,20,11,0,0.6451612903225806,1.0,0.7843137254901961
+B0_bm25_tag_vote_v1,10,cross_channel_similar_anomaly_comparison,0,40,20,0.0,0.0,0.0
+B0_bm25_tag_vote_v1,10,record_processing_and_timestamp_check,0,9,20,0.0,0.0,0.0
+B0_bm25_tag_vote_v1,10,signal_transmission_path_check,0,0,20,0.0,0.0,0.0

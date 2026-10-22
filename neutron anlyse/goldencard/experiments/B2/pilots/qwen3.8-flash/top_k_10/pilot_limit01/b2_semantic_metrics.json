@@ -1,0 +1,39 @@
+{
+  "totals": {
+    "semantic_candidate_precision_at_k": 0.5,
+    "semantic_candidate_recall_at_k": 0.75,
+    "semantic_candidate_f1_at_k": 0.6,
+    "semantic_candidate_coverage_at_k": 1.0,
+    "semantic_candidate_action_pair_precision_at_k": 0.5,
+    "semantic_candidate_action_pair_recall_at_k": 0.75,
+    "semantic_candidate_action_pair_f1_at_k": 0.6,
+    "unmapped_evidence_id_count": 0
+  },
+  "by_action": [
+    {
+      "gold_action_id": "on_site_operation_or_calibration_check",
+      "case_count": 1,
+      "semantic_candidate_precision_at_k": 0.5,
+      "semantic_candidate_recall_at_k": 0.75,
+      "semantic_candidate_f1_at_k": 0.6,
+      "semantic_candidate_coverage_at_k": 1.0,
+      "semantic_candidate_action_pair_precision_at_k": 0.5,
+      "semantic_candidate_action_pair_recall_at_k": 0.75,
+      "semantic_candidate_action_pair_f1_at_k": 0.6
+    }
+  ],
+  "per_case": [
+    {
+      "goldcard_id": "GC-B80-001",
+      "gold_action_id": "on_site_operation_or_calibration_check",
+      "semantic_candidate_precision_at_k": 0.5,
+      "semantic_candidate_recall_at_k": 0.75,
+      "semantic_candidate_f1_at_k": 0.6,
+      "semantic_candidate_coverage_at_k": 1,
+      "semantic_candidate_action_pair_precision_at_k": 0.5,
+      "semantic_candidate_action_pair_recall_at_k": 0.75,
+      "semantic_candidate_action_pair_f1_at_k": 0.6,
+      "missing_semantic_mapping_ids": ""
+    }
+  ]
+}

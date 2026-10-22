@@ -1,0 +1,42 @@
+{
+  "pool_id": "03",
+  "selection_mode": "nested_cyclic_reuse_extension_of_n20_v1",
+  "retrieval_top_k": 10,
+  "example_count": 24,
+  "per_action_count": 6,
+  "parent_pool": "n_20/pool_03",
+  "reuse_source_pool": "n_20/pool_01",
+  "reused_goldcard_ids_model_external_only": [
+    "GC-B80-010",
+    "GC-B80-032",
+    "GC-B80-043",
+    "GC-B80-080"
+  ],
+  "goldcard_ids_model_external_only": [
+    "GC-B80-005",
+    "GC-B80-018",
+    "GC-B80-030",
+    "GC-B80-033",
+    "GC-B80-042",
+    "GC-B80-055",
+    "GC-B80-070",
+    "GC-B80-078",
+    "GC-B80-008",
+    "GC-B80-024",
+    "GC-B80-059",
+    "GC-B80-074",
+    "GC-B80-012",
+    "GC-B80-040",
+    "GC-B80-048",
+    "GC-B80-064",
+    "GC-B80-019",
+    "GC-B80-025",
+    "GC-B80-054",
+    "GC-B80-069",
+    "GC-B80-010",
+    "GC-B80-032",
+    "GC-B80-043",
+    "GC-B80-080"
+  ],
+  "selection_rule": "Preserve all twenty examples from the corresponding n20 pool; append the four cases added to the next n20 pool (02→01, 03→02, 01→03). Three n24 pools require 72 assignments but only 60 training cases exist, so these twelve cases are each reused once across pools. All model inputs remain without goldcard_id."
+}

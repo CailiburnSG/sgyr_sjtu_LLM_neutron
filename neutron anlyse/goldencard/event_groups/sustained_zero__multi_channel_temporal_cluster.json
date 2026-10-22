@@ -1,0 +1,352 @@
+[
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0001",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 00:07:00",
+    "time_end": "2030-01-01 00:07:04",
+    "channels": [
+      "SYN.RIC.1012",
+      "SYN.RIC.1013",
+      "SYN.RIC.1014"
+    ],
+    "channel_count": 3,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：3 个通道在 2030-01-01 00:07:00 至 2030-01-01 00:07:04 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0001-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0001-02",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0001-03"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 5,
+      "duration_seconds": 5
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0002",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 00:14:00",
+    "time_end": "2030-01-01 00:14:05",
+    "channels": [
+      "SYN.RIC.1013",
+      "SYN.RIC.1014",
+      "SYN.RIC.1015",
+      "SYN.RIC.1016"
+    ],
+    "channel_count": 4,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：4 个通道在 2030-01-01 00:14:00 至 2030-01-01 00:14:05 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0002-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0002-02",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0002-03",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0002-04"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 6,
+      "duration_seconds": 6
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0003",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 00:21:00",
+    "time_end": "2030-01-01 00:21:06",
+    "channels": [
+      "SYN.RIC.1014",
+      "SYN.RIC.1015",
+      "SYN.RIC.1016",
+      "SYN.RIC.1017",
+      "SYN.RIC.1011"
+    ],
+    "channel_count": 5,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：5 个通道在 2030-01-01 00:21:00 至 2030-01-01 00:21:06 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0003-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0003-02",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0003-03",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0003-04",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0003-05"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 7,
+      "duration_seconds": 7
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0004",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 00:28:00",
+    "time_end": "2030-01-01 00:28:07",
+    "channels": [
+      "SYN.RIC.1015",
+      "SYN.RIC.1016"
+    ],
+    "channel_count": 2,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：2 个通道在 2030-01-01 00:28:00 至 2030-01-01 00:28:07 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0004-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0004-02"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 8,
+      "duration_seconds": 8
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0005",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 00:35:00",
+    "time_end": "2030-01-01 00:35:08",
+    "channels": [
+      "SYN.RIC.1016",
+      "SYN.RIC.1017",
+      "SYN.RIC.1011"
+    ],
+    "channel_count": 3,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：3 个通道在 2030-01-01 00:35:00 至 2030-01-01 00:35:08 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0005-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0005-02",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0005-03"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 9,
+      "duration_seconds": 9
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0006",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 00:42:00",
+    "time_end": "2030-01-01 00:42:09",
+    "channels": [
+      "SYN.RIC.1017",
+      "SYN.RIC.1011",
+      "SYN.RIC.1012",
+      "SYN.RIC.1013"
+    ],
+    "channel_count": 4,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：4 个通道在 2030-01-01 00:42:00 至 2030-01-01 00:42:09 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0006-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0006-02",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0006-03",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0006-04"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 10,
+      "duration_seconds": 10
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0007",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 00:49:00",
+    "time_end": "2030-01-01 00:49:10",
+    "channels": [
+      "SYN.RIC.1011",
+      "SYN.RIC.1012",
+      "SYN.RIC.1013",
+      "SYN.RIC.1014",
+      "SYN.RIC.1015"
+    ],
+    "channel_count": 5,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：5 个通道在 2030-01-01 00:49:00 至 2030-01-01 00:49:10 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0007-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0007-02",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0007-03",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0007-04",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0007-05"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 11,
+      "duration_seconds": 11
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0008",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 00:56:00",
+    "time_end": "2030-01-01 00:56:11",
+    "channels": [
+      "SYN.RIC.1012",
+      "SYN.RIC.1013"
+    ],
+    "channel_count": 2,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：2 个通道在 2030-01-01 00:56:00 至 2030-01-01 00:56:11 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0008-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0008-02"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 12,
+      "duration_seconds": 12
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0009",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 01:03:00",
+    "time_end": "2030-01-01 01:03:12",
+    "channels": [
+      "SYN.RIC.1013",
+      "SYN.RIC.1014",
+      "SYN.RIC.1015"
+    ],
+    "channel_count": 3,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：3 个通道在 2030-01-01 01:03:00 至 2030-01-01 01:03:12 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0009-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0009-02",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0009-03"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 13,
+      "duration_seconds": 13
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-sustained_zero-multi_channel_temporal_cluster-E0010",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "sustained_zero",
+    "time_start": "2030-01-01 01:10:00",
+    "time_end": "2030-01-01 01:10:13",
+    "channels": [
+      "SYN.RIC.1014",
+      "SYN.RIC.1015",
+      "SYN.RIC.1016",
+      "SYN.RIC.1017"
+    ],
+    "channel_count": 4,
+    "scope": "multi_channel_temporal_cluster",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：4 个通道在 2030-01-01 01:10:00 至 2030-01-01 01:10:13 出现 sustained_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0010-01",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0010-02",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0010-03",
+      "SYN-sustained_zero-multi_channel_temporal_cluster-C0010-04"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 14,
+      "duration_seconds": 14
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  }
+]

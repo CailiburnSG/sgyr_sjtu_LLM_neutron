@@ -1,0 +1,302 @@
+[
+  {
+    "event_id": "SYN-short_zero-single_channel-E0001",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 00:07:00",
+    "time_end": "2030-01-01 00:07:01",
+    "channels": [
+      "SYN.RIC.1012"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 00:07:00 至 2030-01-01 00:07:01 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0001-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 2,
+      "duration_seconds": 2
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0002",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 00:14:00",
+    "time_end": "2030-01-01 00:14:00",
+    "channels": [
+      "SYN.RIC.1013"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 00:14:00 至 2030-01-01 00:14:00 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0002-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 1,
+      "duration_seconds": 1
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0003",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 00:21:00",
+    "time_end": "2030-01-01 00:21:01",
+    "channels": [
+      "SYN.RIC.1014"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 00:21:00 至 2030-01-01 00:21:01 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0003-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 2,
+      "duration_seconds": 2
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0004",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 00:28:00",
+    "time_end": "2030-01-01 00:28:00",
+    "channels": [
+      "SYN.RIC.1015"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 00:28:00 至 2030-01-01 00:28:00 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0004-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 1,
+      "duration_seconds": 1
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0005",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 00:35:00",
+    "time_end": "2030-01-01 00:35:01",
+    "channels": [
+      "SYN.RIC.1016"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 00:35:00 至 2030-01-01 00:35:01 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0005-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 2,
+      "duration_seconds": 2
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0006",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 00:42:00",
+    "time_end": "2030-01-01 00:42:00",
+    "channels": [
+      "SYN.RIC.1017"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 00:42:00 至 2030-01-01 00:42:00 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0006-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 1,
+      "duration_seconds": 1
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0007",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 00:49:00",
+    "time_end": "2030-01-01 00:49:01",
+    "channels": [
+      "SYN.RIC.1011"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 00:49:00 至 2030-01-01 00:49:01 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0007-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 2,
+      "duration_seconds": 2
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0008",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 00:56:00",
+    "time_end": "2030-01-01 00:56:00",
+    "channels": [
+      "SYN.RIC.1012"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 00:56:00 至 2030-01-01 00:56:00 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0008-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 1,
+      "duration_seconds": 1
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0009",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 01:03:00",
+    "time_end": "2030-01-01 01:03:01",
+    "channels": [
+      "SYN.RIC.1013"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 01:03:00 至 2030-01-01 01:03:01 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0009-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 2,
+      "duration_seconds": 2
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  },
+  {
+    "event_id": "SYN-short_zero-single_channel-E0010",
+    "record_id": "goldencard_template_v1",
+    "event_taxonomy_version": "v1",
+    "event_type": "short_zero",
+    "time_start": "2030-01-01 01:10:00",
+    "time_end": "2030-01-01 01:10:00",
+    "channels": [
+      "SYN.RIC.1014"
+    ],
+    "channel_count": 1,
+    "scope": "single_channel",
+    "operating_context": "operation_context_unknown",
+    "context_source": null,
+    "observed_facts": [
+      "模板事件：1 个通道在 2030-01-01 01:10:00 至 2030-01-01 01:10:00 出现 short_zero 观测。"
+    ],
+    "source_channel_card_ids": [
+      "SYN-short_zero-single_channel-C0010-01"
+    ],
+    "provenance": {
+      "kind": "gold_standard_template",
+      "template_version": "v1",
+      "run_samples": 1,
+      "duration_seconds": 1
+    },
+    "limitations": [
+      "该卡只记录可观测事件状态，不确认失效机理或因果关系。"
+    ]
+  }
+]

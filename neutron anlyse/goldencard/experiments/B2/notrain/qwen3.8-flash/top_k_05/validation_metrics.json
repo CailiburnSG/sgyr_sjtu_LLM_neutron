@@ -1,0 +1,100 @@
+{
+  "experiment_id": "B2_llm_full_library_selection_then_action_v1",
+  "model": "qwen3.8-flash",
+  "retrieval_top_k": 5,
+  "run_id": "zero_shot_metadata_v1",
+  "split": "frozen_validation_60",
+  "run_at_utc": "2026-10-13T07:54:53.549748+00:00",
+  "case_count": 60,
+  "selection_json_valid_rate": 1.0,
+  "selection_contract_valid_rate": 1.0,
+  "action_json_valid_rate": 1.0,
+  "action_contract_valid_rate": 1.0,
+  "action_accuracy": 0.25,
+  "action_macro_f1": 0.11904761904761904,
+  "action_per_class": {
+    "on_site_operation_or_calibration_check": {
+      "tp": 15,
+      "fp": 33,
+      "fn": 0,
+      "precision": 0.3125,
+      "recall": 1.0,
+      "f1": 0.47619047619047616
+    },
+    "cross_channel_similar_anomaly_comparison": {
+      "tp": 0,
+      "fp": 11,
+      "fn": 15,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "record_processing_and_timestamp_check": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 15,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "signal_transmission_path_check": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 15,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "selection_error_counts": {},
+  "action_error_counts": {},
+  "usage": {
+    "selection": {
+      "prompt_tokens": 4668518,
+      "completion_tokens": 13867,
+      "total_tokens": 4682385
+    },
+    "action": {
+      "prompt_tokens": 141855,
+      "completion_tokens": 4314,
+      "total_tokens": 146169
+    }
+  },
+  "semantic_metrics": {
+    "semantic_candidate_precision_at_k": 0.4761111111111111,
+    "semantic_candidate_recall_at_k": 0.8236111111111111,
+    "semantic_candidate_f1_at_k": 0.5874963924963925,
+    "semantic_candidate_coverage_at_k": 1.0,
+    "semantic_candidate_action_pair_precision_at_k": 0.15555555555555556,
+    "semantic_candidate_action_pair_recall_at_k": 0.2111111111111111,
+    "semantic_candidate_action_pair_f1_at_k": 0.17654401154401153,
+    "unmapped_evidence_id_count": 0
+  },
+  "strict_gold_evidence_precision_at_k": 0.07,
+  "strict_gold_evidence_recall_at_k": 0.11666666666666667,
+  "strict_gold_evidence_f1_at_k": 0.08750000000000001,
+  "gold_action_evidence_candidate_coverage_at_k": 0.48333333333333334,
+  "gold_action_evidence_candidate_precision_at_k": 0.10333333333333333,
+  "gold_action_evidence_candidate_coverage_by_gold_action": {
+    "on_site_operation_or_calibration_check": {
+      "acceptable_evidence_count": 5,
+      "candidate_coverage_at_k": 1.0,
+      "candidate_precision_at_k": 0.22666666666666666
+    },
+    "cross_channel_similar_anomaly_comparison": {
+      "acceptable_evidence_count": 5,
+      "candidate_coverage_at_k": 0.0,
+      "candidate_precision_at_k": 0.0
+    },
+    "record_processing_and_timestamp_check": {
+      "acceptable_evidence_count": 5,
+      "candidate_coverage_at_k": 0.9333333333333333,
+      "candidate_precision_at_k": 0.18666666666666668
+    },
+    "signal_transmission_path_check": {
+      "acceptable_evidence_count": 5,
+      "candidate_coverage_at_k": 0.0,
+      "candidate_precision_at_k": 0.0
+    }
+  }
+}

@@ -42,6 +42,7 @@ paper/v3/zh_tex/*.spl
 # Local experiment runtime (not for GitHub)
 .venv/
 .cache/
+neutron anlyse/goldencard/experiments/apikey.txt
 
 # P0 runtime logs
 evidence/rag_results/query_formulation_sensitivity/historical_chunk_grid_minilm/run.log

@@ -1,0 +1,32 @@
+# B0：按行动类别的 Precision、Recall、F1
+
+| K | 行动 | Precision | Recall | F1 | TP | FP | FN |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 3 | `on_site_operation_or_calibration_check` | 0.500 | 1.000 | 0.667 | 20 | 20 | 0 |
+| 3 | `cross_channel_similar_anomaly_comparison` | 0.000 | 0.000 | 0.000 | 0 | 36 | 20 |
+| 3 | `record_processing_and_timestamp_check` | 0.000 | 0.000 | 0.000 | 0 | 4 | 20 |
+| 3 | `signal_transmission_path_check` | 0.000 | 0.000 | 0.000 | 0 | 0 | 20 |
+| 5 | `on_site_operation_or_calibration_check` | 0.541 | 1.000 | 0.702 | 20 | 17 | 0 |
+| 5 | `cross_channel_similar_anomaly_comparison` | 0.000 | 0.000 | 0.000 | 0 | 40 | 20 |
+| 5 | `record_processing_and_timestamp_check` | 0.000 | 0.000 | 0.000 | 0 | 3 | 20 |
+| 5 | `signal_transmission_path_check` | 0.000 | 0.000 | 0.000 | 0 | 0 | 20 |
+| 8 | `on_site_operation_or_calibration_check` | 0.571 | 1.000 | 0.727 | 20 | 15 | 0 |
+| 8 | `cross_channel_similar_anomaly_comparison` | 0.000 | 0.000 | 0.000 | 0 | 38 | 20 |
+| 8 | `record_processing_and_timestamp_check` | 0.286 | 0.100 | 0.148 | 2 | 5 | 18 |
+| 8 | `signal_transmission_path_check` | 0.000 | 0.000 | 0.000 | 0 | 0 | 20 |
+| 10 | `on_site_operation_or_calibration_check` | 0.645 | 1.000 | 0.784 | 20 | 11 | 0 |
+| 10 | `cross_channel_similar_anomaly_comparison` | 0.000 | 0.000 | 0.000 | 0 | 40 | 20 |
+| 10 | `record_processing_and_timestamp_check` | 0.000 | 0.000 | 0.000 | 0 | 9 | 20 |
+| 10 | `signal_transmission_path_check` | 0.000 | 0.000 | 0.000 | 0 | 0 | 20 |
+| 12 | `on_site_operation_or_calibration_check` | 0.870 | 1.000 | 0.930 | 20 | 3 | 0 |
+| 12 | `cross_channel_similar_anomaly_comparison` | 0.184 | 0.450 | 0.261 | 9 | 40 | 11 |
+| 12 | `record_processing_and_timestamp_check` | 0.000 | 0.000 | 0.000 | 0 | 8 | 20 |
+| 12 | `signal_transmission_path_check` | 0.000 | 0.000 | 0.000 | 0 | 0 | 20 |
+| 15 | `on_site_operation_or_calibration_check` | 1.000 | 1.000 | 1.000 | 20 | 0 | 0 |
+| 15 | `cross_channel_similar_anomaly_comparison` | 0.298 | 0.850 | 0.442 | 17 | 40 | 3 |
+| 15 | `record_processing_and_timestamp_check` | 0.000 | 0.000 | 0.000 | 0 | 3 | 20 |
+| 15 | `signal_transmission_path_check` | 0.000 | 0.000 | 0.000 | 0 | 0 | 20 |
+| 20 | `on_site_operation_or_calibration_check` | 0.833 | 0.750 | 0.789 | 15 | 3 | 5 |
+| 20 | `cross_channel_similar_anomaly_comparison` | 0.298 | 0.850 | 0.442 | 17 | 40 | 3 |
+| 20 | `record_processing_and_timestamp_check` | 0.000 | 0.000 | 0.000 | 0 | 5 | 20 |
+| 20 | `signal_transmission_path_check` | 0.000 | 0.000 | 0.000 | 0 | 0 | 20 |

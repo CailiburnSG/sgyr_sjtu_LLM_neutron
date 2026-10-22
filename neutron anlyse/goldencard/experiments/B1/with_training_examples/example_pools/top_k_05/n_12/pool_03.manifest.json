@@ -1,0 +1,28 @@
+{
+  "pool_id": "03",
+  "selection_mode": "same_case_ids_as_top_k_10_n_12_v1",
+  "retrieval_top_k": 5,
+  "example_count": 12,
+  "action_counts": {
+    "on_site_operation_or_calibration_check": 3,
+    "cross_channel_similar_anomaly_comparison": 3,
+    "record_processing_and_timestamp_check": 3,
+    "signal_transmission_path_check": 3
+  },
+  "source_pool": "top_k_10/n_12/pool_03.manifest.json",
+  "goldcard_ids_model_external_only": [
+    "GC-B80-005",
+    "GC-B80-018",
+    "GC-B80-030",
+    "GC-B80-033",
+    "GC-B80-042",
+    "GC-B80-055",
+    "GC-B80-070",
+    "GC-B80-078",
+    "GC-B80-008",
+    "GC-B80-024",
+    "GC-B80-059",
+    "GC-B80-074"
+  ],
+  "selection_rule": "Reuse exactly the frozen n12 training-case IDs and targets from Top-10; replace only candidate packages with frozen BM25 Top-5 versions. No validation case or goldcard_id enters the model prompt."
+}

@@ -1,0 +1,5 @@
+experiment_id,model,retrieval_top_k,run_id,action_id,tp,fp,fn,precision,recall,f1
+B2_llm_full_library_selection_then_action_v1,qwen3.8-flash,10,zero_shot,on_site_operation_or_calibration_check,13,31,2,0.29545454545454547,0.8666666666666667,0.44067796610169496
+B2_llm_full_library_selection_then_action_v1,qwen3.8-flash,10,zero_shot,cross_channel_similar_anomaly_comparison,1,6,14,0.14285714285714285,0.06666666666666667,0.09090909090909091
+B2_llm_full_library_selection_then_action_v1,qwen3.8-flash,10,zero_shot,record_processing_and_timestamp_check,0,0,15,0.0,0.0,0.0
+B2_llm_full_library_selection_then_action_v1,qwen3.8-flash,10,zero_shot,signal_transmission_path_check,0,0,15,0.0,0.0,0.0

@@ -1,0 +1,64 @@
+{
+  "experiment_id": "B1_bm25_topk_fixed_examples_llm_action_v1",
+  "model": "qwen3.8-flash",
+  "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "retrieval_top_k": 10,
+  "split": "frozen_validation_60_fixed_examples_4",
+  "run_at_utc": "2026-10-13T03:11:33.518278+00:00",
+  "case_count": 60,
+  "json_valid_rate": 1.0,
+  "constraint_valid_rate": 1.0,
+  "action_accuracy": 0.7333333333333333,
+  "action_macro_f1": 0.6703869047619048,
+  "action_per_class": {
+    "on_site_operation_or_calibration_check": {
+      "tp": 15,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.8823529411764706,
+      "recall": 1.0,
+      "f1": 0.9375
+    },
+    "cross_channel_similar_anomaly_comparison": {
+      "tp": 13,
+      "fp": 14,
+      "fn": 2,
+      "precision": 0.48148148148148145,
+      "recall": 0.8666666666666667,
+      "f1": 0.6190476190476191
+    },
+    "record_processing_and_timestamp_check": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 14,
+      "precision": 1.0,
+      "recall": 0.06666666666666667,
+      "f1": 0.125
+    },
+    "signal_transmission_path_check": {
+      "tp": 15,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "error_counts": {},
+  "latency_seconds": {
+    "case_count": 60,
+    "total_seconds": 241.092,
+    "mean_seconds": 4.018,
+    "p50_seconds": 3.611,
+    "p95_seconds": 7.917
+  },
+  "usage": {
+    "prompt_tokens": 1022014,
+    "completion_tokens": 2591,
+    "total_tokens": 1024605
+  },
+  "fixed_example_count": 4,
+  "example_pool_id": "01",
+  "selection_mode": "same_case_ids_as_top_k_10_n_04_v1",
+  "example_pool_file": "example_pools/top_k_10/n_04/pool_01.jsonl"
+}

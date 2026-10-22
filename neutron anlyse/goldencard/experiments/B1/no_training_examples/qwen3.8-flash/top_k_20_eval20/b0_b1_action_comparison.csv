@@ -1,0 +1,3 @@
+method,candidate_evidence_package,validation_case_count,action_accuracy,action_macro_f1,semantic_candidate_action_pair_f1_at_k
+B0_BM25_all_top20_tag_vote,BM25_Top20_shared,20,0.35,0.2666666666666666,0.19743589743589743
+B1_qwen3.8-flash_all_top20_direct_judgment,BM25_Top20_shared,20,0.5,0.375,0.2891025641025641
