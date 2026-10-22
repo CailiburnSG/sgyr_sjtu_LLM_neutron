@@ -8,7 +8,7 @@
 
 本节比较未向 RAG-LLM 提供固定示例上下文时，各基线工作流的证据选择与核查建议生成结果。B0 使用 BM25 Top-K 检索与标签机械投票；B1 使用与 B0 完全相同的候选证据包，仅将投票替换为 LLM 行动选择；B2 则要求 LLM 从完整的 300 张人工证据卡中选择候选证据，再输出行动建议。三种配置分别对应词汇检索加规则映射、固定检索条件下的零样本行动推理，以及零样本端到端证据选择。
 
-表~\ref{tab:zero-shot-main} 将候选证据语义质量、语义--行动对质量和最终行动表现并列报告。该比较的重点不在于将所有配置压缩为单一分数，而在于检验候选证据覆盖能否真正转化为正确的检查建议。B0 中，BM25 候选包在 \(K\geq5\) 时达到完整语义候选覆盖，但标签投票的 Accuracy 仍仅为 0.2500--0.2667。B1 零样本使用完全相同的候选证据包；随着 \(K\) 增大，其行动 Accuracy 从 0.2333 提升至 0.4833，但仍未稳定地区分四类检查建议。B2 零样本在各 \(K\) 下均达到完整候选覆盖，语义 F1 也高于 B0，却仍维持较低的 Pair-F1 和行动表现，表明全库访问本身不等同于有效的证据--行动映射。
+表~\ref{tab:zero-shot-main} 将候选证据语义质量、语义--行动对质量和最终行动表现并列报告。该比较的重点不在于将所有配置压缩为单一分数，而在于检验候选证据覆盖能否真正转化为正确的检查建议。B0 中，BM25 候选包在 \(K\geq5\) 时达到完整语义候选覆盖（\(\mathrm{SCC@K}=1\)），但标签投票的 \(\mathrm{Acc}\) 仍仅为 0.2500--0.2667。B1 零样本使用完全相同的候选证据包；随着 \(K\) 增大，其 \(\mathrm{Acc}\) 从 0.2333 提升至 0.4833，但仍未稳定地区分四类检查建议。B2 零样本在各 \(K\) 下均达到完整候选覆盖，\(\mathrm{SF1@K}\) 也高于 B0，却仍维持较低的 \(\mathrm{SCA\mbox{-}F1@K}\) 和行动表现，表明全库访问本身不等同于有效的证据--行动映射。
 
 \begin{table*}[t]
 \centering
@@ -17,7 +17,7 @@
 \small
 \begin{tabular}{c c c c c c c}
 \hline
-配置 & \(K\) & 语义 F1@K & 候选覆盖率 & Pair-F1@K & Accuracy & Macro-F1 \\
+配置 & \(K\) & SF1@K & SCC@K & SCA-F1@K & Acc & MF1 \\
 \hline
 B0 & 3  & 0.4188 & 0.9000 & 0.1698 & 0.2500 & 0.1667 \\
 B0 & 5  & 0.4749 & 1.0000 & 0.1458 & 0.2500 & 0.1744 \\
@@ -36,25 +36,48 @@ B2 零样本 & 8 & 0.5719 & 1.0000 & 0.1719 & 0.2500 & 0.1210 \\
 \end{tabular}
 \end{table*}
 
-图~\ref{fig:zero-shot-evidence-action} 建议以语义 F1@K、语义--行动对 F1@K 与 Accuracy 为三组并列柱状图。若候选覆盖率或语义 F1 已经较高，但 Pair-F1 和 Accuracy 仍然较低，则可直接说明：候选证据存在并不足以保证系统能够作出正确行动选择。这一现象构成后续引入固定示例的动机。
+图~\ref{fig:zero-shot-evidence-action} 建议以 \(\mathrm{SF1@K}\)、\(\mathrm{SCA\mbox{-}F1@K}\) 与 \(\mathrm{Acc}\) 为三组并列柱状图。若 \(\mathrm{SCC@K}\) 或 \(\mathrm{SF1@K}\) 已经较高，但 \(\mathrm{SCA\mbox{-}F1@K}\) 和 \(\mathrm{Acc}\) 仍然较低，则可直接说明：候选证据存在并不足以保证系统能够作出正确行动选择。这一现象构成后续引入固定示例的动机。
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{fig_zero_shot_evidence_action}
-  \caption{B0、B1 零样本与 B2 零样本的证据质量和行动质量比较。候选证据覆盖不等于证据--行动映射正确。}
+  \caption{B0、B1 零样本与 B2 零样本的 \(\mathrm{SF1@K}\)、\(\mathrm{SCA\mbox{-}F1@K}\) 与 \(\mathrm{Acc}\) 比较。候选证据覆盖不等于证据--行动映射正确。}
   \label{fig:zero-shot-evidence-action}
 \end{figure}
 
 \subsection{B1：固定候选证据条件下的示例学习与收益平台}
 
-在 B1 中，候选证据始终由同一 BM25 检索器给出，因此固定示例带来的变化主要反映行动选择阶段的上下文学习。图~\ref{fig:b1-k-n} 展示不同 \(K\) 和示例数 \(n\) 下的 Accuracy 与 Macro-F1；每个点使用三个冻结示例池的均值和标准差。固定示例加入后，B1 的行动表现相较零样本显著提升，表明模型能够从完整案例中学习事件组合、候选证据与检查建议之间的任务关系。
+在 B1 中，候选证据始终由同一 BM25 检索器给出，因此固定示例数量 \(n\) 及示例池的变化不会改变候选证据本身的语义质量。由此，\(\mathrm{Acc}\)、\(\mathrm{MF1}\) 与 \(\mathrm{SCA\mbox{-}F1@K}\) 随 \(n\) 的变化主要反映模型在证据条件下选择固定检查建议的能力，而不能归因于检索结果的变化。图~\ref{fig:b1-k-n} 以 \(K\)--\(n\) 热力图展示 \(\mathrm{Acc}\)、\(\mathrm{MF1}\)、\(\mathrm{SCA\mbox{-}F1@K}\) 和平均总 token/池；每个单元为三个冻结示例池的均值，图中标注其数值。\(\mathrm{SF1@K}\) 仍在表~\ref{tab:zero-shot-main} 及相关讨论中报告；\(\mathrm{SCA\mbox{-}F1@K}\) 则刻画候选证据语义与最终行动同时正确的联合表现。
 
-表~\ref{tab:b1-main-settings} 给出代表性设置。K=5、\(n=8\) 的三池平均 Accuracy 为 \(0.9389\pm0.0255\)，而在 \(K=8,n=16\) 时，Accuracy 和 Macro-F1 分别达到 \(0.9889\pm0.0192\) 与 \(0.9888\pm0.0193\)。当示例数进一步增加至 \(n=20\) 时，两项指标保持不变，但平均总 token/池从约 2.739M 增至约 3.364M。该结果表明，固定示例并非越多越好：在当前任务中，性能随 \(n\) 增长而改善，但会在一定规模后进入收益平台。
+与 4.1 节的无示例结果相比，固定示例显著改变了 B1 的行动表现。在 \(n=0\) 时，B1 虽已使用 BM25 候选证据和 LLM 行动选择，但 \(\mathrm{Acc}\) 仅为 0.2333--0.4833，说明模型尚不能稳定地区分四类检查建议。加入 \(n=4\) 个固定示例后，各 \(K\) 下的 \(\mathrm{Acc}\) 已提升至 0.7056--0.8000；当 \(n=8\) 时，\(K=3,5,8,10\) 的 \(\mathrm{Acc}\) 分别达到 0.9389、0.9389、0.9500 和 0.9611。这表明完整案例示例不仅提供行动标签，还提供事件组合、候选证据与检查建议之间的具体对应方式，使模型能够在既定候选证据边界内完成更稳定的优先核查选择。
+
+随着 \(n\) 继续增加，性能总体上升，但提升并非严格单调。对于 \(K=5,8,10\)，当 \(n=16\) 时，\(\mathrm{Acc}\) 均达到 0.9889，\(\mathrm{MF1}\) 也相应达到约 0.9888；相比之下，个别 \(n\) 与示例池组合仍存在波动，尤其在较小 \(K\) 或中等示例数量下更为明显。这说明固定示例的具体组成仍会影响模型的上下文学习，但当示例数量达到一定规模后，不同 \(K\) 之间的行动表现差异已明显缩小。\(\mathrm{SCA\mbox{-}F1@K}\) 随 \(K\) 和 \(n\) 增加而总体提高，但始终低于最终行动指标；这是因为固定示例能够改善行动选择，却不会改变 BM25 候选包中已有的无关证据比例。因此，较高的 \(\mathrm{Acc}\) 表示模型能够作出正确的优先核查判断，而相对较低的 \(\mathrm{SCA\mbox{-}F1@K}\) 保留了候选证据质量仍受词汇检索限制的信息。
+
+表~\ref{tab:b1-main-settings} 给出代表性设置。\(K=5,n=8\) 时，三池平均 Accuracy 为 \(0.9389\pm0.0255\)；在 \(K=8,n=16\) 时，Accuracy 和 Macro-F1 分别达到 \(0.9889\pm0.0192\) 与 \(0.9888\pm0.0193\)。当示例数进一步增加至 \(n=20\) 时，两项行动指标未再提升，但平均总 token/池由约 2.739M 增至约 3.364M。因而，B1 的结果呈现明确的收益平台：固定示例是提升证据条件下行动选择的关键因素，但在 \(n=16\) 左右已接近当前设置下的性能上限，继续增加示例主要带来上下文成本而非可观的行动收益。
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.86\textwidth]{fig_b1_k_n_tradeoff}
-  \caption{B1 固定示例实验中，\(K\) 与 \(n\) 对 Accuracy、Macro-F1 和总 token 的影响。误差线表示三个冻结示例池的标准差。}
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{b1_kn_acc_heatmap}\\[-2pt]
+    \small (a) \(\mathrm{Acc}\)
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{b1_kn_mf1_heatmap}\\[-2pt]
+    \small (b) \(\mathrm{MF1}\)
+  \end{minipage}\\[4pt]
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{b1_kn_sca_f1_heatmap}\\[-2pt]
+    \small (c) \(\mathrm{SCA\mbox{-}F1@K}\)
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{b1_kn_token_cost_heatmap}\\[-2pt]
+    \small (d) Token cost（平均总 token/池）
+  \end{minipage}
+  \caption{B1 固定示例实验中 \(K\) 与 \(n\) 对最终行动表现、证据--行动联合质量和 token 成本的影响。颜色和单元标注均表示三个冻结示例池上的均值；\(\mathrm{SCA\mbox{-}F1@K}\) 要求候选证据语义与最终行动同时正确，token cost 表示单个示例池完成 60 例评估的总 token 消耗。}
   \label{fig:b1-k-n}
 \end{figure*}
 
@@ -65,9 +88,9 @@ B2 零样本 & 8 & 0.5719 & 1.0000 & 0.1719 & 0.2500 & 0.1210 \\
 \small
 \begin{tabular}{c c c c c}
 \hline
-\(K\) & \(n\) & Accuracy & Macro-F1 & 平均总 token/池 \\
+\(K\) & \(n\) & Acc & MF1 & 平均总 token/池 \\
 \hline
-5 & 8  & \(0.9389\pm0.0255\) & \(0.9387\pm0.0256\) & [待填] \\
+5 & 8  & \(0.9389\pm0.0255\) & \(0.9387\pm0.0256\) & 约 1.031M \\
 8 & 16 & \(0.9889\pm0.0192\) & \(0.9888\pm0.0193\) & 约 2.739M \\
 8 & 20 & \(0.9889\pm0.0192\) & \(0.9888\pm0.0193\) & 约 3.364M \\
 \hline
